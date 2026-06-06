@@ -309,3 +309,33 @@ function triggerGoogleTranslate(lang) {
 init().catch((error) => {
   elements.grid.innerHTML = `<div class="surface rounded-lg p-8 text-sm text-red-600">Unable to load tool catalog: ${escapeHtml(error.message)}</div>`;
 });
+
+// ─── Dynamic GTAG for homepage ───
+(function() {
+  if (document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) return;
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ window.dataLayer.push(arguments); };
+  var gtagScript = document.createElement('script');
+  gtagScript.async = true;
+  gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-HRN5TZ61NL';
+  gtagScript.onload = function() {
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-HRN5TZ61NL', {
+      page_path: window.location.pathname,
+      page_title: document.title,
+      page_location: window.location.href
+    });
+  };
+  var first = document.getElementsByTagName('script')[0];
+  if (first && first.parentNode) first.parentNode.insertBefore(gtagScript, first);
+  else document.head.appendChild(gtagScript);
+})();
+
+// ─── Custom 49-Feature Accessibility Widget ───
+(function() {
+  if (window.__GTH_A11Y_LOADED) return;
+  var s = document.createElement('script');
+  s.src = 'assets/accessibility-widget.js';
+  s.defer = true;
+  document.head.appendChild(s);
+})();
