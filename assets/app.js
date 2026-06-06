@@ -211,6 +211,9 @@ function bindEvents() {
     populateFilters();
     localize();
     renderTools();
+    if (typeof triggerGoogleTranslate === "function") {
+      triggerGoogleTranslate(state.language);
+    }
   });
   elements.country.addEventListener("change", (event) => {
     state.country = event.target.value;
@@ -231,11 +234,76 @@ async function init() {
   populateSelectors();
   applyPreferences();
   bindEvents();
+  initGoogleTranslate();
   const response = await fetch("assets/tools.json", { cache: "no-store" });
   state.tools = await response.json();
   populateFilters();
   localize();
   renderTools();
+}
+
+function initGoogleTranslate() {
+  const div = document.createElement('div');
+  div.id = 'google_translate_element';
+  div.style.display = 'none';
+  document.body.appendChild(div);
+
+  window.googleTranslateElementInit = function() {
+    new window.google.translate.TranslateElement({
+      pageLanguage: 'en',
+      autoDisplay: false
+    }, 'google_translate_element');
+    
+    // Automatically apply saved language on load if it's not English
+    setTimeout(() => {
+      if (state.language !== 'en') {
+        triggerGoogleTranslate(state.language);
+      }
+    }, 500);
+  };
+
+  const script = document.createElement('script');
+  script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+  document.head.appendChild(script);
+  
+  // Hide Google Translate banner
+  const style = document.createElement('style');
+  style.textContent = `
+    .goog-te-banner-frame { display: none !important; }
+    body { top: 0 !important; }
+    .skiptranslate { display: none !important; }
+  `;
+  document.head.appendChild(style);
+}
+
+function triggerGoogleTranslate(lang) {
+  const select = document.querySelector('.goog-te-combo');
+  if (!select) {
+    // If widget hasn't loaded yet, try again in a bit
+    setTimeout(() => triggerGoogleTranslate(lang), 500);
+    return;
+  }
+  
+  // Handle language mappings (e.g., Chinese)
+  const targetLang = lang === 'zh' ? 'zh-CN' : lang;
+  
+  if (lang === 'en') {
+    // To restore original English, we simulate a click on the "Show original" button in the iframe if possible
+    // Alternatively, we set the select back to English
+    select.value = 'en';
+    select.dispatchEvent(new Event('change'));
+    
+    // Sometimes Google Translate requires clearing the cookie to truly revert
+    const iframe = document.querySelector('iframe.goog-te-banner-frame');
+    if (iframe) {
+        const innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+        const restoreBtn = innerDoc.querySelector('button[id*="restore"]');
+        if (restoreBtn) restoreBtn.click();
+    }
+  } else {
+    select.value = targetLang;
+    select.dispatchEvent(new Event('change'));
+  }
 }
 
 init().catch((error) => {
