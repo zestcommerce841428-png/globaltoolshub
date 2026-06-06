@@ -12,26 +12,7 @@ const sources = [
   { dir: "usemagictools", name: "UseMagicTools" },
 ];
 
-const replacements = [
-  [/Magic Toolbox/gi, "GlobalToolsHub"],
-  [/UseMagicTools/gi, "GlobalToolsHub"],
-  [/usemagictools/gi, "globaltoolshub"],
-  [/ToolVerse/gi, "GlobalToolsHub"],
-  [/NakulTools/gi, "GlobalToolsHub"],
-  [/Nakul Tools/gi, "GlobalToolsHub"],
-  [/Online Tools/g, "GlobalToolsHub"],
-  [/online-tools/g, "global-tools"],
-  [/GlobalToolsHub/g, "GlobalToolsHub"],
-  [/globaltoolshub/g, "globaltoolshub"],
-  [/global-tools/g, "global-tools"],
-  [/https:\/\/www\.GlobalToolsHub\.com\//g, "/"],
-  [/https:\/\/www\.GlobalToolsHub\.com/g, ""],
-  [/www\.GlobalToolsHub\.com/g, ""],
-  [/www\.usemagictools\.com/gi, ""],
-  [/https:\/\/emn178\.github\.io\/legacy\/(?:legacy\/)*online-tools\//gi, "/legacy/online-tools/"],
-  [/https:\/\/emn178\.github\.io\/online-tools\//gi, "/legacy/online-tools/"],
-  [/emn178\.github\.io\/online-tools/gi, "legacy/online-tools"],
-];
+const replacements = [];
 
 const categoryRules = [
   ["PDF", /pdf|document|word/i],
@@ -296,7 +277,6 @@ async function rebrandFile(file, sourceRoot) {
     const depth = relToTools.split("/").length - 1;
     const baseHref = depth === 0 ? "./" : "../".repeat(depth);
     content = content.replace(/<base href="[^"]*">/i, `<base href="${baseHref}">`);
-    content = content.replace(/\/global-tools\//g, "/legacy/online-tools/");
   }
 
   content = stripAnalytics(content);
