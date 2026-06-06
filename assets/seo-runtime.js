@@ -4,6 +4,18 @@ window.dataLayer = window.dataLayer || [];
 if (typeof window.gtag === 'undefined') {
   window.gtag = function(){ dataLayer.push(arguments); };
 }
+
+// Inject Google Analytics dynamically
+(function() {
+  if (document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) return;
+  const script = document.createElement('script');
+  script.src = "https://www.googletagmanager.com/gtag/js?id=G-HRN5TZ61NL";
+  script.async = true;
+  document.head.appendChild(script);
+  
+  window.gtag('js', new Date());
+  window.gtag('config', 'G-HRN5TZ61NL');
+})();
 (function () {
   const currentUrl = window.location.href.split("#")[0];
   const origin = window.location.origin;
@@ -32,7 +44,8 @@ if (typeof window.gtag === 'undefined') {
         if (Array.isArray(value)) return value.map(rewrite);
         for (const key of Object.keys(value)) {
           if ((key === "url" || key === "item" || key === "@id") && typeof value[key] === "string") {
-            value[key] = value[key].startsWith("/") ? `${origin}${value[key]}` : currentUrl;
+            // Replace any auto-generated canonical path with the actual loaded live URL
+            value[key] = currentUrl;
           } else {
             value[key] = rewrite(value[key]);
           }
