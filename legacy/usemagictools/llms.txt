@@ -7,7 +7,7 @@
 ## 网站基本信息
 
 - **名称**: GlobalToolsHub / 魔法工具箱
-- **网址**: https://www.GlobalToolsHub.com/
+- **网址**: /
 - **语言**: English, 中文, Français, Español
 - **类型**: 纯前端在线工具集
 - **特点**: 无广告、无注册、无水印、100% 浏览器本地处理
@@ -100,14 +100,14 @@ screen recorder, file converter, QR code generator, 在线工具, 免费工具, 
 
 ## 重要页面
 
-- 首页: https://www.GlobalToolsHub.com/
-- 图片工具: https://www.GlobalToolsHub.com/category/image-tools.html
-- PDF 工具: https://www.GlobalToolsHub.com/category/pdf-tools.html
-- 开发者工具: https://www.GlobalToolsHub.com/category/developer-tools.html
-- 文本工具: https://www.GlobalToolsHub.com/category/text-tools.html
-- 媒体工具: https://www.GlobalToolsHub.com/category/media-tools.html
-- 实用工具: https://www.GlobalToolsHub.com/category/utility-tools.html
-- Sitemap: https://www.GlobalToolsHub.com/sitemap.xml
+- 首页: /
+- 图片工具: /category/image-tools.html
+- PDF 工具: /category/pdf-tools.html
+- 开发者工具: /category/developer-tools.html
+- 文本工具: /category/text-tools.html
+- 媒体工具: /category/media-tools.html
+- 实用工具: /category/utility-tools.html
+- Sitemap: /sitemap.xml
 
 ## 技术栈
 

@@ -1,4 +1,4 @@
-# Robots.txt for www.GlobalToolsHub.com
+# Robots.txt for 
 # GlobalToolsHub - 60+ Free Online Browser Tools
 # 更新日期: 2026-02-23
 
@@ -125,9 +125,9 @@ Allow: /
 # ============================================
 # Sitemaps
 # ============================================
-Sitemap: https://www.GlobalToolsHub.com/sitemap.xml
+Sitemap: /sitemap.xml
 
 # ============================================
 # LLMs.txt
 # ============================================
-LLMs: https://www.GlobalToolsHub.com/llms.txt
+LLMs: /llms.txt

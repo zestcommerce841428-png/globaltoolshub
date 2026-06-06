@@ -24,7 +24,12 @@ const replacements = [
   [/GlobalToolsHub/g, "GlobalToolsHub"],
   [/globaltoolshub/g, "globaltoolshub"],
   [/global-tools/g, "global-tools"],
+  [/https:\/\/www\.GlobalToolsHub\.com\//g, "/"],
+  [/https:\/\/www\.GlobalToolsHub\.com/g, ""],
+  [/www\.GlobalToolsHub\.com/g, ""],
   [/www\.usemagictools\.com/gi, ""],
+  [/https:\/\/emn178\.github\.io\/legacy\/(?:legacy\/)*online-tools\//gi, "/legacy/online-tools/"],
+  [/https:\/\/emn178\.github\.io\/online-tools\//gi, "/legacy/online-tools/"],
   [/emn178\.github\.io\/online-tools/gi, "legacy/online-tools"],
 ];
 
@@ -195,6 +200,13 @@ function upsertDynamicSeo(content, file, sourceRoot) {
     updated = updated.replace(/<script\b[^>]*data-globaltoolshub-seo[^>]*>[\s\S]*?<\/script>/i, seoScript);
   } else {
     updated = updated.replace(/<\/head>/i, `    ${seoScript}\n</head>`);
+  }
+
+  if (!/assets\/seo-runtime\.js|\/assets\/seo-runtime\.js/i.test(updated)) {
+    const runtimePath = path
+      .relative(path.dirname(file), path.join(root, "assets", "seo-runtime.js"))
+      .replaceAll(path.sep, "/");
+    updated = updated.replace(/<\/head>/i, `    <script src="${runtimePath}" defer></script>\n</head>`);
   }
 
   return updated;

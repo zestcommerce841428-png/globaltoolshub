@@ -2,15 +2,40 @@ import { promises as fs } from "node:fs";
 
 const year = new Date().getFullYear();
 
-const nav = `
-  <nav class="page-nav" aria-label="Site navigation">
-    <a href="index.html">Tools</a>
-    <a href="about.html">About</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="terms.html">Terms</a>
-  </nav>`;
+const header = `
+  <header class="border-b border-slate-200/80 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
+    <div class="shell flex min-h-16 items-center justify-between gap-4 py-3">
+      <a href="index.html" class="flex min-w-0 items-center gap-3" aria-label="GlobalToolsHub home">
+        <img src="assets/logo.svg" alt="" class="h-10 w-10 shrink-0 rounded-lg">
+        <span class="truncate text-lg font-bold tracking-normal">GlobalToolsHub</span>
+      </a>
+      <nav class="hidden items-center gap-4 text-sm font-semibold text-slate-600 md:flex dark:text-slate-300" aria-label="Main navigation">
+        <a href="index.html">Tools</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Compliance</a>
+      </nav>
+    </div>
+  </header>`;
+
+const footer = `
+  <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-500 dark:border-slate-800">
+    <div class="shell">
+      <div class="mb-3 flex flex-wrap justify-center gap-4">
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="security.html">Security</a>
+        <a href="accessibility.html">Accessibility</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </div>
+      <p>Copyright ${year} GlobalToolsHub. Built for fast browser-based tools.</p>
+    </div>
+  </footer>`;
 
 const shell = ({ title, description, body }) => `<!doctype html>
 <html lang="en">
@@ -25,15 +50,14 @@ const shell = ({ title, description, body }) => `<!doctype html>
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="assets/site.css">
     <script src="assets/analytics.js" defer></script>
+    <script src="assets/seo-runtime.js" defer></script>
   </head>
   <body data-bg="clean">
+    ${header}
     <main class="page-main">
-      ${nav}
       ${body}
     </main>
-    <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-500 dark:border-slate-800">
-      <p>Copyright ${year} GlobalToolsHub. Built for fast browser-based tools.</p>
-    </footer>
+    ${footer}
   </body>
 </html>
 `;
@@ -49,7 +73,7 @@ const pages = [
     file: "contact.html",
     title: "Contact",
     description: "Contact GlobalToolsHub for feedback, bug reports, and tool suggestions.",
-    body: `<h1>Contact</h1><p>Use this page for bug reports, tool suggestions, accessibility feedback, and partnership questions.</p><div class="page-card"><h2>Email</h2><p>Replace this placeholder with your public contact email before launch: contact@globaltoolshub.example</p><h2>What To Include</h2><ul><li>The tool name or page URL.</li><li>What happened and what you expected.</li><li>Your browser and device if the issue is visual or interactive.</li></ul></div>`,
+    body: `<h1>Contact</h1><p>Use this page for bug reports, tool suggestions, accessibility feedback, and partnership questions.</p><div class="page-card"><h2>Email</h2><p>Add your preferred public support email here before launch.</p><h2>What To Include</h2><ul><li>The tool name or page URL.</li><li>What happened and what you expected.</li><li>Your browser and device if the issue is visual or interactive.</li></ul></div>`,
   },
   {
     file: "privacy.html",

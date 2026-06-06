@@ -10,7 +10,7 @@
 
 ### Live Demo
 
-**https://www.GlobalToolsHub.com**
+****
 
 ### Tool Categories
 
@@ -124,7 +124,7 @@ MIT
 
 ### 在线体验
 
-**https://www.GlobalToolsHub.com**
+****
 
 ### 工具分类
 
@@ -238,7 +238,7 @@ MIT
 
 ### Demo en ligne
 
-**https://www.GlobalToolsHub.com**
+****
 
 ### Categories d'outils
 
@@ -352,7 +352,7 @@ MIT
 
 ### Demo en vivo
 
-**https://www.GlobalToolsHub.com**
+****
 
 ### Categorias de herramientas
 
