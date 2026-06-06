@@ -1,0 +1,5646 @@
+[
+  {
+    "id": "usemagictools-json-viewer-html",
+    "title": "{ } JSON Viewer",
+    "description": "Free online JSON viewer with formatting, syntax highlighting, tree view, node collapse/expand, and keyword search. Paste or upload JSON files. Pure frontend, data never uploaded to server. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "PDF",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/json-viewer.html",
+    "tags": [
+      "json",
+      "viewer",
+      "free",
+      "online",
+      "with",
+      "formatting",
+      "syntax",
+      "highlighting",
+      "tree",
+      "view"
+    ]
+  },
+  {
+    "id": "usemagictools-snow-day-calculator-html",
+    "title": "❄️ Snow Day Calculator",
+    "description": "Free Snow Day Calculator predicts school closures using real-time weather data. Enter your ZIP code to check snow day probability. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/snow-day-calculator.html",
+    "tags": [
+      "snow",
+      "day",
+      "calculator",
+      "free",
+      "predicts",
+      "school",
+      "closures",
+      "using",
+      "real"
+    ]
+  },
+  {
+    "id": "usemagictools-ip-lookup-html",
+    "title": "🌍 IP Address Lookup",
+    "description": "Instantly find any IP address location, ISP, city, country & coordinates. Enter an IP or domain to get full geolocation data — plus see your own public IP in one click. 100% free, no ads, no signup, no data stored.",
+    "category": "Utility",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/ip-lookup.html",
+    "tags": [
+      "address",
+      "lookup",
+      "instantly",
+      "find",
+      "any",
+      "location",
+      "isp",
+      "city",
+      "country",
+      "coordinates",
+      "enter"
+    ]
+  },
+  {
+    "id": "usemagictools-world-clock-html",
+    "title": "🌍 World Clock",
+    "description": "Free online world clock and time zone converter. Real-time display of 25+ major cities, time difference lookup, city search, and day/night indicator. ✅ No ads ✅ No signup ✅ No limits.",
+    "category": "Text",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/world-clock.html",
+    "tags": [
+      "world",
+      "clock",
+      "free",
+      "online",
+      "and",
+      "time",
+      "zone",
+      "converter",
+      "real"
+    ]
+  },
+  {
+    "id": "usemagictools-page-refresher-html",
+    "title": "🌐 Page Auto Refresher",
+    "description": "Free online page auto refresh tool with customizable intervals. Perfect for web testing, monitoring page updates, and stress testing. Pure frontend, no installation required. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Utility",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/page-refresher.html",
+    "tags": [
+      "page",
+      "auto",
+      "refresher",
+      "free",
+      "online",
+      "refresh",
+      "tool",
+      "with",
+      "customizable",
+      "intervals"
+    ]
+  },
+  {
+    "id": "usemagictools-ico-maker-html",
+    "title": "🎨 ICO Icon Maker",
+    "description": "Free online ICO icon maker tool. Convert PNG, JPG, GIF images to ICO icon files. Supports cropping, multiple sizes from 16x16 to 512x512, real-time preview, one-click download. ✅ No ads ✅ No signup ✅ No watermark. Runs entirely in your browser.",
+    "category": "Image",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/ico-maker.html",
+    "tags": [
+      "ico",
+      "icon",
+      "maker",
+      "free",
+      "online",
+      "tool",
+      "convert",
+      "png",
+      "jpg"
+    ]
+  },
+  {
+    "id": "usemagictools-color-palette-html",
+    "title": "🎨 Online Color Palette",
+    "description": "Free online color palette tool. Convert colors between HEX, RGB, HSL, and CMYK formats. Generate complementary, analogous, and triadic color schemes. Save favorite colors and copy color codes instantly. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Image",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/color-palette.html",
+    "tags": [
+      "online",
+      "color",
+      "palette",
+      "free",
+      "tool",
+      "convert",
+      "colors",
+      "between",
+      "hex"
+    ]
+  },
+  {
+    "id": "usemagictools-m3u8-downloader-html",
+    "title": "🎬 M3U8 Batch Downloader",
+    "description": "Free online M3U8 video downloader. Batch download M3U8/HLS streaming videos and save as TS files. Real-time preview, progress display, pause/resume. Pure frontend, no installation required. ✅ No ads ✅ No signup ✅ No install. Runs entirely in your browser.",
+    "category": "Utility",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/m3u8-downloader.html",
+    "tags": [
+      "m3u8",
+      "batch",
+      "downloader",
+      "free",
+      "online",
+      "video",
+      "download",
+      "hls"
+    ]
+  },
+  {
+    "id": "usemagictools-image-to-pdf-html",
+    "title": "📄 Image to PDF Converter",
+    "description": "Free online image to PDF converter. Merge multiple images into one PDF with drag-and-drop sorting, clipboard paste, and QR code upload. Supports JPG/PNG/WEBP formats. ✅ No ads ✅ No signup ✅ No watermark. Runs entirely in your browser.",
+    "category": "PDF",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/image-to-pdf.html",
+    "tags": [
+      "image",
+      "pdf",
+      "converter",
+      "free",
+      "online",
+      "merge",
+      "multiple",
+      "images",
+      "into"
+    ]
+  },
+  {
+    "id": "usemagictools-file-renamer-html",
+    "title": "📝 Batch File Renamer",
+    "description": "Free online batch file renaming tool. Supports sequential numbering, find & replace, prefix/suffix, regex replacement. Drag to reorder, real-time preview, fully local processing for privacy. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/file-renamer.html",
+    "tags": [
+      "batch",
+      "file",
+      "renamer",
+      "free",
+      "online",
+      "renaming",
+      "tool",
+      "supports",
+      "sequential",
+      "numbering"
+    ]
+  },
+  {
+    "id": "usemagictools-image-compressor-html",
+    "title": "📦 Image Compressor",
+    "description": "Free online image compression tool. Batch compress JPG, PNG, WebP images. Adjustable quality settings, optional resizing, maintains clarity while significantly reducing file size. Pure frontend, data secure. ✅ No ads ✅ No signup ✅ No watermark. Runs entirely in your browser.",
+    "category": "Image",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/image-compressor.html",
+    "tags": [
+      "image",
+      "compressor",
+      "free",
+      "online",
+      "compression",
+      "tool",
+      "batch",
+      "compress",
+      "jpg",
+      "png",
+      "webp"
+    ]
+  },
+  {
+    "id": "usemagictools-id-photo-tool-html",
+    "title": "📷 ID Photo Cropper & Watermark",
+    "description": "Free online ID photo cropper with transparent watermark. Supports passport, visa, ID card sizes. 100% offline browser processing, no uploads, complete privacy protection. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Image",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/id-photo-tool.html",
+    "tags": [
+      "photo",
+      "cropper",
+      "watermark",
+      "free",
+      "online",
+      "with",
+      "transparent",
+      "supports",
+      "passport"
+    ]
+  },
+  {
+    "id": "usemagictools-websocket-tester-html",
+    "title": "🔌 WebSocket Online Tester",
+    "description": "Free online WebSocket testing tool, supports ws:// and wss:// protocols. Connect to internal and external WebSocket servers. Real-time messaging, connection monitoring, JSON formatting. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/websocket-tester.html",
+    "tags": [
+      "websocket",
+      "online",
+      "tester",
+      "free",
+      "testing",
+      "tool",
+      "supports",
+      "and",
+      "wss",
+      "protocols"
+    ]
+  },
+  {
+    "id": "usemagictools-regex-tester-html",
+    "title": "🔍 Regex Tester",
+    "description": "Free online regex tester tool. Test, validate and match regular expressions with real-time highlighting. Generate code snippets for JavaScript, Python, Java, Go, PHP, Ruby, and C#. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/regex-tester.html",
+    "tags": [
+      "regex",
+      "tester",
+      "free",
+      "online",
+      "tool",
+      "test",
+      "validate",
+      "and",
+      "match",
+      "regular"
+    ]
+  },
+  {
+    "id": "usemagictools-whois-query-html",
+    "title": "🔍 Whois Domain Lookup",
+    "description": "Free online Whois domain lookup tool. Query domain registration info, registrar, owner, registration/expiration dates, DNS servers, and domain status. Based on RDAP protocol, runs entirely in browser. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/whois-query.html",
+    "tags": [
+      "whois",
+      "domain",
+      "lookup",
+      "free",
+      "online",
+      "tool",
+      "query",
+      "registration"
+    ]
+  },
+  {
+    "id": "usemagictools-crypto-tools-html",
+    "title": "🔐 Crypto Toolbox",
+    "description": "Free online crypto and encoding toolbox with 20+ tools: MD5/SHA/AES/DES encryption, Base64/URL/Unicode encoding, Morse code, QR code & barcode generator, password generator, UUID generator. Runs entirely in browser, secure and reliable. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "PDF",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/crypto-tools.html",
+    "tags": [
+      "crypto",
+      "toolbox",
+      "free",
+      "online",
+      "and",
+      "encoding",
+      "with",
+      "20+",
+      "tools",
+      "md5"
+    ]
+  },
+  {
+    "id": "usemagictools-timestamp-converter-html",
+    "title": "🕐 Timestamp Converter",
+    "description": "Online timestamp converter tool. Convert between Unix timestamps and date/time, view multiple time zones, with code examples for various programming languages. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/timestamp-converter.html",
+    "tags": [
+      "timestamp",
+      "converter",
+      "online",
+      "tool",
+      "convert",
+      "between",
+      "unix",
+      "timestamps",
+      "and",
+      "date"
+    ]
+  },
+  {
+    "id": "usemagictools-sqlite-viewer-html",
+    "title": "🗄️ SQLite Database Viewer",
+    "description": "Free online SQLite database viewer. Open .db/.sqlite files directly in browser, view table structure, execute SQL queries. Pure frontend, no upload required, secure and private. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/sqlite-viewer.html",
+    "tags": [
+      "sqlite",
+      "database",
+      "viewer",
+      "free",
+      "online",
+      "open",
+      "files",
+      "directly"
+    ]
+  },
+  {
+    "id": "usemagictools-calculator-html",
+    "title": "🧮 Universal Calculator",
+    "description": "Free online universal calculator with scientific calculator, interest calculator, subnet calculator and 16 unit converters: length, area, volume, temperature, time, speed, pressure, power, energy, angle, data size, density, force. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/calculator.html",
+    "tags": [
+      "universal",
+      "calculator",
+      "free",
+      "online",
+      "with",
+      "scientific",
+      "interest",
+      "subnet"
+    ]
+  },
+  {
+    "id": "online-tools-aes-decrypt-index-html",
+    "title": "AES Decryption",
+    "description": "This online tool helps you decrypt text or a file using AES. It supports various modes and padding schemes. It also supports PBKDF2 or EvpKDF, with customizable salt, iteration, and hash settings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/aes/decrypt/index.html",
+    "tags": [
+      "aes",
+      "decryption",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "decrypt",
+      "text",
+      "file",
+      "using"
+    ]
+  },
+  {
+    "id": "online-tools-aes-encrypt-index-html",
+    "title": "AES Encryption",
+    "description": "This online tool helps you encrypt text or a file from local storage or a URL using AES. It supports various modes and padding schemes. It also supports PBKDF2 or EvpKDF, with customizable salt, iteration, and hash settings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/aes/encrypt/index.html",
+    "tags": [
+      "aes",
+      "encryption",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "encrypt",
+      "text",
+      "file",
+      "from",
+      "local"
+    ]
+  },
+  {
+    "id": "nakul-tools-age-calculator-html",
+    "title": "Age Calculator",
+    "description": "Use Age Calculator online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Utility",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/age-calculator.html",
+    "tags": [
+      "age",
+      "calculator",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "usemagictools-angel-number-html",
+    "title": "Angel Number Calculator",
+    "description": "Free angel number calculator by birthday. Discover your angel number, its meaning, personality traits, strengths & challenges. No ads, no signup, 100% private. ✅ Instant results ✅ Deep interpretation ✅ Lucky color & gemstone",
+    "category": "Image",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/angel-number.html",
+    "tags": [
+      "angel",
+      "number",
+      "calculator",
+      "free",
+      "birthday",
+      "discover",
+      "your"
+    ]
+  },
+  {
+    "id": "usemagictools-api-tester-html",
+    "title": "API Tester",
+    "description": "Free online API tester for HTTP request debugging. Send GET/POST/PUT/DELETE with headers and JSON body in browser. ✅ No ads ✅ No signup ✅ No limits.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/api-tester.html",
+    "tags": [
+      "api",
+      "tester",
+      "free",
+      "online",
+      "for",
+      "http",
+      "request",
+      "debugging",
+      "send",
+      "get"
+    ]
+  },
+  {
+    "id": "usemagictools-audio-cutter-html",
+    "title": "Audio Cutter",
+    "description": "Free online audio cutter tool, supports MP3, WAV, M4A, FLAC, AAC formats. Visual waveform display, drag to select clip range, keyboard shortcuts, local processing for privacy. ✅ No ads ✅ No signup ✅ No install. Runs entirely in your browser.",
+    "category": "Utility",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/audio-cutter.html",
+    "tags": [
+      "audio",
+      "cutter",
+      "free",
+      "online",
+      "tool",
+      "supports",
+      "mp3",
+      "wav",
+      "m4a",
+      "flac"
+    ]
+  },
+  {
+    "id": "usemagictools-bg-remover-html",
+    "title": "Background Remover",
+    "description": "Free online background remover to remove image background and create transparent PNG files in browser. Perfect for product photos and profile images. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Image",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/bg-remover.html",
+    "tags": [
+      "background",
+      "remover",
+      "free",
+      "online",
+      "remove",
+      "image",
+      "and",
+      "create",
+      "transparent"
+    ]
+  },
+  {
+    "id": "nakul-tools-barcode-generator-html",
+    "title": "Barcode Generator",
+    "description": "Use Barcode Generator online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Image",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/Barcode Generator.html",
+    "tags": [
+      "barcode",
+      "generator",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-base32-decode-html",
+    "title": "Base32 Decode",
+    "description": "This online Base32 decoding tool helps you decode Base32 to text or binary. You can output UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/base32_decode.html",
+    "tags": [
+      "base32",
+      "decode",
+      "this",
+      "online",
+      "decoding",
+      "tool",
+      "helps",
+      "you",
+      "text"
+    ]
+  },
+  {
+    "id": "online-tools-base32-encode-html",
+    "title": "Base32 Encode",
+    "description": "This online Base32 encoding tool helps you encode text or binary to Base32. You can input UTF-8, UTF-16, Hex, Bas64, or other encodings",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/base32_encode.html",
+    "tags": [
+      "base32",
+      "encode",
+      "this",
+      "online",
+      "encoding",
+      "tool",
+      "helps",
+      "you",
+      "text",
+      "binary"
+    ]
+  },
+  {
+    "id": "online-tools-base58-decode-index-html",
+    "title": "Base58 Decode",
+    "description": "This online Base58 decoding tool helps you decode Base58 to text or binary. You can output UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/base58/decode/index.html",
+    "tags": [
+      "base58",
+      "decode",
+      "this",
+      "online",
+      "decoding",
+      "tool",
+      "helps",
+      "you",
+      "text"
+    ]
+  },
+  {
+    "id": "online-tools-base58-decode-html",
+    "title": "Base58 Decode",
+    "description": "Use Base58 Decode online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/base58_decode.html",
+    "tags": [
+      "base58",
+      "decode",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-base58-decode-file-html",
+    "title": "Base58 Decode File",
+    "description": "Use Base58 Decode File online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/base58_decode_file.html",
+    "tags": [
+      "base58",
+      "decode",
+      "file",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-base58-encode-index-html",
+    "title": "Base58 Encode",
+    "description": "This online Base58 encoding tool helps you encode text or binary to Base58. You can input UTF-8, UTF-16, Hex, Bas64, or other encodings",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/base58/encode/index.html",
+    "tags": [
+      "base58",
+      "encode",
+      "this",
+      "online",
+      "encoding",
+      "tool",
+      "helps",
+      "you",
+      "text",
+      "binary"
+    ]
+  },
+  {
+    "id": "online-tools-base58-encode-html",
+    "title": "Base58 Encode",
+    "description": "Use Base58 Encode online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/base58_encode.html",
+    "tags": [
+      "base58",
+      "encode",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-base58-encode-file-html",
+    "title": "Base58 Encode File",
+    "description": "Use Base58 Encode File online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/base58_encode_file.html",
+    "tags": [
+      "base58",
+      "encode",
+      "file",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-base64-decode-html",
+    "title": "Base64 Decode",
+    "description": "This online Base64 decoding tool helps you decode Base64 to text or binary. You can output UTF-8, UTF-16, Hex, or other encodings. It also supports various formats such as RFC 4648 (standard and URL Safe), RFC 2045 (MIME), RFC 2152 (UTF-7), and RFC 3501 (IMAP).",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/base64_decode.html",
+    "tags": [
+      "base64",
+      "decode",
+      "this",
+      "online",
+      "decoding",
+      "tool",
+      "helps",
+      "you",
+      "text"
+    ]
+  },
+  {
+    "id": "online-tools-base64-encode-html",
+    "title": "Base64 Encode",
+    "description": "This online Base64 encoding tool helps you encode text or binary to Base64. You can input UTF-8, UTF-16, Hex, or other encodings. It also supports various formats such as RFC 4648 (standard and URL Safe), RFC 2045 (MIME), RFC 2152 (UTF-7), and RFC 3501 (IMAP).",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/base64_encode.html",
+    "tags": [
+      "base64",
+      "encode",
+      "this",
+      "online",
+      "encoding",
+      "tool",
+      "helps",
+      "you",
+      "text",
+      "binary"
+    ]
+  },
+  {
+    "id": "usemagictools-base64-tool-html",
+    "title": "Base64 Encoder / Decoder",
+    "description": "Free online Base64 encoder and decoder. Encode text, files, images to Base64. Decode Base64 strings. Supports UTF-8. No data uploaded.",
+    "category": "Image",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/base64-tool.html",
+    "tags": [
+      "base64",
+      "encoder",
+      "decoder",
+      "free",
+      "online",
+      "and",
+      "encode",
+      "text",
+      "files"
+    ]
+  },
+  {
+    "id": "nakul-tools-base64-encoder-decode-html",
+    "title": "Base64 Encoder/Decoder",
+    "description": "Use Base64 Encoder/Decoder online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/base64-encoder-decode.html",
+    "tags": [
+      "base64",
+      "encoder",
+      "decoder",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-blake2b-html",
+    "title": "Blake2b",
+    "description": "Use Blake2b online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/blake2b.html",
+    "tags": [
+      "blake2b",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-tmp-blake2b-html",
+    "title": "Blake2b",
+    "description": "Use Blake2b online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/tmp/blake2b.html",
+    "tags": [
+      "blake2b",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-blake2b-index-html",
+    "title": "BLAKE2b",
+    "description": "This BLAKE2b online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/blake2b/index.html",
+    "tags": [
+      "blake2b",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from",
+      "strings"
+    ]
+  },
+  {
+    "id": "online-tools-blake2b-file-hash-html",
+    "title": "Blake2b File Hash",
+    "description": "Use Blake2b File Hash online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/blake2b_file_hash.html",
+    "tags": [
+      "blake2b",
+      "file",
+      "hash",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-tmp-blake2b-file-hash-html",
+    "title": "Blake2b File Hash",
+    "description": "Use Blake2b File Hash online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/tmp/blake2b_file_hash.html",
+    "tags": [
+      "blake2b",
+      "file",
+      "hash",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-blake2b-file-index-html",
+    "title": "BLAKE2b File Hash",
+    "description": "This BLAKE2b online tool helps you calculate the hash of a file from local or URL using BLAKE2b without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/blake2b/file/index.html",
+    "tags": [
+      "blake2b",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "the"
+    ]
+  },
+  {
+    "id": "online-tools-blake2s-html",
+    "title": "Blake2s",
+    "description": "Use Blake2s online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/blake2s.html",
+    "tags": [
+      "blake2s",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-tmp-blake2s-html",
+    "title": "Blake2s",
+    "description": "Use Blake2s online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/tmp/blake2s.html",
+    "tags": [
+      "blake2s",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-blake2s-index-html",
+    "title": "BLAKE2s",
+    "description": "This BLAKE2s online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/blake2s/index.html",
+    "tags": [
+      "blake2s",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from",
+      "strings"
+    ]
+  },
+  {
+    "id": "online-tools-blake2s-file-hash-html",
+    "title": "Blake2s File Hash",
+    "description": "Use Blake2s File Hash online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/blake2s_file_hash.html",
+    "tags": [
+      "blake2s",
+      "file",
+      "hash",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-tmp-blake2s-file-hash-html",
+    "title": "Blake2s File Hash",
+    "description": "Use Blake2s File Hash online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/tmp/blake2s_file_hash.html",
+    "tags": [
+      "blake2s",
+      "file",
+      "hash",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-blake2s-file-index-html",
+    "title": "BLAKE2s File Hash",
+    "description": "This BLAKE2s online tool helps you calculate the hash of a file from local or URL using BLAKE2s without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/blake2s/file/index.html",
+    "tags": [
+      "blake2s",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "the"
+    ]
+  },
+  {
+    "id": "online-tools-blake3-html",
+    "title": "Blake3",
+    "description": "Use Blake3 online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/blake3.html",
+    "tags": [
+      "blake3",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-blake3-index-html",
+    "title": "BLAKE3",
+    "description": "This BLAKE3 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/blake3/index.html",
+    "tags": [
+      "blake3",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from",
+      "strings"
+    ]
+  },
+  {
+    "id": "online-tools-blake3-file-hash-html",
+    "title": "Blake3 File Hash",
+    "description": "Use Blake3 File Hash online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/blake3_file_hash.html",
+    "tags": [
+      "blake3",
+      "file",
+      "hash",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-tmp-blake3-file-hash-html",
+    "title": "Blake3 File Hash",
+    "description": "Use Blake3 File Hash online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/tmp/blake3_file_hash.html",
+    "tags": [
+      "blake3",
+      "file",
+      "hash",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-blake3-file-index-html",
+    "title": "BLAKE3 File Hash",
+    "description": "This BLAKE3 online tool helps you calculate the hash of a file from local or URL using BLAKE3 without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/blake3/file/index.html",
+    "tags": [
+      "blake3",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "the"
+    ]
+  },
+  {
+    "id": "online-tools-tmp-blake34-html",
+    "title": "Blake34",
+    "description": "Use Blake34 online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/tmp/blake34.html",
+    "tags": [
+      "blake34",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "nakul-tools-bmi-calculator-html",
+    "title": "BMI Calculator",
+    "description": "Use BMI Calculator online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Utility",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/bmi-calculator.html",
+    "tags": [
+      "bmi",
+      "calculator",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "usemagictools-relative-calculator-html",
+    "title": "Chinese Relative Calculator",
+    "description": "Free online Chinese relative relationship calculator. Quickly find the correct Chinese family titles and kinship terms. Supports both paternal and maternal relatives, blood and in-law relationships. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Text",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/relative-calculator.html",
+    "tags": [
+      "chinese",
+      "relative",
+      "calculator",
+      "free",
+      "online",
+      "relationship",
+      "quickly",
+      "find",
+      "the"
+    ]
+  },
+  {
+    "id": "usemagictools-chinese-converter-html",
+    "title": "Chinese Simplified/Traditional Converter",
+    "description": "Free online Chinese Simplified/Traditional converter tool. Convert between Simplified Chinese, Traditional Chinese, Hong Kong, Taiwan, and Malaysia/Singapore variants with smart regional terminology handling. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Text",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/chinese-converter.html",
+    "tags": [
+      "chinese",
+      "simplified",
+      "traditional",
+      "converter",
+      "free",
+      "online",
+      "tool",
+      "convert"
+    ]
+  },
+  {
+    "id": "usemagictools-claude-history-viewer-html",
+    "title": "Claude Code History Viewer",
+    "description": "Free online Claude Code history viewer. Browse, search, and export JSONL conversation files with a beautiful interface. 100% browser-based, no ads, no signup, no data upload.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/claude-history-viewer.html",
+    "tags": [
+      "claude",
+      "code",
+      "history",
+      "viewer",
+      "free",
+      "online",
+      "browse",
+      "search"
+    ]
+  },
+  {
+    "id": "usemagictools-code-formatter-html",
+    "title": "Code Formatter",
+    "description": "Free online code formatter and beautifier for JSON, JavaScript, TypeScript, HTML, CSS, Markdown, and SQL. ✅ No ads ✅ No signup ✅ No limits.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/code-formatter.html",
+    "tags": [
+      "code",
+      "formatter",
+      "free",
+      "online",
+      "and",
+      "beautifier",
+      "for",
+      "json",
+      "javascript",
+      "typescript"
+    ]
+  },
+  {
+    "id": "nakul-tools-color-blindness-simulator-html",
+    "title": "Color Blindness Simulator",
+    "description": "Use Color Blindness Simulator online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Image",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/Color Blindness Simulator.html",
+    "tags": [
+      "color",
+      "blindness",
+      "simulator",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "nakul-tools-color-picker-converter-html",
+    "title": "Color Picker & Converter",
+    "description": "Use Color Picker & Converter online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Image",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/color-picker-converter.html",
+    "tags": [
+      "color",
+      "picker",
+      "converter",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "nakul-tools-color-picker-from-image-html",
+    "title": "Color Picker from Image",
+    "description": "Use Color Picker from Image online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Image",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/Color Picker from Image.html",
+    "tags": [
+      "color",
+      "picker",
+      "from",
+      "image",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast"
+    ]
+  },
+  {
+    "id": "online-tools-case-constant-index-html",
+    "title": "Constant Case Converter",
+    "description": "Convert string to constant case. (Screaming snake case, MACRO_CASE)",
+    "category": "Text",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/case/constant/index.html",
+    "tags": [
+      "constant",
+      "case",
+      "converter",
+      "convert",
+      "string",
+      "screaming",
+      "snake",
+      "macro"
+    ]
+  },
+  {
+    "id": "nakul-tools-contrast-checker-html",
+    "title": "Contrast Checker",
+    "description": "Use Contrast Checker online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Utility",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/Contrast Checker.html",
+    "tags": [
+      "contrast",
+      "checker",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-convert-constant-case-html",
+    "title": "Convert Constant Case",
+    "description": "Use Convert Constant Case online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Text",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/convert_constant_case.html",
+    "tags": [
+      "convert",
+      "constant",
+      "case",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-convert-kebab-case-html",
+    "title": "Convert Kebab Case",
+    "description": "Use Convert Kebab Case online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Text",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/convert_kebab_case.html",
+    "tags": [
+      "convert",
+      "kebab",
+      "case",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-convert-lower-camel-case-html",
+    "title": "Convert Lower Camel Case",
+    "description": "Use Convert Lower Camel Case online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Text",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/convert_lower_camel_case.html",
+    "tags": [
+      "convert",
+      "lower",
+      "camel",
+      "case",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast"
+    ]
+  },
+  {
+    "id": "online-tools-convert-lower-case-html",
+    "title": "Convert Lower Case",
+    "description": "Use Convert Lower Case online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Text",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/convert_lower_case.html",
+    "tags": [
+      "convert",
+      "lower",
+      "case",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-convert-snake-case-html",
+    "title": "Convert Snake Case",
+    "description": "Use Convert Snake Case online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Text",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/convert_snake_case.html",
+    "tags": [
+      "convert",
+      "snake",
+      "case",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-convert-upper-camel-case-html",
+    "title": "Convert Upper Camel Case",
+    "description": "Use Convert Upper Camel Case online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Text",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/convert_upper_camel_case.html",
+    "tags": [
+      "convert",
+      "upper",
+      "camel",
+      "case",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast"
+    ]
+  },
+  {
+    "id": "online-tools-convert-upper-case-html",
+    "title": "Convert Upper Case",
+    "description": "Use Convert Upper Case online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Text",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/convert_upper_case.html",
+    "tags": [
+      "convert",
+      "upper",
+      "case",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-crc-index-html",
+    "title": "CRC",
+    "description": "This online tool helps you calculate the checksum of text or a file from local storage or a URL using CRC. It supports various models such as CRC-32, CRC-16, CRC-8, CRC-24, CRC-64, and other predefined models. It also supports custom models.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/crc/index.html",
+    "tags": [
+      "crc",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "the",
+      "checksum",
+      "text",
+      "file",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-crc16-html",
+    "title": "Crc16",
+    "description": "Use Crc16 online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/crc16.html",
+    "tags": [
+      "crc16",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-crc16-checksum-html",
+    "title": "Crc16 Checksum",
+    "description": "Use Crc16 Checksum online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/crc16_checksum.html",
+    "tags": [
+      "crc16",
+      "checksum",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-crc32-html",
+    "title": "Crc32",
+    "description": "Use Crc32 online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/crc32.html",
+    "tags": [
+      "crc32",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-crc32-checksum-html",
+    "title": "Crc32 Checksum",
+    "description": "Use Crc32 Checksum online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/crc32_checksum.html",
+    "tags": [
+      "crc32",
+      "checksum",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "usemagictools-cron-generator-html",
+    "title": "Cron Expression Generator",
+    "description": "Free online cron expression generator to build and validate cron schedules quickly. Create cron syntax with readable descriptions for Linux crontab and server jobs. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/cron-generator.html",
+    "tags": [
+      "cron",
+      "expression",
+      "generator",
+      "free",
+      "online",
+      "build",
+      "and",
+      "validate"
+    ]
+  },
+  {
+    "id": "online-tools-cshake128-index-html",
+    "title": "cSHAKE128",
+    "description": "This cSHAKE128 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/cshake128/index.html",
+    "tags": [
+      "cshake128",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from",
+      "strings"
+    ]
+  },
+  {
+    "id": "online-tools-cshake128-html",
+    "title": "Cshake128",
+    "description": "Use Cshake128 online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/cshake128.html",
+    "tags": [
+      "cshake128",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-cshake128-file-index-html",
+    "title": "cSHAKE128 File Hash",
+    "description": "This cSHAKE128 online tool helps you calculate the hash of a file from local or URL using cSHAKE128 without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/cshake128/file/index.html",
+    "tags": [
+      "cshake128",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "the"
+    ]
+  },
+  {
+    "id": "online-tools-cshake128-file-hash-html",
+    "title": "Cshake128 File Hash",
+    "description": "Use Cshake128 File Hash online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/cshake128_file_hash.html",
+    "tags": [
+      "cshake128",
+      "file",
+      "hash",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-cshake256-index-html",
+    "title": "cSHAKE256",
+    "description": "This cSHAKE256 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/cshake256/index.html",
+    "tags": [
+      "cshake256",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from",
+      "strings"
+    ]
+  },
+  {
+    "id": "online-tools-cshake256-html",
+    "title": "Cshake256",
+    "description": "Use Cshake256 online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/cshake256.html",
+    "tags": [
+      "cshake256",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-cshake256-file-index-html",
+    "title": "cSHAKE256 File Hash",
+    "description": "This cSHAKE256 online tool helps you calculate the hash of a file from local or URL using cSHAKE256 without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/cshake256/file/index.html",
+    "tags": [
+      "cshake256",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "the"
+    ]
+  },
+  {
+    "id": "online-tools-cshake256-file-hash-html",
+    "title": "Cshake256 File Hash",
+    "description": "Use Cshake256 File Hash online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/cshake256_file_hash.html",
+    "tags": [
+      "cshake256",
+      "file",
+      "hash",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "usemagictools-csv-json-html",
+    "title": "CSV JSON Converter",
+    "description": "Free online CSV JSON converter for developers. Convert CSV to JSON and JSON to CSV instantly with headers, formatting, and one-click copy. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/csv-json.html",
+    "tags": [
+      "csv",
+      "json",
+      "converter",
+      "free",
+      "online",
+      "for",
+      "developers",
+      "convert"
+    ]
+  },
+  {
+    "id": "nakul-tools-currency-calculator-html",
+    "title": "Currency Converter",
+    "description": "Use Currency Converter online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Finance",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/currency-calculator.html",
+    "tags": [
+      "currency",
+      "converter",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-base32-decode-file-html",
+    "title": "Decode Base32 to File",
+    "description": "This online Base32 decoding tool helps you decode Base32 to a file for download.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/base32_decode_file.html",
+    "tags": [
+      "decode",
+      "base32",
+      "file",
+      "this",
+      "online",
+      "decoding",
+      "tool",
+      "helps",
+      "you"
+    ]
+  },
+  {
+    "id": "online-tools-base58-decode-file-index-html",
+    "title": "Decode Base58 to File",
+    "description": "This online Base58 decoding tool helps you decode Base58 to a file for download.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/base58/decode/file/index.html",
+    "tags": [
+      "decode",
+      "base58",
+      "file",
+      "this",
+      "online",
+      "decoding",
+      "tool",
+      "helps",
+      "you"
+    ]
+  },
+  {
+    "id": "online-tools-base64-decode-file-html",
+    "title": "Decode Base64 to File",
+    "description": "This online Base64 decoding tool helps you decode Base64 to a file for download. It also supports various formats such as RFC 4648 (standard and URL Safe), RFC 2045 (MIME), RFC 2152 (UTF-7), and RFC 3501 (IMAP)",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/base64_decode_file.html",
+    "tags": [
+      "decode",
+      "base64",
+      "file",
+      "this",
+      "online",
+      "decoding",
+      "tool",
+      "helps",
+      "you"
+    ]
+  },
+  {
+    "id": "online-tools-hex-decode-file-html",
+    "title": "Decode Hex (Base16) to File",
+    "description": "This online Hex (Base16) decoding tool helps you decode Hex to a file for download.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/hex_decode_file.html",
+    "tags": [
+      "decode",
+      "hex",
+      "base16",
+      "file",
+      "this",
+      "online",
+      "decoding",
+      "tool",
+      "helps",
+      "you"
+    ]
+  },
+  {
+    "id": "online-tools-hex-decode-html",
+    "title": "Decode Hex (Base16) to String",
+    "description": "This online Hex (Base16) decoding tool helps you decode Hex to text or binary. You can output UTF-8, UTF-16, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/hex_decode.html",
+    "tags": [
+      "decode",
+      "hex",
+      "base16",
+      "string",
+      "this",
+      "online",
+      "decoding",
+      "tool",
+      "helps",
+      "you"
+    ]
+  },
+  {
+    "id": "online-tools-des-decrypt-index-html",
+    "title": "DES Decryption",
+    "description": "This online tool helps you decrypt text or a file using DES. It supports various modes and padding schemes. It also supports PBKDF2 or EvpKDF, with customizable salt, iteration, and hash settings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/des/decrypt/index.html",
+    "tags": [
+      "des",
+      "decryption",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "decrypt",
+      "text",
+      "file",
+      "using"
+    ]
+  },
+  {
+    "id": "online-tools-des-encrypt-index-html",
+    "title": "DES Encryption",
+    "description": "This online tool helps you encrypt text or a file from local storage or a URL using DES. It supports various modes and padding schemes. It also supports PBKDF2 or EvpKDF, with customizable salt, iteration, and hash settings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/des/encrypt/index.html",
+    "tags": [
+      "des",
+      "encryption",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "encrypt",
+      "text",
+      "file",
+      "from",
+      "local"
+    ]
+  },
+  {
+    "id": "nakul-tools-document-converter-html",
+    "title": "Document Converter",
+    "description": "Use Document Converter online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "PDF",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/document-converter.html",
+    "tags": [
+      "document",
+      "converter",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-double-sha256-html",
+    "title": "Double SHA256",
+    "description": "This Double SHA256 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/double_sha256.html",
+    "tags": [
+      "double",
+      "sha256",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from"
+    ]
+  },
+  {
+    "id": "usemagictools-e-sign-html",
+    "title": "E-Sign Tool",
+    "description": "Free online electronic signature tool to sign PDF in browser. Draw your signature and place it on any PDF page. ✅ No ads ✅ No signup ✅ No limits.",
+    "category": "PDF",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/e-sign.html",
+    "tags": [
+      "sign",
+      "tool",
+      "free",
+      "online",
+      "electronic",
+      "signature",
+      "pdf",
+      "browser",
+      "draw",
+      "your"
+    ]
+  },
+  {
+    "id": "online-tools-ecdsa-key-generator-index-html",
+    "title": "ECDSA Key Generator",
+    "description": "This online tool helps you generate a pair of ECDSA keys. It supports PEM, HEX, and Base64 formats, as well as various curves. The PEM format supports PKCS#1, PKCS#5, and PKCS#8.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ecdsa/key-generator/index.html",
+    "tags": [
+      "ecdsa",
+      "key",
+      "generator",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "generate",
+      "pair",
+      "keys"
+    ]
+  },
+  {
+    "id": "online-tools-ecdsa-sign-html",
+    "title": "Ecdsa Sign",
+    "description": "Use Ecdsa Sign online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ecdsa_sign.html",
+    "tags": [
+      "ecdsa",
+      "sign",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-ecdsa-sign-index-html",
+    "title": "ECDSA Sign Message",
+    "description": "This online tool helps you sign messages using ECDSA. It supports various curves and signature algorithms. You can also use PEM with a passphrase.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ecdsa/sign/index.html",
+    "tags": [
+      "ecdsa",
+      "sign",
+      "message",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "messages",
+      "using"
+    ]
+  },
+  {
+    "id": "online-tools-ecdsa-verify-html",
+    "title": "Ecdsa Verify",
+    "description": "Use Ecdsa Verify online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ecdsa_verify.html",
+    "tags": [
+      "ecdsa",
+      "verify",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-ecdsa-verify-index-html",
+    "title": "ECDSA Verify Signature",
+    "description": "This online tool helps you verify signatures using ECDSA. It supports various curves and signature algorithms.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ecdsa/verify/index.html",
+    "tags": [
+      "ecdsa",
+      "verify",
+      "signature",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "signatures",
+      "using"
+    ]
+  },
+  {
+    "id": "online-tools-base32-encode-file-html",
+    "title": "Encode File to Base32",
+    "description": "This online Base32 encoding tool helps you encode a file from local or URL to Base32 without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/base32_encode_file.html",
+    "tags": [
+      "encode",
+      "file",
+      "base32",
+      "this",
+      "online",
+      "encoding",
+      "tool",
+      "helps",
+      "you"
+    ]
+  },
+  {
+    "id": "online-tools-base58-encode-file-index-html",
+    "title": "Encode File to Base58",
+    "description": "This online Base58 encoding tool helps you encode a file from local or URL to Base58 without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/base58/encode/file/index.html",
+    "tags": [
+      "encode",
+      "file",
+      "base58",
+      "this",
+      "online",
+      "encoding",
+      "tool",
+      "helps",
+      "you"
+    ]
+  },
+  {
+    "id": "online-tools-base64-encode-file-html",
+    "title": "Encode File to Base64",
+    "description": "This online Base64 encoding tool helps you encode a file from local or URL to Base64 without uploading the file. It also supports various formats such as RFC 4648 (standard and URL Safe), RFC 2045 (MIME), RFC 2152 (UTF-7), and RFC 3501 (IMAP).",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/base64_encode_file.html",
+    "tags": [
+      "encode",
+      "file",
+      "base64",
+      "this",
+      "online",
+      "encoding",
+      "tool",
+      "helps",
+      "you"
+    ]
+  },
+  {
+    "id": "online-tools-hex-encode-file-html",
+    "title": "Encode File to Hex (Base16)",
+    "description": "This online Hex (Base16) encoding tool helps you encode a file from local or URL to Hex without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/hex_encode_file.html",
+    "tags": [
+      "encode",
+      "file",
+      "hex",
+      "base16",
+      "this",
+      "online",
+      "encoding",
+      "tool",
+      "helps",
+      "you"
+    ]
+  },
+  {
+    "id": "online-tools-hex-encode-html",
+    "title": "Encode String to Hex (Base16)",
+    "description": "This online Hex (Base16) encoding tool helps you encode text or binary to Hex. You can input UTF-8, UTF-16, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/hex_encode.html",
+    "tags": [
+      "encode",
+      "string",
+      "hex",
+      "base16",
+      "this",
+      "online",
+      "encoding",
+      "tool",
+      "helps",
+      "you"
+    ]
+  },
+  {
+    "id": "nakul-tools-e-sign-html",
+    "title": "eSign PDF Tool",
+    "description": "Use eSign PDF Tool online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "PDF",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/e-sign.html",
+    "tags": [
+      "esign",
+      "pdf",
+      "tool",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-aes-decrypt-file-index-html",
+    "title": "File",
+    "description": "Use File online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/aes/decrypt/file/index.html",
+    "tags": [
+      "file",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-aes-encrypt-file-index-html",
+    "title": "File",
+    "description": "Use File online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/aes/encrypt/file/index.html",
+    "tags": [
+      "file",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-des-decrypt-file-index-html",
+    "title": "File",
+    "description": "Use File online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/des/decrypt/file/index.html",
+    "tags": [
+      "file",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-des-encrypt-file-index-html",
+    "title": "File",
+    "description": "Use File online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/des/encrypt/file/index.html",
+    "tags": [
+      "file",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-rc4-decrypt-file-index-html",
+    "title": "File",
+    "description": "Use File online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/rc4/decrypt/file/index.html",
+    "tags": [
+      "file",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-rc4-encrypt-file-index-html",
+    "title": "File",
+    "description": "Use File online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/rc4/encrypt/file/index.html",
+    "tags": [
+      "file",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-triple-des-decrypt-file-index-html",
+    "title": "File",
+    "description": "Use File online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/triple-des/decrypt/file/index.html",
+    "tags": [
+      "file",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-triple-des-encrypt-file-index-html",
+    "title": "File",
+    "description": "Use File online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/triple-des/encrypt/file/index.html",
+    "tags": [
+      "file",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "usemagictools-file-converter-html",
+    "title": "File Converter",
+    "description": "Free online file converter: Video to GIF, Video to Audio (WAV), SVG to PNG/JPG, Image to Base64. ✅ No ads ✅ No signup ✅ No limits. 100% browser-based.",
+    "category": "Image",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/file-converter.html",
+    "tags": [
+      "file",
+      "converter",
+      "free",
+      "online",
+      "video",
+      "gif",
+      "audio",
+      "wav",
+      "svg"
+    ]
+  },
+  {
+    "id": "nakul-tools-gradient-converter-html",
+    "title": "Gradient Generator",
+    "description": "Use Gradient Generator online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Utility",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/Gradient Converter.html",
+    "tags": [
+      "gradient",
+      "generator",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "nakul-tools-gst-calculator-html",
+    "title": "GST Calculator",
+    "description": "Use GST Calculator online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Finance",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/gst-calculator.html",
+    "tags": [
+      "gst",
+      "calculator",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "usemagictools-handheld-danmaku-html",
+    "title": "Handheld Danmaku",
+    "description": "Free online handheld danmaku tool with customizable scrolling text, speed, font size and colors. Perfect for concerts, events, parties and confessions. Best viewed in landscape mode on mobile. ✅ No ads ✅ No signup ✅ No install. Runs entirely in your browser.",
+    "category": "Image",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/handheld-danmaku.html",
+    "tags": [
+      "handheld",
+      "danmaku",
+      "free",
+      "online",
+      "tool",
+      "with",
+      "customizable",
+      "scrolling",
+      "text",
+      "speed"
+    ]
+  },
+  {
+    "id": "nakul-tools-hex-to-rgb-converter-html",
+    "title": "HEX to RGB Converter",
+    "description": "Use HEX to RGB Converter online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/HEX to RGB Converter.html",
+    "tags": [
+      "hex",
+      "rgb",
+      "converter",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "usemagictools-hex-viewer-html",
+    "title": "Hex Viewer",
+    "description": "Free online hex viewer for binary files. Inspect byte offsets, HEX values, and ASCII output directly in browser. ✅ No ads ✅ No signup ✅ No limits.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/hex-viewer.html",
+    "tags": [
+      "hex",
+      "viewer",
+      "free",
+      "online",
+      "for",
+      "binary",
+      "files",
+      "inspect",
+      "byte",
+      "offsets"
+    ]
+  },
+  {
+    "id": "online-tools-html-decode-html",
+    "title": "HTML Decode / Unescape",
+    "description": "This HTML decode online tool helps you decode entities encoding string to HTML.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/html_decode.html",
+    "tags": [
+      "html",
+      "decode",
+      "unescape",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "entities"
+    ]
+  },
+  {
+    "id": "online-tools-html-encode-html",
+    "title": "HTML Encode / Escape",
+    "description": "This HTML encode online tool helps you encode HTML to entities encoding string.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/html_encode.html",
+    "tags": [
+      "html",
+      "encode",
+      "escape",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you"
+    ]
+  },
+  {
+    "id": "nakul-tools-minifier-html",
+    "title": "HTML/CSS/JS Minifier Tool",
+    "description": "Use HTML/CSS/JS Minifier Tool online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/minifier.html",
+    "tags": [
+      "html",
+      "css",
+      "minifier",
+      "tool",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast"
+    ]
+  },
+  {
+    "id": "nakul-tools-image-compressor-html",
+    "title": "Image Compressor",
+    "description": "Use Image Compressor online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Image",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/image-compressor.html",
+    "tags": [
+      "image",
+      "compressor",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "nakul-tools-image-converter-html",
+    "title": "Image Converter Tool",
+    "description": "Use Image Converter Tool online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Image",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/image-converter.html",
+    "tags": [
+      "image",
+      "converter",
+      "tool",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "nakul-tools-image-cropper-html",
+    "title": "Image Cropper",
+    "description": "Use Image Cropper online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Image",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/image-cropper.html",
+    "tags": [
+      "image",
+      "cropper",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "usemagictools-image-converter-html",
+    "title": "Image Format Converter",
+    "description": "Free online image format converter. Convert between PNG, JPEG, WebP, GIF, BMP, ICO formats. Batch conversion, quality adjustment, local processing for privacy. ✅ No ads ✅ No signup ✅ No watermark. Runs entirely in your browser.",
+    "category": "Image",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/image-converter.html",
+    "tags": [
+      "image",
+      "format",
+      "converter",
+      "free",
+      "online",
+      "convert",
+      "between",
+      "png",
+      "jpeg"
+    ]
+  },
+  {
+    "id": "nakul-tools-image-resizer-html",
+    "title": "Image Resizer",
+    "description": "Use Image Resizer online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Image",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/image-resizer.html",
+    "tags": [
+      "image",
+      "resizer",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "nakul-tools-image-rotator-html",
+    "title": "Image Rotator/Flipper Tool",
+    "description": "Use Image Rotator/Flipper Tool online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Image",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/image-rotator.html",
+    "tags": [
+      "image",
+      "rotator",
+      "flipper",
+      "tool",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast"
+    ]
+  },
+  {
+    "id": "nakul-tools-image-to-text-html",
+    "title": "Image to Text",
+    "description": "Use Image to Text online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Image",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/image-to-text.html",
+    "tags": [
+      "image",
+      "text",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "usemagictools-invoice-generator-html",
+    "title": "Invoice Generator",
+    "description": "Free online invoice generator to create professional invoices and export PDF in browser. Add items, tax, and totals in seconds. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "PDF",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/invoice-generator.html",
+    "tags": [
+      "invoice",
+      "generator",
+      "free",
+      "online",
+      "create",
+      "professional",
+      "invoices",
+      "and",
+      "export",
+      "pdf"
+    ]
+  },
+  {
+    "id": "online-tools-json-formatter-index-html",
+    "title": "JSON Formatter",
+    "description": "This free online JSON formatter helps you beautify your JSON string and make it more readable. You can choose the indentation level and characters.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/json/formatter/index.html",
+    "tags": [
+      "json",
+      "formatter",
+      "this",
+      "free",
+      "online",
+      "helps",
+      "you",
+      "beautify",
+      "your"
+    ]
+  },
+  {
+    "id": "online-tools-json-formatter-html",
+    "title": "JSON Formatter",
+    "description": "Use JSON Formatter online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/json_formatter.html",
+    "tags": [
+      "json",
+      "formatter",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "nakul-tools-json-formatter-validator-html",
+    "title": "JSON Formatter & Validator Tool",
+    "description": "Use JSON Formatter & Validator Tool online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/json-formatter-validator.html",
+    "tags": [
+      "json",
+      "formatter",
+      "validator",
+      "tool",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast"
+    ]
+  },
+  {
+    "id": "online-tools-json-minifier-index-html",
+    "title": "JSON Minifier",
+    "description": "This free online JSON minifier helps you minify your JSON string and make it more cleaner. It can remove indentation and new lines to reduce size and make it one line.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/json/minifier/index.html",
+    "tags": [
+      "json",
+      "minifier",
+      "this",
+      "free",
+      "online",
+      "helps",
+      "you",
+      "minify",
+      "your"
+    ]
+  },
+  {
+    "id": "online-tools-json-minifier-html",
+    "title": "JSON Minifier",
+    "description": "Use JSON Minifier online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/json_minifier.html",
+    "tags": [
+      "json",
+      "minifier",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-json-validator-index-html",
+    "title": "JSON Validator",
+    "description": "This free online JSON validator helps you validate your JSON string.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/json/validator/index.html",
+    "tags": [
+      "json",
+      "validator",
+      "this",
+      "free",
+      "online",
+      "helps",
+      "you",
+      "validate",
+      "your"
+    ]
+  },
+  {
+    "id": "online-tools-json-viewer-index-html",
+    "title": "JSON Viewer",
+    "description": "This JSON Viewer online tool helps you view JSON object in a readable way.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/json/viewer/index.html",
+    "tags": [
+      "json",
+      "viewer",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "view",
+      "object"
+    ]
+  },
+  {
+    "id": "online-tools-json-viewer-html",
+    "title": "JSON Viewer",
+    "description": "Use JSON Viewer online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/json_viewer.html",
+    "tags": [
+      "json",
+      "viewer",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-case-kebab-index-html",
+    "title": "Kebab Case Converter",
+    "description": "Convert string to kebab case. (Dash case, Lisp case, Spinal case)",
+    "category": "Text",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/case/kebab/index.html",
+    "tags": [
+      "kebab",
+      "case",
+      "converter",
+      "convert",
+      "string",
+      "dash",
+      "lisp",
+      "spinal"
+    ]
+  },
+  {
+    "id": "online-tools-keccak-224-html",
+    "title": "Keccak-224",
+    "description": "This Keccak-224 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/keccak_224.html",
+    "tags": [
+      "keccak",
+      "224",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-keccak-224-checksum-html",
+    "title": "Keccak-224 File Hash",
+    "description": "This Keccak-224 online tool helps you calculate the hash of a file from local or URL using Keccak-224 without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/keccak_224_checksum.html",
+    "tags": [
+      "keccak",
+      "224",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate"
+    ]
+  },
+  {
+    "id": "online-tools-keccak-256-html",
+    "title": "Keccak-256",
+    "description": "This Keccak-256 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/keccak_256.html",
+    "tags": [
+      "keccak",
+      "256",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-keccak-256-checksum-html",
+    "title": "Keccak-256 File Hash",
+    "description": "This Keccak-256 online tool helps you calculate the hash of a file from local or URL using Keccak-256 without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/keccak_256_checksum.html",
+    "tags": [
+      "keccak",
+      "256",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate"
+    ]
+  },
+  {
+    "id": "online-tools-keccak-384-html",
+    "title": "Keccak-384",
+    "description": "This Keccak-384 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/keccak_384.html",
+    "tags": [
+      "keccak",
+      "384",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-keccak-384-checksum-html",
+    "title": "Keccak-384 File Hash",
+    "description": "This Keccak-384 online tool helps you calculate the hash of a file from local or URL using Keccak-384 without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/keccak_384_checksum.html",
+    "tags": [
+      "keccak",
+      "384",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate"
+    ]
+  },
+  {
+    "id": "online-tools-keccak-512-html",
+    "title": "Keccak-512",
+    "description": "This Keccak-512 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/keccak_512.html",
+    "tags": [
+      "keccak",
+      "512",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-keccak-512-checksum-html",
+    "title": "Keccak-512 File Hash",
+    "description": "This Keccak-512 online tool helps you calculate the hash of a file from local or URL using Keccak-512 without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/keccak_512_checksum.html",
+    "tags": [
+      "keccak",
+      "512",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate"
+    ]
+  },
+  {
+    "id": "usemagictools-keyboard-tester-html",
+    "title": "Keyboard Tester",
+    "description": "Free online keyboard tester - test every key, detect ghosting, check N-key rollover. Shows key code, event code, keyCode. No ads, no signup, no upload. 100% browser-based keyboard testing tool.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/keyboard-tester.html",
+    "tags": [
+      "keyboard",
+      "tester",
+      "free",
+      "online",
+      "test",
+      "every",
+      "key",
+      "detect",
+      "ghosting",
+      "check"
+    ]
+  },
+  {
+    "id": "nakul-tools-density-checker-html",
+    "title": "Keyword Density Checker",
+    "description": "Use Keyword Density Checker online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "PDF",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/Density Checker.html",
+    "tags": [
+      "keyword",
+      "density",
+      "checker",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-kmac128-html",
+    "title": "Kmac128",
+    "description": "Use Kmac128 online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Utility",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/kmac128.html",
+    "tags": [
+      "kmac128",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-kmac128-index-html",
+    "title": "KMAC128",
+    "description": "This KMAC128 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/kmac128/index.html",
+    "tags": [
+      "kmac128",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from",
+      "strings"
+    ]
+  },
+  {
+    "id": "online-tools-kmac128-file-hash-html",
+    "title": "Kmac128 File Hash",
+    "description": "Use Kmac128 File Hash online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/kmac128_file_hash.html",
+    "tags": [
+      "kmac128",
+      "file",
+      "hash",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-kmac128-file-index-html",
+    "title": "KMAC128 File Hash",
+    "description": "This KMAC128 online tool helps you calculate the hash of a file from local or URL using KMAC128 without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/kmac128/file/index.html",
+    "tags": [
+      "kmac128",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "the"
+    ]
+  },
+  {
+    "id": "online-tools-kmac256-html",
+    "title": "Kmac256",
+    "description": "Use Kmac256 online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Utility",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/kmac256.html",
+    "tags": [
+      "kmac256",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-kmac256-index-html",
+    "title": "KMAC256",
+    "description": "This KMAC256 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/kmac256/index.html",
+    "tags": [
+      "kmac256",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from",
+      "strings"
+    ]
+  },
+  {
+    "id": "online-tools-kmac256-file-hash-html",
+    "title": "Kmac256 File Hash",
+    "description": "Use Kmac256 File Hash online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/kmac256_file_hash.html",
+    "tags": [
+      "kmac256",
+      "file",
+      "hash",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-kmac256-file-index-html",
+    "title": "KMAC256 File Hash",
+    "description": "This KMAC256 online tool helps you calculate the hash of a file from local or URL using KMAC256 without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/kmac256/file/index.html",
+    "tags": [
+      "kmac256",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "the"
+    ]
+  },
+  {
+    "id": "nakul-tools-loan-emi-calculator-html",
+    "title": "Loan EMI Calculator",
+    "description": "Use Loan EMI Calculator online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Finance",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/loan-emi-calculator.html",
+    "tags": [
+      "loan",
+      "emi",
+      "calculator",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "usemagictools-lorem-ipsum-html",
+    "title": "Lorem Ipsum Generator",
+    "description": "Free online Lorem Ipsum generator. Generate placeholder text in paragraphs, sentences, or words. Classic Latin, Chinese, and Hipster styles.",
+    "category": "PDF",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/lorem-ipsum.html",
+    "tags": [
+      "lorem",
+      "ipsum",
+      "generator",
+      "free",
+      "online",
+      "generate",
+      "placeholder",
+      "text",
+      "paragraphs"
+    ]
+  },
+  {
+    "id": "online-tools-case-lower-camel-index-html",
+    "title": "Lower Camel Case Converter",
+    "description": "Convert string to lower camel case (Dromedary case).",
+    "category": "Text",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/case/lower-camel/index.html",
+    "tags": [
+      "lower",
+      "camel",
+      "case",
+      "converter",
+      "convert",
+      "string",
+      "dromedary"
+    ]
+  },
+  {
+    "id": "online-tools-case-lower-index-html",
+    "title": "Lower Case Converter",
+    "description": "Convert string to lower case. (Downcase)",
+    "category": "Text",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/case/lower/index.html",
+    "tags": [
+      "lower",
+      "case",
+      "converter",
+      "convert",
+      "string",
+      "downcase",
+      "index",
+      "html"
+    ]
+  },
+  {
+    "id": "usemagictools-markdown-editor-html",
+    "title": "Markdown Editor",
+    "description": "Free online markdown editor with live preview, syntax highlighting, HTML export, and one-click copy. Fast browser-based markdown preview tool for docs and README writing. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/markdown-editor.html",
+    "tags": [
+      "markdown",
+      "editor",
+      "free",
+      "online",
+      "with",
+      "live",
+      "preview",
+      "syntax",
+      "highlighting",
+      "html"
+    ]
+  },
+  {
+    "id": "online-tools-md2-html",
+    "title": "MD2",
+    "description": "This MD2 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/md2.html",
+    "tags": [
+      "md2",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from",
+      "strings"
+    ]
+  },
+  {
+    "id": "online-tools-md2-file-hash-html",
+    "title": "MD2 File Hash",
+    "description": "This MD2 online tool helps you calculate the hash of a file from local or URL using MD2 without uploading the file. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/md2_file_hash.html",
+    "tags": [
+      "md2",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "the"
+    ]
+  },
+  {
+    "id": "online-tools-md4-html",
+    "title": "MD4",
+    "description": "This MD4 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/md4.html",
+    "tags": [
+      "md4",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from",
+      "strings"
+    ]
+  },
+  {
+    "id": "online-tools-md4-file-hash-html",
+    "title": "MD4 File Hash",
+    "description": "This MD4 online tool helps you calculate the hash of a file from local or URL using MD4 without uploading the file. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/md4_file_hash.html",
+    "tags": [
+      "md4",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "the"
+    ]
+  },
+  {
+    "id": "online-tools-md5-html",
+    "title": "MD5",
+    "description": "This MD5 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/md5.html",
+    "tags": [
+      "md5",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from",
+      "strings"
+    ]
+  },
+  {
+    "id": "online-tools-md5-checksum-html",
+    "title": "MD5 File Checksum",
+    "description": "This MD5 online tool helps you calculate the hash of a file from local or URL using MD5 without uploading the file. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/md5_checksum.html",
+    "tags": [
+      "md5",
+      "file",
+      "checksum",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "the",
+      "hash"
+    ]
+  },
+  {
+    "id": "nakul-tools-meta-tag-analyzer-html",
+    "title": "Meta Tag Analyzer",
+    "description": "Use Meta Tag Analyzer online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Utility",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/Meta Tag Analyzer.html",
+    "tags": [
+      "meta",
+      "tag",
+      "analyzer",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "usemagictools-metronome-html",
+    "title": "Metronome",
+    "description": "Free online metronome tool with 40-220 BPM speed adjustment, multiple time signatures (2/4, 3/4, 4/4, 6/8), electronic and piano sounds. Perfect for instrument practice, singing training, and dance rehearsal. ✅ No ads ✅ No signup ✅ No install. Runs entirely in your browser.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/metronome.html",
+    "tags": [
+      "metronome",
+      "free",
+      "online",
+      "tool",
+      "with",
+      "220",
+      "bpm",
+      "speed",
+      "adjustment",
+      "multiple",
+      "time"
+    ]
+  },
+  {
+    "id": "usemagictools-numerology-html",
+    "title": "Numerology Calculator",
+    "description": "Free numerology calculator: Life Path, Expression, Soul Urge & Personality numbers from your birthday and name. Deep interpretation with Pythagorean chart. No ads, no signup, 100% private. ✅ 4 core numbers ✅ Personal Year",
+    "category": "Utility",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/numerology.html",
+    "tags": [
+      "numerology",
+      "calculator",
+      "free",
+      "life",
+      "path",
+      "expression",
+      "soul",
+      "urge",
+      "personality",
+      "numbers"
+    ]
+  },
+  {
+    "id": "usemagictools-ocr-tool-html",
+    "title": "OCR Tool",
+    "description": "Free online OCR tool to extract text from images in your browser. Convert image to text for screenshots, documents, and photos. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "PDF",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/ocr-tool.html",
+    "tags": [
+      "ocr",
+      "tool",
+      "free",
+      "online",
+      "extract",
+      "text",
+      "from",
+      "images",
+      "your",
+      "browser"
+    ]
+  },
+  {
+    "id": "usemagictools-image-editor-html",
+    "title": "Online Image Editor",
+    "description": "Free online image editor with crop, flip, rotate, color adjustment, filters, annotations, and text overlay. Features grayscale, invert, blur, sharpen, emboss, pixelate effects. ✅ No ads ✅ No signup ✅ No watermark. Runs entirely in your browser.",
+    "category": "Image",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/image-editor.html",
+    "tags": [
+      "online",
+      "image",
+      "editor",
+      "free",
+      "with",
+      "crop",
+      "flip",
+      "rotate",
+      "color"
+    ]
+  },
+  {
+    "id": "usemagictools-paint-board-html",
+    "title": "Paint Board - Free Online Drawing Tool | No Ads, No Signup",
+    "description": "Free online paint board with brush, eraser, fill, rectangle, circle, line, arrow, text tools. Customize colors and opacity, undo/redo support, export to PNG/JPG. ✅ No ads ✅ No signup ✅ No watermark. Runs entirely in your browser.",
+    "category": "Image",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/paint-board.html",
+    "tags": [
+      "paint",
+      "board",
+      "free",
+      "online",
+      "drawing",
+      "tool",
+      "ads",
+      "signup"
+    ]
+  },
+  {
+    "id": "nakul-tools-palette-generator-html",
+    "title": "Palette Generator",
+    "description": "Use Palette Generator online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Image",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/Palette Generator.html",
+    "tags": [
+      "palette",
+      "generator",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "nakul-tools-random-password-generator-html",
+    "title": "Password Generator",
+    "description": "Use Password Generator online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "PDF",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/Random Password Generator.html",
+    "tags": [
+      "password",
+      "generator",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "usemagictools-password-generator-html",
+    "title": "Password Generator",
+    "description": "Free online password generator. Create strong, random, secure passwords instantly. Customize length, characters, and complexity. No data stored.",
+    "category": "PDF",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/password-generator.html",
+    "tags": [
+      "password",
+      "generator",
+      "free",
+      "online",
+      "create",
+      "strong",
+      "random",
+      "secure",
+      "passwords",
+      "instantly"
+    ]
+  },
+  {
+    "id": "usemagictools-pdf-compress-html",
+    "title": "PDF Compress Tool",
+    "description": "Free online PDF compressor to reduce PDF file size quickly. Compress large PDF files in browser with adjustable quality and resolution, then download optimized PDF instantly. ✅ No ads ✅ No signup ✅ No upload — files never leave your browser.",
+    "category": "PDF",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/pdf-compress.html",
+    "tags": [
+      "pdf",
+      "compress",
+      "tool",
+      "free",
+      "online",
+      "compressor",
+      "reduce",
+      "file",
+      "size",
+      "quickly"
+    ]
+  },
+  {
+    "id": "nakul-tools-pdf-compressor-html",
+    "title": "PDF Compressor",
+    "description": "Use PDF Compressor online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "PDF",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/pdf-compressor.html",
+    "tags": [
+      "pdf",
+      "compressor",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "nakul-tools-pdf-lock-unlock-html",
+    "title": "PDF Lock Tool",
+    "description": "Use PDF Lock Tool online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "PDF",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/pdf-lock-unlock.html",
+    "tags": [
+      "pdf",
+      "lock",
+      "tool",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "usemagictools-pdf-merge-html",
+    "title": "PDF Merge Tool",
+    "description": "Free online PDF merge tool to combine multiple PDF files into one document. Reorder pages, merge securely in browser, and download instantly with no upload or registration. ✅ No ads ✅ No signup ✅ No upload — files never leave your browser.",
+    "category": "PDF",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/pdf-merge.html",
+    "tags": [
+      "pdf",
+      "merge",
+      "tool",
+      "free",
+      "online",
+      "combine",
+      "multiple",
+      "files"
+    ]
+  },
+  {
+    "id": "nakul-tools-pdf-merge-and-splitter-html",
+    "title": "PDF Merger & Splitter",
+    "description": "Use PDF Merger & Splitter online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "PDF",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/pdf-merge-and-splitter.html",
+    "tags": [
+      "pdf",
+      "merger",
+      "splitter",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "usemagictools-pdf-protect-html",
+    "title": "PDF Protect",
+    "description": "Free online PDF protect tool. Encrypt PDF files with password or decrypt protected PDFs directly in your browser. Secure, private, no file upload to server. No ads, no signup, no limits.",
+    "category": "PDF",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/pdf-protect.html",
+    "tags": [
+      "pdf",
+      "protect",
+      "free",
+      "online",
+      "tool",
+      "encrypt",
+      "files",
+      "with",
+      "password"
+    ]
+  },
+  {
+    "id": "usemagictools-pdf-split-html",
+    "title": "PDF Split Tool",
+    "description": "Free online PDF split tool to extract pages or split PDF by custom ranges. Separate PDF pages in browser and download as PDF or ZIP without uploading files. ✅ No ads ✅ No signup ✅ No upload — files never leave your browser.",
+    "category": "PDF",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/pdf-split.html",
+    "tags": [
+      "pdf",
+      "split",
+      "tool",
+      "free",
+      "online",
+      "extract",
+      "pages"
+    ]
+  },
+  {
+    "id": "usemagictools-pdf-to-image-html",
+    "title": "PDF to Image Converter",
+    "description": "Free online PDF to image converter. Convert PDF pages to JPG or PNG with custom quality and scale. Export all pages or selected ranges directly in your browser. ✅ No ads ✅ No signup ✅ No upload — files never leave your browser.",
+    "category": "PDF",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/pdf-to-image.html",
+    "tags": [
+      "pdf",
+      "image",
+      "converter",
+      "free",
+      "online",
+      "convert",
+      "pages",
+      "jpg"
+    ]
+  },
+  {
+    "id": "nakul-tools-pdf-to-word-html",
+    "title": "PDF to Word Converter",
+    "description": "Use PDF to Word Converter online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "PDF",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/pdf-to-word.html",
+    "tags": [
+      "pdf",
+      "word",
+      "converter",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "usemagictools-pomodoro-html",
+    "title": "Pomodoro Timer",
+    "description": "Free online pomodoro timer for focus sessions and breaks. Customize work and break durations with browser notifications. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Utility",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/pomodoro.html",
+    "tags": [
+      "pomodoro",
+      "timer",
+      "free",
+      "online",
+      "for",
+      "focus",
+      "sessions",
+      "and",
+      "breaks",
+      "customize"
+    ]
+  },
+  {
+    "id": "online-tools-qr-code-index-html",
+    "title": "QR Code",
+    "description": "Use QR Code online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Image",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/qr-code/index.html",
+    "tags": [
+      "code",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "nakul-tools-qr-code-generator-html",
+    "title": "QR Code Generator",
+    "description": "Use QR Code Generator online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Image",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/QR-Code-Generator.html",
+    "tags": [
+      "code",
+      "generator",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-qr-code-generator-index-html",
+    "title": "QR Code Generator",
+    "description": "This online QR code tool helps you generate a QR code and customize its design. You can download the image, share a link, or use an embedded script. Quick and free.",
+    "category": "Image",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/qr-code/generator/index.html",
+    "tags": [
+      "code",
+      "generator",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "generate",
+      "and",
+      "customize"
+    ]
+  },
+  {
+    "id": "usemagictools-qr-code-generator-html",
+    "title": "QR Code Generator",
+    "description": "Free online QR code generator. Create custom QR codes for URLs, WiFi, text, email, phone numbers. Customize colors, add logos, download as PNG or SVG. No ads, no signup, 100% browser-based.",
+    "category": "Image",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/qr-code-generator.html",
+    "tags": [
+      "code",
+      "generator",
+      "free",
+      "online",
+      "create",
+      "custom",
+      "codes",
+      "for",
+      "urls",
+      "wifi"
+    ]
+  },
+  {
+    "id": "online-tools-qrcode-html",
+    "title": "Qrcode",
+    "description": "Use Qrcode online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Image",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/qrcode.html",
+    "tags": [
+      "qrcode",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser",
+      "tool",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-qrcode-embed-html",
+    "title": "Qrcode Embed",
+    "description": "Use Qrcode Embed online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Image",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/qrcode_embed.html",
+    "tags": [
+      "qrcode",
+      "embed",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-rc4-decrypt-index-html",
+    "title": "RC4 Decryption",
+    "description": "This online tool helps you decrypt text or a file using RC4. It supports various modes and padding schemes. It also supports PBKDF2 or EvpKDF, with customizable salt, iteration, and hash settings. It also supports drop bytes.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/rc4/decrypt/index.html",
+    "tags": [
+      "rc4",
+      "decryption",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "decrypt",
+      "text",
+      "file",
+      "using"
+    ]
+  },
+  {
+    "id": "online-tools-rc4-encrypt-index-html",
+    "title": "RC4 Encryption",
+    "description": "This online tool helps you encrypt text or a file from local storage or a URL using RC4. It supports various modes and padding schemes. It also supports PBKDF2 or EvpKDF, with customizable salt, iteration, and hash settings. It also supports drop bytes.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/rc4/encrypt/index.html",
+    "tags": [
+      "rc4",
+      "encryption",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "encrypt",
+      "text",
+      "file",
+      "from",
+      "local"
+    ]
+  },
+  {
+    "id": "nakul-tools-regex-tester-html",
+    "title": "Regex Tester",
+    "description": "Use Regex Tester online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/Regex-Tester.html",
+    "tags": [
+      "regex",
+      "tester",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "nakul-tools-duplicate-line-html",
+    "title": "Remove Duplicate Lines Tool",
+    "description": "Use Remove Duplicate Lines Tool online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Utility",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/duplicate-line.html",
+    "tags": [
+      "remove",
+      "duplicate",
+      "lines",
+      "tool",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast"
+    ]
+  },
+  {
+    "id": "online-tools-ripemd-128-html",
+    "title": "Ripemd 128",
+    "description": "Use Ripemd 128 online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ripemd_128.html",
+    "tags": [
+      "ripemd",
+      "128",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-ripemd-128-checksum-html",
+    "title": "Ripemd 128 Checksum",
+    "description": "Use Ripemd 128 Checksum online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ripemd_128_checksum.html",
+    "tags": [
+      "ripemd",
+      "128",
+      "checksum",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-ripemd-160-html",
+    "title": "Ripemd 160",
+    "description": "Use Ripemd 160 online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ripemd_160.html",
+    "tags": [
+      "ripemd",
+      "160",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-ripemd-160-checksum-html",
+    "title": "Ripemd 160 Checksum",
+    "description": "Use Ripemd 160 Checksum online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ripemd_160_checksum.html",
+    "tags": [
+      "ripemd",
+      "160",
+      "checksum",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-ripemd-256-html",
+    "title": "Ripemd 256",
+    "description": "Use Ripemd 256 online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ripemd_256.html",
+    "tags": [
+      "ripemd",
+      "256",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-ripemd-256-checksum-html",
+    "title": "Ripemd 256 Checksum",
+    "description": "Use Ripemd 256 Checksum online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ripemd_256_checksum.html",
+    "tags": [
+      "ripemd",
+      "256",
+      "checksum",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-ripemd-320-html",
+    "title": "Ripemd 320",
+    "description": "Use Ripemd 320 online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ripemd_320.html",
+    "tags": [
+      "ripemd",
+      "320",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-ripemd-320-checksum-html",
+    "title": "Ripemd 320 Checksum",
+    "description": "Use Ripemd 320 Checksum online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ripemd_320_checksum.html",
+    "tags": [
+      "ripemd",
+      "320",
+      "checksum",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-ripemd-128-index-html",
+    "title": "RIPEMD-128",
+    "description": "This RIPEMD-128 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ripemd-128/index.html",
+    "tags": [
+      "ripemd",
+      "128",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-ripemd-128-file-index-html",
+    "title": "RIPEMD-128 File Hash",
+    "description": "This RIPEMD-128 online tool helps you calculate the hash of a file from local or URL using RIPEMD-128 without uploading the file. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ripemd-128/file/index.html",
+    "tags": [
+      "ripemd",
+      "128",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate"
+    ]
+  },
+  {
+    "id": "online-tools-ripemd-160-index-html",
+    "title": "RIPEMD-160",
+    "description": "This RIPEMD-160 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ripemd-160/index.html",
+    "tags": [
+      "ripemd",
+      "160",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-ripemd-160-file-index-html",
+    "title": "RIPEMD-160 File Hash",
+    "description": "This RIPEMD-160 online tool helps you calculate the hash of a file from local or URL using RIPEMD-160 without uploading the file. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ripemd-160/file/index.html",
+    "tags": [
+      "ripemd",
+      "160",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate"
+    ]
+  },
+  {
+    "id": "online-tools-ripemd-256-index-html",
+    "title": "RIPEMD-256",
+    "description": "This RIPEMD-256 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ripemd-256/index.html",
+    "tags": [
+      "ripemd",
+      "256",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-ripemd-256-file-index-html",
+    "title": "RIPEMD-256 File Hash",
+    "description": "This RIPEMD-256 online tool helps you calculate the hash of a file from local or URL using RIPEMD-256 without uploading the file. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ripemd-256/file/index.html",
+    "tags": [
+      "ripemd",
+      "256",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate"
+    ]
+  },
+  {
+    "id": "online-tools-ripemd-320-index-html",
+    "title": "RIPEMD-320",
+    "description": "This RIPEMD-320 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ripemd-320/index.html",
+    "tags": [
+      "ripemd",
+      "320",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-ripemd-320-file-index-html",
+    "title": "RIPEMD-320 File Hash",
+    "description": "This RIPEMD-320 online tool helps you calculate the hash of a file from local or URL using RIPEMD-320 without uploading the file. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/ripemd-320/file/index.html",
+    "tags": [
+      "ripemd",
+      "320",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate"
+    ]
+  },
+  {
+    "id": "online-tools-rsa-decrypt-index-html",
+    "title": "RSA Decryption",
+    "description": "This online tool helps you decrypt messages using RSA. It supports PKCS#1 and OAEP with various hash algorithms. You can also use PEM with a passphrase.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/rsa/decrypt/index.html",
+    "tags": [
+      "rsa",
+      "decryption",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "decrypt",
+      "messages",
+      "using",
+      "supports"
+    ]
+  },
+  {
+    "id": "online-tools-rsa-encrypt-index-html",
+    "title": "RSA Encryption",
+    "description": "This online tool helps you encrypt messages using RSA. It supports PKCS#1 and OAEP with various hash algorithms.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/rsa/encrypt/index.html",
+    "tags": [
+      "rsa",
+      "encryption",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "encrypt",
+      "messages",
+      "using",
+      "supports"
+    ]
+  },
+  {
+    "id": "online-tools-rsa-key-generator-index-html",
+    "title": "RSA Key Generator",
+    "description": "This online tool helps you generate a pair of RSA keys. The PEM format supports PKCS#1, PKCS#5, and PKCS#8.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/rsa/key-generator/index.html",
+    "tags": [
+      "rsa",
+      "key",
+      "generator",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "generate",
+      "pair",
+      "keys"
+    ]
+  },
+  {
+    "id": "online-tools-rsa-sign-index-html",
+    "title": "RSA Sign Message",
+    "description": "This online tool helps you sign messages using RSA. It supports various signature algorithms. You can also use PEM with a passphrase.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/rsa/sign/index.html",
+    "tags": [
+      "rsa",
+      "sign",
+      "message",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "messages",
+      "using"
+    ]
+  },
+  {
+    "id": "online-tools-rsa-verify-index-html",
+    "title": "RSA Verify Signature",
+    "description": "This online tool helps you verify signatures using RSA. It supports various curves and signature algorithms.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/rsa/verify/index.html",
+    "tags": [
+      "rsa",
+      "verify",
+      "signature",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "signatures",
+      "using"
+    ]
+  },
+  {
+    "id": "nakul-tools-scientific-calculator-html",
+    "title": "Scientific Calculator",
+    "description": "Use Scientific Calculator online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Utility",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/scientific-calculator.html",
+    "tags": [
+      "scientific",
+      "calculator",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "usemagictools-screen-recorder-html",
+    "title": "Screen Recorder",
+    "description": "Free online screen recorder with browser MediaRecorder API. Record screen with optional microphone audio and export HD MP4 in browser. ✅ No ads ✅ No signup ✅ No limits.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/screen-recorder.html",
+    "tags": [
+      "screen",
+      "recorder",
+      "free",
+      "online",
+      "with",
+      "browser",
+      "mediarecorder",
+      "api",
+      "record"
+    ]
+  },
+  {
+    "id": "online-tools-sha1-html",
+    "title": "SHA1",
+    "description": "This SHA1 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha1.html",
+    "tags": [
+      "sha1",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from",
+      "strings"
+    ]
+  },
+  {
+    "id": "online-tools-sha1-checksum-html",
+    "title": "SHA1 File Checksum",
+    "description": "This SHA1 online tool helps you calculate the hash of a file from local or URL using SHA1 without uploading the file. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha1_checksum.html",
+    "tags": [
+      "sha1",
+      "file",
+      "checksum",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "the",
+      "hash"
+    ]
+  },
+  {
+    "id": "online-tools-sha224-html",
+    "title": "SHA224",
+    "description": "This SHA224 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha224.html",
+    "tags": [
+      "sha224",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from",
+      "strings"
+    ]
+  },
+  {
+    "id": "online-tools-sha224-checksum-html",
+    "title": "SHA224 File Hash",
+    "description": "This SHA224 online tool helps you calculate the hash of a file from local or URL using SHA224 without uploading the file. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha224_checksum.html",
+    "tags": [
+      "sha224",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "the"
+    ]
+  },
+  {
+    "id": "online-tools-sha256-html",
+    "title": "SHA256",
+    "description": "This SHA256 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha256.html",
+    "tags": [
+      "sha256",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from",
+      "strings"
+    ]
+  },
+  {
+    "id": "online-tools-sha256-checksum-html",
+    "title": "SHA256 File Checksum",
+    "description": "This SHA256 online tool helps you calculate the hash of a file from local or URL using SHA256 without uploading the file. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha256_checksum.html",
+    "tags": [
+      "sha256",
+      "file",
+      "checksum",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "the",
+      "hash"
+    ]
+  },
+  {
+    "id": "online-tools-sha3-224-html",
+    "title": "SHA3-224",
+    "description": "This SHA3-224 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha3_224.html",
+    "tags": [
+      "sha3",
+      "224",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-sha3-224-checksum-html",
+    "title": "SHA3-224 File Hash",
+    "description": "This SHA3-224 online tool helps you calculate the hash of a file from local or URL using SHA3-224 without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha3_224_checksum.html",
+    "tags": [
+      "sha3",
+      "224",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate"
+    ]
+  },
+  {
+    "id": "online-tools-sha3-256-html",
+    "title": "SHA3-256",
+    "description": "This SHA3-256 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha3_256.html",
+    "tags": [
+      "sha3",
+      "256",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-sha3-256-checksum-html",
+    "title": "SHA3-256 File Hash",
+    "description": "This SHA3-256 online tool helps you calculate the hash of a file from local or URL using SHA3-256 without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha3_256_checksum.html",
+    "tags": [
+      "sha3",
+      "256",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate"
+    ]
+  },
+  {
+    "id": "online-tools-sha3-384-html",
+    "title": "SHA3-384",
+    "description": "This SHA3-384 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha3_384.html",
+    "tags": [
+      "sha3",
+      "384",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-sha3-384-checksum-html",
+    "title": "SHA3-384 File Hash",
+    "description": "This SHA3-384 online tool helps you calculate the hash of a file from local or URL using SHA3-384 without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha3_384_checksum.html",
+    "tags": [
+      "sha3",
+      "384",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate"
+    ]
+  },
+  {
+    "id": "online-tools-sha3-512-html",
+    "title": "SHA3-512",
+    "description": "This SHA3-512 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha3_512.html",
+    "tags": [
+      "sha3",
+      "512",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-sha3-512-checksum-html",
+    "title": "SHA3-512 File Hash",
+    "description": "This SHA3-512 online tool helps you calculate the hash of a file from local or URL using SHA3-512 without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha3_512_checksum.html",
+    "tags": [
+      "sha3",
+      "512",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate"
+    ]
+  },
+  {
+    "id": "online-tools-sha384-html",
+    "title": "SHA384",
+    "description": "This SHA384 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha384.html",
+    "tags": [
+      "sha384",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from",
+      "strings"
+    ]
+  },
+  {
+    "id": "online-tools-sha384-file-hash-html",
+    "title": "SHA384 File Hash",
+    "description": "This SHA384 online tool helps you calculate the hash of a file from local or URL using SHA384 without uploading the file. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha384_file_hash.html",
+    "tags": [
+      "sha384",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "the"
+    ]
+  },
+  {
+    "id": "online-tools-sha512-html",
+    "title": "SHA512",
+    "description": "This SHA512 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha512.html",
+    "tags": [
+      "sha512",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from",
+      "strings"
+    ]
+  },
+  {
+    "id": "online-tools-sha512-file-hash-html",
+    "title": "SHA512 File Hash",
+    "description": "This SHA512 online tool helps you calculate the hash of a file from local or URL using SHA512 without uploading the file. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha512_file_hash.html",
+    "tags": [
+      "sha512",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "the"
+    ]
+  },
+  {
+    "id": "online-tools-sha512-224-html",
+    "title": "SHA512/224",
+    "description": "This SHA512/224 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha512_224.html",
+    "tags": [
+      "sha512",
+      "224",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-sha512-224-file-hash-html",
+    "title": "SHA512/224 File Hash",
+    "description": "This SHA512/224 online tool helps you calculate the hash of a file from local or URL using SHA512/224 without uploading the file. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha512_224_file_hash.html",
+    "tags": [
+      "sha512",
+      "224",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate"
+    ]
+  },
+  {
+    "id": "online-tools-sha512-256-html",
+    "title": "SHA512/256",
+    "description": "This SHA512/256 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha512_256.html",
+    "tags": [
+      "sha512",
+      "256",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from"
+    ]
+  },
+  {
+    "id": "online-tools-sha512-256-file-hash-html",
+    "title": "SHA512/256 File Hash",
+    "description": "This SHA512/256 online tool helps you calculate the hash of a file from local or URL using SHA512/256 without uploading the file. It also supports HMAC.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/sha512_256_file_hash.html",
+    "tags": [
+      "sha512",
+      "256",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate"
+    ]
+  },
+  {
+    "id": "online-tools-shake-128-html",
+    "title": "Shake 128",
+    "description": "Use Shake 128 online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/shake_128.html",
+    "tags": [
+      "shake",
+      "128",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-shake-128-checksum-html",
+    "title": "Shake 128 Checksum",
+    "description": "Use Shake 128 Checksum online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/shake_128_checksum.html",
+    "tags": [
+      "shake",
+      "128",
+      "checksum",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-shake-256-html",
+    "title": "Shake 256",
+    "description": "Use Shake 256 online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/shake_256.html",
+    "tags": [
+      "shake",
+      "256",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "online-tools-shake-256-checksum-html",
+    "title": "Shake 256 Checksum",
+    "description": "Use Shake 256 Checksum online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/shake_256_checksum.html",
+    "tags": [
+      "shake",
+      "256",
+      "checksum",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-shake128-index-html",
+    "title": "SHAKE128",
+    "description": "This SHAKE128 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/shake128/index.html",
+    "tags": [
+      "shake128",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from",
+      "strings"
+    ]
+  },
+  {
+    "id": "online-tools-shake128-file-index-html",
+    "title": "SHAKE128 File Hash",
+    "description": "This SHAKE128 online tool helps you calculate the hash of a file from local or URL using SHAKE128 without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/shake128/file/index.html",
+    "tags": [
+      "shake128",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "the"
+    ]
+  },
+  {
+    "id": "online-tools-shake256-index-html",
+    "title": "SHAKE256",
+    "description": "This SHAKE256 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/shake256/index.html",
+    "tags": [
+      "shake256",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "hashes",
+      "from",
+      "strings"
+    ]
+  },
+  {
+    "id": "online-tools-shake256-file-index-html",
+    "title": "SHAKE256 File Hash",
+    "description": "This SHAKE256 online tool helps you calculate the hash of a file from local or URL using SHAKE256 without uploading the file.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/shake256/file/index.html",
+    "tags": [
+      "shake256",
+      "file",
+      "hash",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "calculate",
+      "the"
+    ]
+  },
+  {
+    "id": "online-tools-case-snake-index-html",
+    "title": "Snake Case Converter",
+    "description": "Convert string to snake case. (Snail case, Pothole case)",
+    "category": "Text",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/case/snake/index.html",
+    "tags": [
+      "snake",
+      "case",
+      "converter",
+      "convert",
+      "string",
+      "snail",
+      "pothole"
+    ]
+  },
+  {
+    "id": "usemagictools-social-video-downloader-html",
+    "title": "Social Video Downloader - Free No Watermark",
+    "description": "Download public videos from TikTok, X (Twitter), Instagram Reels, Facebook and YouTube in HD. No app install, no login, one-click online downloader.",
+    "category": "Image",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/social-video-downloader.html",
+    "tags": [
+      "social",
+      "video",
+      "downloader",
+      "free",
+      "watermark",
+      "download",
+      "public",
+      "videos",
+      "from",
+      "tiktok",
+      "twitter",
+      "instagram"
+    ]
+  },
+  {
+    "id": "online-tools-syntax-highlight-index-html",
+    "title": "Syntax Highlight",
+    "description": "This syntax highlight online tool helps you highlight your code. Supports many languages such as JavaScript, C++, C#, Java... and so on.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/syntax-highlight/index.html",
+    "tags": [
+      "syntax",
+      "highlight",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "your",
+      "code"
+    ]
+  },
+  {
+    "id": "online-tools-syntax-highlight-html",
+    "title": "Syntax Highlight",
+    "description": "Use Syntax Highlight online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/syntax_highlight.html",
+    "tags": [
+      "syntax",
+      "highlight",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "nakul-tools-text-case-html",
+    "title": "Text Case Converter",
+    "description": "Use Text Case Converter online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Text",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/text-case.html",
+    "tags": [
+      "text",
+      "case",
+      "converter",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "usemagictools-text-diff-html",
+    "title": "Text Diff Checker",
+    "description": "Free online text diff checker to compare two texts and highlight added, removed, and changed content instantly. Great for code reviews, copy edits, and QA workflows. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/text-diff.html",
+    "tags": [
+      "text",
+      "diff",
+      "checker",
+      "free",
+      "online",
+      "compare",
+      "two",
+      "texts",
+      "and"
+    ]
+  },
+  {
+    "id": "nakul-tools-text-encryptor-decryptor-html",
+    "title": "Text Encryptor/Decryptor Tool",
+    "description": "Use Text Encryptor/Decryptor Tool online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/text-encryptor-decryptor.html",
+    "tags": [
+      "text",
+      "encryptor",
+      "decryptor",
+      "tool",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast"
+    ]
+  },
+  {
+    "id": "nakul-tools-text-reverse-html",
+    "title": "Text Reversal Tool",
+    "description": "Use Text Reversal Tool online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/text-reverse.html",
+    "tags": [
+      "text",
+      "reversal",
+      "tool",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "nakul-tools-text-shortener-html",
+    "title": "Text Shortener Tool",
+    "description": "Use Text Shortener Tool online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Text",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/text-shortener.html",
+    "tags": [
+      "text",
+      "shortener",
+      "tool",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "nakul-tools-time-zone-converter-html",
+    "title": "Time Zone Converter",
+    "description": "Use Time Zone Converter online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Utility",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/Time Zone Converter.html",
+    "tags": [
+      "time",
+      "zone",
+      "converter",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "usemagictools-transparent-png-html",
+    "title": "Transparent PNG Maker",
+    "description": "Remove any color from images to create transparent PNGs instantly. Multi-color removal, real-time preview, edge smoothing. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Image",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/transparent-png.html",
+    "tags": [
+      "transparent",
+      "png",
+      "maker",
+      "remove",
+      "any",
+      "color",
+      "from",
+      "images",
+      "create",
+      "pngs",
+      "instantly"
+    ]
+  },
+  {
+    "id": "online-tools-triple-des-decrypt-index-html",
+    "title": "Triple DES Decryption",
+    "description": "This online tool helps you decrypt text or a file using Triple DES (3DES). It supports various modes and padding schemes. It also supports PBKDF2 or EvpKDF, with customizable salt, iteration, and hash settings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/triple-des/decrypt/index.html",
+    "tags": [
+      "triple",
+      "des",
+      "decryption",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "decrypt",
+      "text",
+      "file",
+      "using"
+    ]
+  },
+  {
+    "id": "online-tools-triple-des-encrypt-index-html",
+    "title": "Triple DES Encryption",
+    "description": "This online tool helps you encrypt text or a file from local storage or a URL using Triple DES (3DES). It supports various modes and padding schemes. It also supports PBKDF2 or EvpKDF, with customizable salt, iteration, and hash settings.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/triple-des/encrypt/index.html",
+    "tags": [
+      "triple",
+      "des",
+      "encryption",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "encrypt",
+      "text",
+      "file",
+      "from"
+    ]
+  },
+  {
+    "id": "nakul-tools-unit-converter-html",
+    "title": "Unit Converter",
+    "description": "Use Unit Converter online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Utility",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/Unit Converter.html",
+    "tags": [
+      "unit",
+      "converter",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "usemagictools-unit-converter-html",
+    "title": "Unit Converter",
+    "description": "Free online unit converter for length, weight, temperature, area, volume, and speed. Convert units instantly with high precision. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
+    "category": "Utility",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/unit-converter.html",
+    "tags": [
+      "unit",
+      "converter",
+      "free",
+      "online",
+      "for",
+      "length",
+      "weight",
+      "temperature",
+      "area",
+      "volume"
+    ]
+  },
+  {
+    "id": "online-tools-case-upper-camel-index-html",
+    "title": "Upper Camel Case Converter",
+    "description": "Convert string to upper camel case (Pascal case).",
+    "category": "Text",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/case/upper-camel/index.html",
+    "tags": [
+      "upper",
+      "camel",
+      "case",
+      "converter",
+      "convert",
+      "string",
+      "pascal"
+    ]
+  },
+  {
+    "id": "online-tools-case-upper-index-html",
+    "title": "Upper Case Converter",
+    "description": "Convert string to upper case. (Upcase, All caps)",
+    "category": "Text",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/case/upper/index.html",
+    "tags": [
+      "upper",
+      "case",
+      "converter",
+      "convert",
+      "string",
+      "upcase",
+      "all",
+      "caps"
+    ]
+  },
+  {
+    "id": "online-tools-url-decode-html",
+    "title": "URL Decode",
+    "description": "This URL decode online tool helps you decode percent-encoding string to URL.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/url_decode.html",
+    "tags": [
+      "url",
+      "decode",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "percent",
+      "encoding"
+    ]
+  },
+  {
+    "id": "online-tools-url-encode-html",
+    "title": "URL Encode",
+    "description": "This URL encode online tool helps you encode URL to percent-encoding string.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/url_encode.html",
+    "tags": [
+      "url",
+      "encode",
+      "this",
+      "online",
+      "tool",
+      "helps",
+      "you",
+      "percent"
+    ]
+  },
+  {
+    "id": "nakul-tools-url-encoder-decoder-html",
+    "title": "URL Encoder / Decoder",
+    "description": "Use URL Encoder / Decoder online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/url-encoder-decoder.html",
+    "tags": [
+      "url",
+      "encoder",
+      "decoder",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "usemagictools-url-encoder-html",
+    "title": "URL Encoder / Decoder",
+    "description": "Free online URL encoder and decoder. Encode/decode URLs, query strings and special characters. Parse URL components, build URLs from parameters. No ads, no signup, runs entirely in your browser.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/url-encoder.html",
+    "tags": [
+      "url",
+      "encoder",
+      "decoder",
+      "free",
+      "online",
+      "and",
+      "encode",
+      "decode",
+      "urls"
+    ]
+  },
+  {
+    "id": "nakul-tools-uuid-generator-html",
+    "title": "UUID Generator",
+    "description": "Use UUID Generator online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "Developer",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/UUID Generator.html",
+    "tags": [
+      "uuid",
+      "generator",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy",
+      "friendly",
+      "browser"
+    ]
+  },
+  {
+    "id": "usemagictools-watermark-tool-html",
+    "title": "Watermark Tool",
+    "description": "Free online image watermark tool. Add text watermark with opacity, angle, and position in browser. ✅ No ads ✅ No signup ✅ No limits.",
+    "category": "Image",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/watermark-tool.html",
+    "tags": [
+      "watermark",
+      "tool",
+      "free",
+      "online",
+      "image",
+      "add",
+      "text",
+      "with",
+      "opacity"
+    ]
+  },
+  {
+    "id": "nakul-tools-word-counter-html",
+    "title": "Word and Character Counter",
+    "description": "Use Word and Character Counter online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "PDF",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/word-counter.html",
+    "tags": [
+      "word",
+      "and",
+      "character",
+      "counter",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast"
+    ]
+  },
+  {
+    "id": "usemagictools-word-counter-html",
+    "title": "Word Counter",
+    "description": "Free online word counter tool. Count words, characters, sentences, paragraphs instantly. Get reading time estimation and keyword density analysis. No ads, no signup, works entirely in your browser.",
+    "category": "PDF",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/word-counter.html",
+    "tags": [
+      "word",
+      "counter",
+      "free",
+      "online",
+      "tool",
+      "count",
+      "words",
+      "characters",
+      "sentences",
+      "paragraphs"
+    ]
+  },
+  {
+    "id": "nakul-tools-word-counter-html",
+    "title": "Word Counter Tool",
+    "description": "Use Word Counter Tool online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
+    "category": "PDF",
+    "source": "Nakul Tools",
+    "url": "legacy/nakul-tools/Word Counter.html",
+    "tags": [
+      "word",
+      "counter",
+      "tool",
+      "use",
+      "online",
+      "globaltoolshub",
+      "fast",
+      "responsive",
+      "privacy"
+    ]
+  },
+  {
+    "id": "online-tools-xml-formatter-index-html",
+    "title": "XML Formatter",
+    "description": "This free online XML formatter helps you beautify your XML string and make it more readable. You can choose the indentation level and characters.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/xml/formatter/index.html",
+    "tags": [
+      "xml",
+      "formatter",
+      "this",
+      "free",
+      "online",
+      "helps",
+      "you",
+      "beautify",
+      "your"
+    ]
+  },
+  {
+    "id": "online-tools-xml-minifier-index-html",
+    "title": "XML Minifier",
+    "description": "This free online XML minifier helps you minify your XML string and make it more cleaner. It can remove indentation, new lines and comments to reduce size.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/xml/minifier/index.html",
+    "tags": [
+      "xml",
+      "minifier",
+      "this",
+      "free",
+      "online",
+      "helps",
+      "you",
+      "minify",
+      "your"
+    ]
+  },
+  {
+    "id": "online-tools-xml-validator-index-html",
+    "title": "XML Validator",
+    "description": "This free online XML validator helps you validate your XML string.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/xml/validator/index.html",
+    "tags": [
+      "xml",
+      "validator",
+      "this",
+      "free",
+      "online",
+      "helps",
+      "you",
+      "validate",
+      "your"
+    ]
+  },
+  {
+    "id": "usemagictools-yaml-editor-html",
+    "title": "YAML TOML Editor",
+    "description": "Free online YAML TOML editor and converter. Validate config syntax and convert between YAML, TOML, and JSON in browser. ✅ No ads ✅ No signup ✅ No limits.",
+    "category": "Developer",
+    "source": "UseMagicTools",
+    "url": "legacy/usemagictools/yaml-editor.html",
+    "tags": [
+      "yaml",
+      "toml",
+      "editor",
+      "free",
+      "online",
+      "and",
+      "converter",
+      "validate",
+      "config"
+    ]
+  },
+  {
+    "id": "toolverse-index-html",
+    "title": "Your Universe of Free GlobalToolsHub",
+    "description": "GlobalToolsHub is a free collection of 20+ online tools including password generator, JSON formatter, QR code generator, Base64 encoder, BMI calculator, age calculator, regex tester, and more. No login, no API, works offline.",
+    "category": "PDF",
+    "source": "ToolVerse",
+    "url": "legacy/toolverse/index.html",
+    "tags": [
+      "your",
+      "universe",
+      "free",
+      "globaltoolshub",
+      "collection",
+      "20+",
+      "online",
+      "tools",
+      "including",
+      "password"
+    ]
+  }
+]

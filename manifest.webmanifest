@@ -1,0 +1,17 @@
+{
+  "name": "GlobalToolsHub",
+  "short_name": "GTHub",
+  "description": "Unified local hub for fast online tools.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f766e",
+  "icons": [
+    {
+      "src": "assets/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

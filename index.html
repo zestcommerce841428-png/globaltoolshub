@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+    <title>GlobalToolsHub - Unified Free Online Tools</title>
+    <meta name="description" content="GlobalToolsHub is a fast, responsive hub for developer, image, PDF, text, crypto, finance, and utility tools.">
+    <meta name="keywords" content="GlobalToolsHub, online tools, developer tools, PDF tools, image tools, JSON formatter, crypto tools, calculators">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="theme-color" content="#0f766e">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GlobalToolsHub - Unified Free Online Tools">
+    <meta property="og:description" content="Search and launch merged developer, image, PDF, text, crypto, finance, and utility tools from one fast responsive hub.">
+    <meta property="og:image" content="assets/logo.svg">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="GlobalToolsHub - Unified Free Online Tools">
+    <meta name="twitter:description" content="A fast searchable hub for hundreds of merged browser tools.">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="assets/styles.css" as="style">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "GlobalToolsHub",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web Browser",
+        "isAccessibleForFree": true,
+        "description": "A unified searchable hub for merged online tools covering development, images, PDFs, text, crypto, finance, and utilities.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    </script>
+    <script src="assets/analytics.js" defer></script>
+  </head>
+  <body data-bg="clean">
+    <header class="border-b border-slate-200/80 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
+      <div class="shell flex min-h-16 items-center justify-between gap-4 py-3">
+        <a href="./" class="flex min-w-0 items-center gap-3" aria-label="GlobalToolsHub home">
+          <img src="assets/logo.svg" alt="" class="h-10 w-10 shrink-0 rounded-lg">
+          <span class="truncate text-lg font-bold tracking-normal">GlobalToolsHub</span>
+        </a>
+        <nav class="hidden items-center gap-4 text-sm font-semibold text-slate-600 lg:flex dark:text-slate-300" aria-label="Main navigation">
+          <a href="./">Tools</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Compliance</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <select id="themeSelect" class="control w-32" aria-label="Theme"></select>
+          <select id="languageSelect" class="control w-28" aria-label="Language"></select>
+          <select id="countrySelect" class="control hidden w-40 sm:block" aria-label="Country"></select>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="shell py-10 sm:py-14">
+        <div class="grid gap-8 lg:grid-cols-[1fr_360px] lg:items-end">
+          <div>
+            <div id="countryNotice" class="mb-5 inline-flex items-center gap-2 rounded-full border border-teal-500/30 bg-teal-500/10 px-3 py-1 text-sm font-medium text-teal-700 dark:text-teal-200">
+              <span class="h-2 w-2 rounded-full bg-teal-500"></span>
+              Global tool catalog
+            </div>
+            <h1 class="max-w-4xl text-4xl font-black tracking-normal sm:text-5xl lg:text-6xl">GlobalToolsHub</h1>
+            <p id="subtitle" class="mt-4 max-w-3xl text-lg leading-8 text-slate-600 dark:text-slate-300">
+              A unified, searchable hub for developer, image, PDF, text, crypto, finance, and utility tools.
+            </p>
+          </div>
+          <div class="surface grid grid-cols-3 gap-3 rounded-lg p-4">
+            <div>
+              <div id="statTools" class="text-3xl font-black">0</div>
+              <div class="text-xs font-medium uppercase tracking-wide text-slate-500">Tools</div>
+            </div>
+            <div>
+              <div id="statCategories" class="text-3xl font-black">0</div>
+              <div class="text-xs font-medium uppercase tracking-wide text-slate-500">Categories</div>
+            </div>
+            <div>
+              <div id="statSources" class="text-3xl font-black">0</div>
+              <div class="text-xs font-medium uppercase tracking-wide text-slate-500">Sources</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="catalog" class="shell pb-12">
+        <div class="surface rounded-lg p-4 sm:p-5">
+          <div class="grid gap-3 lg:grid-cols-[1fr_180px_180px_150px]">
+            <input id="searchInput" class="control" type="search" autocomplete="off" placeholder="Search tools, formats, tasks, or sources">
+            <select id="categoryFilter" class="control" aria-label="Filter by category"></select>
+            <select id="sourceFilter" class="control" aria-label="Filter by source"></select>
+            <select id="bgSelect" class="control" aria-label="Background style">
+              <option value="clean">Clean</option>
+              <option value="mesh">Focus</option>
+              <option value="paper">Grid</option>
+            </select>
+          </div>
+          <div class="mt-4 flex flex-wrap items-center justify-between gap-3">
+            <p id="resultCount" class="text-sm font-semibold text-slate-600 dark:text-slate-300">0 tools</p>
+            <div class="flex items-center gap-2">
+              <select id="pageSize" class="control w-24" aria-label="Tools per page">
+                <option value="12">12</option>
+                <option value="24" selected>24</option>
+                <option value="48">48</option>
+              </select>
+              <button id="gridView" class="icon-button" type="button" aria-label="Grid view" title="Grid view" aria-pressed="true">Grid</button>
+              <button id="listView" class="icon-button" type="button" aria-label="List view" title="List view" aria-pressed="false">List</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="toolsGrid" class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"></div>
+        <nav id="pagination" class="mt-6 flex flex-wrap justify-center gap-2" aria-label="Tool catalog pagination"></nav>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-500 dark:border-slate-800">
+      <div class="shell">
+        <div class="mb-3 flex flex-wrap justify-center gap-4">
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="accessibility.html">Accessibility</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+        <p>Copyright <span id="currentYear">2026</span> GlobalToolsHub. Built from local-first browser tools.</p>
+      </div>
+    </footer>
+
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>

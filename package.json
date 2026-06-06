@@ -1,0 +1,27 @@
+{
+  "name": "globaltoolshub",
+  "version": "1.0.0",
+  "description": "Unified GlobalToolsHub static tools catalog built from four local projects.",
+  "main": "index.html",
+  "scripts": {
+    "generate": "node scripts/generate-tools.mjs",
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/styles.css --minify",
+    "generate:pages": "node scripts/generate-pages.mjs",
+    "build": "npm run generate && npm run generate:pages && npm run build:css",
+    "dev": "node node_modules/http-server/bin/http-server . -p 4173 -c-1"
+  },
+  "keywords": [
+    "globaltoolshub",
+    "online-tools",
+    "tailwindcss",
+    "static-site"
+  ],
+  "author": "GlobalToolsHub",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "http-server": "^14.1.1",
+    "tailwindcss": "^4.3.0"
+  }
+}

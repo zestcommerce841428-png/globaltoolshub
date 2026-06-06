@@ -1,0 +1,50 @@
+.page-main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+
+.page-main h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1;
+  font-weight: 900;
+}
+
+.page-main h2 {
+  margin-top: 32px;
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.page-main p,
+.page-main li {
+  color: rgb(var(--muted));
+  line-height: 1.8;
+}
+
+.page-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 28px;
+}
+
+.page-card {
+  background: rgba(var(--surface) / 0.92);
+  border: 1px solid rgb(var(--line));
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.page-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.page-nav a {
+  color: rgb(var(--accent-strong));
+}

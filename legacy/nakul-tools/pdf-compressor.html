@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="twitter:description" content="Use PDF Compressor online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.">
+    <meta name="twitter:title" content="PDF Compressor - GlobalToolsHub">
+    <meta property="og:url" content="/legacy/nakul-tools/pdf-compressor.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Use PDF Compressor online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.">
+    <meta property="og:title" content="PDF Compressor - GlobalToolsHub">
+    <link rel="canonical" href="/legacy/nakul-tools/pdf-compressor.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="pdf, compressor, use, online, globaltoolshub, fast, responsive, privacy, friendly, browser">
+    <meta name="description" content="Use PDF Compressor online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF Compressor - GlobalToolsHub</title>
+  <link rel="icon" href="favicon.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      color: #007BFF;
+    }
+
+    input[type="file"] {
+      display: block;
+      margin: 1rem auto;
+    }
+
+    .button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .button:disabled {
+      background-color: #a6c8ff;
+      cursor: not-allowed;
+    }
+
+    #downloadLink {
+      display: none;
+      margin-top: 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+    <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"PDF Compressor","url":"/legacy/nakul-tools/pdf-compressor.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Use PDF Compressor online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection."}</script>
+</head>
+<body>
+  <div class="container">
+    <h1>PDF Compressor</h1>
+    <input type="file" id="pdfInput" accept="application/pdf" />
+    <button class="button" id="compressBtn" disabled>Compress PDF</button>
+    <a id="downloadLink" class="button" download="compressed.pdf">Download Compressed PDF</a>
+  </div>
+
+  <script type="module">
+    import { PDFDocument } from 'https://cdn.skypack.dev/pdf-lib';
+
+    const pdfInput = document.getElementById('pdfInput');
+    const compressBtn = document.getElementById('compressBtn');
+    const downloadLink = document.getElementById('downloadLink');
+    let originalPDF;
+
+    pdfInput.addEventListener('change', (event) => {
+      const file = event.target.files[0];
+      if (file && file.type === 'application/pdf') {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          originalPDF = e.target.result;
+          compressBtn.disabled = false;
+        };
+        reader.readAsArrayBuffer(file);
+      } else {
+        compressBtn.disabled = true;
+      }
+    });
+
+    compressBtn.addEventListener('click', async () => {
+      const pdfDoc = await PDFDocument.load(originalPDF);
+
+      // Basic compression by copying pages to a new PDF
+      const compressedPdf = await PDFDocument.create();
+      const pages = await compressedPdf.copyPages(pdfDoc, pdfDoc.getPageIndices());
+      pages.forEach((page) => compressedPdf.addPage(page));
+
+      const compressedBytes = await compressedPdf.save();
+      const blob = new Blob([compressedBytes], { type: 'application/pdf' });
+      const url = URL.createObjectURL(blob);
+      downloadLink.href = url;
+      downloadLink.style.display = 'inline-block';
+    });
+  </script>
+</body>
+</html>
+
+  
