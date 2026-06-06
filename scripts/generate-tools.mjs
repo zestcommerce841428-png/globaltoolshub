@@ -202,11 +202,19 @@ function upsertDynamicSeo(content, file, sourceRoot) {
     updated = updated.replace(/<\/head>/i, `    ${seoScript}\n</head>`);
   }
 
-  if (!/assets\/seo-runtime\.js|\/assets\/seo-runtime\.js/i.test(updated)) {
-    const runtimePath = path
-      .relative(path.dirname(file), path.join(root, "assets", "seo-runtime.js"))
-      .replaceAll(path.sep, "/");
-    updated = updated.replace(/<\/head>/i, `    <script src="${runtimePath}" defer></script>\n</head>`);
+  let runtimePath = path
+    .relative(path.dirname(file), path.join(root, "assets", "seo-runtime.js"))
+    .replaceAll(path.sep, "/");
+    
+  if (file.includes(path.join("legacy", "online-tools"))) {
+    runtimePath = "../../assets/seo-runtime.js";
+  }
+
+  const seoRuntimeScript = `<script src="${runtimePath}" defer></script>`;
+  if (/<script\b[^>]*src=["'][^"']*seo-runtime\.js["'][^>]*>[\s\S]*?<\/script>/i.test(updated)) {
+    updated = updated.replace(/<script\b[^>]*src=["'][^"']*seo-runtime\.js["'][^>]*>[\s\S]*?<\/script>/i, seoRuntimeScript);
+  } else {
+    updated = updated.replace(/<\/head>/i, `    ${seoRuntimeScript}\n</head>`);
   }
 
   return updated;
@@ -284,7 +292,10 @@ async function rebrandFile(file, sourceRoot) {
   }
 
   if (file.includes(path.join("legacy", "online-tools"))) {
-    content = content.replace(/<base href="[^"]*">/i, '<base href="/legacy/online-tools/">');
+    const relToTools = path.relative(path.join(root, "legacy", "online-tools"), file).replaceAll(path.sep, "/");
+    const depth = relToTools.split("/").length - 1;
+    const baseHref = depth === 0 ? "./" : "../".repeat(depth);
+    content = content.replace(/<base href="[^"]*">/i, `<base href="${baseHref}">`);
     content = content.replace(/\/global-tools\//g, "/legacy/online-tools/");
   }
 

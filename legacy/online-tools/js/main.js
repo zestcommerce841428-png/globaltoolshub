@@ -29,7 +29,7 @@ window.gtag=window.gtag||function(){};!function(t,e,a,o){function n(t,e,a){i({sr
     "@context": "https://schema.org",
     "@type": "WebSite",
     "url": currentUrl,
-    "name": document.title || "Online Tools",
+    "name": document.title || "GlobalToolsHub",
     "image": ogImage ? ogImage.getAttribute('content') : ""
   };
   var script = document.createElement('script');
