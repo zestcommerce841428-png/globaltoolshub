@@ -40,14 +40,14 @@
   style.id = "gth-a11y-styles";
   style.textContent = `
 /* ─── Toggle Button ─── */
-#gth-a11y-btn{position:fixed;bottom:24px;right:24px;z-index:999999;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(99,102,241,.45);transition:transform .2s,box-shadow .2s;font-size:26px}
+#gth-a11y-btn{position:fixed;bottom:24px;left:24px;z-index:999999;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(99,102,241,.45);transition:transform .2s,box-shadow .2s;font-size:26px}
 #gth-a11y-btn:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(99,102,241,.6)}
 #gth-a11y-btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
 #gth-a11y-btn svg{width:28px;height:28px;fill:currentColor}
 
 /* ─── Panel ─── */
-#gth-a11y-panel{position:fixed;top:0;right:-420px;z-index:999998;width:400px;max-width:92vw;height:100vh;background:#0f1219;color:#e2e8f0;font-family:'Inter','Segoe UI',system-ui,sans-serif;transition:right .35s cubic-bezier(.4,0,.2,1);overflow-y:auto;overflow-x:hidden;box-shadow:-4px 0 30px rgba(0,0,0,.5);display:flex;flex-direction:column}
-#gth-a11y-panel.open{right:0}
+#gth-a11y-panel{position:fixed;top:0;left:-420px;z-index:999998;width:400px;max-width:92vw;height:100vh;background:#0f1219;color:#e2e8f0;font-family:'Inter','Segoe UI',system-ui,sans-serif;transition:left .35s cubic-bezier(.4,0,.2,1);overflow-y:auto;overflow-x:hidden;box-shadow:4px 0 30px rgba(0,0,0,.5);display:flex;flex-direction:column}
+#gth-a11y-panel.open{left:0}
 #gth-a11y-panel *{box-sizing:border-box;margin:0;padding:0}
 
 /* Panel Header */
@@ -162,7 +162,7 @@ body.gth-cognitive *{font-size:110%!important}
 #gth-a11y-panel::-webkit-scrollbar-thumb{background:#334155;border-radius:3px}
 
 /* Counter badge on toggle */
-#gth-a11y-badge{position:absolute;top:-4px;right:-4px;background:#ef4444;color:#fff;font-size:10px;font-weight:700;min-width:18px;height:18px;border-radius:9px;display:flex;align-items:center;justify-content:center;padding:0 4px;pointer-events:none;display:none}
+#gth-a11y-badge{position:absolute;top:-4px;left:-4px;background:#ef4444;color:#fff;font-size:10px;font-weight:700;min-width:18px;height:18px;border-radius:9px;display:flex;align-items:center;justify-content:center;padding:0 4px;pointer-events:none;display:none}
 #gth-a11y-badge.show{display:flex}
 
 /* Tooltip Helper */
@@ -171,7 +171,7 @@ body.gth-tooltip-helper [title]:hover::after{content:attr(title);position:absolu
 
 @media(max-width:480px){
   #gth-a11y-panel{width:100vw;max-width:100vw}
-  #gth-a11y-btn{bottom:16px;right:16px;width:48px;height:48px}
+  #gth-a11y-btn{bottom:16px;left:16px;width:48px;height:48px}
 }
 `;
   document.head.appendChild(style);

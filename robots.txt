@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: /sitemap.xml
+
+Sitemap: https://zestcommerce841428-png.github.io/globaltoolshub/sitemap.xml

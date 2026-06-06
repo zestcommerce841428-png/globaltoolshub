@@ -340,7 +340,7 @@ async function main() {
 
   await fs.writeFile(
     path.join(root, "robots.txt"),
-    "User-agent: *\nAllow: /\nSitemap: /sitemap.xml\n",
+    "User-agent: *\nAllow: /\n\nSitemap: https://zestcommerce841428-png.github.io/globaltoolshub/sitemap.xml\n",
   );
 
   console.log(`Generated ${sorted.length} tools.`);
