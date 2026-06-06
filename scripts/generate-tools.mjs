@@ -148,7 +148,7 @@ function upsertDynamicSeo(content, file, sourceRoot) {
   const sourceSlug = path.basename(sourceRoot);
   const title = extractTitle(content, prettyName(file));
   const description = extractDescription(content, title);
-  const canonical = `/legacy/${sourceSlug}/${relative}`;
+  const canonical = `/globaltoolshub/legacy/${sourceSlug}/${relative}`;
   const keywords = tagsFor(`${title} ${description} ${relative}`).slice(0, 10).join(", ");
   const jsonLd = JSON.stringify({
     "@context": "https://schema.org",
@@ -330,11 +330,11 @@ async function main() {
   await fs.writeFile(path.join(outDir, "tools.json"), `${JSON.stringify(sorted, null, 2)}\n`);
 
   const now = new Date().toISOString().slice(0, 10);
-  const urls = ["./", ...sorted.map((tool) => tool.url)];
+  const urls = ["", ...sorted.map((tool) => tool.url)];
   await fs.writeFile(
     path.join(root, "sitemap.xml"),
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
-      .map((url) => `  <url><loc>/${url}</loc><lastmod>${now}</lastmod><changefreq>weekly</changefreq><priority>${url === "./" ? "1.0" : "0.7"}</priority></url>`)
+      .map((url) => `  <url><loc>https://zestcommerce841428-png.github.io/globaltoolshub/${url}</loc><lastmod>${now}</lastmod><changefreq>weekly</changefreq><priority>${url === "" ? "1.0" : "0.7"}</priority></url>`)
       .join("\n")}\n</urlset>\n`,
   );
 
