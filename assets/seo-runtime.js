@@ -1,3 +1,9 @@
+
+// Dynamic GTAG fallback and initialization
+window.dataLayer = window.dataLayer || [];
+if (typeof window.gtag === 'undefined') {
+  window.gtag = function(){ dataLayer.push(arguments); };
+}
 (function () {
   const currentUrl = window.location.href.split("#")[0];
   const origin = window.location.origin;
