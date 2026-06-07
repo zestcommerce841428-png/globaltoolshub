@@ -12,5 +12,11 @@
   margin: 0;
   padding: 0;
 }</style>    <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"QR Code","url":"/globaltoolshub/legacy/online-tools/qr-code/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Use QR Code online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection."}</script>
-    <script src="../../assets/seo-runtime.js" defer></script>
-</head><body><div id="qrcode"></div><script src="js/qr-code-styling.js"></script><script src="js/url-blob.js?v=1"></script><script src="js/qrcode.js?v=8"></script><script>generateByQuery(fetchQuery());</script></body></html>
+    <script src="../../../assets/seo-runtime.js" defer></script>
+</head><body><div id="qrcode"></div><script src="js/qr-code-styling.js"></script><script src="js/url-blob.js?v=1"></script><script src="js/qrcode.js?v=8"></script><script>
+if (typeof fetchQuery === 'function' && typeof generateByQuery === 'function') {
+  try { generateByQuery(fetchQuery()); } catch (e) { console.warn('QR init failed:', e); }
+} else {
+  console.warn('QR functions not available; skipping auto-init');
+}
+</script></body></html>
