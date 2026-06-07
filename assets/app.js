@@ -85,10 +85,10 @@ function applyPreferences() {
   document.documentElement.lang = state.language;
   document.documentElement.dir = state.language === "ar" || state.language === "ur" ? "rtl" : "ltr";
   document.body.dataset.bg = localStorage.getItem("gth:bg") || "clean";
-  elements.bgSelect.value = document.body.dataset.bg;
-  elements.gridView.setAttribute("aria-pressed", String(state.view === "grid"));
-  elements.listView.setAttribute("aria-pressed", String(state.view === "list"));
-  elements.year.textContent = new Date().getFullYear();
+  if (elements.bgSelect) elements.bgSelect.value = document.body.dataset.bg;
+  if (elements.gridView) elements.gridView.setAttribute("aria-pressed", String(state.view === "grid"));
+  if (elements.listView) elements.listView.setAttribute("aria-pressed", String(state.view === "list"));
+  if (elements.year) elements.year.textContent = new Date().getFullYear();
 }
 
 function populateSelectors() {
