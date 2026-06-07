@@ -13,8 +13,8 @@ const targetTools = [
 
 const staticPages = [
   "about.html", "contact.html", "privacy.html", "terms.html",
-  "accessibility.html", "disclaimer.html", "cookies.html", "security.html"
-]; // blog.html will be updated by blog script
+  "accessibility.html", "disclaimer.html", "cookies.html", "security.html", "index.html"
+]; // index.html is also a static page to upgrade now
 
 async function updateTool(toolName) {
   const p = path.join(root, "legacy/online-tools", toolName, "index.html");
@@ -25,54 +25,21 @@ async function updateTool(toolName) {
      return;
   }
 
-  const header = `
-  <header class="border-b border-slate-200/80 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80" role="banner">
-    <div class="shell flex min-h-16 flex-wrap items-center justify-between gap-3 py-3">
-      <a href="../../index.html" class="flex min-w-0 items-center gap-3" aria-label="GlobalToolsHub home">
-        <img src="../../assets/logo.svg" alt="GlobalToolsHub logo" class="h-10 w-10 shrink-0 rounded-lg" width="40" height="40" loading="eager">
-        <span class="truncate text-lg font-bold tracking-normal">GlobalToolsHub</span>
-      </a>
-      <nav class="hidden items-center gap-4 text-sm font-semibold text-slate-600 md:flex dark:text-slate-300" aria-label="Main navigation">
-        <a href="../../index.html">Tools</a>
-        <a href="../../about.html">About</a>
-        <a href="../../blog.html">Blog</a>
-        <a href="../../contact.html">Contact</a>
-        <a href="../../privacy.html">Compliance</a>
-      </nav>
-      <div class="flex flex-wrap items-center gap-2">
-        <select id="themeSelect" class="control w-28 sm:w-32" aria-label="Theme"></select>
-        <select id="languageSelect" class="control w-24 sm:w-28" aria-label="Language"></select>
-      </div>
-    </div>
-  </header>`;
-
-  const footer = `
-  <footer class="border-t border-slate-200 py-6 text-center text-sm text-slate-500 sm:py-8 dark:border-slate-800" role="contentinfo">
-    <div class="shell">
-      <div class="mb-3 flex flex-wrap justify-center gap-3 sm:gap-4">
-        <a href="../../about.html">About</a>
-        <a href="../../blog.html">Blog</a>
-        <a href="../../contact.html">Contact</a>
-        <a href="../../privacy.html">Privacy</a>
-        <a href="../../terms.html">Terms</a>
-        <a href="../../accessibility.html">Accessibility</a>
-        <a href="../../disclaimer.html">Disclaimer</a>
-      </div>
-      <p>Copyright 2026 GlobalToolsHub. Built from local-first browser tools.</p>
-    </div>
-  </footer>`;
+  // Remove old hardcoded headers/footers if they exist
+  html = html.replace(/<header[\s\S]*?<\/header>/, '<global-header></global-header>');
+  html = html.replace(/<footer[\s\S]*?<\/footer>/, '<global-footer></global-footer>');
 
   html = html.replace(/<a href="\.\.\/\.\.\/" class="back">← Back to GlobalToolsHub<\/a>/, '');
   
-  if (!html.includes('<header')) {
-    html = html.replace('<body>', `<body data-bg="clean">\n${header}\n<main class="page-main shell py-8">`);
+  if (!html.includes('<global-header')) {
+    html = html.replace('<body>', `<body data-bg="clean">\n<global-header></global-header>\n<main class="page-main shell py-8">`);
   }
-  if (!html.includes('<footer')) {
-    html = html.replace('</body>', `</main>\n${footer}\n<script src="../../assets/app.js" defer></script>\n</body>`);
+  if (!html.includes('<global-footer')) {
+    html = html.replace('</body>', `</main>\n<global-footer></global-footer>\n</body>`);
   }
   
-  if (!html.includes('styles.css')) {
-    html = html.replace('</head>', `<link rel="stylesheet" href="../../assets/styles.css">\n<link rel="stylesheet" href="../../assets/site.css">\n</head>`);
+  if (!html.includes('assets/components.js')) {
+    html = html.replace('</head>', `<script src="../../assets/components.js" defer></script>\n</head>`);
   }
   
   await fs.writeFile(p, html);
@@ -89,53 +56,20 @@ async function updateStaticPage(fileName) {
      return;
   }
 
-  const header = `
-  <header class="border-b border-slate-200/80 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80" role="banner">
-    <div class="shell flex min-h-16 flex-wrap items-center justify-between gap-3 py-3">
-      <a href="index.html" class="flex min-w-0 items-center gap-3" aria-label="GlobalToolsHub home">
-        <img src="assets/logo.svg" alt="GlobalToolsHub logo" class="h-10 w-10 shrink-0 rounded-lg" width="40" height="40" loading="eager">
-        <span class="truncate text-lg font-bold tracking-normal">GlobalToolsHub</span>
-      </a>
-      <nav class="hidden items-center gap-4 text-sm font-semibold text-slate-600 md:flex dark:text-slate-300" aria-label="Main navigation">
-        <a href="index.html">Tools</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Compliance</a>
-      </nav>
-      <div class="flex flex-wrap items-center gap-2">
-        <select id="themeSelect" class="control w-28 sm:w-32" aria-label="Theme"></select>
-        <select id="languageSelect" class="control w-24 sm:w-28" aria-label="Language"></select>
-      </div>
-    </div>
-  </header>`;
-
-  const footer = `
-  <footer class="border-t border-slate-200 py-6 text-center text-sm text-slate-500 sm:py-8 dark:border-slate-800" role="contentinfo">
-    <div class="shell">
-      <div class="mb-3 flex flex-wrap justify-center gap-3 sm:gap-4">
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="accessibility.html">Accessibility</a>
-        <a href="disclaimer.html">Disclaimer</a>
-      </div>
-      <p>Copyright 2026 GlobalToolsHub. Built from local-first browser tools.</p>
-    </div>
-  </footer>`;
-
   if (html.includes('<header')) {
-    html = html.replace(/<header[\s\S]*?<\/header>/, header);
-  } else {
-    html = html.replace(/<body[^>]*>/, `$& \n${header}`);
+    html = html.replace(/<header[\s\S]*?<\/header>/, '<global-header></global-header>');
+  } else if (!html.includes('<global-header')) {
+    html = html.replace(/<body[^>]*>/, `$& \n<global-header></global-header>`);
   }
 
   if (html.includes('<footer')) {
-    html = html.replace(/<footer[\s\S]*?<\/footer>/, footer);
-  } else {
-    html = html.replace('</body>', `${footer}\n</body>`);
+    html = html.replace(/<footer[\s\S]*?<\/footer>/, '<global-footer></global-footer>');
+  } else if (!html.includes('<global-footer')) {
+    html = html.replace('</body>', `<global-footer></global-footer>\n</body>`);
+  }
+  
+  if (!html.includes('assets/components.js')) {
+    html = html.replace('</head>', `<script src="assets/components.js" defer></script>\n</head>`);
   }
   
   await fs.writeFile(p, html);
