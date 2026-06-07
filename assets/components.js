@@ -60,7 +60,7 @@
             <a href="${basePath}accessibility.html">Accessibility</a>
             <a href="${basePath}disclaimer.html">Disclaimer</a>
           </div>
-          <p>Copyright 2026 GlobalToolsHub. Created by <strong>Naushad Alam</strong>.</p>
+          <p>Copyright 2026 GlobalToolsHub. Created by <strong>Naushad Alam</strong> assisted by Antigravity and hosted on GitHub Pages.</p>
         </div>
       </footer>
       `;
