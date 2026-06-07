@@ -47,6 +47,17 @@ async function fileUrl(relative) {
   }
 }
 
+async function isRedirectPage(relative) {
+  const p = path.join(root, relative);
+  try {
+    const html = await fs.readFile(p, 'utf8');
+    const normalized = html.toLowerCase();
+    return normalized.includes('http-equiv="refresh"') || normalized.includes('http-equiv=refresh');
+  } catch {
+    return false;
+  }
+}
+
 async function run() {
   console.log('Launching headless browser...');
   const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
@@ -57,6 +68,12 @@ async function run() {
 
   const candidates = await discoverCandidates();
   for (const rel of candidates) {
+    if (await isRedirectPage(rel)) {
+      console.log(`Skipping redirect page: ${rel}`);
+      results.push({ page: rel, redirect: true });
+      continue;
+    }
+
     const url = await fileUrl(rel);
     if (!url) {
       console.log(`Skipping (not found): ${rel}`);
@@ -103,6 +120,12 @@ async function run() {
   let failures = 0;
   console.log('\nSmoke test results:');
   for (const r of results) {
+    if (r.redirect) {
+      console.log(`\nPage: ${r.page}`);
+      console.log('  Skipped redirect-only page.');
+      continue;
+    }
+
     const has = (r.consoleErrors.length + r.pageErrors.length + (r.networkFailures ? r.networkFailures.length : 0)) > 0;
     console.log(`\nPage: ${r.page}`);
     console.log(`  Console errors: ${r.consoleErrors.length}`);

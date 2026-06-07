@@ -39,7 +39,7 @@ const state = {
   source: "All",
   view: localStorage.getItem("gth:view") || "grid",
   page: 1,
-  perPage: 24,
+  perPage: Number(localStorage.getItem("gth:perPage")) || 24,
   language: localStorage.getItem("gth:language") || "en",
   country: localStorage.getItem("gth:country") || "global",
   theme: localStorage.getItem("gth:theme") || "light",
@@ -86,15 +86,19 @@ function applyPreferences() {
   document.documentElement.dir = state.language === "ar" || state.language === "ur" ? "rtl" : "ltr";
   document.body.dataset.bg = localStorage.getItem("gth:bg") || "clean";
   if (elements.bgSelect) elements.bgSelect.value = document.body.dataset.bg;
+  if (elements.pageSize) elements.pageSize.value = String(state.perPage);
+  if (elements.category) elements.category.value = state.category;
+  if (elements.source) elements.source.value = state.source;
+  if (elements.country) elements.country.value = state.country;
   if (elements.gridView) elements.gridView.setAttribute("aria-pressed", String(state.view === "grid"));
   if (elements.listView) elements.listView.setAttribute("aria-pressed", String(state.view === "list"));
   if (elements.year) elements.year.textContent = new Date().getFullYear();
 }
 
 function populateSelectors() {
-  fillSelect(elements.theme, themes, state.theme);
-  fillSelect(elements.language, languages, state.language);
-  fillSelect(elements.country, countries, state.country);
+  if (elements.theme) fillSelect(elements.theme, themes, state.theme);
+  if (elements.language) fillSelect(elements.language, languages, state.language);
+  if (elements.country) fillSelect(elements.country, countries, state.country);
 }
 
 function localize() {
@@ -163,7 +167,7 @@ function toolCard(tool, t) {
         <p class="mt-2 line-clamp-3 text-sm leading-6 text-slate-500 dark:text-slate-400">${escapeHtml(tool.description)}</p>
         <div class="mt-4 flex flex-wrap gap-2">${tags}</div>
       </div>
-      <a class="button-primary mt-5 inline-flex h-10 items-center justify-center rounded-md px-4 text-sm font-semibold md:mt-0" href="${tool.url}">${t.open}</a>
+      <a class="button-primary mt-5 inline-flex h-10 items-center justify-center rounded-md px-4 text-sm font-semibold md:mt-0" href="${escapeHtml(tool.url)}">${t.open}</a>
     </article>`;
 }
 
@@ -188,7 +192,7 @@ function bindEvents() {
   elements.query?.addEventListener("input", (event) => { state.query = event.target.value; state.page = 1; renderTools(); });
   elements.category?.addEventListener("change", (event) => { state.category = event.target.value; state.page = 1; renderTools(); });
   elements.source?.addEventListener("change", (event) => { state.source = event.target.value; state.page = 1; renderTools(); });
-  elements.pageSize?.addEventListener("change", (event) => { state.perPage = Number(event.target.value); state.page = 1; renderTools(); });
+  elements.pageSize?.addEventListener("change", (event) => { state.perPage = Number(event.target.value); localStorage.setItem("gth:perPage", String(state.perPage)); state.page = 1; renderTools(); });
   elements.pagination?.addEventListener("click", (event) => {
     const button = event.target.closest("button[data-page]");
     if (!button || button.disabled) return;
@@ -208,11 +212,14 @@ function bindEvents() {
     document.body.dataset.bg = event.target.value;
     localStorage.setItem("gth:bg", event.target.value);
   });
-  elements.language?.addEventListener("change", (event) => {
+  elements.language?.addEventListener("change", async (event) => {
     state.language = event.target.value;
     localStorage.setItem("gth:language", state.language);
-    if (typeof triggerGoogleTranslate === "function") {
+    if (state.language !== 'en') {
+      await initGoogleTranslate();
       triggerGoogleTranslate(state.language);
+    } else {
+      triggerGoogleTranslate('en');
     }
   });
   elements.country?.addEventListener("change", (event) => {
@@ -234,6 +241,7 @@ async function init() {
   // Re-query elements that might have been dynamically inserted by web components
   if (!elements.theme) elements.theme = document.querySelector("#themeSelect");
   if (!elements.language) elements.language = document.querySelector("#languageSelect");
+  if (!elements.country) elements.country = document.querySelector("#countrySelect");
   
   if (elements.theme) fillSelect(elements.theme, themes, state.theme);
   if (elements.language) fillSelect(elements.language, languages, state.language);
@@ -241,7 +249,9 @@ async function init() {
   
   applyPreferences();
   bindEvents();
-  initGoogleTranslate();
+  if (state.language !== 'en') {
+    await initGoogleTranslate();
+  }
   
   if (!elements.grid) return; // Stop execution on non-catalog pages
   
@@ -253,30 +263,41 @@ async function init() {
 }
 
 function initGoogleTranslate() {
+  if (window.__GTH_GOOGLE_TRANSLATE_INITIALIZED) return Promise.resolve();
+  window.__GTH_GOOGLE_TRANSLATE_INITIALIZED = true;
+
   const div = document.createElement('div');
   div.id = 'google_translate_element';
   div.style.display = 'none';
   document.body.appendChild(div);
 
   window.googleTranslateElementInit = function() {
-    new window.google.translate.TranslateElement({
-      pageLanguage: 'en',
-      autoDisplay: false
-    }, 'google_translate_element');
-    
-    // Automatically apply saved language on load if it's not English
-    setTimeout(() => {
-      if (state.language !== 'en') {
-        triggerGoogleTranslate(state.language);
-      }
-    }, 500);
+    if (window.google && window.google.translate) {
+      new window.google.translate.TranslateElement({
+        pageLanguage: 'en',
+        autoDisplay: false
+      }, 'google_translate_element');
+
+      setTimeout(() => {
+        if (state.language !== 'en') {
+          triggerGoogleTranslate(state.language);
+        }
+      }, 500);
+    }
   };
 
   const script = document.createElement('script');
-  script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+  script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+  script.defer = true;
+
+  const promise = new Promise((resolve) => {
+    script.onload = () => resolve();
+    script.onerror = () => resolve();
+  });
+
   document.head.appendChild(script);
   
-  // Hide Google Translate banner
+  // Hide Google Translate banner if active
   const style = document.createElement('style');
   style.textContent = `
     .goog-te-banner-frame { display: none !important; }
@@ -284,6 +305,8 @@ function initGoogleTranslate() {
     .skiptranslate { display: none !important; }
   `;
   document.head.appendChild(style);
+
+  return promise;
 }
 
 function triggerGoogleTranslate(lang) {
@@ -308,32 +331,3 @@ init().catch((error) => {
   }
 });
 
-// ─── Dynamic GTAG for homepage ───
-(function() {
-  if (document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) return;
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = function(){ window.dataLayer.push(arguments); };
-  var gtagScript = document.createElement('script');
-  gtagScript.async = true;
-  gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-HRN5TZ61NL';
-  gtagScript.onload = function() {
-    window.gtag('js', new Date());
-    window.gtag('config', 'G-HRN5TZ61NL', {
-      page_path: window.location.pathname,
-      page_title: document.title,
-      page_location: window.location.href
-    });
-  };
-  var first = document.getElementsByTagName('script')[0];
-  if (first && first.parentNode) first.parentNode.insertBefore(gtagScript, first);
-  else document.head.appendChild(gtagScript);
-})();
-
-// ─── Custom 49-Feature Accessibility Widget ───
-(function() {
-  if (window.__GTH_A11Y_LOADED) return;
-  var s = document.createElement('script');
-  s.src = 'assets/accessibility-widget.js';
-  s.defer = true;
-  document.head.appendChild(s);
-})();
