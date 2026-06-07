@@ -276,7 +276,11 @@ async function rebrandFile(file, sourceRoot) {
     const relToTools = path.relative(path.join(root, "legacy", "online-tools"), file).replaceAll(path.sep, "/");
     const depth = relToTools.split("/").length - 1;
     const baseHref = depth === 0 ? "./" : "../".repeat(depth);
-    content = content.replace(/<base href="[^"]*">/i, `<base href="${baseHref}">`);
+    if (/<base href="[^"]*">/i.test(content)) {
+      content = content.replace(/<base href="[^"]*">/i, `<base href="${baseHref}">`);
+    } else {
+      content = content.replace(/<head([^>]*)>/i, `<head$1>\n    <base href="${baseHref}">`);
+    }
   }
 
   content = stripAnalytics(content);
