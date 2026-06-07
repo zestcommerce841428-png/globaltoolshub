@@ -63,18 +63,18 @@
           <p>Copyright 2026 GlobalToolsHub. Created by <strong>Naushad Alam</strong> assisted by Antigravity and hosted on GitHub Pages.</p>
           <div id="build-version" class="mt-4 inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-xs font-mono text-slate-500 dark:bg-slate-800 dark:text-slate-400" title="Latest deployment version">
             <span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span></span>
-            <span id="build-text">Fetching build info...</span>
+            <span id="build-text">Build: 077d0a8 - just now  Master</span>
           </div>
         </div>
       </footer>
       `;
       
-      // Fetch latest build version dynamically
-      fetch('https://api.github.com/repos/zestcommerce841428-png/globaltoolshub/commits/main')
+      // Fetch latest build version dynamically from local build.json
+      fetch(basePath + 'assets/build.json?v=' + new Date().getTime())
         .then(r => r.json())
         .then(data => {
           const sha = data.sha.substring(0, 7);
-          const date = new Date(data.commit.author.date);
+          const date = new Date(data.date);
           const diffHours = Math.floor((new Date() - date) / (1000 * 60 * 60));
           const diffDays = Math.floor(diffHours / 24);
           let timeStr = 'just now';
