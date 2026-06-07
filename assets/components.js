@@ -4,7 +4,7 @@
   for (let s of scripts) {
     const srcStr = s.getAttribute('src');
     if (srcStr && srcStr.includes('assets/components.js')) {
-      basePath = srcStr.replace('assets/components.js', '');
+      basePath = srcStr.split('assets/components.js')[0];
       break;
     }
   }
