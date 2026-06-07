@@ -211,10 +211,6 @@ function bindEvents() {
   elements.language?.addEventListener("change", (event) => {
     state.language = event.target.value;
     localStorage.setItem("gth:language", state.language);
-    applyPreferences();
-    populateFilters();
-    localize();
-    renderTools();
     if (typeof triggerGoogleTranslate === "function") {
       triggerGoogleTranslate(state.language);
     }
@@ -291,33 +287,17 @@ function initGoogleTranslate() {
 }
 
 function triggerGoogleTranslate(lang) {
-  const select = document.querySelector('.goog-te-combo');
-  if (!select) {
-    // If widget hasn't loaded yet, try again in a bit
-    setTimeout(() => triggerGoogleTranslate(lang), 500);
-    return;
-  }
-  
-  // Handle language mappings (e.g., Chinese)
   const targetLang = lang === 'zh' ? 'zh-CN' : lang;
   
   if (lang === 'en') {
-    // To restore original English, we simulate a click on the "Show original" button in the iframe if possible
-    // Alternatively, we set the select back to English
-    select.value = 'en';
-    select.dispatchEvent(new Event('change'));
-    
-    // Sometimes Google Translate requires clearing the cookie to truly revert
-    const iframe = document.querySelector('iframe.goog-te-banner-frame');
-    if (iframe) {
-        const innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-        const restoreBtn = innerDoc.querySelector('button[id*="restore"]');
-        if (restoreBtn) restoreBtn.click();
-    }
+    document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=" + location.hostname + "; path=/;";
   } else {
-    select.value = targetLang;
-    select.dispatchEvent(new Event('change'));
+    document.cookie = `googtrans=/en/${targetLang}; path=/`;
+    document.cookie = `googtrans=/en/${targetLang}; domain=${location.hostname}; path=/`;
   }
+  
+  window.location.reload();
 }
 
 init().catch((error) => {
