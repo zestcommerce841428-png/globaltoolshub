@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta name="twitter:description" content="Generate complete SEO meta tags, Open Graph, Twitter Cards, and JSON-LD for any webpage.">
+    <meta name="twitter:title" content="🏷️ Meta Tag Generator - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/online-tools/meta-tag-generator/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Generate complete SEO meta tags, Open Graph, Twitter Cards, and JSON-LD for any webpage.">
+    <meta property="og:title" content="🏷️ Meta Tag Generator - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/online-tools/meta-tag-generator/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="meta, tag, generator, generate, complete, seo, tags, open, graph, twitter"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🏷️ Meta Tag Generator - GlobalToolsHub</title>
+<meta name="description" content="Generate complete SEO meta tags, Open Graph, Twitter Cards, and JSON-LD for any webpage.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',system-ui,sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;padding:20px}
+.container{max-width:900px;margin:0 auto}.header{text-align:center;margin-bottom:24px}.header h1{font-size:28px;background:linear-gradient(135deg,#6366f1,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}.header p{color:#94a3b8;font-size:14px}
+.card{background:#1e293b;border-radius:12px;padding:20px;margin-bottom:16px;border:1px solid #334155}
+input,textarea,select{width:100%;background:#0f172a;color:#e2e8f0;border:1px solid #334155;border-radius:8px;padding:10px 12px;font-size:13px;margin-bottom:12px}input:focus,textarea:focus{outline:none;border-color:#6366f1}
+label{display:block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#6366f1;margin-bottom:6px}
+.btn{background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border:none;padding:10px 24px;border-radius:8px;cursor:pointer;font-weight:600;font-size:14px}.btn:hover{transform:translateY(-1px)}
+.code{background:#0f172a;border:1px solid #334155;border-radius:8px;padding:16px;font-family:'Fira Code',monospace;font-size:12px;white-space:pre-wrap;color:#a5b4fc;max-height:500px;overflow-y:auto;line-height:1.7}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.back{display:inline-block;margin-bottom:16px;color:#6366f1;text-decoration:none;font-size:14px}
+#toast{position:fixed;bottom:20px;right:20px;background:#22c55e;color:#fff;padding:10px 20px;border-radius:8px;font-size:13px;font-weight:600;display:none;z-index:99999}
+@media(max-width:640px){.grid-2{grid-template-columns:1fr}}
+</style>
+<script src="../../assets/seo-runtime.js" defer></script>
+    <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"🏷️ Meta Tag Generator","url":"/globaltoolshub/legacy/online-tools/meta-tag-generator/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Generate complete SEO meta tags, Open Graph, Twitter Cards, and JSON-LD for any webpage."}</script>
+</head><body>
+<div class="container">
+<a href="../../" class="back">← Back to GlobalToolsHub</a>
+<div class="header"><h1>🏷️ Meta Tag Generator</h1><p>Generate complete SEO meta tags, Open Graph, Twitter Card, and JSON-LD structured data</p></div>
+<div class="card">
+<div class="grid-2">
+<div><label>Page Title</label><input id="title" placeholder="My Amazing Website" oninput="gen()"></div>
+<div><label>URL</label><input id="url" placeholder="https://example.com" oninput="gen()"></div>
+</div>
+<label>Description (150-160 chars)</label><textarea id="desc" rows="2" placeholder="A brief description of your page..." oninput="gen()"></textarea>
+<div class="grid-2">
+<div><label>Author</label><input id="author" placeholder="John Doe" oninput="gen()"></div>
+<div><label>Keywords</label><input id="keywords" placeholder="web, tools, seo" oninput="gen()"></div>
+</div>
+<div class="grid-2">
+<div><label>OG Image URL</label><input id="image" placeholder="https://example.com/image.png" oninput="gen()"></div>
+<div><label>Site Name</label><input id="sitename" placeholder="My Site" oninput="gen()"></div>
+</div>
+<div class="grid-2">
+<div><label>Twitter Handle</label><input id="twitter" placeholder="@myhandle" oninput="gen()"></div>
+<div><label>Language</label><select id="lang" onchange="gen()"><option value="en">English</option><option value="es">Spanish</option><option value="fr">French</option><option value="de">German</option><option value="hi">Hindi</option><option value="ar">Arabic</option><option value="zh">Chinese</option><option value="ja">Japanese</option></select></div>
+</div>
+</div>
+<div class="card">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><label style="margin:0">Generated HTML</label><button class="btn" onclick="copy()">📋 Copy</button></div>
+<div class="code" id="out"></div>
+</div>
+</div>
+<div id="toast">✅ Copied!</div>
+<script>
+function esc(s){return s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function gen(){
+const t=document.getElementById('title').value||'';const u=document.getElementById('url').value||'';const d=document.getElementById('desc').value||'';
+const a=document.getElementById('author').value||'';const k=document.getElementById('keywords').value||'';const i=document.getElementById('image').value||'';
+const s=document.getElementById('sitename').value||'';const tw=document.getElementById('twitter').value||'';const l=document.getElementById('lang').value;
+let h=`&lt;!-- Primary Meta Tags --&gt;\n&lt;title&gt;${esc(t)}&lt;/title&gt;\n&lt;meta name="description" content="${esc(d)}"&gt;\n&lt;meta name="keywords" content="${esc(k)}"&gt;\n`;
+if(a)h+=`&lt;meta name="author" content="${esc(a)}"&gt;\n`;
+h+=`&lt;meta name="robots" content="index, follow"&gt;\n&lt;meta name="language" content="${l}"&gt;\n&lt;link rel="canonical" href="${esc(u)}"&gt;\n`;
+h+=`\n&lt;!-- Open Graph / Facebook --&gt;\n&lt;meta property="og:type" content="website"&gt;\n&lt;meta property="og:url" content="${esc(u)}"&gt;\n&lt;meta property="og:title" content="${esc(t)}"&gt;\n&lt;meta property="og:description" content="${esc(d)}"&gt;\n`;
+if(i)h+=`&lt;meta property="og:image" content="${esc(i)}"&gt;\n`;
+if(s)h+=`&lt;meta property="og:site_name" content="${esc(s)}"&gt;\n`;
+h+=`\n&lt;!-- Twitter Card --&gt;\n&lt;meta name="twitter:card" content="summary_large_image"&gt;\n&lt;meta name="twitter:title" content="${esc(t)}"&gt;\n&lt;meta name="twitter:description" content="${esc(d)}"&gt;\n`;
+if(i)h+=`&lt;meta name="twitter:image" content="${esc(i)}"&gt;\n`;
+if(tw)h+=`&lt;meta name="twitter:site" content="${esc(tw)}"&gt;\n`;
+h+=`\n&lt;!-- JSON-LD Structured Data --&gt;\n&lt;script type="application/ld+json"&gt;\n${JSON.stringify({"@context":"https://schema.org","@type":"WebPage",name:t,url:u,description:d,author:{"@type":"Person",name:a||"Author"},image:i||undefined},null,2)}\n&lt;/script&gt;`;
+document.getElementById('out').innerHTML=h;
+}
+function copy(){const t=document.getElementById('out').textContent;navigator.clipboard.writeText(t).then(()=>{const el=document.getElementById('toast');el.style.display='block';setTimeout(()=>el.style.display='none',2000)});}
+gen();
+</script></body></html>

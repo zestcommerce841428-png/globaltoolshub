@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta name="twitter:description" content="Generate QR codes from text or URLs instantly.">
+    <meta name="twitter:title" content="📱 QR Code Generator - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/online-tools/qr-code-generator/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Generate QR codes from text or URLs instantly.">
+    <meta property="og:title" content="📱 QR Code Generator - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/online-tools/qr-code-generator/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="code, generator, generate, codes, from, text, urls, instantly, index, html"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>📱 QR Code Generator - GlobalToolsHub</title>
+<meta name="description" content="Generate QR codes from text or URLs instantly.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',system-ui,sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;padding:20px}
+.container{max-width:800px;margin:0 auto}.header{text-align:center;margin-bottom:30px}.header h1{font-size:28px;background:linear-gradient(135deg,#6366f1,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}.header p{color:#94a3b8;font-size:14px}
+.card{background:#1e293b;border-radius:12px;padding:20px;margin-bottom:16px;border:1px solid #334155}
+input[type="text"]{width:100%;background:#0f172a;color:#e2e8f0;border:1px solid #334155;border-radius:8px;padding:12px;font-size:15px;margin-bottom:16px}
+input[type="text"]:focus{outline:none;border-color:#6366f1}
+label{display:block;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#6366f1;margin-bottom:8px}
+.back{display:inline-block;margin-bottom:16px;color:#6366f1;text-decoration:none;font-size:14px}
+.qr-container{display:flex;justify-content:center;align-items:center;padding:20px;background:#fff;border-radius:8px;margin:0 auto;width:fit-content;min-width:256px;min-height:256px}
+</style>
+<script src="../../assets/seo-runtime.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"📱 QR Code Generator","url":"/globaltoolshub/legacy/online-tools/qr-code-generator/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Generate QR codes from text or URLs instantly."}</script>
+</head><body>
+<div class="container">
+<a href="../../" class="back">← Back to GlobalToolsHub</a>
+<div class="header"><h1>📱 QR Code Generator</h1><p>Generate QR codes instantly from text or URLs.</p></div>
+<div class="card" style="text-align:center">
+<label style="text-align:left">Text or URL</label>
+<input type="text" id="text" placeholder="https://example.com" value="https://globaltoolshub.github.io" oninput="generate()">
+<div class="qr-container" id="qrcode"></div>
+</div>
+</div>
+<script>
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+    text: document.getElementById('text').value,
+    width: 256,
+    height: 256,
+    colorDark : "#000000",
+    colorLight : "#ffffff",
+    correctLevel : QRCode.CorrectLevel.H
+});
+function generate(){
+  var t = document.getElementById('text').value;
+  if(t) {
+    qrcode.clear();
+    qrcode.makeCode(t);
+  }
+}
+</script></body></html>

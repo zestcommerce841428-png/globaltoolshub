@@ -20,6 +20,28 @@
     ]
   },
   {
+    "id": "online-tools-js-minifier-index-html",
+    "title": "⚡ JS Minifier",
+    "description": "Minify your JS code instantly. Remove whitespace and comments to reduce file size.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/js-minifier/index.html",
+    "tags": [
+      "minifier",
+      "minify",
+      "your",
+      "code",
+      "instantly",
+      "remove",
+      "whitespace",
+      "and",
+      "comments",
+      "reduce",
+      "file",
+      "size"
+    ]
+  },
+  {
     "id": "usemagictools-snow-day-calculator-html",
     "title": "❄️ Snow Day Calculator",
     "description": "Free Snow Day Calculator predicts school closures using real-time weather data. Enter your ZIP code to check snow day probability. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
@@ -99,6 +121,68 @@
     ]
   },
   {
+    "id": "online-tools-color-converter-index-html",
+    "title": "🎨 Color Converter",
+    "description": "Convert colors between HEX, RGB, and HSL formats instantly.",
+    "category": "Image",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/color-converter/index.html",
+    "tags": [
+      "color",
+      "converter",
+      "convert",
+      "colors",
+      "between",
+      "hex",
+      "rgb",
+      "and",
+      "hsl",
+      "formats",
+      "instantly"
+    ]
+  },
+  {
+    "id": "online-tools-css-gradient-index-html",
+    "title": "🎨 CSS Gradient Generator",
+    "description": "Visual CSS gradient builder. Create linear and radial gradients with live preview and copy CSS.",
+    "category": "Utility",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/css-gradient/index.html",
+    "tags": [
+      "css",
+      "gradient",
+      "generator",
+      "visual",
+      "builder",
+      "create",
+      "linear",
+      "and",
+      "radial",
+      "gradients"
+    ]
+  },
+  {
+    "id": "online-tools-css-minifier-index-html",
+    "title": "🎨 CSS Minifier",
+    "description": "Minify your CSS code instantly. Remove whitespace and comments to reduce file size.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/css-minifier/index.html",
+    "tags": [
+      "css",
+      "minifier",
+      "minify",
+      "your",
+      "code",
+      "instantly",
+      "remove",
+      "whitespace",
+      "and",
+      "comments",
+      "reduce"
+    ]
+  },
+  {
     "id": "usemagictools-ico-maker-html",
     "title": "🎨 ICO Icon Maker",
     "description": "Free online ICO icon maker tool. Convert PNG, JPG, GIF images to ICO icon files. Supports cropping, multiple sizes from 16x16 to 512x512, real-time preview, one-click download. ✅ No ads ✅ No signup ✅ No watermark. Runs entirely in your browser.",
@@ -155,6 +239,27 @@
     ]
   },
   {
+    "id": "online-tools-meta-tag-generator-index-html",
+    "title": "🏷️ Meta Tag Generator",
+    "description": "Generate complete SEO meta tags, Open Graph, Twitter Cards, and JSON-LD for any webpage.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/meta-tag-generator/index.html",
+    "tags": [
+      "meta",
+      "tag",
+      "generator",
+      "generate",
+      "complete",
+      "seo",
+      "tags",
+      "open",
+      "graph",
+      "twitter",
+      "cards"
+    ]
+  },
+  {
     "id": "usemagictools-image-to-pdf-html",
     "title": "📄 Image to PDF Converter",
     "description": "Free online image to PDF converter. Merge multiple images into one PDF with drag-and-drop sorting, clipboard paste, and QR code upload. Supports JPG/PNG/WEBP formats. ✅ No ads ✅ No signup ✅ No watermark. Runs entirely in your browser.",
@@ -171,6 +276,26 @@
       "multiple",
       "images",
       "into"
+    ]
+  },
+  {
+    "id": "online-tools-json-diff-index-html",
+    "title": "📊 JSON Diff",
+    "description": "Compare two JSON objects side by side. Highlights additions, deletions, and changes.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/json-diff/index.html",
+    "tags": [
+      "json",
+      "diff",
+      "compare",
+      "two",
+      "objects",
+      "side",
+      "highlights",
+      "additions",
+      "deletions",
+      "and"
     ]
   },
   {
@@ -191,6 +316,46 @@
       "supports",
       "sequential",
       "numbering"
+    ]
+  },
+  {
+    "id": "online-tools-lorem-ipsum-generator-index-html",
+    "title": "📝 Lorem Ipsum Generator",
+    "description": "Generate random Lorem Ipsum placeholder text for designs and mockups.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/lorem-ipsum-generator/index.html",
+    "tags": [
+      "lorem",
+      "ipsum",
+      "generator",
+      "generate",
+      "random",
+      "placeholder",
+      "text",
+      "for",
+      "designs",
+      "and"
+    ]
+  },
+  {
+    "id": "online-tools-markdown-preview-index-html",
+    "title": "📝 Markdown Preview",
+    "description": "Live markdown editor with instant HTML preview. Supports headings, bold, italic, code, lists, links, and images.",
+    "category": "Image",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/markdown-preview/index.html",
+    "tags": [
+      "markdown",
+      "preview",
+      "live",
+      "editor",
+      "with",
+      "instant",
+      "html",
+      "supports",
+      "headings",
+      "bold"
     ]
   },
   {
@@ -215,6 +380,26 @@
     ]
   },
   {
+    "id": "online-tools-qr-code-generator-index-html",
+    "title": "📱 QR Code Generator",
+    "description": "Generate QR codes from text or URLs instantly.",
+    "category": "Image",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/qr-code-generator/index.html",
+    "tags": [
+      "code",
+      "generator",
+      "generate",
+      "codes",
+      "from",
+      "text",
+      "urls",
+      "instantly",
+      "index",
+      "html"
+    ]
+  },
+  {
     "id": "usemagictools-id-photo-tool-html",
     "title": "📷 ID Photo Cropper & Watermark",
     "description": "Free online ID photo cropper with transparent watermark. Supports passport, visa, ID card sizes. 100% offline browser processing, no uploads, complete privacy protection. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
@@ -231,6 +416,23 @@
       "transparent",
       "supports",
       "passport"
+    ]
+  },
+  {
+    "id": "online-tools-base64-encoder-decoder-index-html",
+    "title": "🔄 Base64 Encoder / Decoder",
+    "description": "Encode text to Base64 or decode Base64 to text instantly.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/base64-encoder-decoder/index.html",
+    "tags": [
+      "base64",
+      "encoder",
+      "decoder",
+      "encode",
+      "text",
+      "decode",
+      "instantly"
     ]
   },
   {
@@ -312,6 +514,64 @@
     ]
   },
   {
+    "id": "online-tools-jwt-decoder-index-html",
+    "title": "🔑 JWT Decoder",
+    "description": "Decode and inspect JWT tokens. View header, payload, expiration, and signature verification.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/jwt-decoder/index.html",
+    "tags": [
+      "jwt",
+      "decoder",
+      "decode",
+      "and",
+      "inspect",
+      "tokens",
+      "view",
+      "header",
+      "payload",
+      "expiration"
+    ]
+  },
+  {
+    "id": "online-tools-url-encoder-decoder-index-html",
+    "title": "🔗 URL Encoder / Decoder",
+    "description": "Encode URL safely or decode URL encoded strings instantly.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/url-encoder-decoder/index.html",
+    "tags": [
+      "url",
+      "encoder",
+      "decoder",
+      "encode",
+      "safely",
+      "decode",
+      "encoded",
+      "strings",
+      "instantly"
+    ]
+  },
+  {
+    "id": "online-tools-box-shadow-index-html",
+    "title": "🔲 Box Shadow Generator",
+    "description": "Visual CSS box-shadow generator with live preview. Adjust offset, blur, spread, color, and inset.",
+    "category": "Image",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/box-shadow/index.html",
+    "tags": [
+      "box",
+      "shadow",
+      "generator",
+      "visual",
+      "css",
+      "with",
+      "live",
+      "preview",
+      "adjust"
+    ]
+  },
+  {
     "id": "usemagictools-timestamp-converter-html",
     "title": "🕐 Timestamp Converter",
     "description": "Online timestamp converter tool. Convert between Unix timestamps and date/time, view multiple time zones, with code examples for various programming languages. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
@@ -347,6 +607,27 @@
       "open",
       "files",
       "directly"
+    ]
+  },
+  {
+    "id": "online-tools-html-minifier-index-html",
+    "title": "🗜️ HTML Minifier",
+    "description": "Minify your HTML code instantly. Remove whitespace and comments to reduce file size.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/html-minifier/index.html",
+    "tags": [
+      "html",
+      "minifier",
+      "minify",
+      "your",
+      "code",
+      "instantly",
+      "remove",
+      "whitespace",
+      "and",
+      "comments",
+      "reduce"
     ]
   },
   {
@@ -2515,6 +2796,27 @@
       "online",
       "globaltoolshub",
       "fast"
+    ]
+  },
+  {
+    "id": "online-tools-uuid-generator-index-html",
+    "title": "🆔 UUID / GUID Generator",
+    "description": "Generate random UUIDs (version 4) instantly with customizable formats.",
+    "category": "Developer",
+    "source": "Online Tools",
+    "url": "legacy/online-tools/uuid-generator/index.html",
+    "tags": [
+      "uuid",
+      "guid",
+      "generator",
+      "generate",
+      "random",
+      "uuids",
+      "version",
+      "instantly",
+      "with",
+      "customizable",
+      "formats"
     ]
   },
   {

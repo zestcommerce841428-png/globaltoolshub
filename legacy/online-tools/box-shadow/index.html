@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta name="twitter:description" content="Visual CSS box-shadow generator with live preview. Adjust offset, blur, spread, color, and inset.">
+    <meta name="twitter:title" content="🔲 Box Shadow Generator - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/online-tools/box-shadow/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Visual CSS box-shadow generator with live preview. Adjust offset, blur, spread, color, and inset.">
+    <meta property="og:title" content="🔲 Box Shadow Generator - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/online-tools/box-shadow/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="box, shadow, generator, visual, css, with, live, preview, adjust"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🔲 Box Shadow Generator - GlobalToolsHub</title><meta name="description" content="Visual CSS box-shadow generator with live preview. Adjust offset, blur, spread, color, and inset.">
+<style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',system-ui,sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;padding:20px}.container{max-width:800px;margin:0 auto}.header{text-align:center;margin-bottom:24px}.header h1{font-size:28px;background:linear-gradient(135deg,#6366f1,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.header p{color:#94a3b8;font-size:14px;margin-top:8px}.card{background:#1e293b;border-radius:12px;padding:20px;margin-bottom:16px;border:1px solid #334155}.preview-box{width:200px;height:200px;background:#6366f1;border-radius:16px;margin:30px auto;transition:box-shadow .2s}.field{margin-bottom:14px}.field label{display:flex;justify-content:space-between;font-size:12px;font-weight:600;color:#6366f1;margin-bottom:6px;text-transform:uppercase;letter-spacing:1px}.field input[type="range"]{width:100%;accent-color:#6366f1}.field input[type="color"]{height:36px;border:1px solid #334155;border-radius:8px;background:#0f172a;cursor:pointer;width:100%}.field select{width:100%;background:#0f172a;color:#e2e8f0;border:1px solid #334155;border-radius:8px;padding:8px}.css-out{background:#0f172a;border:1px solid #334155;border-radius:8px;padding:14px;font-family:'Fira Code',monospace;font-size:13px;color:#a5b4fc;cursor:pointer}.btn{background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border:none;padding:10px 24px;border-radius:8px;cursor:pointer;font-weight:600;font-size:14px}.back{display:inline-block;margin-bottom:16px;color:#6366f1;text-decoration:none;font-size:14px}#toast{position:fixed;bottom:20px;right:20px;background:#22c55e;color:#fff;padding:10px 20px;border-radius:8px;font-size:13px;font-weight:600;display:none;z-index:99999}</style>
+<script src="../../assets/seo-runtime.js" defer></script>    <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"🔲 Box Shadow Generator","url":"/globaltoolshub/legacy/online-tools/box-shadow/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Visual CSS box-shadow generator with live preview. Adjust offset, blur, spread, color, and inset."}</script>
+</head><body>
+<div class="container"><a href="../../" class="back">← Back to GlobalToolsHub</a>
+<div class="header"><h1>🔲 Box Shadow Generator</h1><p>Visually build CSS box-shadow with live preview</p></div>
+<div class="card"><div class="preview-box" id="box"></div></div>
+<div class="card">
+<div class="field"><label>Horizontal Offset <span id="hv">5px</span></label><input type="range" id="h" min="-50" max="50" value="5" oninput="u()"></div>
+<div class="field"><label>Vertical Offset <span id="vv">5px</span></label><input type="range" id="v" min="-50" max="50" value="5" oninput="u()"></div>
+<div class="field"><label>Blur Radius <span id="bv">15px</span></label><input type="range" id="b" min="0" max="100" value="15" oninput="u()"></div>
+<div class="field"><label>Spread <span id="sv">0px</span></label><input type="range" id="s" min="-50" max="50" value="0" oninput="u()"></div>
+<div class="field"><label>Opacity <span id="ov">0.4</span></label><input type="range" id="o" min="0" max="100" value="40" oninput="u()"></div>
+<div class="field"><label>Shadow Color</label><input type="color" id="c" value="#000000" oninput="u()"></div>
+<div class="field"><label>Type</label><select id="t" onchange="u()"><option value="">Outer</option><option value="inset">Inset</option></select></div>
+</div>
+<div class="card"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><label style="margin:0;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#6366f1">CSS Output</label><button class="btn" onclick="cp()">📋 Copy</button></div><div class="css-out" id="out" onclick="cp()"></div></div>
+</div><div id="toast">✅ Copied!</div>
+<script>
+function hexToRgba(hex,a){const r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);return`rgba(${r},${g},${b},${a})`;}
+function u(){const h=document.getElementById('h').value,v=document.getElementById('v').value,b=document.getElementById('b').value,s=document.getElementById('s').value,o=(document.getElementById('o').value/100).toFixed(2),c=document.getElementById('c').value,t=document.getElementById('t').value;
+document.getElementById('hv').textContent=h+'px';document.getElementById('vv').textContent=v+'px';document.getElementById('bv').textContent=b+'px';document.getElementById('sv').textContent=s+'px';document.getElementById('ov').textContent=o;
+const shadow=`${t?t+' ':''}${h}px ${v}px ${b}px ${s}px ${hexToRgba(c,o)}`;
+document.getElementById('box').style.boxShadow=shadow;document.getElementById('out').textContent=`box-shadow: ${shadow};`;}
+function cp(){navigator.clipboard.writeText(document.getElementById('out').textContent).then(()=>{const t=document.getElementById('toast');t.style.display='block';setTimeout(()=>t.style.display='none',2000)});}
+u();
+</script></body></html>

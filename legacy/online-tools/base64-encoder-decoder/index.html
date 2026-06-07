@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta name="twitter:description" content="Encode text to Base64 or decode Base64 to text instantly.">
+    <meta name="twitter:title" content="🔄 Base64 Encoder / Decoder - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/online-tools/base64-encoder-decoder/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Encode text to Base64 or decode Base64 to text instantly.">
+    <meta property="og:title" content="🔄 Base64 Encoder / Decoder - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/online-tools/base64-encoder-decoder/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="base64, encoder, decoder, encode, text, decode, instantly"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🔄 Base64 Encoder / Decoder - GlobalToolsHub</title>
+<meta name="description" content="Encode text to Base64 or decode Base64 to text instantly.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',system-ui,sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;padding:20px}
+.container{max-width:1000px;margin:0 auto}.header{text-align:center;margin-bottom:30px}.header h1{font-size:28px;background:linear-gradient(135deg,#6366f1,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}.header p{color:#94a3b8;font-size:14px}
+.card{background:#1e293b;border-radius:12px;padding:20px;margin-bottom:16px;border:1px solid #334155}
+textarea{width:100%;min-height:200px;background:#0f172a;color:#e2e8f0;border:1px solid #334155;border-radius:8px;padding:12px;font-family:'Fira Code',monospace;font-size:14px;resize:vertical}
+textarea:focus{outline:none;border-color:#6366f1}
+.btn{background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border:none;padding:10px 24px;border-radius:8px;cursor:pointer;font-weight:600;font-size:14px;transition:transform .15s}.btn:hover{transform:translateY(-1px)}
+.btn-outline{background:transparent;border:1px solid #334155;color:#94a3b8}.btn-outline:hover{border-color:#6366f1;color:#fff}
+label{display:block;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#6366f1;margin-bottom:8px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.back{display:inline-block;margin-bottom:16px;color:#6366f1;text-decoration:none;font-size:14px}
+.actions{display:flex;gap:8px;margin-top:12px;justify-content:center}
+@media(max-width:768px){.grid-2{grid-template-columns:1fr}}
+</style>
+<script src="../../assets/seo-runtime.js" defer></script>
+    <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"🔄 Base64 Encoder / Decoder","url":"/globaltoolshub/legacy/online-tools/base64-encoder-decoder/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Encode text to Base64 or decode Base64 to text instantly."}</script>
+</head><body>
+<div class="container">
+<a href="../../" class="back">← Back to GlobalToolsHub</a>
+<div class="header"><h1>🔄 Base64 Encoder / Decoder</h1><p>Encode plain text to Base64 format, or decode Base64 back to plain text.</p></div>
+<div class="grid-2">
+<div class="card">
+<label>Input (Text or Base64)</label>
+<textarea id="input" placeholder="Type or paste content here..."></textarea>
+<div class="actions">
+<button class="btn" onclick="encode()">Encode Base64 ➡️</button>
+<button class="btn" onclick="decode()">Decode Base64 ➡️</button>
+<button class="btn btn-outline" onclick="document.getElementById('input').value=''">Clear</button>
+</div>
+</div>
+<div class="card">
+<label>Result</label>
+<textarea id="output" readonly placeholder="Result will appear here..."></textarea>
+<div class="actions">
+<button class="btn btn-outline" onclick="copy()">Copy Result</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+function encode(){
+const text=document.getElementById('input').value;
+try{document.getElementById('output').value=btoa(unescape(encodeURIComponent(text)))}catch(e){document.getElementById('output').value='Error encoding text.'}
+}
+function decode(){
+const text=document.getElementById('input').value;
+try{document.getElementById('output').value=decodeURIComponent(escape(atob(text)))}catch(e){document.getElementById('output').value='Invalid Base64 string.'}
+}
+function copy(){
+const out=document.getElementById('output');out.select();document.execCommand('copy');
+alert('Copied to clipboard!');
+}
+</script></body></html>

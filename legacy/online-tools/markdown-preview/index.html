@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta name="twitter:description" content="Live markdown editor with instant HTML preview. Supports headings, bold, italic, code, lists, links, and images.">
+    <meta name="twitter:title" content="📝 Markdown Preview - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/online-tools/markdown-preview/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Live markdown editor with instant HTML preview. Supports headings, bold, italic, code, lists, links, and images.">
+    <meta property="og:title" content="📝 Markdown Preview - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/online-tools/markdown-preview/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="markdown, preview, live, editor, with, instant, html, supports, headings, bold"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>📝 Markdown Preview - GlobalToolsHub</title><meta name="description" content="Live markdown editor with instant HTML preview. Supports headings, bold, italic, code, lists, links, and images.">
+<style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',system-ui,sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;padding:20px}.container{max-width:1200px;margin:0 auto}.header{text-align:center;margin-bottom:24px}.header h1{font-size:28px;background:linear-gradient(135deg,#6366f1,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.header p{color:#94a3b8;font-size:14px;margin-top:8px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}label{display:block;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#6366f1;margin-bottom:8px}.card{background:#1e293b;border-radius:12px;padding:20px;border:1px solid #334155}textarea{width:100%;min-height:500px;background:#0f172a;color:#e2e8f0;border:1px solid #334155;border-radius:8px;padding:14px;font-family:'Fira Code',monospace;font-size:13px;resize:vertical;line-height:1.7}textarea:focus{outline:none;border-color:#6366f1}#preview{background:#0f172a;border:1px solid #334155;border-radius:8px;padding:20px;min-height:500px;overflow-y:auto;line-height:1.8;font-size:14px}#preview h1{font-size:28px;margin:16px 0 8px;color:#fff;border-bottom:1px solid #334155;padding-bottom:8px}#preview h2{font-size:22px;margin:14px 0 6px;color:#e2e8f0}#preview h3{font-size:18px;margin:12px 0 6px;color:#cbd5e1}#preview p{margin:8px 0}#preview code{background:#334155;padding:2px 6px;border-radius:4px;font-size:12px;color:#a5b4fc}#preview pre{background:#334155;padding:14px;border-radius:8px;overflow-x:auto;margin:10px 0}#preview pre code{background:transparent;padding:0}#preview blockquote{border-left:3px solid #6366f1;padding-left:14px;color:#94a3b8;margin:10px 0}#preview a{color:#818cf8;text-decoration:underline}#preview ul,#preview ol{padding-left:24px;margin:8px 0}#preview img{max-width:100%;border-radius:8px}#preview hr{border:none;border-top:1px solid #334155;margin:16px 0}#preview strong{color:#fff}#preview table{width:100%;border-collapse:collapse;margin:10px 0}#preview th,#preview td{border:1px solid #334155;padding:8px;text-align:left}#preview th{background:#334155}.back{display:inline-block;margin-bottom:16px;color:#6366f1;text-decoration:none;font-size:14px}@media(max-width:768px){.grid{grid-template-columns:1fr}}</style>
+<script src="../../assets/seo-runtime.js" defer></script>    <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"📝 Markdown Preview","url":"/globaltoolshub/legacy/online-tools/markdown-preview/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Live markdown editor with instant HTML preview. Supports headings, bold, italic, code, lists, links, and images."}</script>
+</head><body>
+<div class="container"><a href="../../" class="back">← Back to GlobalToolsHub</a>
+<div class="header"><h1>📝 Markdown Preview</h1><p>Live markdown editor with instant rendered preview</p></div>
+<div class="grid"><div class="card"><label>Markdown Input</label><textarea id="md" oninput="render()" placeholder="# Hello World&#10;&#10;Write your **markdown** here...&#10;&#10;- Item 1&#10;- Item 2&#10;&#10;```js&#10;console.log('hello');&#10;```"></textarea></div><div class="card"><label>Preview</label><div id="preview"></div></div></div>
+</div>
+<script>
+function render(){const md=document.getElementById('md').value;document.getElementById('preview').innerHTML=parseMd(md);}
+function parseMd(md){let h=md
+.replace(/^### (.*$)/gm,'<h3>$1</h3>').replace(/^## (.*$)/gm,'<h2>$1</h2>').replace(/^# (.*$)/gm,'<h1>$1</h1>')
+.replace(/\*\*\*(.*?)\*\*\*/g,'<strong><em>$1</em></strong>')
+.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/\*(.*?)\*/g,'<em>$1</em>')
+.replace(/~~(.*?)~~/g,'<del>$1</del>')
+.replace(/`([^`]+)`/g,'<code>$1</code>')
+.replace(/```(\w*)\n([\s\S]*?)```/g,'<pre><code>$2</code></pre>')
+.replace(/!\[(.*?)\]\((.*?)\)/g,'<img src="$2" alt="$1">')
+.replace(/\[(.*?)\]\((.*?)\)/g,'<a href="$2" target="_blank">$1</a>')
+.replace(/^> (.*$)/gm,'<blockquote>$1</blockquote>')
+.replace(/^---$/gm,'<hr>')
+.replace(/^\- (.*$)/gm,'<li>$1</li>')
+.replace(/^(\d+)\. (.*$)/gm,'<li>$2</li>');
+h=h.replace(/(<li>.*<\/li>\n?)+/g,(m)=>'<ul>'+m+'</ul>');
+h=h.replace(/\n\n/g,'</p><p>').replace(/\n/g,'<br>');
+return '<p>'+h+'</p>';
+}
+document.getElementById('md').value="# Welcome to Markdown Preview\n\nThis is a **live** markdown editor with *instant* preview.\n\n## Features\n- Bold, italic, strikethrough\n- Headers (h1-h3)\n- Code blocks with syntax\n- Links and images\n- Blockquotes\n- Lists\n\n> This is a blockquote\n\n```js\nconst greeting = 'Hello, World!';\nconsole.log(greeting);\n```\n\n---\n\nMade with ❤️ by [GlobalToolsHub](https://globaltoolshub.com)";
+render();
+</script></body></html>

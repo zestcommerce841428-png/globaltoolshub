@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta name="twitter:description" content="Compare two JSON objects side by side. Highlights additions, deletions, and changes.">
+    <meta name="twitter:title" content="📊 JSON Diff - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/online-tools/json-diff/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Compare two JSON objects side by side. Highlights additions, deletions, and changes.">
+    <meta property="og:title" content="📊 JSON Diff - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/online-tools/json-diff/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="json, diff, compare, two, objects, side, highlights, additions, deletions, and"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>📊 JSON Diff - GlobalToolsHub</title>
+<meta name="description" content="Compare two JSON objects side by side. Highlights additions, deletions, and changes.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',system-ui,sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;padding:20px}
+.container{max-width:1200px;margin:0 auto}.header{text-align:center;margin-bottom:24px}.header h1{font-size:28px;background:linear-gradient(135deg,#6366f1,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}.header p{color:#94a3b8;font-size:14px}
+.card{background:#1e293b;border-radius:12px;padding:20px;margin-bottom:16px;border:1px solid #334155}
+textarea{width:100%;min-height:200px;background:#0f172a;color:#e2e8f0;border:1px solid #334155;border-radius:8px;padding:12px;font-family:'Fira Code',monospace;font-size:13px;resize:vertical}textarea:focus{outline:none;border-color:#6366f1}
+.btn{background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border:none;padding:10px 24px;border-radius:8px;cursor:pointer;font-weight:600;font-size:14px;transition:transform .15s}.btn:hover{transform:translateY(-1px)}
+label{display:block;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#6366f1;margin-bottom:8px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.diff-out{background:#0f172a;border:1px solid #334155;border-radius:8px;padding:16px;font-family:'Fira Code',monospace;font-size:13px;line-height:1.7;white-space:pre-wrap;word-break:break-all;max-height:500px;overflow-y:auto}
+.added{background:rgba(34,197,94,.12);color:#4ade80;padding:1px 4px;border-radius:3px}
+.removed{background:rgba(239,68,68,.12);color:#f87171;padding:1px 4px;border-radius:3px;text-decoration:line-through}
+.changed{background:rgba(245,158,11,.12);color:#fbbf24;padding:1px 4px;border-radius:3px}
+.stat{display:inline-block;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:700;margin-right:6px}
+.back{display:inline-block;margin-bottom:16px;color:#6366f1;text-decoration:none;font-size:14px}
+@media(max-width:640px){.grid-2{grid-template-columns:1fr}}
+</style>
+<script src="../../assets/seo-runtime.js" defer></script>
+    <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"📊 JSON Diff","url":"/globaltoolshub/legacy/online-tools/json-diff/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Compare two JSON objects side by side. Highlights additions, deletions, and changes."}</script>
+</head><body>
+<div class="container">
+<a href="../../" class="back">← Back to GlobalToolsHub</a>
+<div class="header"><h1>📊 JSON Diff</h1><p>Compare two JSON objects side by side and see additions, deletions, and modifications</p></div>
+<div class="grid-2">
+<div class="card"><label>Original JSON</label><textarea id="j1" placeholder='{"name":"John","age":30,"city":"NYC"}'></textarea></div>
+<div class="card"><label>Modified JSON</label><textarea id="j2" placeholder='{"name":"John","age":31,"country":"US"}'></textarea></div>
+</div>
+<div style="text-align:center;margin:16px 0"><button class="btn" onclick="diff()">Compare JSON</button></div>
+<div id="stats" style="margin-bottom:12px"></div>
+<div class="card" id="result" style="display:none"><label>Differences</label><div class="diff-out" id="out"></div></div>
+</div>
+<script>
+function diff(){
+try{
+const a=JSON.parse(document.getElementById('j1').value);
+const b=JSON.parse(document.getElementById('j2').value);
+const changes=[];
+function compare(o1,o2,path=''){
+const keys=new Set([...Object.keys(o1),...Object.keys(o2)]);
+for(const k of keys){
+const p=path?path+'.'+k:k;
+if(!(k in o1)){changes.push({type:'added',path:p,val:o2[k]});continue;}
+if(!(k in o2)){changes.push({type:'removed',path:p,val:o1[k]});continue;}
+if(typeof o1[k]==='object'&&o1[k]!==null&&typeof o2[k]==='object'&&o2[k]!==null&&!Array.isArray(o1[k])&&!Array.isArray(o2[k])){
+compare(o1[k],o2[k],p);
+}else if(JSON.stringify(o1[k])!==JSON.stringify(o2[k])){
+changes.push({type:'changed',path:p,from:o1[k],to:o2[k]});
+}}}
+compare(a,b);
+const added=changes.filter(c=>c.type==='added').length;
+const removed=changes.filter(c=>c.type==='removed').length;
+const changed=changes.filter(c=>c.type==='changed').length;
+document.getElementById('stats').innerHTML=`<span class="stat" style="background:rgba(34,197,94,.15);color:#4ade80">+${added} added</span><span class="stat" style="background:rgba(239,68,68,.15);color:#f87171">-${removed} removed</span><span class="stat" style="background:rgba(245,158,11,.15);color:#fbbf24">~${changed} changed</span>`;
+if(!changes.length){document.getElementById('out').innerHTML='✅ Both JSON objects are identical.';document.getElementById('result').style.display='block';return;}
+let html='';
+for(const c of changes){
+if(c.type==='added')html+=`<span class="added">+ ${c.path}: ${JSON.stringify(c.val)}</span>\n`;
+if(c.type==='removed')html+=`<span class="removed">- ${c.path}: ${JSON.stringify(c.val)}</span>\n`;
+if(c.type==='changed')html+=`<span class="changed">~ ${c.path}: ${JSON.stringify(c.from)} → ${JSON.stringify(c.to)}</span>\n`;
+}
+document.getElementById('out').innerHTML=html;document.getElementById('result').style.display='block';
+}catch(e){document.getElementById('out').innerHTML='❌ Invalid JSON: '+e.message;document.getElementById('result').style.display='block';}}
+</script></body></html>
