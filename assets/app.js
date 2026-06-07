@@ -98,16 +98,18 @@ function populateSelectors() {
 }
 
 function localize() {
+  if (!elements.subtitle || !elements.query) return;
   const t = text();
   const countryName = countries.find(([code]) => code === state.country)?.[1] || "Global";
   elements.subtitle.textContent = t.subtitle;
   elements.query.placeholder = t.search;
-  if (elements.category.options[0]) elements.category.options[0].textContent = t.allCategories;
-  if (elements.source.options[0]) elements.source.options[0].textContent = t.allSources;
-  elements.countryNotice.lastChild.textContent = state.country === "global" ? " Global tool catalog" : ` Optimized for ${countryName}`;
+  if (elements.category && elements.category.options[0]) elements.category.options[0].textContent = t.allCategories;
+  if (elements.source && elements.source.options[0]) elements.source.options[0].textContent = t.allSources;
+  if (elements.countryNotice && elements.countryNotice.lastChild) elements.countryNotice.lastChild.textContent = state.country === "global" ? " Global tool catalog" : ` Optimized for ${countryName}`;
 }
 
 function populateFilters() {
+  if (!elements.category || !elements.source) return;
   elements.category.innerHTML = "";
   elements.source.innerHTML = "";
   for (const value of uniqueValues("category")) {
@@ -130,6 +132,7 @@ function filteredTools() {
 }
 
 function renderTools() {
+  if (!elements.grid) return;
   const t = text();
   const tools = filteredTools();
   const pageCount = Math.max(1, Math.ceil(tools.length / state.perPage));
@@ -137,10 +140,10 @@ function renderTools() {
   const start = (state.page - 1) * state.perPage;
   const visible = tools.slice(start, start + state.perPage);
 
-  elements.count.textContent = `${tools.length} ${t.results}`;
-  elements.statTools.textContent = state.tools.length;
-  elements.statCategories.textContent = new Set(state.tools.map((tool) => tool.category)).size;
-  elements.statSources.textContent = new Set(state.tools.map((tool) => tool.source)).size;
+  if (elements.count) elements.count.textContent = `${tools.length} ${t.results}`;
+  if (elements.statTools) elements.statTools.textContent = state.tools.length;
+  if (elements.statCategories) elements.statCategories.textContent = new Set(state.tools.map((tool) => tool.category)).size;
+  if (elements.statSources) elements.statSources.textContent = new Set(state.tools.map((tool) => tool.source)).size;
   elements.grid.className = state.view === "grid" ? "grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" : "grid gap-3";
   elements.grid.innerHTML = visible.length ? visible.map((tool) => toolCard(tool, t)).join("") : `<div class="surface rounded-lg p-8 text-center text-sm text-slate-500">${t.noResults}</div>`;
   renderPagination(pageCount);
@@ -182,29 +185,30 @@ function escapeHtml(value) {
 }
 
 function bindEvents() {
-  elements.query.addEventListener("input", (event) => { state.query = event.target.value; state.page = 1; renderTools(); });
-  elements.category.addEventListener("change", (event) => { state.category = event.target.value; state.page = 1; renderTools(); });
-  elements.source.addEventListener("change", (event) => { state.source = event.target.value; state.page = 1; renderTools(); });
-  elements.pageSize.addEventListener("change", (event) => { state.perPage = Number(event.target.value); state.page = 1; renderTools(); });
-  elements.pagination.addEventListener("click", (event) => {
+  elements.query?.addEventListener("input", (event) => { state.query = event.target.value; state.page = 1; renderTools(); });
+  elements.category?.addEventListener("change", (event) => { state.category = event.target.value; state.page = 1; renderTools(); });
+  elements.source?.addEventListener("change", (event) => { state.source = event.target.value; state.page = 1; renderTools(); });
+  elements.pageSize?.addEventListener("change", (event) => { state.perPage = Number(event.target.value); state.page = 1; renderTools(); });
+  elements.pagination?.addEventListener("click", (event) => {
     const button = event.target.closest("button[data-page]");
     if (!button || button.disabled) return;
     state.page = Number(button.dataset.page);
     renderTools();
-    document.querySelector("#catalog").scrollIntoView({ behavior: "smooth", block: "start" });
+    const catalog = document.querySelector("#catalog");
+    if (catalog) catalog.scrollIntoView({ behavior: "smooth", block: "start" });
   });
-  elements.gridView.addEventListener("click", () => setView("grid"));
-  elements.listView.addEventListener("click", () => setView("list"));
-  elements.theme.addEventListener("change", (event) => {
+  elements.gridView?.addEventListener("click", () => setView("grid"));
+  elements.listView?.addEventListener("click", () => setView("list"));
+  elements.theme?.addEventListener("change", (event) => {
     state.theme = event.target.value;
     document.documentElement.dataset.theme = state.theme;
     localStorage.setItem("gth:theme", state.theme);
   });
-  elements.bgSelect.addEventListener("change", (event) => {
+  elements.bgSelect?.addEventListener("change", (event) => {
     document.body.dataset.bg = event.target.value;
     localStorage.setItem("gth:bg", event.target.value);
   });
-  elements.language.addEventListener("change", (event) => {
+  elements.language?.addEventListener("change", (event) => {
     state.language = event.target.value;
     localStorage.setItem("gth:language", state.language);
     applyPreferences();
@@ -215,7 +219,7 @@ function bindEvents() {
       triggerGoogleTranslate(state.language);
     }
   });
-  elements.country.addEventListener("change", (event) => {
+  elements.country?.addEventListener("change", (event) => {
     state.country = event.target.value;
     localStorage.setItem("gth:country", state.country);
     localize();
@@ -231,10 +235,20 @@ function setView(view) {
 }
 
 async function init() {
-  populateSelectors();
+  // Re-query elements that might have been dynamically inserted by web components
+  if (!elements.theme) elements.theme = document.querySelector("#themeSelect");
+  if (!elements.language) elements.language = document.querySelector("#languageSelect");
+  
+  if (elements.theme) fillSelect(elements.theme, themes, state.theme);
+  if (elements.language) fillSelect(elements.language, languages, state.language);
+  if (elements.country) fillSelect(elements.country, countries, state.country);
+  
   applyPreferences();
   bindEvents();
   initGoogleTranslate();
+  
+  if (!elements.grid) return; // Stop execution on non-catalog pages
+  
   const response = await fetch("assets/tools.json", { cache: "no-store" });
   state.tools = await response.json();
   populateFilters();
@@ -307,7 +321,11 @@ function triggerGoogleTranslate(lang) {
 }
 
 init().catch((error) => {
-  elements.grid.innerHTML = `<div class="surface rounded-lg p-8 text-sm text-red-600">Unable to load tool catalog: ${escapeHtml(error.message)}</div>`;
+  if (elements.grid) {
+    elements.grid.innerHTML = `<div class="surface rounded-lg p-8 text-sm text-red-600">Unable to load tool catalog: ${escapeHtml(error.message)}</div>`;
+  } else {
+    console.error("Unable to initialize app.js:", error);
+  }
 });
 
 // ─── Dynamic GTAG for homepage ───
