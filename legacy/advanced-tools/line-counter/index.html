@@ -1,16 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta name="twitter:description" content="Count the number of lines in a text block.">
-    <meta name="twitter:title" content="Line Counter - GlobalToolsHub">
-    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/line-counter/index.html">
-    <meta property="og:site_name" content="GlobalToolsHub">
-    <meta property="og:description" content="Count the number of lines in a text block.">
-    <meta property="og:title" content="Line Counter - GlobalToolsHub">
-    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/line-counter/index.html">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="author" content="GlobalToolsHub">
-    <meta name="keywords" content="line, counter, count, the, number, lines, text, block, index, html">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Line Counter - GlobalToolsHub</title>
@@ -18,23 +8,22 @@
     <link rel="stylesheet" href="../../assets/styles.css">
     <link rel="stylesheet" href="../../assets/site.css">
     <script src="../../assets/components.js" defer></script>
-    <script src="../../../assets/seo-runtime.js" defer></script>
+    <script src="../../assets/seo-runtime.js" defer></script>
     <script src="../../assets/app.js" defer></script>
-      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"Line Counter","url":"/globaltoolshub/legacy/advanced-tools/line-counter/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Count the number of lines in a text block."}</script>
-</head>
+  </head>
   <body data-bg="clean">
     <global-header></global-header>
     <main class="page-main">
       <h1>Line Counter</h1>
       <p>Count the number of lines in a text block.</p>
-      <div class="page-card">
+      <div class="page-card surface rounded-2xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-900">
         
       <div class="space-y-4">
         <div class="flex justify-between items-center bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
           <span class="text-lg font-bold">Total Lines:</span>
           <span id="count" class="text-2xl font-black text-indigo-600">0</span>
         </div>
-        <textarea id="input" class="control h-64" placeholder="Paste text here..." oninput="document.getElementById('count').textContent = this.value ? this.value.split('\n').length : 0"></textarea>
+        <textarea id="input" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64" placeholder="Paste text here..." oninput="document.getElementById('count').textContent = this.value ? this.value.split('\n').length : 0"></textarea>
       </div>
     
       </div>

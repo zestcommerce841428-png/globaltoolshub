@@ -1,16 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta name="twitter:description" content="Calculate your Body Mass Index.">
-    <meta name="twitter:title" content="BMI Calculator - GlobalToolsHub">
-    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/bmi-calculator/index.html">
-    <meta property="og:site_name" content="GlobalToolsHub">
-    <meta property="og:description" content="Calculate your Body Mass Index.">
-    <meta property="og:title" content="BMI Calculator - GlobalToolsHub">
-    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/bmi-calculator/index.html">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="author" content="GlobalToolsHub">
-    <meta name="keywords" content="bmi, calculator, calculate, your, body, mass, index, html">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BMI Calculator - GlobalToolsHub</title>
@@ -18,21 +8,20 @@
     <link rel="stylesheet" href="../../assets/styles.css">
     <link rel="stylesheet" href="../../assets/site.css">
     <script src="../../assets/components.js" defer></script>
-    <script src="../../../assets/seo-runtime.js" defer></script>
+    <script src="../../assets/seo-runtime.js" defer></script>
     <script src="../../assets/app.js" defer></script>
-      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"BMI Calculator","url":"/globaltoolshub/legacy/advanced-tools/bmi-calculator/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Calculate your Body Mass Index."}</script>
-</head>
+  </head>
   <body data-bg="clean">
     <global-header></global-header>
     <main class="page-main">
       <h1>BMI Calculator</h1>
       <p>Calculate your Body Mass Index.</p>
-      <div class="page-card">
+      <div class="page-card surface rounded-2xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-900">
         
       <div class="max-w-sm mx-auto space-y-4">
-        <div><label class="block text-sm font-medium mb-1">Weight (kg)</label><input type="number" id="w" class="control" value="70"></div>
-        <div><label class="block text-sm font-medium mb-1">Height (cm)</label><input type="number" id="h" class="control" value="175"></div>
-        <button class="btn btn-primary w-full" onclick="calcBMI()">Calculate</button>
+        <div><label class="block text-sm font-medium mb-1">Weight (kg)</label><input type="number" id="w" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner" value="70"></div>
+        <div><label class="block text-sm font-medium mb-1">Height (cm)</label><input type="number" id="h" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner" value="175"></div>
+        <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 w-full" onclick="calcBMI()">Calculate</button>
         <div id="res" class="text-center font-bold text-xl mt-4"></div>
       </div>
     

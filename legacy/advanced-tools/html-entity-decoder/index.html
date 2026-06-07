@@ -1,16 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta name="twitter:description" content="Convert HTML entities back to characters.">
-    <meta name="twitter:title" content="HTML Entity Decoder - GlobalToolsHub">
-    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/html-entity-decoder/index.html">
-    <meta property="og:site_name" content="GlobalToolsHub">
-    <meta property="og:description" content="Convert HTML entities back to characters.">
-    <meta property="og:title" content="HTML Entity Decoder - GlobalToolsHub">
-    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/html-entity-decoder/index.html">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="author" content="GlobalToolsHub">
-    <meta name="keywords" content="html, entity, decoder, convert, entities, back, characters, index">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Entity Decoder - GlobalToolsHub</title>
@@ -18,22 +8,21 @@
     <link rel="stylesheet" href="../../assets/styles.css">
     <link rel="stylesheet" href="../../assets/site.css">
     <script src="../../assets/components.js" defer></script>
-    <script src="../../../assets/seo-runtime.js" defer></script>
+    <script src="../../assets/seo-runtime.js" defer></script>
     <script src="../../assets/app.js" defer></script>
-      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"HTML Entity Decoder","url":"/globaltoolshub/legacy/advanced-tools/html-entity-decoder/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Convert HTML entities back to characters."}</script>
-</head>
+  </head>
   <body data-bg="clean">
     <global-header></global-header>
     <main class="page-main">
       <h1>HTML Entity Decoder</h1>
       <p>Convert HTML entities back to characters.</p>
-      <div class="page-card">
+      <div class="page-card surface rounded-2xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-900">
         
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div><label class="block text-sm font-medium mb-2">Entities</label><textarea id="input" class="control h-64 font-mono" placeholder="&lt;script&gt;"></textarea></div>
+        <div><label class="block text-sm font-medium mb-2">Entities</label><textarea id="input" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64 font-mono" placeholder="&lt;script&gt;"></textarea></div>
         <div>
-          <label class="block text-sm font-medium mb-2">HTML/Text</label><textarea id="output" class="control h-64" readonly></textarea>
-          <button class="btn btn-primary mt-4 w-full" onclick="const t = document.createElement('textarea'); t.innerHTML = document.getElementById('input').value; document.getElementById('output').value = t.value;">Decode</button>
+          <label class="block text-sm font-medium mb-2">HTML/Text</label><textarea id="output" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64" readonly></textarea>
+          <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 mt-4 w-full" onclick="const t = document.createElement('textarea'); t.innerHTML = document.getElementById('input').value; document.getElementById('output').value = t.value;">Decode</button>
         </div>
       </div>
     

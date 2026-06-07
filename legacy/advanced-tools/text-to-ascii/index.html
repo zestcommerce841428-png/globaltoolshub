@@ -1,16 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta name="twitter:description" content="Convert text to ASCII decimal values.">
-    <meta name="twitter:title" content="Text to ASCII Converter - GlobalToolsHub">
-    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/text-to-ascii/index.html">
-    <meta property="og:site_name" content="GlobalToolsHub">
-    <meta property="og:description" content="Convert text to ASCII decimal values.">
-    <meta property="og:title" content="Text to ASCII Converter - GlobalToolsHub">
-    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/text-to-ascii/index.html">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="author" content="GlobalToolsHub">
-    <meta name="keywords" content="text, ascii, converter, convert, decimal, values, index, html">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Text to ASCII Converter - GlobalToolsHub</title>
@@ -18,22 +8,21 @@
     <link rel="stylesheet" href="../../assets/styles.css">
     <link rel="stylesheet" href="../../assets/site.css">
     <script src="../../assets/components.js" defer></script>
-    <script src="../../../assets/seo-runtime.js" defer></script>
+    <script src="../../assets/seo-runtime.js" defer></script>
     <script src="../../assets/app.js" defer></script>
-      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"Text to ASCII Converter","url":"/globaltoolshub/legacy/advanced-tools/text-to-ascii/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Convert text to ASCII decimal values."}</script>
-</head>
+  </head>
   <body data-bg="clean">
     <global-header></global-header>
     <main class="page-main">
       <h1>Text to ASCII Converter</h1>
       <p>Convert text to ASCII decimal values.</p>
-      <div class="page-card">
+      <div class="page-card surface rounded-2xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-900">
         
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div><label class="block text-sm font-medium mb-2">Text</label><textarea id="input" class="control h-64" placeholder="Hello"></textarea></div>
+        <div><label class="block text-sm font-medium mb-2">Text</label><textarea id="input" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64" placeholder="Hello"></textarea></div>
         <div>
-          <label class="block text-sm font-medium mb-2">ASCII</label><textarea id="output" class="control h-64 font-mono" readonly></textarea>
-          <button class="btn btn-primary mt-4 w-full" onclick="document.getElementById('output').value=document.getElementById('input').value.split('').map(c=>c.charCodeAt(0)).join(' ')">Convert</button>
+          <label class="block text-sm font-medium mb-2">ASCII</label><textarea id="output" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64 font-mono" readonly></textarea>
+          <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 mt-4 w-full" onclick="document.getElementById('output').value=document.getElementById('input').value.split('').map(c=>c.charCodeAt(0)).join(' ')">Convert</button>
         </div>
       </div>
     
