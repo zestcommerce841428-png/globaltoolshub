@@ -7,6 +7,13 @@
 
 // ─── 1. Google Analytics (GTAG) — Dynamic Injection ───
 (function() {
+  // Avoid loading analytics during local `file:` tests or on localhost to keep smoke tests clean
+  try {
+    if (location && (location.protocol === 'file:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+      return;
+    }
+  } catch (e) { /* defensive */ }
+
   // Skip if gtag script already loaded
   if (document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) return;
 
@@ -83,6 +90,12 @@
     link.setAttribute("href", currentUrl);
   });
 
+  // Provide a safe favicon link to avoid requests for /favicon.ico when not present
+  try {
+    var iconHref = (location && location.protocol === 'file:') ? 'assets/logo.svg' : (location.origin || '') + '/assets/logo.svg';
+    setOrCreate('link[rel="icon"]', 'link', { rel: 'icon', href: iconHref, type: 'image/svg+xml' });
+  } catch (e) { /* ignore */ }
+
   // Rewrite JSON-LD schema urls to match the live page URL
   document.querySelectorAll('script[type="application/ld+json"]').forEach(function(script) {
     try {
@@ -112,13 +125,47 @@
   var widgetScript = document.createElement('script');
   widgetScript.id = 'gth-accessibility-widget-loader';
 
-  // Compute relative path to assets/accessibility-widget.js from current page
-  var scripts = document.querySelectorAll('script[src*="seo-runtime"]');
+  // Robustly resolve the base path for the runtime assets:
+  // 1) prefer an explicit `data-basepath` on the seo-runtime script
+  // 2) use `document.currentScript` when available
+  // 3) find the last script whose src contains `seo-runtime`
+  // 4) fallback to site-root `/assets/` (absolute)
   var basePath = '';
-  if (scripts.length > 0) {
-    var src = scripts[0].getAttribute('src');
-    basePath = src.substring(0, src.lastIndexOf('/') + 1);
+  try {
+    var scriptEl = document.currentScript || (function() {
+      var scripts = document.getElementsByTagName('script');
+      for (var i = scripts.length - 1; i >= 0; i--) {
+        var s = scripts[i];
+        if (s.src && s.src.indexOf('seo-runtime') !== -1) return s;
+      }
+      return null;
+    })();
+
+    if (scriptEl) {
+      // allow opt-in override
+      basePath = scriptEl.getAttribute('data-basepath') || '';
+      if (!basePath && scriptEl.src) {
+        try {
+          var resolved = new URL(scriptEl.src, location.href);
+          basePath = resolved.href.substring(0, resolved.href.lastIndexOf('/') + 1);
+        } catch (e) {
+          // ignore and fallthrough to fallback
+        }
+      }
+    }
+  } catch (e) {
+    /* defensive: keep going to fallback */
   }
+
+  if (!basePath) {
+    // final safe fallback: absolute /assets/ on current origin
+    try {
+      basePath = (location.origin || (location.protocol + '//' + location.host)) + '/assets/';
+    } catch (e) {
+      basePath = '/assets/';
+    }
+  }
+
   widgetScript.src = basePath + 'accessibility-widget.js';
   widgetScript.defer = true;
   document.head.appendChild(widgetScript);
