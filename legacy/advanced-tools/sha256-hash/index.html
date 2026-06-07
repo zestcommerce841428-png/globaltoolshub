@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="twitter:description" content="Generate SHA-256 secure hash for any string.">
+    <meta name="twitter:title" content="SHA-256 Hash Generator - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/sha256-hash/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Generate SHA-256 secure hash for any string.">
+    <meta property="og:title" content="SHA-256 Hash Generator - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/sha256-hash/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="sha, 256, hash, generator, generate, secure, for, any, string">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SHA-256 Hash Generator - GlobalToolsHub</title>
+    <meta name="description" content="Generate SHA-256 secure hash for any string.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="../../assets/site.css">
+    <script src="../../assets/components.js" defer></script>
+    <script src="../../../assets/seo-runtime.js" defer></script>
+    <script src="../../assets/app.js" defer></script>
+      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"SHA-256 Hash Generator","url":"/globaltoolshub/legacy/advanced-tools/sha256-hash/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Generate SHA-256 secure hash for any string."}</script>
+</head>
+  <body data-bg="clean">
+    <global-header></global-header>
+    <main class="page-main">
+      <h1>SHA-256 Hash Generator</h1>
+      <p>Generate SHA-256 secure hash for any string.</p>
+      <div class="page-card">
+        
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <textarea id="input" class="control h-32" placeholder="Type here..." oninput="hash()"></textarea>
+        <textarea id="output" class="control h-32 font-mono text-sm break-all" readonly></textarea>
+      </div>
+    
+      </div>
+    </main>
+    <global-footer></global-footer>
+    <script>
+      
+      async function hash() {
+        const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(document.getElementById('input').value));
+        document.getElementById('output').value = Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+      }
+    
+    </script>
+  </body>
+</html>

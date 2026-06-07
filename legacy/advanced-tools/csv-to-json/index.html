@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="twitter:description" content="Convert CSV string to JSON array format instantly.">
+    <meta name="twitter:title" content="CSV to JSON Converter - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/csv-to-json/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Convert CSV string to JSON array format instantly.">
+    <meta property="og:title" content="CSV to JSON Converter - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/csv-to-json/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="csv, json, converter, convert, string, array, format, instantly">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSV to JSON Converter - GlobalToolsHub</title>
+    <meta name="description" content="Convert CSV string to JSON array format instantly.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="../../assets/site.css">
+    <script src="../../assets/components.js" defer></script>
+    <script src="../../../assets/seo-runtime.js" defer></script>
+    <script src="../../assets/app.js" defer></script>
+      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"CSV to JSON Converter","url":"/globaltoolshub/legacy/advanced-tools/csv-to-json/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Convert CSV string to JSON array format instantly."}</script>
+</head>
+  <body data-bg="clean">
+    <global-header></global-header>
+    <main class="page-main">
+      <h1>CSV to JSON Converter</h1>
+      <p>Convert CSV string to JSON array format instantly.</p>
+      <div class="page-card">
+        
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div><label class="block text-sm font-medium mb-2">CSV</label><textarea id="input" class="control h-64" placeholder="a,b,c\n1,2,3"></textarea></div>
+        <div>
+          <label class="block text-sm font-medium mb-2">JSON</label><textarea id="output" class="control h-64 font-mono text-sm" readonly></textarea>
+          <button class="btn btn-primary mt-4 w-full" onclick="convert()">Convert to JSON</button>
+        </div>
+      </div>
+    
+      </div>
+    </main>
+    <global-footer></global-footer>
+    <script>
+      
+      function convert() {
+        try {
+          const lines = document.getElementById('input').value.trim().split('\n');
+          if(lines.length<2) { document.getElementById('output').value = "[]"; return; }
+          const headers = lines[0].split(',');
+          const result = lines.slice(1).map(line => {
+            const obj = {};
+            const vals = line.split(',');
+            headers.forEach((h, i) => obj[h.trim()] = vals[i] ? vals[i].trim() : '');
+            return obj;
+          });
+          document.getElementById('output').value = JSON.stringify(result, null, 2);
+        } catch(e) { document.getElementById('output').value = "Error parsing CSV"; }
+      }
+    
+    </script>
+  </body>
+</html>

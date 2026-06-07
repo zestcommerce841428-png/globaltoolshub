@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="twitter:description" content="Compress CSS code to save bytes.">
+    <meta name="twitter:title" content="CSS Minifier - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/css-minifier/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Compress CSS code to save bytes.">
+    <meta property="og:title" content="CSS Minifier - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/css-minifier/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="css, minifier, compress, code, save, bytes, index, html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Minifier - GlobalToolsHub</title>
+    <meta name="description" content="Compress CSS code to save bytes.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="../../assets/site.css">
+    <script src="../../assets/components.js" defer></script>
+    <script src="../../../assets/seo-runtime.js" defer></script>
+    <script src="../../assets/app.js" defer></script>
+      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"CSS Minifier","url":"/globaltoolshub/legacy/advanced-tools/css-minifier/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Compress CSS code to save bytes."}</script>
+</head>
+  <body data-bg="clean">
+    <global-header></global-header>
+    <main class="page-main">
+      <h1>CSS Minifier</h1>
+      <p>Compress CSS code to save bytes.</p>
+      <div class="page-card">
+        
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <textarea id="input" class="control h-64 font-mono text-sm" placeholder="body {\n  color: red;\n}"></textarea>
+        <textarea id="output" class="control h-64 font-mono text-sm" readonly></textarea>
+      </div>
+      <button class="btn btn-primary mt-4 w-full" onclick="minify()">Minify CSS</button>
+    
+      </div>
+    </main>
+    <global-footer></global-footer>
+    <script>
+      
+      function minify() {
+        let css = document.getElementById('input').value;
+        css = css.replace(/\/\*[\s\S]*?\*\//g, '');
+        css = css.replace(/\s+/g, ' ').replace(/ {\s+/g, '{').replace(/\s+}/g, '}').replace(/\s*:\s*/g, ':').replace(/\s*;\s*/g, ';').replace(/;}/g, '}');
+        document.getElementById('output').value = css.trim();
+      }
+    
+    </script>
+  </body>
+</html>

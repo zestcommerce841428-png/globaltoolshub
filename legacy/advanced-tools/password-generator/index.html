@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="twitter:description" content="Generate highly secure random passwords.">
+    <meta name="twitter:title" content="Strong Password Generator - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/password-generator/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Generate highly secure random passwords.">
+    <meta property="og:title" content="Strong Password Generator - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/password-generator/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="strong, password, generator, generate, highly, secure, random, passwords, index, html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Strong Password Generator - GlobalToolsHub</title>
+    <meta name="description" content="Generate highly secure random passwords.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="../../assets/site.css">
+    <script src="../../assets/components.js" defer></script>
+    <script src="../../../assets/seo-runtime.js" defer></script>
+    <script src="../../assets/app.js" defer></script>
+      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"Strong Password Generator","url":"/globaltoolshub/legacy/advanced-tools/password-generator/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Generate highly secure random passwords."}</script>
+</head>
+  <body data-bg="clean">
+    <global-header></global-header>
+    <main class="page-main">
+      <h1>Strong Password Generator</h1>
+      <p>Generate highly secure random passwords.</p>
+      <div class="page-card">
+        
+      <div class="max-w-md mx-auto space-y-4 surface p-6 rounded-xl border border-slate-200">
+        <input type="text" id="pwd" class="control text-center font-mono text-xl" readonly>
+        <div class="flex items-center gap-4 justify-between">
+          <span>Length: <span id="len_val">16</span></span>
+          <input type="range" id="len" min="8" max="64" value="16" class="w-1/2" oninput="len_val.textContent=this.value; gen()">
+        </div>
+        <button class="btn btn-primary w-full" onclick="gen()">Generate Password</button>
+      </div>
+    
+      </div>
+    </main>
+    <global-footer></global-footer>
+    <script>
+      
+      function gen() {
+        const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+~" + String.fromCharCode(96) + "|}{[]:;?><,./-=";
+        const len = document.getElementById('len').value;
+        let res = '';
+        const rand = window.crypto.getRandomValues(new Uint32Array(len));
+        for(let i=0; i<len; i++) res += chars[rand[i] % chars.length];
+        document.getElementById('pwd').value = res;
+      }
+      gen();
+    
+    </script>
+  </body>
+</html>

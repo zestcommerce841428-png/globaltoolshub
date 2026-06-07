@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="twitter:description" content="Generate random UUIDs (Universally Unique Identifiers).">
+    <meta name="twitter:title" content="UUID v4 Generator - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/uuid-generator/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Generate random UUIDs (Universally Unique Identifiers).">
+    <meta property="og:title" content="UUID v4 Generator - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/uuid-generator/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="uuid, generator, generate, random, uuids, universally, unique, identifiers, index, html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UUID v4 Generator - GlobalToolsHub</title>
+    <meta name="description" content="Generate random UUIDs (Universally Unique Identifiers).">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="../../assets/site.css">
+    <script src="../../assets/components.js" defer></script>
+    <script src="../../../assets/seo-runtime.js" defer></script>
+    <script src="../../assets/app.js" defer></script>
+      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"UUID v4 Generator","url":"/globaltoolshub/legacy/advanced-tools/uuid-generator/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Generate random UUIDs (Universally Unique Identifiers)."}</script>
+</head>
+  <body data-bg="clean">
+    <global-header></global-header>
+    <main class="page-main">
+      <h1>UUID v4 Generator</h1>
+      <p>Generate random UUIDs (Universally Unique Identifiers).</p>
+      <div class="page-card">
+        
+      <div class="max-w-md mx-auto text-center space-y-4">
+        <input type="text" id="uuid" class="control text-center font-mono text-lg" readonly>
+        <button class="btn btn-primary w-full" onclick="genUUID()">Generate New UUID</button>
+      </div>
+    
+      </div>
+    </main>
+    <global-footer></global-footer>
+    <script>
+      
+      function genUUID() {
+        document.getElementById('uuid').value = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+          const r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+          return v.toString(16);
+        });
+      }
+      genUUID();
+    
+    </script>
+  </body>
+</html>

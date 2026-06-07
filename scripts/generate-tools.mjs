@@ -10,6 +10,7 @@ const sources = [
   { dir: "online-tools", name: "Online Tools" },
   { dir: "toolverse", name: "ToolVerse" },
   { dir: "usemagictools", name: "UseMagicTools" },
+  { dir: "advanced-tools", name: "Advanced Tools" }
 ];
 
 const replacements = [];

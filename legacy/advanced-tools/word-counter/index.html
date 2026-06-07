@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="twitter:description" content="Count words, characters, sentences, and paragraphs in your text in real-time.">
+    <meta name="twitter:title" content="Word &amp; Character Counter - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/word-counter/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Count words, characters, sentences, and paragraphs in your text in real-time.">
+    <meta property="og:title" content="Word &amp; Character Counter - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/word-counter/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="word, character, counter, count, words, characters, sentences, and, paragraphs, your">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Word &amp; Character Counter - GlobalToolsHub</title>
+    <meta name="description" content="Count words, characters, sentences, and paragraphs in your text in real-time.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="../../assets/site.css">
+    <script src="../../assets/components.js" defer></script>
+    <script src="../../../assets/seo-runtime.js" defer></script>
+    <script src="../../assets/app.js" defer></script>
+      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"Word & Character Counter","url":"/globaltoolshub/legacy/advanced-tools/word-counter/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Count words, characters, sentences, and paragraphs in your text in real-time."}</script>
+</head>
+  <body data-bg="clean">
+    <global-header></global-header>
+    <main class="page-main">
+      <h1>Word & Character Counter</h1>
+      <p>Count words, characters, sentences, and paragraphs in your text in real-time.</p>
+      <div class="page-card">
+        
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div><label class="block text-sm font-medium mb-2">Text</label><textarea id="input" class="control h-64" placeholder="Type or paste text..."></textarea></div>
+        <div class="surface p-6 rounded-xl border border-slate-200 dark:border-slate-800">
+          <h3 class="text-xl font-bold mb-4">Statistics</h3>
+          <div class="space-y-4 text-lg">
+            <div class="flex justify-between border-b pb-2"><span>Words:</span><span id="words" class="font-bold">0</span></div>
+            <div class="flex justify-between border-b pb-2"><span>Characters (no spaces):</span><span id="charsNoSp" class="font-bold">0</span></div>
+            <div class="flex justify-between border-b pb-2"><span>Characters (with spaces):</span><span id="charsSp" class="font-bold">0</span></div>
+            <div class="flex justify-between border-b pb-2"><span>Sentences:</span><span id="sentences" class="font-bold">0</span></div>
+            <div class="flex justify-between pb-2"><span>Paragraphs:</span><span id="paras" class="font-bold">0</span></div>
+          </div>
+        </div>
+      </div>
+    
+      </div>
+    </main>
+    <global-footer></global-footer>
+    <script>
+      
+      document.getElementById('input').addEventListener('input', e => {
+        const val = e.target.value;
+        const words = val.match(/\b\w+\b/g);
+        document.getElementById('words').textContent = words ? words.length : 0;
+        document.getElementById('charsNoSp').textContent = val.replace(/\s/g, '').length;
+        document.getElementById('charsSp').textContent = val.length;
+        document.getElementById('sentences').textContent = val.split(/[.!?]+/).filter(Boolean).length;
+        document.getElementById('paras').textContent = val.split(/\n+/).filter(Boolean).length;
+      });
+    
+    </script>
+  </body>
+</html>

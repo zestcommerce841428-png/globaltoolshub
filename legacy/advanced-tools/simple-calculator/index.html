@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="twitter:description" content="A basic standard calculator.">
+    <meta name="twitter:title" content="Simple Calculator - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/simple-calculator/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="A basic standard calculator.">
+    <meta property="og:title" content="Simple Calculator - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/simple-calculator/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="simple, calculator, basic, standard, index, html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Calculator - GlobalToolsHub</title>
+    <meta name="description" content="A basic standard calculator.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="../../assets/site.css">
+    <script src="../../assets/components.js" defer></script>
+    <script src="../../../assets/seo-runtime.js" defer></script>
+    <script src="../../assets/app.js" defer></script>
+      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"Simple Calculator","url":"/globaltoolshub/legacy/advanced-tools/simple-calculator/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"A basic standard calculator."}</script>
+</head>
+  <body data-bg="clean">
+    <global-header></global-header>
+    <main class="page-main">
+      <h1>Simple Calculator</h1>
+      <p>A basic standard calculator.</p>
+      <div class="page-card">
+        
+      <div class="max-w-xs mx-auto surface p-6 rounded-xl border border-slate-200 shadow-lg dark:border-slate-800">
+        <input type="text" id="calc-display" class="w-full bg-slate-100 dark:bg-slate-900 text-right p-4 text-2xl font-mono rounded-lg mb-4 outline-none" readonly value="0">
+        <div class="grid grid-cols-4 gap-2">
+          <button class="btn btn-secondary col-span-2" onclick="calcClear()">C</button>
+          <button class="btn btn-secondary" onclick="calcOp('/')">/</button>
+          <button class="btn btn-secondary" onclick="calcOp('*')">×</button>
+          <button class="btn btn-default" onclick="calcNum(7)">7</button>
+          <button class="btn btn-default" onclick="calcNum(8)">8</button>
+          <button class="btn btn-default" onclick="calcNum(9)">9</button>
+          <button class="btn btn-secondary" onclick="calcOp('-')">-</button>
+          <button class="btn btn-default" onclick="calcNum(4)">4</button>
+          <button class="btn btn-default" onclick="calcNum(5)">5</button>
+          <button class="btn btn-default" onclick="calcNum(6)">6</button>
+          <button class="btn btn-secondary" onclick="calcOp('+')">+</button>
+          <button class="btn btn-default" onclick="calcNum(1)">1</button>
+          <button class="btn btn-default" onclick="calcNum(2)">2</button>
+          <button class="btn btn-default" onclick="calcNum(3)">3</button>
+          <button class="btn btn-primary row-span-2" onclick="calcEq()">=</button>
+          <button class="btn btn-default col-span-2" onclick="calcNum(0)">0</button>
+          <button class="btn btn-default" onclick="calcNum('.')">.</button>
+        </div>
+      </div>
+    
+      </div>
+    </main>
+    <global-footer></global-footer>
+    <script>
+      
+      let disp = '0', op = null, prev = null;
+      const d = document.getElementById('calc-display');
+      function calcNum(n) { disp = disp === '0' ? String(n) : disp + n; d.value = disp; }
+      function calcOp(o) { prev = disp; op = o; disp = '0'; }
+      function calcEq() { if(op && prev){ disp = String(eval(prev + op + disp)); op=null; prev=null; d.value = disp; } }
+      function calcClear() { disp = '0'; op = null; prev = null; d.value = disp; }
+    
+    </script>
+  </body>
+</html>

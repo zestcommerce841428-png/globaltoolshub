@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="twitter:description" content="Convert text into binary code.">
+    <meta name="twitter:title" content="Text to Binary Converter - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/text-to-binary/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Convert text into binary code.">
+    <meta property="og:title" content="Text to Binary Converter - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/text-to-binary/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="text, binary, converter, convert, into, code, index, html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Text to Binary Converter - GlobalToolsHub</title>
+    <meta name="description" content="Convert text into binary code.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="../../assets/site.css">
+    <script src="../../assets/components.js" defer></script>
+    <script src="../../../assets/seo-runtime.js" defer></script>
+    <script src="../../assets/app.js" defer></script>
+      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"Text to Binary Converter","url":"/globaltoolshub/legacy/advanced-tools/text-to-binary/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Convert text into binary code."}</script>
+</head>
+  <body data-bg="clean">
+    <global-header></global-header>
+    <main class="page-main">
+      <h1>Text to Binary Converter</h1>
+      <p>Convert text into binary code.</p>
+      <div class="page-card">
+        
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div><label class="block text-sm font-medium mb-2">Text</label><textarea id="input" class="control h-64" placeholder="Hi"></textarea></div>
+        <div>
+          <label class="block text-sm font-medium mb-2">Binary</label><textarea id="output" class="control h-64 font-mono" readonly></textarea>
+          <button class="btn btn-primary mt-4 w-full" onclick="document.getElementById('output').value=document.getElementById('input').value.split('').map(c=>c.charCodeAt(0).toString(2).padStart(8,'0')).join(' ')">Convert</button>
+        </div>
+      </div>
+    
+      </div>
+    </main>
+    <global-footer></global-footer>
+    <script>
+      
+    </script>
+  </body>
+</html>

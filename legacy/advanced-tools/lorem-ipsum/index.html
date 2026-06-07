@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="twitter:description" content="Generate placeholder text for designs.">
+    <meta name="twitter:title" content="Lorem Ipsum Generator - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/lorem-ipsum/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Generate placeholder text for designs.">
+    <meta property="og:title" content="Lorem Ipsum Generator - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/lorem-ipsum/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="lorem, ipsum, generator, generate, placeholder, text, for, designs, index, html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lorem Ipsum Generator - GlobalToolsHub</title>
+    <meta name="description" content="Generate placeholder text for designs.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="../../assets/site.css">
+    <script src="../../assets/components.js" defer></script>
+    <script src="../../../assets/seo-runtime.js" defer></script>
+    <script src="../../assets/app.js" defer></script>
+      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"Lorem Ipsum Generator","url":"/globaltoolshub/legacy/advanced-tools/lorem-ipsum/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Generate placeholder text for designs."}</script>
+</head>
+  <body data-bg="clean">
+    <global-header></global-header>
+    <main class="page-main">
+      <h1>Lorem Ipsum Generator</h1>
+      <p>Generate placeholder text for designs.</p>
+      <div class="page-card">
+        
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block mb-2">Paragraphs</label>
+          <input type="number" id="count" class="control mb-4" value="3" min="1" max="20">
+          <button class="btn btn-primary w-full" onclick="gen()">Generate</button>
+        </div>
+        <textarea id="output" class="control h-64" readonly></textarea>
+      </div>
+    
+      </div>
+    </main>
+    <global-footer></global-footer>
+    <script>
+      
+      function gen() {
+        const p = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+        const count = document.getElementById('count').value;
+        document.getElementById('output').value = Array(parseInt(count)).fill(p).join('\n\n');
+      }
+      gen();
+    
+    </script>
+  </body>
+</html>

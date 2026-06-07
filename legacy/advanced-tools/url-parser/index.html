@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="twitter:description" content="Parse a URL into its constituent parts (protocol, host, pathname, query params).">
+    <meta name="twitter:title" content="URL Parser - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/url-parser/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Parse a URL into its constituent parts (protocol, host, pathname, query params).">
+    <meta property="og:title" content="URL Parser - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/url-parser/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="url, parser, parse, into, its, constituent, parts, protocol, host, pathname">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>URL Parser - GlobalToolsHub</title>
+    <meta name="description" content="Parse a URL into its constituent parts (protocol, host, pathname, query params).">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="../../assets/site.css">
+    <script src="../../assets/components.js" defer></script>
+    <script src="../../../assets/seo-runtime.js" defer></script>
+    <script src="../../assets/app.js" defer></script>
+      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"URL Parser","url":"/globaltoolshub/legacy/advanced-tools/url-parser/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Parse a URL into its constituent parts (protocol, host, pathname, query params)."}</script>
+</head>
+  <body data-bg="clean">
+    <global-header></global-header>
+    <main class="page-main">
+      <h1>URL Parser</h1>
+      <p>Parse a URL into its constituent parts (protocol, host, pathname, query params).</p>
+      <div class="page-card">
+        
+      <div class="space-y-4">
+        <input type="text" id="url" class="control" placeholder="https://example.com:8080/path/to/page?query=1#hash" oninput="parse()">
+        <table class="w-full text-left border-collapse">
+          <tbody id="res" class="divide-y divide-slate-200 dark:divide-slate-800"></tbody>
+        </table>
+      </div>
+    
+      </div>
+    </main>
+    <global-footer></global-footer>
+    <script>
+      
+      function parse() {
+        try {
+          const u = new URL(document.getElementById('url').value);
+          const parts = { Protocol: u.protocol, Host: u.hostname, Port: u.port, Path: u.pathname, Query: u.search, Hash: u.hash };
+          document.getElementById('res').innerHTML = Object.entries(parts).map(([k,v])=>'<tr><td class="py-2 font-bold">' + k + '</td><td class="py-2 font-mono">' + v + '</td></tr>').join('');
+        } catch(e) { document.getElementById('res').innerHTML = '<tr><td class="text-red-500 py-2">Invalid URL</td></tr>'; }
+      }
+    
+    </script>
+  </body>
+</html>

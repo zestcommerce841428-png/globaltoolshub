@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="twitter:description" content="Convert hex color codes to RGB.">
+    <meta name="twitter:title" content="HEX to RGB - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/hex-to-rgb/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Convert hex color codes to RGB.">
+    <meta property="og:title" content="HEX to RGB - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/hex-to-rgb/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="hex, rgb, convert, color, codes, index, html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HEX to RGB - GlobalToolsHub</title>
+    <meta name="description" content="Convert hex color codes to RGB.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="../../assets/site.css">
+    <script src="../../assets/components.js" defer></script>
+    <script src="../../../assets/seo-runtime.js" defer></script>
+    <script src="../../assets/app.js" defer></script>
+      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"HEX to RGB","url":"/globaltoolshub/legacy/advanced-tools/hex-to-rgb/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Convert hex color codes to RGB."}</script>
+</head>
+  <body data-bg="clean">
+    <global-header></global-header>
+    <main class="page-main">
+      <h1>HEX to RGB</h1>
+      <p>Convert hex color codes to RGB.</p>
+      <div class="page-card">
+        
+      <div class="max-w-sm mx-auto space-y-4 text-center">
+        <input type="color" id="picker" class="w-24 h-24 mx-auto rounded-lg cursor-pointer" oninput="hex.value=this.value; conv()">
+        <input type="text" id="hex" class="control font-mono text-center uppercase" value="#4F46E5" oninput="picker.value=this.value; conv()">
+        <input type="text" id="rgb" class="control font-mono text-center" readonly>
+      </div>
+    
+      </div>
+    </main>
+    <global-footer></global-footer>
+    <script>
+      
+      function conv() {
+        let h = document.getElementById('hex').value.replace('#', '');
+        if(h.length === 3) h = h.split('').map(c=>c+c).join('');
+        if(h.length === 6) {
+          const r = parseInt(h.substring(0,2), 16);
+          const g = parseInt(h.substring(2,4), 16);
+          const b = parseInt(h.substring(4,6), 16);
+          document.getElementById('rgb').value = "rgb(" + r + ", " + g + ", " + b + ")";
+        }
+      }
+      conv();
+    
+    </script>
+  </body>
+</html>

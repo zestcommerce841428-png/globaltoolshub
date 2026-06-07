@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="twitter:description" content="Convert Unix epoch timestamps to human-readable dates and vice versa.">
+    <meta name="twitter:title" content="Unix Timestamp Converter - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/timestamp-converter/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Convert Unix epoch timestamps to human-readable dates and vice versa.">
+    <meta property="og:title" content="Unix Timestamp Converter - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/timestamp-converter/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="unix, timestamp, converter, convert, epoch, timestamps, human, readable, dates, and">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unix Timestamp Converter - GlobalToolsHub</title>
+    <meta name="description" content="Convert Unix epoch timestamps to human-readable dates and vice versa.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="../../assets/site.css">
+    <script src="../../assets/components.js" defer></script>
+    <script src="../../../assets/seo-runtime.js" defer></script>
+    <script src="../../assets/app.js" defer></script>
+      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"Unix Timestamp Converter","url":"/globaltoolshub/legacy/advanced-tools/timestamp-converter/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Convert Unix epoch timestamps to human-readable dates and vice versa."}</script>
+</head>
+  <body data-bg="clean">
+    <global-header></global-header>
+    <main class="page-main">
+      <h1>Unix Timestamp Converter</h1>
+      <p>Convert Unix epoch timestamps to human-readable dates and vice versa.</p>
+      <div class="page-card">
+        
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="space-y-4">
+          <h3 class="font-bold text-lg">Timestamp to Date</h3>
+          <input type="number" id="ts" class="control font-mono" placeholder="1717000000">
+          <button class="btn btn-primary w-full" onclick="res1.value=new Date(ts.value*1000).toLocaleString()">Convert</button>
+          <input type="text" id="res1" class="control" readonly>
+        </div>
+        <div class="space-y-4">
+          <h3 class="font-bold text-lg">Date to Timestamp</h3>
+          <input type="datetime-local" id="dt" class="control">
+          <button class="btn btn-primary w-full" onclick="res2.value=Math.floor(new Date(dt.value).getTime()/1000)">Convert</button>
+          <input type="text" id="res2" class="control font-mono" readonly>
+        </div>
+      </div>
+    
+      </div>
+    </main>
+    <global-footer></global-footer>
+    <script>
+      
+      document.getElementById('ts').value = Math.floor(Date.now()/1000);
+    
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="twitter:description" content="Calculate your Body Mass Index.">
+    <meta name="twitter:title" content="BMI Calculator - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/bmi-calculator/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Calculate your Body Mass Index.">
+    <meta property="og:title" content="BMI Calculator - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/bmi-calculator/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="bmi, calculator, calculate, your, body, mass, index, html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BMI Calculator - GlobalToolsHub</title>
+    <meta name="description" content="Calculate your Body Mass Index.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="../../assets/site.css">
+    <script src="../../assets/components.js" defer></script>
+    <script src="../../../assets/seo-runtime.js" defer></script>
+    <script src="../../assets/app.js" defer></script>
+      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"BMI Calculator","url":"/globaltoolshub/legacy/advanced-tools/bmi-calculator/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Calculate your Body Mass Index."}</script>
+</head>
+  <body data-bg="clean">
+    <global-header></global-header>
+    <main class="page-main">
+      <h1>BMI Calculator</h1>
+      <p>Calculate your Body Mass Index.</p>
+      <div class="page-card">
+        
+      <div class="max-w-sm mx-auto space-y-4">
+        <div><label class="block text-sm font-medium mb-1">Weight (kg)</label><input type="number" id="w" class="control" value="70"></div>
+        <div><label class="block text-sm font-medium mb-1">Height (cm)</label><input type="number" id="h" class="control" value="175"></div>
+        <button class="btn btn-primary w-full" onclick="calcBMI()">Calculate</button>
+        <div id="res" class="text-center font-bold text-xl mt-4"></div>
+      </div>
+    
+      </div>
+    </main>
+    <global-footer></global-footer>
+    <script>
+      
+      function calcBMI() {
+        const w = parseFloat(document.getElementById('w').value);
+        const h = parseFloat(document.getElementById('h').value)/100;
+        if(w && h) {
+          const bmi = (w/(h*h)).toFixed(1);
+          let cat = 'Normal';
+          if(bmi<18.5) cat = 'Underweight';
+          else if(bmi>=25) cat = 'Overweight';
+          document.getElementById('res').innerHTML = "BMI: " + bmi + " (" + cat + ")";
+        }
+      }
+    
+    </script>
+  </body>
+</html>

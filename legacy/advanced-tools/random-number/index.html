@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="twitter:description" content="Generate random numbers between a minimum and maximum range.">
+    <meta name="twitter:title" content="Random Number Generator - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/random-number/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Generate random numbers between a minimum and maximum range.">
+    <meta property="og:title" content="Random Number Generator - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/random-number/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="random, number, generator, generate, numbers, between, minimum, and, maximum, range">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Random Number Generator - GlobalToolsHub</title>
+    <meta name="description" content="Generate random numbers between a minimum and maximum range.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="../../assets/site.css">
+    <script src="../../assets/components.js" defer></script>
+    <script src="../../../assets/seo-runtime.js" defer></script>
+    <script src="../../assets/app.js" defer></script>
+      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"Random Number Generator","url":"/globaltoolshub/legacy/advanced-tools/random-number/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Generate random numbers between a minimum and maximum range."}</script>
+</head>
+  <body data-bg="clean">
+    <global-header></global-header>
+    <main class="page-main">
+      <h1>Random Number Generator</h1>
+      <p>Generate random numbers between a minimum and maximum range.</p>
+      <div class="page-card">
+        
+      <div class="max-w-md mx-auto space-y-4 surface p-6 rounded-xl border border-slate-200">
+        <div class="flex gap-4">
+          <div class="flex-1"><label class="block text-sm mb-1">Min</label><input type="number" id="min" class="control" value="1"></div>
+          <div class="flex-1"><label class="block text-sm mb-1">Max</label><input type="number" id="max" class="control" value="100"></div>
+        </div>
+        <button class="btn btn-primary w-full" onclick="gen()">Generate</button>
+        <div id="res" class="text-center text-4xl font-black py-4"></div>
+      </div>
+    
+      </div>
+    </main>
+    <global-footer></global-footer>
+    <script>
+      
+      function gen() {
+        const min = parseInt(document.getElementById('min').value);
+        const max = parseInt(document.getElementById('max').value);
+        document.getElementById('res').textContent = Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      gen();
+    
+    </script>
+  </body>
+</html>
