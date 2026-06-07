@@ -12,8 +12,31 @@
 <title>🔲 Box Shadow Generator - GlobalToolsHub</title><meta name="description" content="Visual CSS box-shadow generator with live preview. Adjust offset, blur, spread, color, and inset.">
 <style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Segoe UI',system-ui,sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;padding:20px}.container{max-width:800px;margin:0 auto}.header{text-align:center;margin-bottom:24px}.header h1{font-size:28px;background:linear-gradient(135deg,#6366f1,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.header p{color:#94a3b8;font-size:14px;margin-top:8px}.card{background:#1e293b;border-radius:12px;padding:20px;margin-bottom:16px;border:1px solid #334155}.preview-box{width:200px;height:200px;background:#6366f1;border-radius:16px;margin:30px auto;transition:box-shadow .2s}.field{margin-bottom:14px}.field label{display:flex;justify-content:space-between;font-size:12px;font-weight:600;color:#6366f1;margin-bottom:6px;text-transform:uppercase;letter-spacing:1px}.field input[type="range"]{width:100%;accent-color:#6366f1}.field input[type="color"]{height:36px;border:1px solid #334155;border-radius:8px;background:#0f172a;cursor:pointer;width:100%}.field select{width:100%;background:#0f172a;color:#e2e8f0;border:1px solid #334155;border-radius:8px;padding:8px}.css-out{background:#0f172a;border:1px solid #334155;border-radius:8px;padding:14px;font-family:'Fira Code',monospace;font-size:13px;color:#a5b4fc;cursor:pointer}.btn{background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border:none;padding:10px 24px;border-radius:8px;cursor:pointer;font-weight:600;font-size:14px}.back{display:inline-block;margin-bottom:16px;color:#6366f1;text-decoration:none;font-size:14px}#toast{position:fixed;bottom:20px;right:20px;background:#22c55e;color:#fff;padding:10px 20px;border-radius:8px;font-size:13px;font-weight:600;display:none;z-index:99999}</style>
 <script src="../../assets/seo-runtime.js" defer></script>    <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"🔲 Box Shadow Generator","url":"/globaltoolshub/legacy/online-tools/box-shadow/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Visual CSS box-shadow generator with live preview. Adjust offset, blur, spread, color, and inset."}</script>
-</head><body>
-<div class="container"><a href="../../" class="back">← Back to GlobalToolsHub</a>
+<link rel="stylesheet" href="../../assets/styles.css">
+<link rel="stylesheet" href="../../assets/site.css">
+</head><body data-bg="clean">
+
+  <header class="border-b border-slate-200/80 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80" role="banner">
+    <div class="shell flex min-h-16 flex-wrap items-center justify-between gap-3 py-3">
+      <a href="../../index.html" class="flex min-w-0 items-center gap-3" aria-label="GlobalToolsHub home">
+        <img src="../../assets/logo.svg" alt="GlobalToolsHub logo" class="h-10 w-10 shrink-0 rounded-lg" width="40" height="40" loading="eager">
+        <span class="truncate text-lg font-bold tracking-normal">GlobalToolsHub</span>
+      </a>
+      <nav class="hidden items-center gap-4 text-sm font-semibold text-slate-600 md:flex dark:text-slate-300" aria-label="Main navigation">
+        <a href="../../index.html">Tools</a>
+        <a href="../../about.html">About</a>
+        <a href="../../blog.html">Blog</a>
+        <a href="../../contact.html">Contact</a>
+        <a href="../../privacy.html">Compliance</a>
+      </nav>
+      <div class="flex flex-wrap items-center gap-2">
+        <select id="themeSelect" class="control w-28 sm:w-32" aria-label="Theme"></select>
+        <select id="languageSelect" class="control w-24 sm:w-28" aria-label="Language"></select>
+      </div>
+    </div>
+  </header>
+<main class="page-main shell py-8">
+<div class="container">
 <div class="header"><h1>🔲 Box Shadow Generator</h1><p>Visually build CSS box-shadow with live preview</p></div>
 <div class="card"><div class="preview-box" id="box"></div></div>
 <div class="card">
@@ -35,4 +58,21 @@ const shadow=`${t?t+' ':''}${h}px ${v}px ${b}px ${s}px ${hexToRgba(c,o)}`;
 document.getElementById('box').style.boxShadow=shadow;document.getElementById('out').textContent=`box-shadow: ${shadow};`;}
 function cp(){navigator.clipboard.writeText(document.getElementById('out').textContent).then(()=>{const t=document.getElementById('toast');t.style.display='block';setTimeout(()=>t.style.display='none',2000)});}
 u();
-</script></body></html>
+</script></main>
+
+  <footer class="border-t border-slate-200 py-6 text-center text-sm text-slate-500 sm:py-8 dark:border-slate-800" role="contentinfo">
+    <div class="shell">
+      <div class="mb-3 flex flex-wrap justify-center gap-3 sm:gap-4">
+        <a href="../../about.html">About</a>
+        <a href="../../blog.html">Blog</a>
+        <a href="../../contact.html">Contact</a>
+        <a href="../../privacy.html">Privacy</a>
+        <a href="../../terms.html">Terms</a>
+        <a href="../../accessibility.html">Accessibility</a>
+        <a href="../../disclaimer.html">Disclaimer</a>
+      </div>
+      <p>Copyright 2026 GlobalToolsHub. Built from local-first browser tools.</p>
+    </div>
+  </footer>
+<script src="../../assets/app.js" defer></script>
+</body></html>
