@@ -167,7 +167,7 @@ async function main() {
       '  <script src="assets/app.js?v=2" defer></script>',
       '</body>',
       '</html>'
-    ].join('\\n');
+    ].join('\n');
     
     await fs.writeFile(path.join(outDir, post.slug + '.html'), pageHtml);
   }
@@ -177,7 +177,7 @@ async function main() {
   const categories = ["Developer", "Utility", "Crypto", "Image", "Design", "Text", "Security", "PDF", "Math", "Network"];
   const catButtons = ['<button class="filter-btn bg-indigo-600 text-white px-4 py-2 rounded-full border border-indigo-600 text-sm font-medium transition-colors" data-cat="all">All</button>']
     .concat(categories.map(c => '<button class="filter-btn bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300 px-4 py-2 rounded-full border border-slate-300 dark:border-slate-700 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-cat="' + c + '">' + c + '</button>'))
-    .join('\\n        ');
+    .join('\n        ');
   
   const indexHtml = [
     '<!doctype html>',
@@ -299,7 +299,7 @@ async function main() {
     '  <script src="assets/app.js?v=2" defer></script>',
     '</body>',
     '</html>'
-  ].join('\\n');
+  ].join('\n');
 
   await fs.writeFile(path.join(outDir, 'blog.html'), indexHtml);
   console.log('Generated interactive blog.html with Category Filters.');

@@ -23,5 +23,8 @@
     "@tailwindcss/cli": "^4.3.0",
     "http-server": "^14.1.1",
     "tailwindcss": "^4.3.0"
+  },
+  "dependencies": {
+    "acorn": "^8.16.0"
   }
 }
