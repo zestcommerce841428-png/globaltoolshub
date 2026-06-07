@@ -31,6 +31,8 @@
     <global-footer></global-footer>
     <script>
       
+function process() { try { document.getElementById('output').value = atob(document.getElementById('input').value); } catch(e) { document.getElementById('output').value = 'Invalid Base64'; } }
+    
     </script>
   </body>
 </html>

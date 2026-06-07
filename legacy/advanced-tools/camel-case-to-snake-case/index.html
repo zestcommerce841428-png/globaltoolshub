@@ -22,7 +22,7 @@
         <div><label class="block mb-2">Input</label><textarea id="input" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64" placeholder="Enter input here..."></textarea></div>
         <div>
           <label class="block mb-2">Output</label><textarea id="output" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64" readonly></textarea>
-          <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 mt-4 w-full" onclick="document.getElementById('output').value = 'Processing...\n' + document.getElementById('input').value">Process</button>
+          <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 mt-4 w-full" onclick="process()">Process</button>
         </div>
       </div>
     
@@ -31,6 +31,8 @@
     <global-footer></global-footer>
     <script>
       
+function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
+    
     </script>
   </body>
 </html>

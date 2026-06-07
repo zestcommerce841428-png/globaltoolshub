@@ -141,7 +141,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: ``
+    js: `\nfunction process() { try { document.getElementById('output').value = btoa(document.getElementById('input').value); } catch(e) { document.getElementById('output').value = 'Error'; } }\n    `
   },
   {
     id: "base64-decoder",
@@ -156,7 +156,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: ``
+    js: `\nfunction process() { try { document.getElementById('output').value = atob(document.getElementById('input').value); } catch(e) { document.getElementById('output').value = 'Invalid Base64'; } }\n    `
   },
   {
     id: "url-encoder",
@@ -171,7 +171,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: ``
+    js: `\nfunction process() { try { const data = JSON.parse(document.getElementById('input').value); const arr = Array.isArray(data) ? data : [data]; if(arr.length === 0) return document.getElementById('output').value = ''; const headers = Object.keys(arr[0]); const csv = [headers.join(',')].concat(arr.map(row => headers.map(h => JSON.stringify(row[h]||'')).join(','))).join('\n'); document.getElementById('output').value = csv; } catch(e) { document.getElementById('output').value = 'Invalid JSON Array'; } }\n    `
   },
   {
     id: "url-decoder",
@@ -186,7 +186,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: ``
+    js: `\nfunction process() { try { const lines = document.getElementById('input').value.split('\n').filter(x=>x.trim()); const headers = lines[0].split(','); const res = lines.slice(1).map(l => { const vals = l.split(','); const obj = {}; headers.forEach((h,i) => obj[h.trim()] = vals[i] ? vals[i].trim() : ''); return obj; }); document.getElementById('output').value = JSON.stringify(res, null, 2); } catch(e) { document.getElementById('output').value = 'Invalid CSV'; } }\n    `
   },
   {
     id: "html-entity-encoder",
@@ -201,7 +201,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: ``
+    js: `\nfunction process() { document.getElementById('output').value = encodeURIComponent(document.getElementById('input').value); }\n    `
   },
   {
     id: "html-entity-decoder",
@@ -216,7 +216,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: ``
+    js: `\nfunction process() { try { document.getElementById('output').value = decodeURIComponent(document.getElementById('input').value); } catch(e) { document.getElementById('output').value = 'Invalid URL Encoding'; } }\n    `
   },
   {
     id: "binary-to-text",
@@ -231,7 +231,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: ``
+    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
   },
   {
     id: "text-to-binary",
@@ -246,7 +246,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: ``
+    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
   },
   {
     id: "hex-to-text",
@@ -261,7 +261,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: ``
+    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
   },
   {
     id: "text-to-hex",
@@ -276,7 +276,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: ``
+    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
   },
   {
     id: "ascii-to-text",
@@ -291,7 +291,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: ``
+    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
   },
   {
     id: "text-to-ascii",
@@ -306,7 +306,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: ``
+    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
   },
   {
     id: "rot13-encoder",
@@ -321,7 +321,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: ``
+    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
   },
   {
     id: "decimal-to-binary",
@@ -336,7 +336,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: ``
+    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
   },
   {
     id: "decimal-to-hex",
@@ -351,7 +351,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: ``
+    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
   },
   {
     id: "simple-calculator",
@@ -432,7 +432,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: ``
+    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
   },
   {
     id: "uuid-generator",
@@ -589,7 +589,7 @@ const tools = [
         <textarea id="output" class="control h-48" readonly></textarea>
       </div>
     `,
-    js: ``
+    js: `\nfunction process() { const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+'; let res = ''; for(let i=0; i<16; i++) res += chars.charAt(Math.floor(Math.random() * chars.length)); document.getElementById('output').value = res; }\n    `
   },
   {
     id: "remove-duplicate-lines",
@@ -601,7 +601,7 @@ const tools = [
         <textarea id="output" class="control h-64" readonly></textarea>
       </div>
     `,
-    js: ``
+    js: `\nfunction process() { document.getElementById('output').value = crypto.randomUUID(); }\n    `
   },
   {
     id: "sort-lines",
@@ -619,7 +619,7 @@ const tools = [
         <textarea id="output" class="control h-64" readonly></textarea>
       </div>
     `,
-    js: ``
+    js: `\nfunction process() { document.getElementById('output').value = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'; }\n    `
   },
   {
     id: "line-counter",
@@ -634,7 +634,7 @@ const tools = [
         <textarea id="input" class="control h-64" placeholder="Paste text here..." oninput="document.getElementById('count').textContent = this.value ? this.value.split('\\n').length : 0"></textarea>
       </div>
     `,
-    js: ``
+    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
   },
   {
     id: "sha256-hash",
@@ -798,11 +798,11 @@ extraTools.forEach((name, idx) => {
         <div><label class="block mb-2">Input</label><textarea id="input" class="control h-64" placeholder="Enter input here..."></textarea></div>
         <div>
           <label class="block mb-2">Output</label><textarea id="output" class="control h-64" readonly></textarea>
-          <button class="btn btn-primary mt-4 w-full" onclick="document.getElementById('output').value = 'Processing...\\n' + document.getElementById('input').value">Process</button>
+          <button class="btn btn-primary mt-4 w-full" onclick="process()">Process</button>
         </div>
       </div>
     `,
-    js: ``
+    js: `\nfunction process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/\s+/g, ' ').replace(/ {\s*/g, '{').replace(/ }\s*/g, '}').replace(/;\s*/g, ';').replace(/:\s*/g, ':'); }\n    `
   });
 });
 

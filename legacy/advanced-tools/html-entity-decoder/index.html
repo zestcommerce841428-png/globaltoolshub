@@ -31,6 +31,8 @@
     <global-footer></global-footer>
     <script>
       
+function process() { try { document.getElementById('output').value = decodeURIComponent(document.getElementById('input').value); } catch(e) { document.getElementById('output').value = 'Invalid URL Encoding'; } }
+    
     </script>
   </body>
 </html>

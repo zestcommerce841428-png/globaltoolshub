@@ -31,6 +31,9 @@
     <global-footer></global-footer>
     <script>
       
+function process() { try { const lines = document.getElementById('input').value.split('
+').filter(x=>x.trim()); const headers = lines[0].split(','); const res = lines.slice(1).map(l => { const vals = l.split(','); const obj = {}; headers.forEach((h,i) => obj[h.trim()] = vals[i] ? vals[i].trim() : ''); return obj; }); document.getElementById('output').value = JSON.stringify(res, null, 2); } catch(e) { document.getElementById('output').value = 'Invalid CSV'; } }
+    
     </script>
   </body>
 </html>

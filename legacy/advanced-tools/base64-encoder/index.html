@@ -31,6 +31,8 @@
     <global-footer></global-footer>
     <script>
       
+function process() { try { document.getElementById('output').value = btoa(document.getElementById('input').value); } catch(e) { document.getElementById('output').value = 'Error'; } }
+    
     </script>
   </body>
 </html>

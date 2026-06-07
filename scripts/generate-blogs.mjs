@@ -177,8 +177,28 @@ async function main() {
   const categories = ["Developer", "Utility", "Crypto", "Image", "Design", "Text", "Security", "PDF", "Math", "Network"];
   const catButtons = ['<button class="filter-btn bg-indigo-600 text-white px-4 py-2 rounded-full border border-indigo-600 text-sm font-medium transition-colors" data-cat="all">All</button>']
     .concat(categories.map(c => '<button class="filter-btn bg-white text-slate-700 dark:bg-slate-900 dark:text-slate-300 px-4 py-2 rounded-full border border-slate-300 dark:border-slate-700 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" data-cat="' + c + '">' + c + '</button>'))
-    .join('\n        ');
+    .join('\\n        ');
   
+  // Load legacy blogs
+  const files = await fs.readdir(root);
+  const legacyBlogs = files.filter(f => f.startsWith('blog-') && !f.match(/\\d/) && f.endsWith('.html'));
+  for (const lb of legacyBlogs) {
+    const html = await fs.readFile(path.join(root, lb), 'utf8');
+    const titleMatch = html.match(/<h[12][^>]*>\s*<a[^>]*>(.*?)<\/a>\s*<\/h[12]>/i) || html.match(/<h1[^>]*>(.*?)<\/h1>/i) || html.match(/<title>(.*?)<\/title>/i);
+    const descMatch = html.match(/<p>([\s\S]*?)<\/p>/i) || html.match(/<meta name="description" content="(.*?)">/i);
+    const title = titleMatch ? titleMatch[1].replace(/ - GlobalToolsHub.*/i, '').trim() : 'Legacy Blog';
+    let desc = descMatch ? descMatch[1].trim() : '';
+    if(desc.length > 150) desc = desc.substring(0, 147) + '...';
+    desc = desc.replace(/<[^>]+>/g, ''); // strip tags
+    posts.unshift({
+      title: title,
+      slug: lb.replace('.html', ''),
+      description: desc,
+      category: 'Guides',
+      date: 'May 15, 2026'
+    });
+  }
+
   const indexHtml = [
     '<!doctype html>',
     '<html lang="en">',
