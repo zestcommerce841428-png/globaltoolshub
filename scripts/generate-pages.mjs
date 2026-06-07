@@ -47,8 +47,8 @@ const shell = ({ title, description, body }) => `<!doctype html>
     <meta name="robots" content="index, follow">
     <meta name="author" content="GlobalToolsHub">
     <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="assets/styles.css">
-    <link rel="stylesheet" href="assets/site.css">
+    <link rel="stylesheet" href="assets/styles.css?v=2">
+    <link rel="stylesheet" href="assets/site.css?v=2">
     <script src="assets/analytics.js" defer></script>
     <script src="assets/seo-runtime.js" defer></script>
   </head>

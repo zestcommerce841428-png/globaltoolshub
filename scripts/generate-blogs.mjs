@@ -141,9 +141,9 @@ async function main() {
       '  <title>' + post.title + ' - GlobalToolsHub Blog</title>',
       '  <meta name="description" content="' + post.description + '">',
       '  <meta name="keywords" content="' + post.keywords + '">',
-      '  <link rel="stylesheet" href="assets/styles.css">',
-      '  <link rel="stylesheet" href="assets/site.css">',
-      '  <script src="assets/components.js" defer></script>',
+      '  <link rel="stylesheet" href="assets/styles.css?v=2">',
+      '  <link rel="stylesheet" href="assets/site.css?v=2">',
+      '  <script src="assets/components.js?v=2" defer></script>',
       '  <script src="assets/seo-runtime.js" defer></script>',
       '  <style>',
       '    .prose h2 { font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; }',
@@ -164,7 +164,7 @@ async function main() {
       '    </div>',
       '  </main>',
       footer,
-      '  <script src="assets/app.js" defer></script>',
+      '  <script src="assets/app.js?v=2" defer></script>',
       '</body>',
       '</html>'
     ].join('\\n');
@@ -187,9 +187,9 @@ async function main() {
     '  <meta name="viewport" content="width=device-width, initial-scale=1">',
     '  <title>Blog - GlobalToolsHub</title>',
     '  <meta name="description" content="Read our 300+ real SEO-based blogs about online tools, developer utilities, and productivity.">',
-    '  <link rel="stylesheet" href="assets/styles.css">',
-    '  <link rel="stylesheet" href="assets/site.css">',
-    '  <script src="assets/components.js" defer></script>',
+    '  <link rel="stylesheet" href="assets/styles.css?v=2">',
+    '  <link rel="stylesheet" href="assets/site.css?v=2">',
+    '  <script src="assets/components.js?v=2" defer></script>',
     '  <script src="assets/seo-runtime.js" defer></script>',
     '  <script>',
     '    const posts = ' + JSON.stringify(posts.map(p => ({title: p.title, slug: p.slug, description: p.description, category: p.category, date: p.date}))) + ';',
@@ -296,7 +296,7 @@ async function main() {
     '    <nav id="pagination" class="flex justify-center items-center gap-4 font-medium text-sm"></nav>',
     '  </main>',
     footer,
-    '  <script src="assets/app.js" defer></script>',
+    '  <script src="assets/app.js?v=2" defer></script>',
     '</body>',
     '</html>'
   ].join('\\n');

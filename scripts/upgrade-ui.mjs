@@ -39,7 +39,7 @@ async function updateTool(toolName) {
   }
   
   if (!html.includes('assets/components.js')) {
-    html = html.replace('</head>', `<script src="../../assets/components.js" defer></script>\n</head>`);
+    html = html.replace('</head>', `<script src="../../assets/components.js?v=2" defer></script>\n</head>`);
   }
   
   await fs.writeFile(p, html);
@@ -69,7 +69,7 @@ async function updateStaticPage(fileName) {
   }
   
   if (!html.includes('assets/components.js')) {
-    html = html.replace('</head>', `<script src="assets/components.js" defer></script>\n</head>`);
+    html = html.replace('</head>', `<script src="assets/components.js?v=2" defer></script>\n</head>`);
   }
   
   await fs.writeFile(p, html);

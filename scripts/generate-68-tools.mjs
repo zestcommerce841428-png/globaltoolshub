@@ -820,11 +820,11 @@ async function main() {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${t.title} - GlobalToolsHub</title>
     <meta name="description" content="${t.desc}">
-    <link rel="stylesheet" href="../../assets/styles.css">
-    <link rel="stylesheet" href="../../assets/site.css">
-    <script src="../../assets/components.js" defer></script>
+    <link rel="stylesheet" href="../../assets/styles.css?v=2">
+    <link rel="stylesheet" href="../../assets/site.css?v=2">
+    <script src="../../assets/components.js?v=2" defer></script>
     <script src="../../assets/seo-runtime.js" defer></script>
-    <script src="../../assets/app.js" defer></script>
+    <script src="../../assets/app.js?v=2" defer></script>
   </head>
   <body data-bg="clean">
     <global-header></global-header>
