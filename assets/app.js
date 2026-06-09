@@ -297,14 +297,7 @@ function initGoogleTranslate() {
 
   document.head.appendChild(script);
   
-  // Hide Google Translate banner if active
-  const style = document.createElement('style');
-  style.textContent = `
-    .goog-te-banner-frame { display: none !important; }
-    body { top: 0 !important; }
-    .skiptranslate { display: none !important; }
-  `;
-  document.head.appendChild(style);
+
 
   return promise;
 }

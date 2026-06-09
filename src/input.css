@@ -124,3 +124,8 @@
     border-color: transparent;
   }
 }
+
+/* Google Translate Banner Hiding Styles */
+.goog-te-banner-frame { display: none !important; }
+body { top: 0 !important; }
+.skiptranslate { display: none !important; }
