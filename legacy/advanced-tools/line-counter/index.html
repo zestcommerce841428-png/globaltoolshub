@@ -1,13 +1,51 @@
-<!doctype html>\n<html lang="en">\n<head>
-    <meta name="twitter:description" content="Free online Line Counter. Secure, fast, and easy to use.">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="twitter:description" content="Count the number of lines in a text block.">
     <meta name="twitter:title" content="Line Counter - GlobalToolsHub">
     <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/line-counter/index.html">
     <meta property="og:site_name" content="GlobalToolsHub">
-    <meta property="og:description" content="Free online Line Counter. Secure, fast, and easy to use.">
+    <meta property="og:description" content="Count the number of lines in a text block.">
     <meta property="og:title" content="Line Counter - GlobalToolsHub">
     <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/line-counter/index.html">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="GlobalToolsHub">
-    <meta name="keywords" content="line, counter, free, online, secure, fast, and, easy, use">\n  <meta charset="utf-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <title>Line Counter - GlobalToolsHub</title>\n  <meta name="description" content="Free online Line Counter. Secure, fast, and easy to use.">\n  <link rel="stylesheet" href="../../../assets/styles.css?v=2">\n  <link rel="stylesheet" href="../../../assets/site.css?v=2">\n  <script src="../../../assets/components.js?v=2" defer></script>\n    <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"Line Counter","url":"/globaltoolshub/legacy/advanced-tools/line-counter/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Free online Line Counter. Secure, fast, and easy to use."}</script>
+    <meta name="keywords" content="line, counter, count, the, number, lines, text, block, index, html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Line Counter - GlobalToolsHub</title>
+    <meta name="description" content="Count the number of lines in a text block.">
+    <link rel="stylesheet" href="../../../assets/styles.css?v=2">
+    <link rel="stylesheet" href="../../../assets/site.css?v=2">
+    <script src="../../../assets/components.js?v=2" defer></script>
     <script src="../../../assets/seo-runtime.js" defer></script>
-</head>\n<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">\n  <global-header></global-header>\n  \n  <main class="flex-grow pt-24 pb-12">\n    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\n      <div class="mb-8">\n        <a href="../../../index.html" class="text-indigo-600 dark:text-indigo-400 hover:underline mb-4 inline-block">&larr; Back to Tools</a>\n        <h1 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Line Counter</h1>\n        <p class="mt-2 text-slate-600 dark:text-slate-400">Professional, secure, and fast Line Counter. Runs completely in your browser.</p>\n      </div>\n      <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-6">\n        <div class="grid grid-cols-1 md:grid-cols-2 gap-4"><div><label class="block mb-2 font-medium">Input</label><textarea id="input" class="control h-64 font-mono text-sm" placeholder="Enter input here..." oninput="process()"></textarea></div><div><label class="block mb-2 font-medium">Output</label><textarea id="output" class="control h-64 font-mono text-sm bg-slate-50 dark:bg-slate-900" readonly></textarea></div></div>\n      </div>\n    </div>\n  </main>\n  <global-footer></global-footer>\n  <script>function process() { document.getElementById('output').value = 'Processed ' + document.getElementById('input').value; }</script>\n</body>\n</html>
+    <script src="../../../assets/app.js?v=2" defer></script>
+      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"Line Counter","url":"/globaltoolshub/legacy/advanced-tools/line-counter/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Count the number of lines in a text block."}</script>
+</head>
+  <body data-bg="clean">
+    <global-header></global-header>
+    <main class="page-main">
+      <h1>Line Counter</h1>
+      <p>Count the number of lines in a text block.</p>
+      <div class="page-card surface rounded-2xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-900">
+        
+      <div class="space-y-4">
+        <div class="flex justify-between items-center bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
+          <span class="text-lg font-bold">Total Lines:</span>
+          <span id="count" class="text-2xl font-black text-indigo-600">0</span>
+        </div>
+        <textarea id="input" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64" placeholder="Paste text here..." oninput="document.getElementById('count').textContent = this.value ? this.value.split('\n').length : 0"></textarea>
+      </div>
+    
+      </div>
+    </main>
+    <global-footer></global-footer>
+    <script>
+      
+function process() { const lines = document.getElementById('input').value.split('
+'); document.getElementById('output').value = 'Total Lines: ' + lines.length + '
+Non-Empty: ' + lines.filter(l=>l.trim()).length; }
+    
+    </script>
+  </body>
+</html>

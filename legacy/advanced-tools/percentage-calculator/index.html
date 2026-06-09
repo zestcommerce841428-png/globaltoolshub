@@ -1,13 +1,52 @@
-<!doctype html>\n<html lang="en">\n<head>
-    <meta name="twitter:description" content="Free online Percentage Calculator. Secure, fast, and easy to use.">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="twitter:description" content="Calculate percentages easily.">
     <meta name="twitter:title" content="Percentage Calculator - GlobalToolsHub">
     <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/percentage-calculator/index.html">
     <meta property="og:site_name" content="GlobalToolsHub">
-    <meta property="og:description" content="Free online Percentage Calculator. Secure, fast, and easy to use.">
+    <meta property="og:description" content="Calculate percentages easily.">
     <meta property="og:title" content="Percentage Calculator - GlobalToolsHub">
     <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/percentage-calculator/index.html">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="GlobalToolsHub">
-    <meta name="keywords" content="percentage, calculator, free, online, secure, fast, and, easy, use">\n  <meta charset="utf-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <title>Percentage Calculator - GlobalToolsHub</title>\n  <meta name="description" content="Free online Percentage Calculator. Secure, fast, and easy to use.">\n  <link rel="stylesheet" href="../../../assets/styles.css?v=2">\n  <link rel="stylesheet" href="../../../assets/site.css?v=2">\n  <script src="../../../assets/components.js?v=2" defer></script>\n    <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"Percentage Calculator","url":"/globaltoolshub/legacy/advanced-tools/percentage-calculator/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Free online Percentage Calculator. Secure, fast, and easy to use."}</script>
+    <meta name="keywords" content="percentage, calculator, calculate, percentages, easily, index, html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Percentage Calculator - GlobalToolsHub</title>
+    <meta name="description" content="Calculate percentages easily.">
+    <link rel="stylesheet" href="../../../assets/styles.css?v=2">
+    <link rel="stylesheet" href="../../../assets/site.css?v=2">
+    <script src="../../../assets/components.js?v=2" defer></script>
     <script src="../../../assets/seo-runtime.js" defer></script>
-</head>\n<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">\n  <global-header></global-header>\n  \n  <main class="flex-grow pt-24 pb-12">\n    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\n      <div class="mb-8">\n        <a href="../../../index.html" class="text-indigo-600 dark:text-indigo-400 hover:underline mb-4 inline-block">&larr; Back to Tools</a>\n        <h1 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Percentage Calculator</h1>\n        <p class="mt-2 text-slate-600 dark:text-slate-400">Professional, secure, and fast Percentage Calculator. Runs completely in your browser.</p>\n      </div>\n      <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-6">\n        <div class="max-w-md mx-auto bg-white dark:bg-slate-900 p-8 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700"><div class="mb-4"><label class="block mb-2 font-medium">Input A</label><input type="number" id="in1" class="control" value="100"></div><div class="mb-6"><label class="block mb-2 font-medium">Input B</label><input type="number" id="in2" class="control" value="50"></div><button class="btn btn-primary w-full mb-6" onclick="process()">Calculate</button><div id="output" class="text-center text-4xl font-bold text-indigo-600 dark:text-indigo-400">0</div></div>\n      </div>\n    </div>\n  </main>\n  <global-footer></global-footer>\n  <script>function process() { document.getElementById('output').innerText = parseFloat(document.getElementById('in1').value) + parseFloat(document.getElementById('in2').value); }</script>\n</body>\n</html>
+    <script src="../../../assets/app.js?v=2" defer></script>
+      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"Percentage Calculator","url":"/globaltoolshub/legacy/advanced-tools/percentage-calculator/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Calculate percentages easily."}</script>
+</head>
+  <body data-bg="clean">
+    <global-header></global-header>
+    <main class="page-main">
+      <h1>Percentage Calculator</h1>
+      <p>Calculate percentages easily.</p>
+      <div class="page-card surface rounded-2xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-900">
+        
+      <div class="max-w-md mx-auto space-y-6">
+        <div class="flex items-center gap-4">
+          <span>What is</span> <input type="number" id="p1" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner w-20"> <span>% of</span> <input type="number" id="v1" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner w-24">
+          <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95" onclick="r1.value=(p1.value/100)*v1.value">=</button> <input type="text" id="r1" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner w-24 font-bold" readonly>
+        </div>
+        <div class="flex items-center gap-4">
+          <input type="number" id="v2" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner w-24"> <span>is what % of</span> <input type="number" id="v3" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner w-24">
+          <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95" onclick="r2.value=(v2.value/v3.value)*100">=</button> <input type="text" id="r2" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner w-24 font-bold" readonly>
+        </div>
+      </div>
+    
+      </div>
+    </main>
+    <global-footer></global-footer>
+    <script>
+      
+function process() { const input = document.getElementById('input').value; const m = input.match(/(d+)s*%s*ofs*(d+)/i); if(m) { document.getElementById('output').value = (parseFloat(m[1]) / 100) * parseFloat(m[2]); } else { document.getElementById('output').value = 'Format: 20% of 100'; } }
+    
+    </script>
+  </body>
+</html>

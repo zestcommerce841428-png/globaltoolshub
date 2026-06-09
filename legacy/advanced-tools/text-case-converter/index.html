@@ -1,13 +1,66 @@
-<!doctype html>\n<html lang="en">\n<head>
-    <meta name="twitter:description" content="Free online Text Case Converter. Secure, fast, and easy to use.">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="twitter:description" content="Convert text between UPPERCASE, lowercase, Title Case, camelCase, snake_case, and more.">
     <meta name="twitter:title" content="Text Case Converter - GlobalToolsHub">
     <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/text-case-converter/index.html">
     <meta property="og:site_name" content="GlobalToolsHub">
-    <meta property="og:description" content="Free online Text Case Converter. Secure, fast, and easy to use.">
+    <meta property="og:description" content="Convert text between UPPERCASE, lowercase, Title Case, camelCase, snake_case, and more.">
     <meta property="og:title" content="Text Case Converter - GlobalToolsHub">
     <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/text-case-converter/index.html">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="GlobalToolsHub">
-    <meta name="keywords" content="text, case, converter, free, online, secure, fast, and, easy">\n  <meta charset="utf-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <title>Text Case Converter - GlobalToolsHub</title>\n  <meta name="description" content="Free online Text Case Converter. Secure, fast, and easy to use.">\n  <link rel="stylesheet" href="../../../assets/styles.css?v=2">\n  <link rel="stylesheet" href="../../../assets/site.css?v=2">\n  <script src="../../../assets/components.js?v=2" defer></script>\n    <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"Text Case Converter","url":"/globaltoolshub/legacy/advanced-tools/text-case-converter/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Free online Text Case Converter. Secure, fast, and easy to use."}</script>
+    <meta name="keywords" content="text, case, converter, convert, between, uppercase, lowercase, title, camelcase, snake">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Text Case Converter - GlobalToolsHub</title>
+    <meta name="description" content="Convert text between UPPERCASE, lowercase, Title Case, camelCase, snake_case, and more.">
+    <link rel="stylesheet" href="../../../assets/styles.css?v=2">
+    <link rel="stylesheet" href="../../../assets/site.css?v=2">
+    <script src="../../../assets/components.js?v=2" defer></script>
     <script src="../../../assets/seo-runtime.js" defer></script>
-</head>\n<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">\n  <global-header></global-header>\n  \n  <main class="flex-grow pt-24 pb-12">\n    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\n      <div class="mb-8">\n        <a href="../../../index.html" class="text-indigo-600 dark:text-indigo-400 hover:underline mb-4 inline-block">&larr; Back to Tools</a>\n        <h1 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Text Case Converter</h1>\n        <p class="mt-2 text-slate-600 dark:text-slate-400">Professional, secure, and fast Text Case Converter. Runs completely in your browser.</p>\n      </div>\n      <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-6">\n        <div class="grid grid-cols-1 md:grid-cols-2 gap-4"><div><label class="block mb-2 font-medium">Input</label><textarea id="input" class="control h-64 font-mono text-sm" placeholder="Enter input here..." oninput="process()"></textarea></div><div><label class="block mb-2 font-medium">Output</label><textarea id="output" class="control h-64 font-mono text-sm bg-slate-50 dark:bg-slate-900" readonly></textarea></div></div>\n      </div>\n    </div>\n  </main>\n  <global-footer></global-footer>\n  <script>function process() { document.getElementById('output').value = 'Processed ' + document.getElementById('input').value; }</script>\n</body>\n</html>
+    <script src="../../../assets/app.js?v=2" defer></script>
+      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"Text Case Converter","url":"/globaltoolshub/legacy/advanced-tools/text-case-converter/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Convert text between UPPERCASE, lowercase, Title Case, camelCase, snake_case, and more."}</script>
+</head>
+  <body data-bg="clean">
+    <global-header></global-header>
+    <main class="page-main">
+      <h1>Text Case Converter</h1>
+      <p>Convert text between UPPERCASE, lowercase, Title Case, camelCase, snake_case, and more.</p>
+      <div class="page-card surface rounded-2xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-900">
+        
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div><label class="block text-sm font-medium mb-2">Input Text</label><textarea id="input" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64" placeholder="Enter text here..."></textarea></div>
+        <div>
+          <label class="block text-sm font-medium mb-2">Output</label><textarea id="output" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64" readonly></textarea>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95" onclick="convert('upper')">UPPERCASE</button>
+            <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95" onclick="convert('lower')">lowercase</button>
+            <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95" onclick="convert('title')">Title Case</button>
+            <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95" onclick="convert('camel')">camelCase</button>
+            <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95" onclick="convert('snake')">snake_case</button>
+            <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95" onclick="convert('kebab')">kebab-case</button>
+          </div>
+        </div>
+      </div>
+    
+      </div>
+    </main>
+    <global-footer></global-footer>
+    <script>
+      
+      function convert(type) {
+        const str = document.getElementById('input').value;
+        let res = '';
+        if(type==='upper') res = str.toUpperCase();
+        if(type==='lower') res = str.toLowerCase();
+        if(type==='title') res = str.replace(/\w\S*/g, w => w.charAt(0).toUpperCase() + w.substr(1).toLowerCase());
+        if(type==='camel') res = str.replace(/(?:^\w|[A-Z]|\b\w)/g, (w, i) => i === 0 ? w.toLowerCase() : w.toUpperCase()).replace(/\s+/g, '');
+        if(type==='snake') res = str.replace(/\W+/g, ' ').split(/ |\B(?=[A-Z])/).map(w => w.toLowerCase()).join('_');
+        if(type==='kebab') res = str.replace(/\W+/g, ' ').split(/ |\B(?=[A-Z])/).map(w => w.toLowerCase()).join('-');
+        document.getElementById('output').value = res;
+      }
+    
+    </script>
+  </body>
+</html>
