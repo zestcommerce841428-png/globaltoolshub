@@ -1,5 +1,5 @@
 // Service Worker for GlobalToolsHub
-const CACHE_VERSION = 'v1.0.0';
+const CACHE_VERSION = 'v2.0.1';
 const CACHE_NAME = `globaltoolshub-${CACHE_VERSION}`;
 const ASSETS_TO_CACHE = [
   './',
