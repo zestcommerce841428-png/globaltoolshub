@@ -1,0 +1,5 @@
+Contact: mailto:security@globaltoolshub.com
+Expires: 2027-06-09T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://zestcommerce841428-png.github.io/globaltoolshub/.well-known/security.txt
+Policy: https://zestcommerce841428-png.github.io/globaltoolshub/security.html
