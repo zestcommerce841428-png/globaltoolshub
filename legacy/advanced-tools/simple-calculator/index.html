@@ -1,58 +1,13 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simple Calculator - GlobalToolsHub</title>
-    <meta name="description" content="A basic standard calculator.">
-    <link rel="stylesheet" href="../../../assets/styles.css?v=2">
-    <link rel="stylesheet" href="../../../assets/site.css?v=2">
-    <script src="../../../assets/components.js?v=2" defer></script>
+<!doctype html>\n<html lang="en">\n<head>
+    <meta name="twitter:description" content="Free online Simple Calculator. Secure, fast, and easy to use.">
+    <meta name="twitter:title" content="Simple Calculator - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/simple-calculator/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Free online Simple Calculator. Secure, fast, and easy to use.">
+    <meta property="og:title" content="Simple Calculator - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/simple-calculator/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="simple, calculator, free, online, secure, fast, and, easy, use">\n  <meta charset="utf-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <title>Simple Calculator - GlobalToolsHub</title>\n  <meta name="description" content="Free online Simple Calculator. Secure, fast, and easy to use.">\n  <link rel="stylesheet" href="../../../assets/styles.css?v=2">\n  <link rel="stylesheet" href="../../../assets/site.css?v=2">\n  <script src="../../../assets/components.js?v=2" defer></script>\n    <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"Simple Calculator","url":"/globaltoolshub/legacy/advanced-tools/simple-calculator/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Free online Simple Calculator. Secure, fast, and easy to use."}</script>
     <script src="../../../assets/seo-runtime.js" defer></script>
-    <script src="../../../assets/app.js?v=2" defer></script>
-  </head>
-  <body data-bg="clean">
-    <global-header></global-header>
-    <main class="page-main">
-      <h1>Simple Calculator</h1>
-      <p>A basic standard calculator.</p>
-      <div class="page-card surface rounded-2xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-900">
-        
-      <div class="max-w-xs mx-auto surface p-6 rounded-xl border border-slate-200 shadow-lg dark:border-slate-800">
-        <input type="text" id="calc-display" class="w-full bg-slate-100 dark:bg-slate-900 text-right p-4 text-2xl font-mono rounded-lg mb-4 outline-none" readonly value="0">
-        <div class="grid grid-cols-4 gap-2">
-          <button class="btn btn-secondary col-span-2" onclick="calcClear()">C</button>
-          <button class="btn btn-secondary" onclick="calcOp('/')">/</button>
-          <button class="btn btn-secondary" onclick="calcOp('*')">×</button>
-          <button class="btn btn-default" onclick="calcNum(7)">7</button>
-          <button class="btn btn-default" onclick="calcNum(8)">8</button>
-          <button class="btn btn-default" onclick="calcNum(9)">9</button>
-          <button class="btn btn-secondary" onclick="calcOp('-')">-</button>
-          <button class="btn btn-default" onclick="calcNum(4)">4</button>
-          <button class="btn btn-default" onclick="calcNum(5)">5</button>
-          <button class="btn btn-default" onclick="calcNum(6)">6</button>
-          <button class="btn btn-secondary" onclick="calcOp('+')">+</button>
-          <button class="btn btn-default" onclick="calcNum(1)">1</button>
-          <button class="btn btn-default" onclick="calcNum(2)">2</button>
-          <button class="btn btn-default" onclick="calcNum(3)">3</button>
-          <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 row-span-2" onclick="calcEq()">=</button>
-          <button class="btn btn-default col-span-2" onclick="calcNum(0)">0</button>
-          <button class="btn btn-default" onclick="calcNum('.')">.</button>
-        </div>
-      </div>
-    
-      </div>
-    </main>
-    <global-footer></global-footer>
-    <script>
-      
-      let disp = '0', op = null, prev = null;
-      const d = document.getElementById('calc-display');
-      function calcNum(n) { disp = disp === '0' ? String(n) : disp + n; d.value = disp; }
-      function calcOp(o) { prev = disp; op = o; disp = '0'; }
-      function calcEq() { if(op && prev){ disp = String(eval(prev + op + disp)); op=null; prev=null; d.value = disp; } }
-      function calcClear() { disp = '0'; op = null; prev = null; d.value = disp; }
-    
-    </script>
-  </body>
-</html>
+</head>\n<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">\n  <global-header></global-header>\n  \n  <main class="flex-grow pt-24 pb-12">\n    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\n      <div class="mb-8">\n        <a href="../../../index.html" class="text-indigo-600 dark:text-indigo-400 hover:underline mb-4 inline-block">&larr; Back to Tools</a>\n        <h1 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Simple Calculator</h1>\n        <p class="mt-2 text-slate-600 dark:text-slate-400">Professional, secure, and fast Simple Calculator. Runs completely in your browser.</p>\n      </div>\n      <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-6">\n        <div class="max-w-md mx-auto bg-white dark:bg-slate-900 p-8 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700"><div class="mb-4"><label class="block mb-2 font-medium">Input A</label><input type="number" id="in1" class="control" value="100"></div><div class="mb-6"><label class="block mb-2 font-medium">Input B</label><input type="number" id="in2" class="control" value="50"></div><button class="btn btn-primary w-full mb-6" onclick="process()">Calculate</button><div id="output" class="text-center text-4xl font-bold text-indigo-600 dark:text-indigo-400">0</div></div>\n      </div>\n    </div>\n  </main>\n  <global-footer></global-footer>\n  <script>function process() { document.getElementById('output').innerText = parseFloat(document.getElementById('in1').value) + parseFloat(document.getElementById('in2').value); }</script>\n</body>\n</html>

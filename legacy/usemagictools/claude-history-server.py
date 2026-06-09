@@ -36,9 +36,18 @@ class ClaudeHistoryHandler(http.server.SimpleHTTPRequestHandler):
 
         # API: 获取指定会话内容
         if parsed.path.startswith('/api/session/'):
-            session_path = parsed.path[13:]  # 移除 '/api/session/'
-            session_path = urllib.parse.unquote(session_path)
-            self.send_json(self.get_session_content(session_path))
+            session_id = parsed.path[13:]
+            session_id = urllib.parse.unquote(session_id)
+            found_path = None
+            for p in PROJECTS_DIR.rglob(session_id):
+                if p.is_file() and p.name == session_id:
+                    found_path = p
+                    break
+            
+            if found_path and found_path.is_relative_to(PROJECTS_DIR):
+                self.send_json(self.get_session_content(found_path))
+            else:
+                self.send_error(404, f"Session file not found: {session_id}")
             return
 
         # 其他请求走默认处理
@@ -49,7 +58,7 @@ class ClaudeHistoryHandler(http.server.SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-Type', 'application/json; charset=utf-8')
         self.send_header('Content-Length', len(content))
-        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Origin', 'http://localhost:8765')
         self.end_headers()
         self.wfile.write(content)
 

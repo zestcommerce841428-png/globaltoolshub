@@ -231,7 +231,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
+    js: `\nfunction process() { try { document.getElementById('output').value = document.getElementById('input').value.split(' ').map(b => String.fromCharCode(parseInt(b, 2))).join(''); } catch(e) { document.getElementById('output').value = 'Invalid Binary'; } }\n    `
   },
   {
     id: "text-to-binary",
@@ -246,7 +246,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
+    js: `\nfunction process() { document.getElementById('output').value = Array.from(document.getElementById('input').value).map(c => c.charCodeAt(0).toString(2).padStart(8, '0')).join(' '); }\n    `
   },
   {
     id: "hex-to-text",
@@ -261,7 +261,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
+    js: `\nfunction process() { try { const hex = document.getElementById('input').value.replace(/\s/g, ''); let str = ''; for (let i = 0; i < hex.length; i += 2) str += String.fromCharCode(parseInt(hex.substr(i, 2), 16)); document.getElementById('output').value = str; } catch(e) { document.getElementById('output').value = 'Invalid Hex'; } }\n    `
   },
   {
     id: "text-to-hex",
@@ -276,7 +276,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
+    js: `\nfunction process() { document.getElementById('output').value = Array.from(document.getElementById('input').value).map(c => c.charCodeAt(0).toString(16).padStart(2, '0')).join(' '); }\n    `
   },
   {
     id: "ascii-to-text",
@@ -291,7 +291,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
+    js: `\nfunction process() { try { document.getElementById('output').value = document.getElementById('input').value.split(' ').map(b => String.fromCharCode(parseInt(b, 10))).join(''); } catch(e) { document.getElementById('output').value = 'Invalid ASCII'; } }\n    `
   },
   {
     id: "text-to-ascii",
@@ -306,7 +306,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
+    js: `\nfunction process() { document.getElementById('output').value = Array.from(document.getElementById('input').value).map(c => c.charCodeAt(0).toString(10)).join(' '); }\n    `
   },
   {
     id: "rot13-encoder",
@@ -321,7 +321,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
+    js: `\nfunction process() { document.getElementById('output').value = document.getElementById('input').value.replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<='Z'?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}); }\n    `
   },
   {
     id: "decimal-to-binary",
@@ -336,7 +336,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
+    js: `\nfunction process() { const n = parseInt(document.getElementById('input').value, 10); document.getElementById('output').value = isNaN(n) ? 'Invalid' : n.toString(2); }\n    `
   },
   {
     id: "decimal-to-hex",
@@ -351,7 +351,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
+    js: `\nfunction process() { const n = parseInt(document.getElementById('input').value, 10); document.getElementById('output').value = isNaN(n) ? 'Invalid' : n.toString(16).toUpperCase(); }\n    `
   },
   {
     id: "simple-calculator",
@@ -432,7 +432,7 @@ const tools = [
         </div>
       </div>
     `,
-    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
+    js: `\nfunction process() { const input = document.getElementById('input').value; const m = input.match(/(\d+)\s*%\s*of\s*(\d+)/i); if(m) { document.getElementById('output').value = (parseFloat(m[1]) / 100) * parseFloat(m[2]); } else { document.getElementById('output').value = 'Format: 20% of 100'; } }\n    `
   },
   {
     id: "uuid-generator",
@@ -634,7 +634,7 @@ const tools = [
         <textarea id="input" class="control h-64" placeholder="Paste text here..." oninput="document.getElementById('count').textContent = this.value ? this.value.split('\\n').length : 0"></textarea>
       </div>
     `,
-    js: `\n      function process() { document.getElementById('output').value = document.getElementById('input').value; }\n    `
+    js: `\nfunction process() { const lines = document.getElementById('input').value.split('\n'); document.getElementById('output').value = 'Total Lines: ' + lines.length + '\nNon-Empty: ' + lines.filter(l=>l.trim()).length; }\n    `
   },
   {
     id: "sha256-hash",

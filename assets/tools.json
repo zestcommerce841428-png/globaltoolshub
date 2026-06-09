@@ -750,20 +750,21 @@
   },
   {
     "id": "advanced-tools-ascii-to-text-index-html",
-    "title": "ASCII to Text Converter",
-    "description": "Convert ASCII decimal values to text.",
+    "title": "Ascii To Text",
+    "description": "Free online Ascii To Text. Secure, fast, and easy to use.",
     "category": "Text",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/ascii-to-text/index.html",
     "tags": [
       "ascii",
       "text",
-      "converter",
-      "convert",
-      "decimal",
-      "values",
-      "index",
-      "html"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -826,6 +827,25 @@
     ]
   },
   {
+    "id": "advanced-tools-barcode-generator-index-html",
+    "title": "Barcode Generator",
+    "description": "Free online Barcode Generator. Secure, fast, and easy to use.",
+    "category": "Image",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/barcode-generator/index.html",
+    "tags": [
+      "barcode",
+      "generator",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
+    ]
+  },
+  {
     "id": "online-tools-base32-decode-html",
     "title": "Base32 Decode",
     "description": "This online Base32 decoding tool helps you decode Base32 to text or binary. You can output UTF-8, UTF-16, Hex, Base64, or other encodings.",
@@ -842,24 +862,6 @@
       "helps",
       "you",
       "text"
-    ]
-  },
-  {
-    "id": "advanced-tools-base32-decoder-index-html",
-    "title": "Base32 Decoder",
-    "description": "Advanced Base32 Decoder tool for developers.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/base32-decoder/index.html",
-    "tags": [
-      "base32",
-      "decoder",
-      "advanced",
-      "tool",
-      "for",
-      "developers",
-      "index",
-      "html"
     ]
   },
   {
@@ -880,24 +882,6 @@
       "you",
       "text",
       "binary"
-    ]
-  },
-  {
-    "id": "advanced-tools-base32-encoder-index-html",
-    "title": "Base32 Encoder",
-    "description": "Advanced Base32 Encoder tool for developers.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/base32-encoder/index.html",
-    "tags": [
-      "base32",
-      "encoder",
-      "advanced",
-      "tool",
-      "for",
-      "developers",
-      "index",
-      "html"
     ]
   },
   {
@@ -956,24 +940,6 @@
       "fast",
       "responsive",
       "privacy"
-    ]
-  },
-  {
-    "id": "advanced-tools-base58-decoder-index-html",
-    "title": "Base58 Decoder",
-    "description": "Advanced Base58 Decoder tool for developers.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/base58-decoder/index.html",
-    "tags": [
-      "base58",
-      "decoder",
-      "advanced",
-      "tool",
-      "for",
-      "developers",
-      "index",
-      "html"
     ]
   },
   {
@@ -1036,24 +1002,6 @@
     ]
   },
   {
-    "id": "advanced-tools-base58-encoder-index-html",
-    "title": "Base58 Encoder",
-    "description": "Advanced Base58 Encoder tool for developers.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/base58-encoder/index.html",
-    "tags": [
-      "base58",
-      "encoder",
-      "advanced",
-      "tool",
-      "for",
-      "developers",
-      "index",
-      "html"
-    ]
-  },
-  {
     "id": "online-tools-base64-decode-html",
     "title": "Base64 Decode",
     "description": "This online Base64 decoding tool helps you decode Base64 to text or binary. You can output UTF-8, UTF-16, Hex, or other encodings. It also supports various formats such as RFC 4648 (standard and URL Safe), RFC 2045 (MIME), RFC 2152 (UTF-7), and RFC 3501 (IMAP).",
@@ -1070,6 +1018,25 @@
       "helps",
       "you",
       "text"
+    ]
+  },
+  {
+    "id": "advanced-tools-base64-decoder-index-html",
+    "title": "Base64 Decoder",
+    "description": "Free online Base64 Decoder. Secure, fast, and easy to use.",
+    "category": "Developer",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/base64-decoder/index.html",
+    "tags": [
+      "base64",
+      "decoder",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -1090,6 +1057,25 @@
       "you",
       "text",
       "binary"
+    ]
+  },
+  {
+    "id": "advanced-tools-base64-encoder-index-html",
+    "title": "Base64 Encoder",
+    "description": "Free online Base64 Encoder. Secure, fast, and easy to use.",
+    "category": "Developer",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/base64-encoder/index.html",
+    "tags": [
+      "base64",
+      "encoder",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -1131,92 +1117,41 @@
     ]
   },
   {
-    "id": "advanced-tools-base64-decoder-index-html",
-    "title": "Base64 String Decoder",
-    "description": "Decode any Base64 string back to text.",
-    "category": "Developer",
+    "id": "advanced-tools-base64-to-image-index-html",
+    "title": "Base64 To Image",
+    "description": "Free online Base64 To Image. Secure, fast, and easy to use.",
+    "category": "Image",
     "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/base64-decoder/index.html",
+    "url": "legacy/advanced-tools/base64-to-image/index.html",
     "tags": [
       "base64",
-      "string",
-      "decoder",
-      "decode",
-      "any",
-      "back",
-      "text",
-      "index"
-    ]
-  },
-  {
-    "id": "advanced-tools-base64-encoder-index-html",
-    "title": "Base64 String Encoder",
-    "description": "Encode any string into Base64 format.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/base64-encoder/index.html",
-    "tags": [
-      "base64",
-      "string",
-      "encoder",
-      "encode",
-      "any",
-      "into",
-      "format",
-      "index"
-    ]
-  },
-  {
-    "id": "advanced-tools-bcrypt-hash-generator-index-html",
-    "title": "Bcrypt Hash Generator",
-    "description": "Advanced Bcrypt Hash Generator tool for developers.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/bcrypt-hash-generator/index.html",
-    "tags": [
-      "bcrypt",
-      "hash",
-      "generator",
-      "advanced",
-      "tool",
-      "for",
-      "developers"
-    ]
-  },
-  {
-    "id": "advanced-tools-binary-to-hex-index-html",
-    "title": "Binary to Hex",
-    "description": "Advanced Binary to Hex tool for developers.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/binary-to-hex/index.html",
-    "tags": [
-      "binary",
-      "hex",
-      "advanced",
-      "tool",
-      "for",
-      "developers",
-      "index",
-      "html"
+      "image",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
     "id": "advanced-tools-binary-to-text-index-html",
-    "title": "Binary to Text Converter",
-    "description": "Convert binary code into readable text.",
-    "category": "Developer",
+    "title": "Binary To Text",
+    "description": "Free online Binary To Text. Secure, fast, and easy to use.",
+    "category": "Text",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/binary-to-text/index.html",
     "tags": [
       "binary",
       "text",
-      "converter",
-      "convert",
-      "code",
-      "into",
-      "readable",
-      "index"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -1580,6 +1515,25 @@
     ]
   },
   {
+    "id": "advanced-tools-bmi-calculator-index-html",
+    "title": "Bmi Calculator",
+    "description": "Free online Bmi Calculator. Secure, fast, and easy to use.",
+    "category": "Utility",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/bmi-calculator/index.html",
+    "tags": [
+      "bmi",
+      "calculator",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
+    ]
+  },
+  {
     "id": "nakul-tools-bmi-calculator-html",
     "title": "BMI Calculator",
     "description": "Use BMI Calculator online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
@@ -1600,27 +1554,9 @@
     ]
   },
   {
-    "id": "advanced-tools-bmi-calculator-index-html",
-    "title": "BMI Calculator",
-    "description": "Calculate your Body Mass Index.",
-    "category": "Utility",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/bmi-calculator/index.html",
-    "tags": [
-      "bmi",
-      "calculator",
-      "calculate",
-      "your",
-      "body",
-      "mass",
-      "index",
-      "html"
-    ]
-  },
-  {
     "id": "advanced-tools-border-radius-generator-index-html",
     "title": "Border Radius Generator",
-    "description": "Advanced Border Radius Generator tool for developers.",
+    "description": "Free online Border Radius Generator. Secure, fast, and easy to use.",
     "category": "Utility",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/border-radius-generator/index.html",
@@ -1628,16 +1564,18 @@
       "border",
       "radius",
       "generator",
-      "advanced",
-      "tool",
-      "for",
-      "developers"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy"
     ]
   },
   {
     "id": "advanced-tools-box-shadow-generator-index-html",
     "title": "Box Shadow Generator",
-    "description": "Advanced Box Shadow Generator tool for developers.",
+    "description": "Free online Box Shadow Generator. Secure, fast, and easy to use.",
     "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/box-shadow-generator/index.html",
@@ -1645,27 +1583,12 @@
       "box",
       "shadow",
       "generator",
-      "advanced",
-      "tool",
-      "for",
-      "developers"
-    ]
-  },
-  {
-    "id": "advanced-tools-camel-case-to-snake-case-index-html",
-    "title": "Camel Case to Snake Case",
-    "description": "Advanced Camel Case to Snake Case tool for developers.",
-    "category": "Text",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/camel-case-to-snake-case/index.html",
-    "tags": [
-      "camel",
-      "case",
-      "snake",
-      "advanced",
-      "tool",
-      "for",
-      "developers"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy"
     ]
   },
   {
@@ -1765,7 +1688,7 @@
   {
     "id": "advanced-tools-color-palette-extractor-index-html",
     "title": "Color Palette Extractor",
-    "description": "Advanced Color Palette Extractor tool for developers.",
+    "description": "Free online Color Palette Extractor. Secure, fast, and easy to use.",
     "category": "Image",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/color-palette-extractor/index.html",
@@ -1773,10 +1696,12 @@
       "color",
       "palette",
       "extractor",
-      "advanced",
-      "tool",
-      "for",
-      "developers"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy"
     ]
   },
   {
@@ -2090,23 +2015,6 @@
     ]
   },
   {
-    "id": "advanced-tools-credit-card-validator-index-html",
-    "title": "Credit Card Validator",
-    "description": "Advanced Credit Card Validator tool for developers.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/credit-card-validator/index.html",
-    "tags": [
-      "credit",
-      "card",
-      "validator",
-      "advanced",
-      "tool",
-      "for",
-      "developers"
-    ]
-  },
-  {
     "id": "usemagictools-cron-generator-html",
     "title": "Cron Expression Generator",
     "description": "Free online cron expression generator to build and validate cron schedules quickly. Create cron syntax with readable descriptions for Linux crontab and server jobs. ✅ No ads ✅ No signup ✅ No limits. Runs entirely in your browser.",
@@ -2286,8 +2194,8 @@
   },
   {
     "id": "advanced-tools-css-gradient-generator-index-html",
-    "title": "CSS Gradient Generator",
-    "description": "Advanced CSS Gradient Generator tool for developers.",
+    "title": "Css Gradient Generator",
+    "description": "Free online Css Gradient Generator. Secure, fast, and easy to use.",
     "category": "Utility",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/css-gradient-generator/index.html",
@@ -2295,28 +2203,31 @@
       "css",
       "gradient",
       "generator",
-      "advanced",
-      "tool",
-      "for",
-      "developers"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy"
     ]
   },
   {
     "id": "advanced-tools-css-minifier-index-html",
-    "title": "CSS Minifier",
-    "description": "Compress CSS code to save bytes.",
+    "title": "Css Minifier",
+    "description": "Free online Css Minifier. Secure, fast, and easy to use.",
     "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/css-minifier/index.html",
     "tags": [
       "css",
       "minifier",
-      "compress",
-      "code",
-      "save",
-      "bytes",
-      "index",
-      "html"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -2339,20 +2250,21 @@
   },
   {
     "id": "advanced-tools-csv-to-json-index-html",
-    "title": "CSV to JSON Converter",
-    "description": "Convert CSV string to JSON array format instantly.",
+    "title": "Csv To Json",
+    "description": "Free online Csv To Json. Secure, fast, and easy to use.",
     "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/csv-to-json/index.html",
     "tags": [
       "csv",
       "json",
-      "converter",
-      "convert",
-      "string",
-      "array",
-      "format",
-      "instantly"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -2377,37 +2289,40 @@
   },
   {
     "id": "advanced-tools-decimal-to-binary-index-html",
-    "title": "Decimal to Binary Converter",
-    "description": "Convert decimal numbers to binary.",
+    "title": "Decimal To Binary",
+    "description": "Free online Decimal To Binary. Secure, fast, and easy to use.",
     "category": "Utility",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/decimal-to-binary/index.html",
     "tags": [
       "decimal",
       "binary",
-      "converter",
-      "convert",
-      "numbers",
-      "index",
-      "html"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
     "id": "advanced-tools-decimal-to-hex-index-html",
-    "title": "Decimal to Hex Converter",
-    "description": "Convert decimal numbers to hexadecimal.",
+    "title": "Decimal To Hex",
+    "description": "Free online Decimal To Hex. Secure, fast, and easy to use.",
     "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/decimal-to-hex/index.html",
     "tags": [
       "decimal",
       "hex",
-      "converter",
-      "convert",
-      "numbers",
-      "hexadecimal",
-      "index",
-      "html"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -2714,19 +2629,20 @@
   {
     "id": "advanced-tools-email-extractor-index-html",
     "title": "Email Extractor",
-    "description": "Advanced Email Extractor tool for developers.",
+    "description": "Free online Email Extractor. Secure, fast, and easy to use.",
     "category": "Utility",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/email-extractor/index.html",
     "tags": [
       "email",
       "extractor",
-      "advanced",
-      "tool",
-      "for",
-      "developers",
-      "index",
-      "html"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -2843,6 +2759,25 @@
       "fast",
       "responsive",
       "privacy"
+    ]
+  },
+  {
+    "id": "advanced-tools-favicon-generator-index-html",
+    "title": "Favicon Generator",
+    "description": "Free online Favicon Generator. Secure, fast, and easy to use.",
+    "category": "Image",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/favicon-generator/index.html",
+    "tags": [
+      "favicon",
+      "generator",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -3033,24 +2968,6 @@
     ]
   },
   {
-    "id": "advanced-tools-fraction-to-decimal-index-html",
-    "title": "Fraction to Decimal",
-    "description": "Advanced Fraction to Decimal tool for developers.",
-    "category": "Utility",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/fraction-to-decimal/index.html",
-    "tags": [
-      "fraction",
-      "decimal",
-      "advanced",
-      "tool",
-      "for",
-      "developers",
-      "index",
-      "html"
-    ]
-  },
-  {
     "id": "nakul-tools-gradient-converter-html",
     "title": "Gradient Generator",
     "description": "Use Gradient Generator online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
@@ -3111,56 +3028,22 @@
     ]
   },
   {
-    "id": "advanced-tools-hex-to-binary-index-html",
-    "title": "Hex to Binary",
-    "description": "Advanced Hex to Binary tool for developers.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/hex-to-binary/index.html",
-    "tags": [
-      "hex",
-      "binary",
-      "advanced",
-      "tool",
-      "for",
-      "developers",
-      "index",
-      "html"
-    ]
-  },
-  {
-    "id": "advanced-tools-hex-to-octal-index-html",
-    "title": "Hex to Octal",
-    "description": "Advanced Hex to Octal tool for developers.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/hex-to-octal/index.html",
-    "tags": [
-      "hex",
-      "octal",
-      "advanced",
-      "tool",
-      "for",
-      "developers",
-      "index",
-      "html"
-    ]
-  },
-  {
     "id": "advanced-tools-hex-to-rgb-index-html",
-    "title": "HEX to RGB",
-    "description": "Convert hex color codes to RGB.",
-    "category": "Image",
+    "title": "Hex To Rgb",
+    "description": "Free online Hex To Rgb. Secure, fast, and easy to use.",
+    "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/hex-to-rgb/index.html",
     "tags": [
       "hex",
       "rgb",
-      "convert",
-      "color",
-      "codes",
-      "index",
-      "html"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -3184,21 +3067,21 @@
   },
   {
     "id": "advanced-tools-hex-to-text-index-html",
-    "title": "Hex to Text Converter",
-    "description": "Convert hexadecimal strings into readable text.",
+    "title": "Hex To Text",
+    "description": "Free online Hex To Text. Secure, fast, and easy to use.",
     "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/hex-to-text/index.html",
     "tags": [
       "hex",
       "text",
-      "converter",
-      "convert",
-      "hexadecimal",
-      "strings",
-      "into",
-      "readable",
-      "index"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -3219,6 +3102,25 @@
       "inspect",
       "byte",
       "offsets"
+    ]
+  },
+  {
+    "id": "advanced-tools-htaccess-generator-index-html",
+    "title": "Htaccess Generator",
+    "description": "Free online Htaccess Generator. Secure, fast, and easy to use.",
+    "category": "Utility",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/htaccess-generator/index.html",
+    "tags": [
+      "htaccess",
+      "generator",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -3260,8 +3162,8 @@
   },
   {
     "id": "advanced-tools-html-entity-decoder-index-html",
-    "title": "HTML Entity Decoder",
-    "description": "Convert HTML entities back to characters.",
+    "title": "Html Entity Decoder",
+    "description": "Free online Html Entity Decoder. Secure, fast, and easy to use.",
     "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/html-entity-decoder/index.html",
@@ -3269,17 +3171,18 @@
       "html",
       "entity",
       "decoder",
-      "convert",
-      "entities",
-      "back",
-      "characters",
-      "index"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy"
     ]
   },
   {
     "id": "advanced-tools-html-entity-encoder-index-html",
-    "title": "HTML Entity Encoder",
-    "description": "Convert characters into HTML entities for safe displaying.",
+    "title": "Html Entity Encoder",
+    "description": "Free online Html Entity Encoder. Secure, fast, and easy to use.",
     "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/html-entity-encoder/index.html",
@@ -3287,30 +3190,31 @@
       "html",
       "entity",
       "encoder",
-      "convert",
-      "characters",
-      "into",
-      "entities",
-      "for",
-      "safe",
-      "displaying"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy"
     ]
   },
   {
     "id": "advanced-tools-html-to-markdown-index-html",
-    "title": "HTML to Markdown",
-    "description": "Advanced HTML to Markdown tool for developers.",
+    "title": "Html To Markdown",
+    "description": "Free online Html To Markdown. Secure, fast, and easy to use.",
     "category": "Text",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/html-to-markdown/index.html",
     "tags": [
       "html",
       "markdown",
-      "advanced",
-      "tool",
-      "for",
-      "developers",
-      "index"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -3469,6 +3373,25 @@
     ]
   },
   {
+    "id": "advanced-tools-image-to-base64-index-html",
+    "title": "Image To Base64",
+    "description": "Free online Image To Base64. Secure, fast, and easy to use.",
+    "category": "Image",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/image-to-base64/index.html",
+    "tags": [
+      "image",
+      "base64",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
+    ]
+  },
+  {
     "id": "nakul-tools-image-to-text-html",
     "title": "Image to Text",
     "description": "Use Image to Text online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
@@ -3506,6 +3429,25 @@
       "and",
       "export",
       "pdf"
+    ]
+  },
+  {
+    "id": "advanced-tools-json-formatter-index-html",
+    "title": "Json Formatter",
+    "description": "Free online Json Formatter. Secure, fast, and easy to use.",
+    "category": "Developer",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/json-formatter/index.html",
+    "tags": [
+      "json",
+      "formatter",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -3548,24 +3490,6 @@
     ]
   },
   {
-    "id": "advanced-tools-json-formatter-index-html",
-    "title": "JSON Formatter",
-    "description": "Advanced JSON Formatter tool for developers.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/json-formatter/index.html",
-    "tags": [
-      "json",
-      "formatter",
-      "advanced",
-      "tool",
-      "for",
-      "developers",
-      "index",
-      "html"
-    ]
-  },
-  {
     "id": "nakul-tools-json-formatter-validator-html",
     "title": "JSON Formatter & Validator Tool",
     "description": "Use JSON Formatter & Validator Tool online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
@@ -3581,6 +3505,25 @@
       "online",
       "globaltoolshub",
       "fast"
+    ]
+  },
+  {
+    "id": "advanced-tools-json-minifier-index-html",
+    "title": "Json Minifier",
+    "description": "Free online Json Minifier. Secure, fast, and easy to use.",
+    "category": "Developer",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/json-minifier/index.html",
+    "tags": [
+      "json",
+      "minifier",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -3623,57 +3566,41 @@
     ]
   },
   {
-    "id": "advanced-tools-json-minifier-index-html",
-    "title": "JSON Minifier",
-    "description": "Advanced JSON Minifier tool for developers.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/json-minifier/index.html",
-    "tags": [
-      "json",
-      "minifier",
-      "advanced",
-      "tool",
-      "for",
-      "developers",
-      "index",
-      "html"
-    ]
-  },
-  {
     "id": "advanced-tools-json-to-csv-index-html",
-    "title": "JSON to CSV Converter",
-    "description": "Convert JSON array to CSV format instantly.",
+    "title": "Json To Csv",
+    "description": "Free online Json To Csv. Secure, fast, and easy to use.",
     "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/json-to-csv/index.html",
     "tags": [
       "json",
       "csv",
-      "converter",
-      "convert",
-      "array",
-      "format",
-      "instantly",
-      "index"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
     "id": "advanced-tools-json-to-yaml-index-html",
-    "title": "JSON to YAML",
-    "description": "Advanced JSON to YAML tool for developers.",
+    "title": "Json To Yaml",
+    "description": "Free online Json To Yaml. Secure, fast, and easy to use.",
     "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/json-to-yaml/index.html",
     "tags": [
       "json",
       "yaml",
-      "advanced",
-      "tool",
-      "for",
-      "developers",
-      "index",
-      "html"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -3732,6 +3659,25 @@
       "privacy",
       "friendly",
       "browser"
+    ]
+  },
+  {
+    "id": "advanced-tools-jwt-decoder-index-html",
+    "title": "Jwt Decoder",
+    "description": "Free online Jwt Decoder. Secure, fast, and easy to use.",
+    "category": "Developer",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/jwt-decoder/index.html",
+    "tags": [
+      "jwt",
+      "decoder",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -4114,21 +4060,20 @@
   {
     "id": "advanced-tools-line-counter-index-html",
     "title": "Line Counter",
-    "description": "Count the number of lines in a text block.",
-    "category": "Text",
+    "description": "Free online Line Counter. Secure, fast, and easy to use.",
+    "category": "Utility",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/line-counter/index.html",
     "tags": [
       "line",
       "counter",
-      "count",
-      "the",
-      "number",
-      "lines",
-      "text",
-      "block",
-      "index",
-      "html"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -4151,6 +4096,25 @@
     ]
   },
   {
+    "id": "advanced-tools-lorem-ipsum-index-html",
+    "title": "Lorem Ipsum",
+    "description": "Free online Lorem Ipsum. Secure, fast, and easy to use.",
+    "category": "Text",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/lorem-ipsum/index.html",
+    "tags": [
+      "lorem",
+      "ipsum",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
+    ]
+  },
+  {
     "id": "usemagictools-lorem-ipsum-html",
     "title": "Lorem Ipsum Generator",
     "description": "Free online Lorem Ipsum generator. Generate placeholder text in paragraphs, sentences, or words. Classic Latin, Chinese, and Hipster styles.",
@@ -4167,26 +4131,6 @@
       "placeholder",
       "text",
       "paragraphs"
-    ]
-  },
-  {
-    "id": "advanced-tools-lorem-ipsum-index-html",
-    "title": "Lorem Ipsum Generator",
-    "description": "Generate placeholder text for designs.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/lorem-ipsum/index.html",
-    "tags": [
-      "lorem",
-      "ipsum",
-      "generator",
-      "generate",
-      "placeholder",
-      "text",
-      "for",
-      "designs",
-      "index",
-      "html"
     ]
   },
   {
@@ -4246,19 +4190,21 @@
   },
   {
     "id": "advanced-tools-markdown-to-html-index-html",
-    "title": "Markdown to HTML",
-    "description": "Advanced Markdown to HTML tool for developers.",
+    "title": "Markdown To Html",
+    "description": "Free online Markdown To Html. Secure, fast, and easy to use.",
     "category": "Text",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/markdown-to-html/index.html",
     "tags": [
       "markdown",
       "html",
-      "advanced",
-      "tool",
-      "for",
-      "developers",
-      "index"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -4384,8 +4330,8 @@
   },
   {
     "id": "advanced-tools-md5-hash-generator-index-html",
-    "title": "MD5 Hash Generator",
-    "description": "Advanced MD5 Hash Generator tool for developers.",
+    "title": "Md5 Hash Generator",
+    "description": "Free online Md5 Hash Generator. Secure, fast, and easy to use.",
     "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/md5-hash-generator/index.html",
@@ -4393,10 +4339,12 @@
       "md5",
       "hash",
       "generator",
-      "advanced",
-      "tool",
-      "for",
-      "developers"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy"
     ]
   },
   {
@@ -4416,6 +4364,25 @@
       "fast",
       "responsive",
       "privacy"
+    ]
+  },
+  {
+    "id": "advanced-tools-meta-tag-generator-index-html",
+    "title": "Meta Tag Generator",
+    "description": "Free online Meta Tag Generator. Secure, fast, and easy to use.",
+    "category": "Utility",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/meta-tag-generator/index.html",
+    "tags": [
+      "meta",
+      "tag",
+      "generator",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy"
     ]
   },
   {
@@ -4480,24 +4447,6 @@
     ]
   },
   {
-    "id": "advanced-tools-octal-to-hex-index-html",
-    "title": "Octal to Hex",
-    "description": "Advanced Octal to Hex tool for developers.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/octal-to-hex/index.html",
-    "tags": [
-      "octal",
-      "hex",
-      "advanced",
-      "tool",
-      "for",
-      "developers",
-      "index",
-      "html"
-    ]
-  },
-  {
     "id": "usemagictools-image-editor-html",
     "title": "Online Image Editor",
     "description": "Free online image editor with crop, flip, rotate, color adjustment, filters, annotations, and text overlay. Features grayscale, invert, blur, sharpen, emboss, pixelate effects. ✅ No ads ✅ No signup ✅ No watermark. Runs entirely in your browser.",
@@ -4514,6 +4463,25 @@
       "flip",
       "rotate",
       "color"
+    ]
+  },
+  {
+    "id": "advanced-tools-open-graph-generator-index-html",
+    "title": "Open Graph Generator",
+    "description": "Free online Open Graph Generator. Secure, fast, and easy to use.",
+    "category": "Utility",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/open-graph-generator/index.html",
+    "tags": [
+      "open",
+      "graph",
+      "generator",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy"
     ]
   },
   {
@@ -4592,6 +4560,25 @@
       "secure",
       "passwords",
       "instantly"
+    ]
+  },
+  {
+    "id": "advanced-tools-password-generator-index-html",
+    "title": "Password Generator",
+    "description": "Free online Password Generator. Secure, fast, and easy to use.",
+    "category": "PDF",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/password-generator/index.html",
+    "tags": [
+      "password",
+      "generator",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -4766,35 +4753,20 @@
   {
     "id": "advanced-tools-percentage-calculator-index-html",
     "title": "Percentage Calculator",
-    "description": "Calculate percentages easily.",
+    "description": "Free online Percentage Calculator. Secure, fast, and easy to use.",
     "category": "Utility",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/percentage-calculator/index.html",
     "tags": [
       "percentage",
       "calculator",
-      "calculate",
-      "percentages",
-      "easily",
-      "index",
-      "html"
-    ]
-  },
-  {
-    "id": "advanced-tools-phone-number-extractor-index-html",
-    "title": "Phone Number Extractor",
-    "description": "Advanced Phone Number Extractor tool for developers.",
-    "category": "Utility",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/phone-number-extractor/index.html",
-    "tags": [
-      "phone",
-      "number",
-      "extractor",
-      "advanced",
-      "tool",
-      "for",
-      "developers"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -4940,23 +4912,41 @@
     ]
   },
   {
+    "id": "advanced-tools-qrcode-generator-index-html",
+    "title": "Qrcode Generator",
+    "description": "Free online Qrcode Generator. Secure, fast, and easy to use.",
+    "category": "Image",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/qrcode-generator/index.html",
+    "tags": [
+      "qrcode",
+      "generator",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
+    ]
+  },
+  {
     "id": "advanced-tools-random-number-index-html",
-    "title": "Random Number Generator",
-    "description": "Generate random numbers between a minimum and maximum range.",
+    "title": "Random Number",
+    "description": "Free online Random Number. Secure, fast, and easy to use.",
     "category": "Utility",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/random-number/index.html",
     "tags": [
       "random",
       "number",
-      "generator",
-      "generate",
-      "numbers",
-      "between",
-      "minimum",
+      "free",
+      "online",
+      "secure",
+      "fast",
       "and",
-      "maximum",
-      "range"
+      "easy",
+      "use"
     ]
   },
   {
@@ -5025,7 +5015,7 @@
   {
     "id": "advanced-tools-remove-duplicate-lines-index-html",
     "title": "Remove Duplicate Lines",
-    "description": "Clean up lists by removing duplicate lines.",
+    "description": "Free online Remove Duplicate Lines. Secure, fast, and easy to use.",
     "category": "Utility",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/remove-duplicate-lines/index.html",
@@ -5033,10 +5023,12 @@
       "remove",
       "duplicate",
       "lines",
-      "clean",
-      "lists",
-      "removing",
-      "index"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy"
     ]
   },
   {
@@ -5059,19 +5051,21 @@
   },
   {
     "id": "advanced-tools-rgb-to-hex-index-html",
-    "title": "RGB to HEX",
-    "description": "Convert RGB color codes to Hex.",
-    "category": "Image",
+    "title": "Rgb To Hex",
+    "description": "Free online Rgb To Hex. Secure, fast, and easy to use.",
+    "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/rgb-to-hex/index.html",
     "tags": [
       "rgb",
       "hex",
-      "convert",
-      "color",
-      "codes",
-      "index",
-      "html"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -5391,22 +5385,41 @@
     ]
   },
   {
+    "id": "advanced-tools-robots-txt-generator-index-html",
+    "title": "Robots Txt Generator",
+    "description": "Free online Robots Txt Generator. Secure, fast, and easy to use.",
+    "category": "Utility",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/robots-txt-generator/index.html",
+    "tags": [
+      "robots",
+      "txt",
+      "generator",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy"
+    ]
+  },
+  {
     "id": "advanced-tools-rot13-encoder-index-html",
-    "title": "ROT13 Encoder/Decoder",
-    "description": "Apply the ROT13 substitution cipher to text.",
+    "title": "Rot13 Encoder",
+    "description": "Free online Rot13 Encoder. Secure, fast, and easy to use.",
     "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/rot13-encoder/index.html",
     "tags": [
       "rot13",
       "encoder",
-      "decoder",
-      "apply",
-      "the",
-      "substitution",
-      "cipher",
-      "text",
-      "index"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -5513,6 +5526,25 @@
     ]
   },
   {
+    "id": "advanced-tools-schema-markup-generator-index-html",
+    "title": "Schema Markup Generator",
+    "description": "Free online Schema Markup Generator. Secure, fast, and easy to use.",
+    "category": "Utility",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/schema-markup-generator/index.html",
+    "tags": [
+      "schema",
+      "markup",
+      "generator",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy"
+    ]
+  },
+  {
     "id": "nakul-tools-scientific-calculator-html",
     "title": "Scientific Calculator",
     "description": "Use Scientific Calculator online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
@@ -5549,44 +5581,6 @@
       "mediarecorder",
       "api",
       "record"
-    ]
-  },
-  {
-    "id": "advanced-tools-sha256-hash-index-html",
-    "title": "SHA-256 Hash Generator",
-    "description": "Generate SHA-256 secure hash for any string.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/sha256-hash/index.html",
-    "tags": [
-      "sha",
-      "256",
-      "hash",
-      "generator",
-      "generate",
-      "secure",
-      "for",
-      "any",
-      "string"
-    ]
-  },
-  {
-    "id": "advanced-tools-sha512-hash-index-html",
-    "title": "SHA-512 Hash Generator",
-    "description": "Generate SHA-512 secure hash for any string.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/sha512-hash/index.html",
-    "tags": [
-      "sha",
-      "512",
-      "hash",
-      "generator",
-      "generate",
-      "secure",
-      "for",
-      "any",
-      "string"
     ]
   },
   {
@@ -5709,6 +5703,25 @@
       "calculate",
       "the",
       "hash"
+    ]
+  },
+  {
+    "id": "advanced-tools-sha256-hash-index-html",
+    "title": "Sha256 Hash",
+    "description": "Free online Sha256 Hash. Secure, fast, and easy to use.",
+    "category": "Developer",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/sha256-hash/index.html",
+    "tags": [
+      "sha256",
+      "hash",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -5952,6 +5965,25 @@
     ]
   },
   {
+    "id": "advanced-tools-sha512-hash-index-html",
+    "title": "Sha512 Hash",
+    "description": "Free online Sha512 Hash. Secure, fast, and easy to use.",
+    "category": "Developer",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/sha512-hash/index.html",
+    "tags": [
+      "sha512",
+      "hash",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
+    ]
+  },
+  {
     "id": "online-tools-sha512-224-html",
     "title": "SHA512/224",
     "description": "This SHA512/224 online tool helps you calculate hashes from strings. You can input UTF-8, UTF-16, Hex, Base64, or other encodings. It also supports HMAC.",
@@ -6192,17 +6224,39 @@
   {
     "id": "advanced-tools-simple-calculator-index-html",
     "title": "Simple Calculator",
-    "description": "A basic standard calculator.",
+    "description": "Free online Simple Calculator. Secure, fast, and easy to use.",
     "category": "Utility",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/simple-calculator/index.html",
     "tags": [
       "simple",
       "calculator",
-      "basic",
-      "standard",
-      "index",
-      "html"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
+    ]
+  },
+  {
+    "id": "advanced-tools-sitemap-generator-index-html",
+    "title": "Sitemap Generator",
+    "description": "Free online Sitemap Generator. Secure, fast, and easy to use.",
+    "category": "Utility",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/sitemap-generator/index.html",
+    "tags": [
+      "sitemap",
+      "generator",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -6220,23 +6274,6 @@
       "string",
       "snail",
       "pothole"
-    ]
-  },
-  {
-    "id": "advanced-tools-snake-case-to-camel-case-index-html",
-    "title": "Snake Case to Camel Case",
-    "description": "Advanced Snake Case to Camel Case tool for developers.",
-    "category": "Text",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/snake-case-to-camel-case/index.html",
-    "tags": [
-      "snake",
-      "case",
-      "camel",
-      "advanced",
-      "tool",
-      "for",
-      "developers"
     ]
   },
   {
@@ -6263,75 +6300,78 @@
   },
   {
     "id": "advanced-tools-sort-lines-index-html",
-    "title": "Sort Lines Alphabetically",
-    "description": "Sort lines in ascending or descending order.",
-    "category": "Developer",
+    "title": "Sort Lines",
+    "description": "Free online Sort Lines. Secure, fast, and easy to use.",
+    "category": "Utility",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/sort-lines/index.html",
     "tags": [
       "sort",
       "lines",
-      "alphabetically",
-      "ascending",
-      "descending",
-      "order",
-      "index",
-      "html"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
-    "id": "advanced-tools-sql-query-formatter-index-html",
-    "title": "SQL Query Formatter",
-    "description": "Advanced SQL Query Formatter tool for developers.",
+    "id": "advanced-tools-sql-formatter-index-html",
+    "title": "Sql Formatter",
+    "description": "Free online Sql Formatter. Secure, fast, and easy to use.",
     "category": "Developer",
     "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/sql-query-formatter/index.html",
+    "url": "legacy/advanced-tools/sql-formatter/index.html",
     "tags": [
       "sql",
-      "query",
       "formatter",
-      "advanced",
-      "tool",
-      "for",
-      "developers"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
     "id": "advanced-tools-string-reverser-index-html",
     "title": "String Reverser",
-    "description": "Reverse any text string backwards.",
-    "category": "Text",
+    "description": "Free online String Reverser. Secure, fast, and easy to use.",
+    "category": "Utility",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/string-reverser/index.html",
     "tags": [
       "string",
       "reverser",
-      "reverse",
-      "any",
-      "text",
-      "backwards",
-      "index",
-      "html"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
-    "id": "advanced-tools-password-generator-index-html",
-    "title": "Strong Password Generator",
-    "description": "Generate highly secure random passwords.",
-    "category": "PDF",
+    "id": "advanced-tools-svg-optimizer-index-html",
+    "title": "Svg Optimizer",
+    "description": "Free online Svg Optimizer. Secure, fast, and easy to use.",
+    "category": "Utility",
     "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/password-generator/index.html",
+    "url": "legacy/advanced-tools/svg-optimizer/index.html",
     "tags": [
-      "strong",
-      "password",
-      "generator",
-      "generate",
-      "highly",
+      "svg",
+      "optimizer",
+      "free",
+      "online",
       "secure",
-      "random",
-      "passwords",
-      "index",
-      "html"
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -6395,7 +6435,7 @@
   {
     "id": "advanced-tools-text-case-converter-index-html",
     "title": "Text Case Converter",
-    "description": "Convert text between UPPERCASE, lowercase, Title Case, camelCase, snake_case, and more.",
+    "description": "Free online Text Case Converter. Secure, fast, and easy to use.",
     "category": "Text",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/text-case-converter/index.html",
@@ -6403,13 +6443,31 @@
       "text",
       "case",
       "converter",
-      "convert",
-      "between",
-      "uppercase",
-      "lowercase",
-      "title",
-      "camelcase",
-      "snake"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy"
+    ]
+  },
+  {
+    "id": "advanced-tools-text-diff-index-html",
+    "title": "Text Diff",
+    "description": "Free online Text Diff. Secure, fast, and easy to use.",
+    "category": "Text",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/text-diff/index.html",
+    "tags": [
+      "text",
+      "diff",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -6429,28 +6487,6 @@
       "two",
       "texts",
       "and"
-    ]
-  },
-  {
-    "id": "advanced-tools-text-diff-index-html",
-    "title": "Text Diff Checker",
-    "description": "Compare two texts and find the differences. (Basic line comparison)",
-    "category": "Text",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/text-diff/index.html",
-    "tags": [
-      "text",
-      "diff",
-      "checker",
-      "compare",
-      "two",
-      "texts",
-      "and",
-      "find",
-      "the",
-      "differences",
-      "basic",
-      "line"
     ]
   },
   {
@@ -6491,6 +6527,25 @@
     ]
   },
   {
+    "id": "advanced-tools-text-shadow-generator-index-html",
+    "title": "Text Shadow Generator",
+    "description": "Free online Text Shadow Generator. Secure, fast, and easy to use.",
+    "category": "Developer",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/text-shadow-generator/index.html",
+    "tags": [
+      "text",
+      "shadow",
+      "generator",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy"
+    ]
+  },
+  {
     "id": "nakul-tools-text-shortener-html",
     "title": "Text Shortener Tool",
     "description": "Use Text Shortener Tool online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
@@ -6511,74 +6566,59 @@
   },
   {
     "id": "advanced-tools-text-to-ascii-index-html",
-    "title": "Text to ASCII Converter",
-    "description": "Convert text to ASCII decimal values.",
+    "title": "Text To Ascii",
+    "description": "Free online Text To Ascii. Secure, fast, and easy to use.",
     "category": "Text",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/text-to-ascii/index.html",
     "tags": [
       "text",
       "ascii",
-      "converter",
-      "convert",
-      "decimal",
-      "values",
-      "index",
-      "html"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
     "id": "advanced-tools-text-to-binary-index-html",
-    "title": "Text to Binary Converter",
-    "description": "Convert text into binary code.",
-    "category": "Developer",
+    "title": "Text To Binary",
+    "description": "Free online Text To Binary. Secure, fast, and easy to use.",
+    "category": "Text",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/text-to-binary/index.html",
     "tags": [
       "text",
       "binary",
-      "converter",
-      "convert",
-      "into",
-      "code",
-      "index",
-      "html"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
     "id": "advanced-tools-text-to-hex-index-html",
-    "title": "Text to Hex Converter",
-    "description": "Convert text into hexadecimal representation.",
+    "title": "Text To Hex",
+    "description": "Free online Text To Hex. Secure, fast, and easy to use.",
     "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/text-to-hex/index.html",
     "tags": [
       "text",
       "hex",
-      "converter",
-      "convert",
-      "into",
-      "hexadecimal",
-      "representation",
-      "index",
-      "html"
-    ]
-  },
-  {
-    "id": "advanced-tools-text-to-markdown-table-index-html",
-    "title": "Text to Markdown Table",
-    "description": "Advanced Text to Markdown Table tool for developers.",
-    "category": "Text",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/text-to-markdown-table/index.html",
-    "tags": [
-      "text",
-      "markdown",
-      "table",
-      "advanced",
-      "tool",
-      "for",
-      "developers"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -6598,6 +6638,25 @@
       "fast",
       "responsive",
       "privacy"
+    ]
+  },
+  {
+    "id": "advanced-tools-timestamp-converter-index-html",
+    "title": "Timestamp Converter",
+    "description": "Free online Timestamp Converter. Secure, fast, and easy to use.",
+    "category": "Developer",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/timestamp-converter/index.html",
+    "tags": [
+      "timestamp",
+      "converter",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -6666,6 +6725,25 @@
     ]
   },
   {
+    "id": "advanced-tools-twitter-card-generator-index-html",
+    "title": "Twitter Card Generator",
+    "description": "Free online Twitter Card Generator. Secure, fast, and easy to use.",
+    "category": "Utility",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/twitter-card-generator/index.html",
+    "tags": [
+      "twitter",
+      "card",
+      "generator",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy"
+    ]
+  },
+  {
     "id": "nakul-tools-unit-converter-html",
     "title": "Unit Converter",
     "description": "Use Unit Converter online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
@@ -6703,27 +6781,6 @@
       "temperature",
       "area",
       "volume"
-    ]
-  },
-  {
-    "id": "advanced-tools-timestamp-converter-index-html",
-    "title": "Unix Timestamp Converter",
-    "description": "Convert Unix epoch timestamps to human-readable dates and vice versa.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/timestamp-converter/index.html",
-    "tags": [
-      "unix",
-      "timestamp",
-      "converter",
-      "convert",
-      "epoch",
-      "timestamps",
-      "human",
-      "readable",
-      "dates",
-      "and",
-      "vice"
     ]
   },
   {
@@ -6782,21 +6839,21 @@
   },
   {
     "id": "advanced-tools-url-decoder-index-html",
-    "title": "URL Decoder",
-    "description": "Decode a URL Encoded string back to normal text.",
+    "title": "Url Decoder",
+    "description": "Free online Url Decoder. Secure, fast, and easy to use.",
     "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/url-decoder/index.html",
     "tags": [
       "url",
       "decoder",
-      "decode",
-      "encoded",
-      "string",
-      "back",
-      "normal",
-      "text",
-      "index"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -6819,20 +6876,21 @@
   },
   {
     "id": "advanced-tools-url-encoder-index-html",
-    "title": "URL Encoder",
-    "description": "URL Encode a string to safely pass it in a URL query parameter.",
+    "title": "Url Encoder",
+    "description": "Free online Url Encoder. Secure, fast, and easy to use.",
     "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/url-encoder/index.html",
     "tags": [
       "url",
       "encoder",
-      "encode",
-      "string",
-      "safely",
-      "pass",
-      "query",
-      "parameter"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -6874,41 +6932,60 @@
     ]
   },
   {
-    "id": "advanced-tools-url-parameter-extractor-index-html",
-    "title": "URL Parameter Extractor",
-    "description": "Advanced URL Parameter Extractor tool for developers.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/url-parameter-extractor/index.html",
-    "tags": [
-      "url",
-      "parameter",
-      "extractor",
-      "advanced",
-      "tool",
-      "for",
-      "developers"
-    ]
-  },
-  {
     "id": "advanced-tools-url-parser-index-html",
-    "title": "URL Parser",
-    "description": "Parse a URL into its constituent parts (protocol, host, pathname, query params).",
+    "title": "Url Parser",
+    "description": "Free online Url Parser. Secure, fast, and easy to use.",
     "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/url-parser/index.html",
     "tags": [
       "url",
       "parser",
-      "parse",
-      "into",
-      "its",
-      "constituent",
-      "parts",
-      "protocol",
-      "host",
-      "pathname",
-      "query"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
+    ]
+  },
+  {
+    "id": "advanced-tools-utm-builder-index-html",
+    "title": "Utm Builder",
+    "description": "Free online Utm Builder. Secure, fast, and easy to use.",
+    "category": "Utility",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/utm-builder/index.html",
+    "tags": [
+      "utm",
+      "builder",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
+    ]
+  },
+  {
+    "id": "advanced-tools-uuid-generator-index-html",
+    "title": "Uuid Generator",
+    "description": "Free online Uuid Generator. Secure, fast, and easy to use.",
+    "category": "Developer",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/uuid-generator/index.html",
+    "tags": [
+      "uuid",
+      "generator",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {
@@ -6932,26 +7009,6 @@
     ]
   },
   {
-    "id": "advanced-tools-uuid-generator-index-html",
-    "title": "UUID v4 Generator",
-    "description": "Generate random UUIDs (Universally Unique Identifiers).",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/uuid-generator/index.html",
-    "tags": [
-      "uuid",
-      "generator",
-      "generate",
-      "random",
-      "uuids",
-      "universally",
-      "unique",
-      "identifiers",
-      "index",
-      "html"
-    ]
-  },
-  {
     "id": "usemagictools-watermark-tool-html",
     "title": "Watermark Tool",
     "description": "Free online image watermark tool. Add text watermark with opacity, angle, and position in browser. ✅ No ads ✅ No signup ✅ No limits.",
@@ -6968,28 +7025,6 @@
       "text",
       "with",
       "opacity"
-    ]
-  },
-  {
-    "id": "advanced-tools-word-counter-index-html",
-    "title": "Word & Character Counter",
-    "description": "Count words, characters, sentences, and paragraphs in your text in real-time.",
-    "category": "PDF",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/word-counter/index.html",
-    "tags": [
-      "word",
-      "character",
-      "counter",
-      "count",
-      "words",
-      "characters",
-      "sentences",
-      "and",
-      "paragraphs",
-      "your",
-      "text",
-      "real"
     ]
   },
   {
@@ -7031,6 +7066,25 @@
     ]
   },
   {
+    "id": "advanced-tools-word-counter-index-html",
+    "title": "Word Counter",
+    "description": "Free online Word Counter. Secure, fast, and easy to use.",
+    "category": "PDF",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/word-counter/index.html",
+    "tags": [
+      "word",
+      "counter",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
+    ]
+  },
+  {
     "id": "nakul-tools-word-counter-html",
     "title": "Word Counter Tool",
     "description": "Use Word Counter Tool online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
@@ -7050,6 +7104,25 @@
     ]
   },
   {
+    "id": "advanced-tools-xml-formatter-index-html",
+    "title": "Xml Formatter",
+    "description": "Free online Xml Formatter. Secure, fast, and easy to use.",
+    "category": "Developer",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/xml-formatter/index.html",
+    "tags": [
+      "xml",
+      "formatter",
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
+    ]
+  },
+  {
     "id": "online-tools-xml-formatter-index-html",
     "title": "XML Formatter",
     "description": "This free online XML formatter helps you beautify your XML string and make it more readable. You can choose the indentation level and characters.",
@@ -7066,24 +7139,6 @@
       "you",
       "beautify",
       "your"
-    ]
-  },
-  {
-    "id": "advanced-tools-xml-formatter-index-html",
-    "title": "XML Formatter",
-    "description": "Advanced XML Formatter tool for developers.",
-    "category": "Developer",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/xml-formatter/index.html",
-    "tags": [
-      "xml",
-      "formatter",
-      "advanced",
-      "tool",
-      "for",
-      "developers",
-      "index",
-      "html"
     ]
   },
   {
@@ -7126,20 +7181,21 @@
   },
   {
     "id": "advanced-tools-yaml-to-json-index-html",
-    "title": "YAML to JSON",
-    "description": "Advanced YAML to JSON tool for developers.",
+    "title": "Yaml To Json",
+    "description": "Free online Yaml To Json. Secure, fast, and easy to use.",
     "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/yaml-to-json/index.html",
     "tags": [
       "yaml",
       "json",
-      "advanced",
-      "tool",
-      "for",
-      "developers",
-      "index",
-      "html"
+      "free",
+      "online",
+      "secure",
+      "fast",
+      "and",
+      "easy",
+      "use"
     ]
   },
   {

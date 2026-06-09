@@ -1,44 +1,13 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lorem Ipsum Generator - GlobalToolsHub</title>
-    <meta name="description" content="Generate placeholder text for designs.">
-    <link rel="stylesheet" href="../../../assets/styles.css?v=2">
-    <link rel="stylesheet" href="../../../assets/site.css?v=2">
-    <script src="../../../assets/components.js?v=2" defer></script>
+<!doctype html>\n<html lang="en">\n<head>
+    <meta name="twitter:description" content="Free online Lorem Ipsum. Secure, fast, and easy to use.">
+    <meta name="twitter:title" content="Lorem Ipsum - GlobalToolsHub">
+    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/lorem-ipsum/index.html">
+    <meta property="og:site_name" content="GlobalToolsHub">
+    <meta property="og:description" content="Free online Lorem Ipsum. Secure, fast, and easy to use.">
+    <meta property="og:title" content="Lorem Ipsum - GlobalToolsHub">
+    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/lorem-ipsum/index.html">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="GlobalToolsHub">
+    <meta name="keywords" content="lorem, ipsum, free, online, secure, fast, and, easy, use">\n  <meta charset="utf-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <title>Lorem Ipsum - GlobalToolsHub</title>\n  <meta name="description" content="Free online Lorem Ipsum. Secure, fast, and easy to use.">\n  <link rel="stylesheet" href="../../../assets/styles.css?v=2">\n  <link rel="stylesheet" href="../../../assets/site.css?v=2">\n  <script src="../../../assets/components.js?v=2" defer></script>\n    <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"Lorem Ipsum","url":"/globaltoolshub/legacy/advanced-tools/lorem-ipsum/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Free online Lorem Ipsum. Secure, fast, and easy to use."}</script>
     <script src="../../../assets/seo-runtime.js" defer></script>
-    <script src="../../../assets/app.js?v=2" defer></script>
-  </head>
-  <body data-bg="clean">
-    <global-header></global-header>
-    <main class="page-main">
-      <h1>Lorem Ipsum Generator</h1>
-      <p>Generate placeholder text for designs.</p>
-      <div class="page-card surface rounded-2xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-900">
-        
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div>
-          <label class="block mb-2">Paragraphs</label>
-          <input type="number" id="count" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner mb-4" value="3" min="1" max="20">
-          <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 w-full" onclick="gen()">Generate</button>
-        </div>
-        <textarea id="output" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64" readonly></textarea>
-      </div>
-    
-      </div>
-    </main>
-    <global-footer></global-footer>
-    <script>
-      
-      function gen() {
-        const p = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-        const count = document.getElementById('count').value;
-        document.getElementById('output').value = Array(parseInt(count)).fill(p).join('\n\n');
-      }
-      gen();
-    
-    </script>
-  </body>
-</html>
+</head>\n<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">\n  <global-header></global-header>\n  \n  <main class="flex-grow pt-24 pb-12">\n    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\n      <div class="mb-8">\n        <a href="../../../index.html" class="text-indigo-600 dark:text-indigo-400 hover:underline mb-4 inline-block">&larr; Back to Tools</a>\n        <h1 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Lorem Ipsum</h1>\n        <p class="mt-2 text-slate-600 dark:text-slate-400">Professional, secure, and fast Lorem Ipsum. Runs completely in your browser.</p>\n      </div>\n      <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-6">\n        <div class="max-w-xl mx-auto bg-white dark:bg-slate-900 p-8 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 text-center"><textarea id="output" class="control h-24 text-2xl font-mono text-center pt-6" readonly></textarea><button class="btn btn-primary w-full mt-4" onclick="process()">Generate</button></div>\n      </div>\n    </div>\n  </main>\n  <global-footer></global-footer>\n  <script>function process() { document.getElementById('output').value = crypto.randomUUID(); }</script>\n</body>\n</html>

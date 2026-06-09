@@ -15,7 +15,16 @@
     <script src="../../../assets/seo-runtime.js" defer></script>
 </head><body><div id="qrcode"></div><script src="js/qr-code-styling.js"></script><script src="js/url-blob.js?v=1"></script><script src="js/qrcode.js?v=8"></script><script>
 if (typeof fetchQuery === 'function' && typeof generateByQuery === 'function') {
-  try { generateByQuery(fetchQuery()); } catch (e) { console.warn('QR init failed:', e); }
+  const query = fetchQuery();
+  if (Object.keys(query).length > 0) {
+    try {
+      generateByQuery(query);
+    } catch (e) {
+      console.warn('QR init failed:', e);
+    }
+  } else {
+    console.info('QR auto-init skipped; no query parameters');
+  }
 } else {
   console.warn('QR functions not available; skipping auto-init');
 }

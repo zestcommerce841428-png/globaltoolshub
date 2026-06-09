@@ -184,13 +184,9 @@ function upsertDynamicSeo(content, file, sourceRoot) {
     updated = updated.replace(/<\/head>/i, `    ${seoScript}\n</head>`);
   }
 
-  let runtimePath = path
+  const runtimePath = path
     .relative(path.dirname(file), path.join(root, "assets", "seo-runtime.js"))
     .replaceAll(path.sep, "/");
-    
-  if (file.includes(path.join("legacy", "online-tools"))) {
-    runtimePath = "../../assets/seo-runtime.js";
-  }
 
   const seoRuntimeScript = `<script src="${runtimePath}" defer></script>`;
   if (/<script\b[^>]*src=["'][^"']*seo-runtime\.js["'][^>]*>[\s\S]*?<\/script>/i.test(updated)) {

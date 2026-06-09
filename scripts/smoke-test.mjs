@@ -3,22 +3,85 @@ import puppeteer from 'puppeteer';
 import path from 'node:path';
 import fs from 'node:fs/promises';
 import http from 'node:http';
+import { URL } from 'node:url';
 
 const root = process.cwd();
+const mimeTypes = {
+  '.html': 'text/html; charset=utf-8',
+  '.js': 'application/javascript; charset=utf-8',
+  '.css': 'text/css; charset=utf-8',
+  '.svg': 'image/svg+xml',
+  '.json': 'application/json; charset=utf-8',
+  '.png': 'image/png',
+  '.jpg': 'image/jpeg',
+  '.jpeg': 'image/jpeg',
+  '.gif': 'image/gif',
+  '.txt': 'text/plain; charset=utf-8',
+};
+let fallbackServer = null;
+let fallbackPort = null;
+
+async function startStaticServer() {
+  if (fallbackServer) return;
+  fallbackServer = http.createServer(async (req, res) => {
+    try {
+      const reqUrl = new URL(req.url, 'http://127.0.0.1');
+      let relPath = decodeURIComponent(reqUrl.pathname);
+      if (relPath.endsWith('/')) relPath += 'index.html';
+      if (relPath.startsWith('/')) relPath = relPath.slice(1);
+      const fullPath = path.join(root, relPath);
+      if (!fullPath.startsWith(root)) {
+        res.statusCode = 403;
+        res.end('Forbidden');
+        return;
+      }
+      const data = await fs.readFile(fullPath);
+      const ext = path.extname(fullPath).toLowerCase();
+      res.setHeader('Content-Type', mimeTypes[ext] || 'application/octet-stream');
+      res.end(data);
+    } catch (err) {
+      res.statusCode = err.code === 'ENOENT' ? 404 : 500;
+      res.end(err.message || 'Error');
+    }
+  });
+  await new Promise((resolve, reject) => {
+    fallbackServer.listen(0, '127.0.0.1');
+    fallbackServer.on('listening', () => {
+      fallbackPort = fallbackServer.address().port;
+      resolve();
+    });
+    fallbackServer.on('error', reject);
+  });
+}
+
+async function closeStaticServer() {
+  if (!fallbackServer) return;
+  await new Promise((resolve) => fallbackServer.close(resolve));
+}
 
 // Candidate pages to test (relative to site root)
 async function discoverCandidates() {
-  const out = ['index.html', 'legacy/index.html'];
-  try {
-    const entries = await fs.readdir(path.join(root, 'legacy'), { withFileTypes: true });
-    for (const e of entries) {
-      if (e.isDirectory()) {
-        const p = path.join('legacy', e.name, 'index.html');
-        try { await fs.access(path.join(root, p)); out.push(p); } catch (err) { /* skip missing */ }
+  const out = [];
+  async function walk(dir) {
+    const entries = await fs.readdir(dir, { withFileTypes: true });
+    for (const entry of entries) {
+      if (entry.name === 'node_modules' || entry.name.startsWith('.')) continue;
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        await walk(full);
+        continue;
+      }
+      if (entry.isFile() && full.endsWith('.html')) {
+        out.push(path.relative(root, full).replace(/\\/g, '/'));
       }
     }
-  } catch (e) { /* ignore */ }
-  return out;
+  }
+  try {
+    await walk(root);
+  } catch (e) {
+    console.error('Error discovering HTML pages:', e);
+  }
+  return out.sort();
 }
 
 async function fileUrl(relative) {
@@ -43,7 +106,8 @@ async function fileUrl(relative) {
     });
     return httpUrl;
   } catch (_) {
-    return `file://${p.replaceAll('\\', '/')}`;
+    await startStaticServer();
+    return `http://127.0.0.1:${fallbackPort}/${relative}`;
   }
 }
 
@@ -116,6 +180,7 @@ async function run() {
   }
 
   await browser.close();
+  await closeStaticServer();
 
   let failures = 0;
   console.log('\nSmoke test results:');
