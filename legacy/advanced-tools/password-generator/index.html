@@ -17,7 +17,11 @@
     <meta name="description" content="Generate highly secure random passwords.">
     <link rel="stylesheet" href="../../../assets/styles.css?v=2">
     <link rel="stylesheet" href="../../../assets/site.css?v=2">
-    <script src="../../../assets/components.js?v=2" defer></script>
+    <script src="../../../assets/components.js?v=2" defer>
+function process() {
+  generatePassword();
+}
+    </script>
     <script src="../../../assets/seo-runtime.js" defer></script>
     <script src="../../../assets/app.js?v=2" defer></script>
       <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"Strong Password Generator","url":"/globaltoolshub/legacy/advanced-tools/password-generator/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Generate highly secure random passwords."}</script>
@@ -35,7 +39,7 @@
           <span>Length: <span id="len_val">16</span></span>
           <input type="range" id="len" min="8" max="64" value="16" class="w-1/2" oninput="len_val.textContent=this.value; gen()">
         </div>
-        <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 w-full" onclick="gen()">Generate Password</button>
+        <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 w-full" onclick="process()">Generate Password</button>
       </div>
     
       </div>

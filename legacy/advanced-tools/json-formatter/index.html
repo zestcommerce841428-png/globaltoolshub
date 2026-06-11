@@ -12,7 +12,11 @@
     <meta name="description" content="Format, validate, and beautify JSON data with syntax highlighting and error detection.">
     <link rel="stylesheet" href="../../../assets/styles.css?v=2">
     <link rel="stylesheet" href="../../../assets/site.css?v=2">
-    <script src="../../../assets/components.js?v=2" defer></script>
+    <script src="../../../assets/components.js?v=2" defer>
+function process() {
+  formatJSON();
+}
+    </script>
     <script src="../../../assets/seo-runtime.js" defer></script>
     <style>
       .json-output {
@@ -47,9 +51,9 @@
       
       <div class="page-card surface rounded-2xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-900">
         <div class="mb-4 flex flex-wrap gap-2">
-          <button onclick="formatJSON()" class="button-primary">Format JSON</button>
-          <button onclick="minifyJSON()" class="button-primary">Minify JSON</button>
-          <button onclick="validateJSON()" class="button-primary">Validate Only</button>
+          <button onclick="process()" class="button-primary">Format JSON</button>
+          <button onclick="process()" class="button-primary">Minify JSON</button>
+          <button onclick="process()" class="button-primary">Validate Only</button>
           <button onclick="copyOutput()" class="button-primary">Copy Output</button>
           <button onclick="clearAll()" class="surface rounded-lg px-4 py-2">Clear</button>
         </div>

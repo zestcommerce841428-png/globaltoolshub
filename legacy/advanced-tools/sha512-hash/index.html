@@ -17,7 +17,18 @@
     <meta name="description" content="Generate SHA-512 secure hash for any string.">
     <link rel="stylesheet" href="../../../assets/styles.css?v=2">
     <link rel="stylesheet" href="../../../assets/site.css?v=2">
-    <script src="../../../assets/components.js?v=2" defer></script>
+    <script src="../../../assets/components.js?v=2" defer>
+async function process() {
+  const input = document.getElementById('input').value;
+  if (!input) { alert('Please enter text'); return; }
+  const encoder = new TextEncoder();
+  const data = encoder.encode(input);
+  const hash = await crypto.subtle.digest('SHA-512', data);
+  const hashArray = Array.from(new Uint8Array(hash));
+  const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+  document.getElementById('output').value = hashHex;
+}
+    </script>
     <script src="../../../assets/seo-runtime.js" defer></script>
     <script src="../../../assets/app.js?v=2" defer></script>
       <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"SHA-512 Hash Generator","url":"/globaltoolshub/legacy/advanced-tools/sha512-hash/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Generate SHA-512 secure hash for any string."}</script>

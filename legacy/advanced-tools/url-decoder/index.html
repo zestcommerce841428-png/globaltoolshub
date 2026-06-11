@@ -33,7 +33,7 @@
         <div><label class="block text-sm font-medium mb-2">URL Encoded</label><textarea id="input" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64 font-mono" placeholder="hello%20world"></textarea></div>
         <div>
           <label class="block text-sm font-medium mb-2">Text</label><textarea id="output" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64" readonly></textarea>
-          <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 mt-4 w-full" onclick="try{document.getElementById('output').value=decodeURIComponent(document.getElementById('input').value)}catch(e){alert('Invalid Format')}">Decode</button>
+          <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 mt-4 w-full" onclick="process()">Decode</button>
         </div>
       </div>
     
