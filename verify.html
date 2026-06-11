@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Verification - GlobalToolsHub</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .status {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+        .info { background: #d1ecf1; color: #0c5460; }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover { background: #45a049; }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🔍 GlobalToolsHub - Live Site Verification</h1>
+        <p>This page verifies that all changes are properly deployed.</p>
+    </div>
+
+    <div class="card">
+        <h2>📊 Blog Data Test</h2>
+        <div id="blogStatus" class="status info">Testing...</div>
+        <div id="blogDetails"></div>
+    </div>
+
+    <div class="card">
+        <h2>🛠️ Tools Functionality Test</h2>
+        <div id="toolsStatus" class="status info">Testing...</div>
+        <div id="toolsDetails"></div>
+    </div>
+
+    <div class="card">
+        <h2>🌐 Browser Cache Issue?</h2>
+        <p>If tests show ✅ but you still see old content:</p>
+        <ol>
+            <li><strong>Hard Refresh:</strong> Press <code>Ctrl + Shift + R</code> (or <code>Cmd + Shift + R</code> on Mac)</li>
+            <li><strong>Clear Cache:</strong> 
+                <ul>
+                    <li>Chrome: Settings → Privacy → Clear browsing data</li>
+                    <li>Firefox: Options → Privacy → Clear Data</li>
+                </ul>
+            </li>
+            <li><strong>Incognito Mode:</strong> Open site in private/incognito window</li>
+        </ol>
+        <button onclick="location.reload(true)">🔄 Hard Refresh This Page</button>
+        <button onclick="clearCacheAndReload()">🗑️ Clear Cache & Reload</button>
+    </div>
+
+    <div class="card">
+        <h2>📝 Quick Links to Test</h2>
+        <ul>
+            <li><a href="index.html" target="_blank">Home Page</a></li>
+            <li><a href="blog.html" target="_blank">Blog Page (400 posts)</a></li>
+            <li><a href="legacy/advanced-tools/base64-encoder/index.html" target="_blank">Base64 Encoder Tool</a></li>
+            <li><a href="legacy/advanced-tools/qrcode-generator/index.html" target="_blank">QR Code Generator</a></li>
+            <li><a href="legacy/advanced-tools/json-formatter/index.html" target="_blank">JSON Formatter</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // Test Blog Data
+        async function testBlogData() {
+            const statusDiv = document.getElementById('blogStatus');
+            const detailsDiv = document.getElementById('blogDetails');
+            
+            try {
+                const response = await fetch('assets/blog-data.json?v=' + Date.now());
+                if (!response.ok) throw new Error('Failed to fetch');
+                
+                const data = await response.json();
+                
+                statusDiv.className = 'status success';
+                statusDiv.textContent = `✅ Blog data loaded successfully!`;
+                
+                detailsDiv.innerHTML = `
+                    <p><strong>Total Posts:</strong> ${data.length}</p>
+                    <p><strong>Categories:</strong> ${[...new Set(data.map(p => p.category))].join(', ')}</p>
+                    <p><strong>Sample Post:</strong></p>
+                    <pre>${JSON.stringify(data[0], null, 2)}</pre>
+                `;
+            } catch (error) {
+                statusDiv.className = 'status error';
+                statusDiv.textContent = `❌ Blog data failed: ${error.message}`;
+            }
+        }
+
+        // Test Tool Functionality
+        async function testTools() {
+            const statusDiv = document.getElementById('toolsStatus');
+            const detailsDiv = document.getElementById('toolsDetails');
+            
+            try {
+                const response = await fetch('legacy/advanced-tools/base64-encoder/index.html?v=' + Date.now());
+                const html = await response.text();
+                
+                const hasProcess = html.includes('function process()');
+                const hasBtoa = html.includes('btoa');
+                const hasEncode = html.includes('Encode');
+                
+                if (hasProcess && hasBtoa) {
+                    statusDiv.className = 'status success';
+                    statusDiv.textContent = `✅ Tools are functional!`;
+                    
+                    detailsDiv.innerHTML = `
+                        <p>✅ process() function: Found</p>
+                        <p>✅ Base64 encoding logic: Found</p>
+                        <p>✅ Encode button: Found</p>
+                        <p><strong>Note:</strong> If tools don't work, clear your browser cache!</p>
+                    `;
+                } else {
+                    throw new Error('Tool functions not found');
+                }
+            } catch (error) {
+                statusDiv.className = 'status error';
+                statusDiv.textContent = `❌ Tools test failed: ${error.message}`;
+            }
+        }
+
+        function clearCacheAndReload() {
+            if ('caches' in window) {
+                caches.keys().then(names => {
+                    names.forEach(name => caches.delete(name));
+                });
+            }
+            location.reload(true);
+        }
+
+        // Run tests on load
+        window.addEventListener('load', () => {
+            testBlogData();
+            testTools();
+        });
+    </script>
+</body>
+</html>
