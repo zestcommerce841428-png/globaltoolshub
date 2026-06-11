@@ -1,0 +1,5 @@
+# Force Rebuild - Blog Page Update
+
+This file forces GitHub Pages to rebuild and serve the correct blog.html with search/filter/pagination.
+
+Timestamp: 2026-06-11 14:12:40 IST
