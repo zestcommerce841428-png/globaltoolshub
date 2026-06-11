@@ -41,9 +41,15 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+
+async function process() {
+  const input = document.getElementById('input').value;
+  if(!input) { alert('Enter text'); return; }
+  const msgUint8 = new TextEncoder().encode(input);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  document.getElementById('output').value = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+}
     </script>
   </body>
 </html>

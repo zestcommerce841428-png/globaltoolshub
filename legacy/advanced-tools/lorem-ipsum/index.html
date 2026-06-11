@@ -42,14 +42,17 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-      function gen() {
-        const p = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-        const count = document.getElementById('count').value;
-        document.getElementById('output').value = Array(parseInt(count)).fill(p).join('\n\n');
-      }
-      gen();
-    
+
+function process() {
+  const count = parseInt(document.getElementById('count')?.value || 5);
+  const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+  const sentences = lorem.split('.');
+  let result = '';
+  for(let i=0; i<count; i++) {
+    result += sentences[i % sentences.length] + '. ';
+  }
+  document.getElementById('output').value = result.trim();
+}
     </script>
   </body>
 </html>

@@ -41,9 +41,21 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+
+function process() {
+  const input = document.getElementById('input').value.toUpperCase();
+  const base32chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
+  let bits = '';
+  for(let i=0; i<input.length; i++) {
+    const val = base32chars.indexOf(input[i]);
+    if(val>=0) bits += val.toString(2).padStart(5,'0');
+  }
+  let result = '';
+  for(let i=0; i<bits.length-7; i+=8) {
+    result += String.fromCharCode(parseInt(bits.substr(i,8),2));
+  }
+  document.getElementById('output').value = result;
+}
     </script>
   </body>
 </html>

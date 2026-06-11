@@ -41,9 +41,16 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { try { document.getElementById('output').value = btoa(document.getElementById('input').value); } catch(e) { document.getElementById('output').value = 'Error'; } }
-    
+
+function process() {
+  const input = document.getElementById('input').value;
+  if (!input) { alert('Please enter text'); return; }
+  try {
+    document.getElementById('output').value = btoa(unescape(encodeURIComponent(input)));
+  } catch(e) {
+    alert('Encoding error: ' + e.message);
+  }
+}
     </script>
   </body>
 </html>

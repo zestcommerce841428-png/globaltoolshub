@@ -47,17 +47,21 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-      document.getElementById('input').addEventListener('input', e => {
-        const val = e.target.value;
-        const words = val.match(/\b\w+\b/g);
-        document.getElementById('words').textContent = words ? words.length : 0;
-        document.getElementById('charsNoSp').textContent = val.replace(/\s/g, '').length;
-        document.getElementById('charsSp').textContent = val.length;
-        document.getElementById('sentences').textContent = val.split(/[.!?]+/).filter(Boolean).length;
-        document.getElementById('paras').textContent = val.split(/\n+/).filter(Boolean).length;
-      });
-    
+
+function process() {
+  const input = document.getElementById('input').value;
+  const words = input.trim().split(/\s+/).filter(Boolean).length;
+  const chars = input.length;
+  const charsNoSpaces = input.replace(/\s/g, '').length;
+  const lines = input.split('\n').length;
+  const sentences = input.split(/[.!?]+/).filter(Boolean).length;
+  document.getElementById('output').value = 
+    'Words: ' + words + '\n' +
+    'Characters: ' + chars + '\n' +
+    'Characters (no spaces): ' + charsNoSpaces + '\n' +
+    'Lines: ' + lines + '\n' +
+    'Sentences: ' + sentences;
+}
     </script>
   </body>
 </html>

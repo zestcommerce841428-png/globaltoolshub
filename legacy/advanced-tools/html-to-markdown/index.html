@@ -41,9 +41,21 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+
+function process() {
+  const input = document.getElementById('input').value;
+  let md = input
+    .replace(/<h1>(.*?)<\/h1>/gi, '# $1\n')
+    .replace(/<h2>(.*?)<\/h2>/gi, '## $1\n')
+    .replace(/<h3>(.*?)<\/h3>/gi, '### $1\n')
+    .replace(/<strong>(.*?)<\/strong>/gi, '**$1**')
+    .replace(/<em>(.*?)<\/em>/gi, '*$1*')
+    .replace(/<a href="(.*?)">(.*?)<\/a>/gi, '[$2]($1)')
+    .replace(/<li>(.*?)<\/li>/gi, '* $1')
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<[^>]+>/g, '');
+  document.getElementById('output').value = md;
+}
     </script>
   </body>
 </html>

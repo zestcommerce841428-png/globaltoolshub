@@ -41,9 +41,17 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+
+function process() {
+  const input = document.getElementById('input').value.trim();
+  if (!input) { alert('Please enter JSON'); return; }
+  try {
+    const parsed = JSON.parse(input);
+    document.getElementById('output').value = JSON.stringify(parsed);
+  } catch(error) {
+    alert('Invalid JSON: ' + error.message);
+  }
+}
     </script>
   </body>
 </html>

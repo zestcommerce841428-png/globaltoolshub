@@ -41,9 +41,15 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+
+function process() {
+  const input = document.getElementById('input').value.trim();
+  try {
+    document.getElementById('output').value = parseInt(input, 16).toString(2);
+  } catch(e) {
+    alert('Invalid hex');
+  }
+}
     </script>
   </body>
 </html>

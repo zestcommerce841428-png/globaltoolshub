@@ -41,9 +41,29 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+
+function process() {
+  const input = document.getElementById('input').value.trim();
+  try {
+    const obj = yamlToJson(input);
+    document.getElementById('output').value = JSON.stringify(obj, null, 2);
+  } catch(e) {
+    alert('Invalid YAML: ' + e.message);
+  }
+}
+function yamlToJson(yaml) {
+  const lines = yaml.split('\n');
+  const obj = {};
+  lines.forEach(line => {
+    if(line.trim() && !line.startsWith('#')) {
+      const [key, ...values] = line.split(':');
+      if(key && values.length) {
+        obj[key.trim()] = values.join(':').trim();
+      }
+    }
+  });
+  return obj;
+}
     </script>
   </body>
 </html>

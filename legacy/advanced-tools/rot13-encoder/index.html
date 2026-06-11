@@ -41,9 +41,13 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { document.getElementById('output').value = document.getElementById('input').value.replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<='Z'?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}); }
-    
+
+function process() {
+  const input = document.getElementById('input').value;
+  document.getElementById('output').value = input.replace(/[a-zA-Z]/g, c =>
+    String.fromCharCode((c<='Z'?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26)
+  );
+}
     </script>
   </body>
 </html>

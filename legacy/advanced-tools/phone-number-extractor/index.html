@@ -41,9 +41,12 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+
+function process() {
+  const input = document.getElementById('input').value;
+  const phones = input.match(/\b\d{3}[-.]?\d{3}[-.]?\d{4}\b/g) || [];
+  document.getElementById('output').value = [...new Set(phones)].join('\n');
+}
     </script>
   </body>
 </html>

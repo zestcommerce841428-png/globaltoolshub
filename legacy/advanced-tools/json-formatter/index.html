@@ -1,49 +1,193 @@
+/**
+ * Enhanced JSON Formatter Tool
+ * Proper JSON parsing, validation, and formatting
+ */
+
 <!doctype html>
 <html lang="en">
   <head>
-    <meta name="twitter:description" content="Advanced JSON Formatter tool for developers.">
-    <meta name="twitter:title" content="JSON Formatter - GlobalToolsHub">
-    <meta property="og:url" content="/globaltoolshub/legacy/advanced-tools/json-formatter/index.html">
-    <meta property="og:site_name" content="GlobalToolsHub">
-    <meta property="og:description" content="Advanced JSON Formatter tool for developers.">
-    <meta property="og:title" content="JSON Formatter - GlobalToolsHub">
-    <link rel="canonical" href="/globaltoolshub/legacy/advanced-tools/json-formatter/index.html">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="author" content="GlobalToolsHub">
-    <meta name="keywords" content="json, formatter, advanced, tool, for, developers, index, html">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JSON Formatter - GlobalToolsHub</title>
-    <meta name="description" content="Advanced JSON Formatter tool for developers.">
+    <meta name="description" content="Format, validate, and beautify JSON data with syntax highlighting and error detection.">
     <link rel="stylesheet" href="../../../assets/styles.css?v=2">
     <link rel="stylesheet" href="../../../assets/site.css?v=2">
     <script src="../../../assets/components.js?v=2" defer></script>
     <script src="../../../assets/seo-runtime.js" defer></script>
-    <script src="../../../assets/app.js?v=2" defer></script>
-      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"JSON Formatter","url":"/globaltoolshub/legacy/advanced-tools/json-formatter/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Advanced JSON Formatter tool for developers."}</script>
-</head>
+    <style>
+      .json-output {
+        font-family: 'Courier New', monospace;
+        white-space: pre-wrap;
+        background: #1e1e1e;
+        color: #d4d4d4;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        overflow-x: auto;
+      }
+      .json-key { color: #9cdcfe; }
+      .json-string { color: #ce9178; }
+      .json-number { color: #b5cea8; }
+      .json-boolean { color: #569cd6; }
+      .json-null { color: #569cd6; }
+      .error-message {
+        background: #ff000020;
+        border: 1px solid #ff0000;
+        color: #ff6b6b;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
   <body data-bg="clean">
     <global-header></global-header>
     <main class="page-main">
-      <h1>JSON Formatter</h1>
-      <p>Advanced JSON Formatter tool for developers.</p>
+      <h1>JSON Formatter & Validator</h1>
+      <p>Format, validate, and beautify JSON data with proper syntax highlighting.</p>
+      
       <div class="page-card surface rounded-2xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-900">
-        
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div><label class="block mb-2">Input</label><textarea id="input" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64" placeholder="Enter input here..."></textarea></div>
-        <div>
-          <label class="block mb-2">Output</label><textarea id="output" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64" readonly></textarea>
-          <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 mt-4 w-full" onclick="process()">Process</button>
+        <div class="mb-4 flex flex-wrap gap-2">
+          <button onclick="formatJSON()" class="button-primary">Format JSON</button>
+          <button onclick="minifyJSON()" class="button-primary">Minify JSON</button>
+          <button onclick="validateJSON()" class="button-primary">Validate Only</button>
+          <button onclick="copyOutput()" class="button-primary">Copy Output</button>
+          <button onclick="clearAll()" class="surface rounded-lg px-4 py-2">Clear</button>
         </div>
-      </div>
-    
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block mb-2 font-semibold">Input JSON</label>
+            <textarea 
+              id="input" 
+              class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner font-mono" 
+              style="height: 400px;"
+              placeholder='{"name": "John", "age": 30}'></textarea>
+          </div>
+          <div>
+            <label class="block mb-2 font-semibold">Formatted Output</label>
+            <div 
+              id="output" 
+              class="json-output"
+              style="height: 400px; overflow-y: auto;"></div>
+          </div>
+        </div>
+
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+        <div class="mt-6 p-4 surface rounded-lg">
+          <h3 class="font-semibold mb-2">Features:</h3>
+          <ul class="list-disc list-inside space-y-1 text-sm text-slate-600 dark:text-slate-300">
+            <li>Proper JSON validation with detailed error messages</li>
+            <li>Syntax highlighting for keys, strings, numbers, booleans</li>
+            <li>Format with 2-space indentation</li>
+            <li>Minify to remove all whitespace</li>
+            <li>Copy formatted output to clipboard</li>
+            <li>Real-time validation on format</li>
+          </ul>
+        </div>
       </div>
     </main>
     <global-footer></global-footer>
+
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+      function formatJSON() {
+        const input = document.getElementById('input').value.trim();
+        const output = document.getElementById('output');
+        const errorDiv = document.getElementById('errorMessage');
+        
+        errorDiv.style.display = 'none';
+        
+        if (!input) {
+          output.innerHTML = '<span style="color: #888;">Enter JSON to format...</span>';
+          return;
+        }
+        
+        try {
+          const parsed = JSON.parse(input);
+          const formatted = JSON.stringify(parsed, null, 2);
+          output.innerHTML = syntaxHighlight(formatted);
+        } catch (error) {
+          errorDiv.style.display = 'block';
+          errorDiv.innerHTML = `<strong>Invalid JSON:</strong><br>${error.message}`;
+          output.innerHTML = '<span style="color: #ff6b6b;">Invalid JSON - see error above</span>';
+        }
+      }
+
+      function minifyJSON() {
+        const input = document.getElementById('input').value.trim();
+        const output = document.getElementById('output');
+        const errorDiv = document.getElementById('errorMessage');
+        
+        errorDiv.style.display = 'none';
+        
+        if (!input) return;
+        
+        try {
+          const parsed = JSON.parse(input);
+          const minified = JSON.stringify(parsed);
+          output.innerHTML = syntaxHighlight(minified);
+        } catch (error) {
+          errorDiv.style.display = 'block';
+          errorDiv.innerHTML = `<strong>Invalid JSON:</strong><br>${error.message}`;
+        }
+      }
+
+      function validateJSON() {
+        const input = document.getElementById('input').value.trim();
+        const errorDiv = document.getElementById('errorMessage');
+        const output = document.getElementById('output');
+        
+        errorDiv.style.display = 'none';
+        
+        if (!input) return;
+        
+        try {
+          JSON.parse(input);
+          output.innerHTML = '<span style="color: #4ade80; font-size: 1.2rem;">✓ Valid JSON</span>';
+        } catch (error) {
+          errorDiv.style.display = 'block';
+          errorDiv.innerHTML = `<strong>Invalid JSON:</strong><br>${error.message}`;
+          output.innerHTML = '<span style="color: #ff6b6b;">✗ Invalid JSON</span>';
+        }
+      }
+
+      function copyOutput() {
+        const output = document.getElementById('output').innerText;
+        navigator.clipboard.writeText(output).then(() => {
+          alert('Copied to clipboard!');
+        });
+      }
+
+      function clearAll() {
+        document.getElementById('input').value = '';
+        document.getElementById('output').innerHTML = '';
+        document.getElementById('errorMessage').style.display = 'none';
+      }
+
+      function syntaxHighlight(json) {
+        json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
+          let cls = 'json-number';
+          if (/^"/.test(match)) {
+            if (/:$/.test(match)) {
+              cls = 'json-key';
+            } else {
+              cls = 'json-string';
+            }
+          } else if (/true|false/.test(match)) {
+            cls = 'json-boolean';
+          } else if (/null/.test(match)) {
+            cls = 'json-null';
+          }
+          return '<span class="' + cls + '">' + match + '</span>';
+        });
+      }
+
+      // Auto-format on load if there's sample data
+      window.addEventListener('load', function() {
+        const sampleJSON = document.getElementById('input').value;
+        if (sampleJSON) formatJSON();
+      });
     </script>
   </body>
 </html>

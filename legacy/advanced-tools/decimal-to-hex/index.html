@@ -41,9 +41,12 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const n = parseInt(document.getElementById('input').value, 10); document.getElementById('output').value = isNaN(n) ? 'Invalid' : n.toString(16).toUpperCase(); }
-    
+
+function process() {
+  const input = parseInt(document.getElementById('input').value);
+  if(isNaN(input)) { alert('Invalid number'); return; }
+  document.getElementById('output').value = input.toString(16).toUpperCase();
+}
     </script>
   </body>
 </html>

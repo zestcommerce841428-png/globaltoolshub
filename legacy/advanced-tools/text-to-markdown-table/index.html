@@ -41,9 +41,18 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+
+function process() {
+  const input = document.getElementById('input').value.trim();
+  const lines = input.split('\n');
+  if(lines.length < 2) { alert('Need at least 2 lines'); return; }
+  let table = '| ' + lines[0].split('\t').join(' | ') + ' |\n';
+  table += '| ' + lines[0].split('\t').map(() => '---').join(' | ') + ' |\n';
+  for(let i=1; i<lines.length; i++) {
+    table += '| ' + lines[i].split('\t').join(' | ') + ' |\n';
+  }
+  document.getElementById('output').value = table;
+}
     </script>
   </body>
 </html>

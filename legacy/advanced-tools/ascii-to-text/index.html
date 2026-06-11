@@ -41,9 +41,16 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { try { document.getElementById('output').value = document.getElementById('input').value.split(' ').map(b => String.fromCharCode(parseInt(b, 10))).join(''); } catch(e) { document.getElementById('output').value = 'Invalid ASCII'; } }
-    
+
+function process() {
+  const input = document.getElementById('input').value.trim();
+  try {
+    document.getElementById('output').value = input.split(/\s+/)
+      .map(ascii => String.fromCharCode(parseInt(ascii))).join('');
+  } catch(e) {
+    alert('Invalid ASCII codes');
+  }
+}
     </script>
   </body>
 </html>

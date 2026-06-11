@@ -41,9 +41,15 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+
+function process() {
+  const tl = document.getElementById('tl')?.value || 0;
+  const tr = document.getElementById('tr')?.value || 0;
+  const br = document.getElementById('br')?.value || 0;
+  const bl = document.getElementById('bl')?.value || 0;
+  document.getElementById('output').value = 
+    'border-radius: '+tl+'px '+tr+'px '+br+'px '+bl+'px;';
+}
     </script>
   </body>
 </html>

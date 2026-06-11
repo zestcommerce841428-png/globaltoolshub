@@ -41,22 +41,20 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-      function convert() {
-        try {
-          const lines = document.getElementById('input').value.trim().split('\n');
-          if(lines.length<2) { document.getElementById('output').value = "[]"; return; }
-          const headers = lines[0].split(',');
-          const result = lines.slice(1).map(line => {
-            const obj = {};
-            const vals = line.split(',');
-            headers.forEach((h, i) => obj[h.trim()] = vals[i] ? vals[i].trim() : '');
-            return obj;
-          });
-          document.getElementById('output').value = JSON.stringify(result, null, 2);
-        } catch(e) { document.getElementById('output').value = "Error parsing CSV"; }
-      }
-    
+
+function process() {
+  const input = document.getElementById('input').value.trim();
+  const lines = input.split('\n');
+  const headers = lines[0].split(',').map(h => h.trim());
+  const result = [];
+  for(let i=1; i<lines.length; i++) {
+    const values = lines[i].split(',').map(v => v.trim());
+    const obj = {};
+    headers.forEach((h, idx) => obj[h] = values[idx]);
+    result.push(obj);
+  }
+  document.getElementById('output').value = JSON.stringify(result, null, 2);
+}
     </script>
   </body>
 </html>

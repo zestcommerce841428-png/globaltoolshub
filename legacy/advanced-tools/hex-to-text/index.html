@@ -41,9 +41,16 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { try { const hex = document.getElementById('input').value.replace(/s/g, ''); let str = ''; for (let i = 0; i < hex.length; i += 2) str += String.fromCharCode(parseInt(hex.substr(i, 2), 16)); document.getElementById('output').value = str; } catch(e) { document.getElementById('output').value = 'Invalid Hex'; } }
-    
+
+function process() {
+  const input = document.getElementById('input').value.replace(/\s/g, '');
+  try {
+    document.getElementById('output').value = input.match(/.{1,2}/g)
+      .map(hex => String.fromCharCode(parseInt(hex, 16))).join('');
+  } catch(e) {
+    alert('Invalid hex');
+  }
+}
     </script>
   </body>
 </html>

@@ -41,9 +41,13 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { try { document.getElementById('output').value = decodeURIComponent(document.getElementById('input').value); } catch(e) { document.getElementById('output').value = 'Invalid URL Encoding'; } }
-    
+
+function process() {
+  const input = document.getElementById('input').value;
+  const txt = document.createElement('textarea');
+  txt.innerHTML = input;
+  document.getElementById('output').value = txt.value;
+}
     </script>
   </body>
 </html>

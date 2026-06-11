@@ -41,9 +41,28 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+
+function process() {
+  const input = document.getElementById('input').value.trim();
+  try {
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(input, 'text/xml');
+    const serializer = new XMLSerializer();
+    const formatted = serializer.serializeToString(xmlDoc);
+    document.getElementById('output').value = formatted
+      .replace(/></g, '>\n<')
+      .split('\n')
+      .map((line, idx, arr) => {
+        let indent = 0;
+        if(idx > 0 && arr[idx-1].match(/<[^/][^>]*>$/)) indent++;
+        if(line.match(/^<\//) && idx > 0) indent--;
+        return '  '.repeat(Math.max(0, indent)) + line;
+      })
+      .join('\n');
+  } catch(e) {
+    alert('Invalid XML: ' + e.message);
+  }
+}
     </script>
   </body>
 </html>

@@ -27,8 +27,6 @@
           </nav>
           <div class="flex flex-wrap items-center gap-2">
             <select id="themeSelect" class="control w-28 sm:w-32" aria-label="Theme"></select>
-            <select id="languageSelect" class="control w-24 sm:w-28" aria-label="Language"></select>
-            <select id="countrySelect" class="control w-32 sm:w-36" aria-label="Country"></select>
           </div>
         </div>
       </header>

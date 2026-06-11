@@ -41,9 +41,20 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+
+function process() {
+  const input = document.getElementById('input').value;
+  const alphabet = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
+  const bytes = new TextEncoder().encode(input);
+  let num = 0n;
+  for(const byte of bytes) num = num * 256n + BigInt(byte);
+  let result = '';
+  while(num > 0) {
+    result = alphabet[Number(num % 58n)] + result;
+    num = num / 58n;
+  }
+  document.getElementById('output').value = result || '1';
+}
     </script>
   </body>
 </html>

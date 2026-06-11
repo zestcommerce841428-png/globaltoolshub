@@ -41,9 +41,18 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+
+function process() {
+  const input = document.getElementById('input').value.trim();
+  try {
+    const url = new URL(input);
+    const params = {};
+    url.searchParams.forEach((value, key) => params[key] = value);
+    document.getElementById('output').value = JSON.stringify(params, null, 2);
+  } catch(e) {
+    alert('Invalid URL');
+  }
+}
     </script>
   </body>
 </html>

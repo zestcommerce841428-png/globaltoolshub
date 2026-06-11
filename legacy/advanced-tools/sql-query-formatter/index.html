@@ -41,9 +41,22 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+
+function process() {
+  const input = document.getElementById('input').value;
+  document.getElementById('output').value = input
+    .replace(/\bSELECT\b/gi, 'SELECT')
+    .replace(/\bFROM\b/gi, 'FROM')
+    .replace(/\bWHERE\b/gi, 'WHERE')
+    .replace(/\bAND\b/gi, 'AND')
+    .replace(/\bOR\b/gi, 'OR')
+    .replace(/\bJOIN\b/gi, 'JOIN')
+    .replace(/\bINNER\b/gi, 'INNER')
+    .replace(/\bLEFT\b/gi, 'LEFT')
+    .replace(/\bRIGHT\b/gi, 'RIGHT')
+    .replace(/\bORDER BY\b/gi, 'ORDER BY')
+    .replace(/\bGROUP BY\b/gi, 'GROUP BY');
+}
     </script>
   </body>
 </html>

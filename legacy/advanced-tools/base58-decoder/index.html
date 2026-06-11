@@ -41,9 +41,21 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+
+function process() {
+  const input = document.getElementById('input').value;
+  const alphabet = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
+  let num = 0n;
+  for(const char of input) {
+    num = num * 58n + BigInt(alphabet.indexOf(char));
+  }
+  const bytes = [];
+  while(num > 0) {
+    bytes.unshift(Number(num % 256n));
+    num = num / 256n;
+  }
+  document.getElementById('output').value = new TextDecoder().decode(new Uint8Array(bytes));
+}
     </script>
   </body>
 </html>

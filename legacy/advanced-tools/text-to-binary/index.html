@@ -41,9 +41,12 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { document.getElementById('output').value = Array.from(document.getElementById('input').value).map(c => c.charCodeAt(0).toString(2).padStart(8, '0')).join(' '); }
-    
+
+function process() {
+  const input = document.getElementById('input').value;
+  document.getElementById('output').value = input.split('')
+    .map(char => char.charCodeAt(0).toString(2).padStart(8, '0')).join(' ');
+}
     </script>
   </body>
 </html>

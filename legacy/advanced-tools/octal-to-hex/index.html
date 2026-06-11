@@ -41,9 +41,15 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+
+function process() {
+  const input = document.getElementById('input').value.trim();
+  try {
+    document.getElementById('output').value = parseInt(input, 8).toString(16).toUpperCase();
+  } catch(e) {
+    alert('Invalid octal');
+  }
+}
     </script>
   </body>
 </html>

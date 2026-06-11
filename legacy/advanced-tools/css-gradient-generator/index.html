@@ -41,9 +41,14 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+
+function process() {
+  const color1 = document.getElementById('color1')?.value || '#ff0000';
+  const color2 = document.getElementById('color2')?.value || '#0000ff';
+  const angle = document.getElementById('angle')?.value || 90;
+  document.getElementById('output').value = 
+    'background: linear-gradient('+angle+'deg, '+color1+', '+color2+');';
+}
     </script>
   </body>
 </html>

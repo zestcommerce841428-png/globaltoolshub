@@ -44,9 +44,11 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { document.getElementById('output').value = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'; }
-    
+
+function process() {
+  const input = document.getElementById('input').value;
+  document.getElementById('output').value = input.split('\n').sort().join('\n');
+}
     </script>
   </body>
 </html>

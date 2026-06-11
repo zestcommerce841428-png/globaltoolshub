@@ -20,8 +20,8 @@
     <script src="../../../assets/components.js?v=2" defer></script>
     <script src="../../../assets/seo-runtime.js" defer></script>
     <script src="../../../assets/app.js?v=2" defer></script>
-      <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"HTML Entity Encoder","url":"/globaltoolshub/legacy/advanced-tools/html-entity-encoder/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Convert characters into HTML entities for safe displaying."}</script>
-</head>
+    <script type="application/ld+json" data-globaltoolshub-seo>{"@context":"https://schema.org","@type":"WebApplication","name":"HTML Entity Encoder","url":"/globaltoolshub/legacy/advanced-tools/html-entity-encoder/index.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web Browser","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"GlobalToolsHub"},"description":"Convert characters into HTML entities for safe displaying."}</script>
+  </head>
   <body data-bg="clean">
     <global-header></global-header>
     <main class="page-main">
@@ -29,21 +29,117 @@
       <p>Convert characters into HTML entities for safe displaying.</p>
       <div class="page-card surface rounded-2xl p-6 md:p-8 border border-slate-200 dark:border-slate-800 shadow-xl bg-white dark:bg-slate-900">
         
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div><label class="block text-sm font-medium mb-2">HTML/Text</label><textarea id="input" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64" placeholder="<script>alert('xss')</script>"></textarea></div>
-        <div>
-          <label class="block text-sm font-medium mb-2">Entities</label><textarea id="output" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64 font-mono" readonly></textarea>
-          <button class="inline-flex justify-center items-center py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 mt-4 w-full" onclick="document.getElementById('output').value=document.getElementById('input').value.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')">Encode</button>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium mb-2">Input Text</label>
+            <textarea id="input" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64" placeholder="Enter text or HTML to encode..."></textarea>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-2">Encoded Output</label>
+            <textarea id="output" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all dark:bg-slate-900 dark:border-slate-700 shadow-inner h-64" placeholder="Encoded HTML entities will appear here..." readonly></textarea>
+          </div>
         </div>
-      </div>
-    
+
+        <div class="flex flex-wrap gap-4 mt-6">
+          <button onclick="process()" class="btn-primary px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-medium shadow-lg transition-all">
+            Encode
+          </button>
+          <button onclick="decode()" class="btn-secondary px-6 py-3 bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 rounded-xl font-medium shadow-lg transition-all">
+            Decode
+          </button>
+          <button onclick="copyOutput()" class="btn-secondary px-6 py-3 bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 rounded-xl font-medium shadow-lg transition-all">
+            Copy Output
+          </button>
+          <button onclick="clearAll()" class="btn-secondary px-6 py-3 bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 rounded-xl font-medium shadow-lg transition-all">
+            Clear
+          </button>
+        </div>
+
+        <div class="mt-8 p-6 bg-slate-50 dark:bg-slate-800 rounded-xl">
+          <h2 class="text-xl font-semibold mb-4">Common HTML Entities</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+            <div><code>&amp;</code> → <code>&amp;amp;</code></div>
+            <div><code>&lt;</code> → <code>&amp;lt;</code></div>
+            <div><code>&gt;</code> → <code>&amp;gt;</code></div>
+            <div><code>&quot;</code> → <code>&amp;quot;</code></div>
+            <div><code>&apos;</code> → <code>&amp;#39;</code></div>
+            <div><code>©</code> → <code>&amp;copy;</code></div>
+            <div><code>®</code> → <code>&amp;reg;</code></div>
+            <div><code>™</code> → <code>&amp;trade;</code></div>
+          </div>
+        </div>
+
       </div>
     </main>
     <global-footer></global-footer>
+
     <script>
-      
-function process() { document.getElementById('output').value = encodeURIComponent(document.getElementById('input').value); }
-    
+function process() {
+  const input = document.getElementById('input').value;
+  if (!input) {
+    alert('Please enter text to encode');
+    return;
+  }
+  document.getElementById('output').value = input
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+    .replace(/©/g, '&copy;')
+    .replace(/®/g, '&reg;')
+    .replace(/™/g, '&trade;')
+    .replace(/€/g, '&euro;')
+    .replace(/£/g, '&pound;')
+    .replace(/¥/g, '&yen;')
+    .replace(/§/g, '&sect;')
+    .replace(/¶/g, '&para;')
+    .replace(/•/g, '&bull;')
+    .replace(/…/g, '&hellip;')
+    .replace(/′/g, '&prime;')
+    .replace(/″/g, '&Prime;')
+    .replace(/‹/g, '&lsaquo;')
+    .replace(/›/g, '&rsaquo;')
+    .replace(/‾/g, '&oline;')
+    .replace(/⁄/g, '&frasl;')
+    .replace(/←/g, '&larr;')
+    .replace(/↑/g, '&uarr;')
+    .replace(/→/g, '&rarr;')
+    .replace(/↓/g, '&darr;')
+    .replace(/↔/g, '&harr;')
+    .replace(/↵/g, '&crarr;')
+    .replace(/⌈/g, '&lceil;')
+    .replace(/⌉/g, '&rceil;')
+    .replace(/⌊/g, '&lfloor;')
+    .replace(/⌋/g, '&rfloor;');
+}
+
+function decode() {
+  const input = document.getElementById('input').value;
+  if (!input) {
+    alert('Please enter text to decode');
+    return;
+  }
+  const textarea = document.createElement('textarea');
+  textarea.innerHTML = input;
+  document.getElementById('output').value = textarea.value;
+}
+
+function copyOutput() {
+  const output = document.getElementById('output');
+  if (!output.value) {
+    alert('Nothing to copy');
+    return;
+  }
+  output.select();
+  document.execCommand('copy');
+  alert('Copied to clipboard!');
+}
+
+function clearAll() {
+  document.getElementById('input').value = '';
+  document.getElementById('output').value = '';
+}
     </script>
   </body>
 </html>

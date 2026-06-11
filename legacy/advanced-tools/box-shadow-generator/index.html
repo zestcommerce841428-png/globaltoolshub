@@ -41,9 +41,16 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+
+function process() {
+  const h = document.getElementById('h')?.value || 0;
+  const v = document.getElementById('v')?.value || 0;
+  const blur = document.getElementById('blur')?.value || 0;
+  const spread = document.getElementById('spread')?.value || 0;
+  const color = document.getElementById('color')?.value || '#000000';
+  document.getElementById('output').value = 
+    'box-shadow: '+h+'px '+v+'px '+blur+'px '+spread+'px '+color+';';
+}
     </script>
   </body>
 </html>

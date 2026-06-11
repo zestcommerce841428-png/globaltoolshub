@@ -40,19 +40,19 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-      function calcBMI() {
-        const w = parseFloat(document.getElementById('w').value);
-        const h = parseFloat(document.getElementById('h').value)/100;
-        if(w && h) {
-          const bmi = (w/(h*h)).toFixed(1);
-          let cat = 'Normal';
-          if(bmi<18.5) cat = 'Underweight';
-          else if(bmi>=25) cat = 'Overweight';
-          document.getElementById('res').innerHTML = "BMI: " + bmi + " (" + cat + ")";
-        }
-      }
-    
+
+function process() {
+  const weight = parseFloat(document.getElementById('weight')?.value || 0);
+  const height = parseFloat(document.getElementById('height')?.value || 0);
+  if(weight<=0 || height<=0) { alert('Enter valid values'); return; }
+  const bmi = (weight / (height * height)).toFixed(2);
+  let category = '';
+  if(bmi<18.5) category = 'Underweight';
+  else if(bmi<25) category = 'Normal';
+  else if(bmi<30) category = 'Overweight';
+  else category = 'Obese';
+  document.getElementById('output').value = 'BMI: ' + bmi + '\nCategory: ' + category;
+}
     </script>
   </body>
 </html>

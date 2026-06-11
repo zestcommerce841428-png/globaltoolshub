@@ -1,0 +1,15 @@
+{
+  "applied": [
+    "✅ Created service worker for offline support",
+    "✅ Service worker ready (manual registration needed in index.html)",
+    "✅ Generated sitemap.xml with 104 URLs"
+  ],
+  "skipped": [
+    "⏭️  build.json already exists",
+    "⏭️  Accessibility widget already exists",
+    "⏭️  PWA manifest already exists",
+    "⏭️  robots.txt already exists",
+    "⏭️  .htaccess already exists"
+  ],
+  "errors": []
+}

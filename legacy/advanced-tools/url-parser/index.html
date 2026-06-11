@@ -40,15 +40,23 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-      function parse() {
-        try {
-          const u = new URL(document.getElementById('url').value);
-          const parts = { Protocol: u.protocol, Host: u.hostname, Port: u.port, Path: u.pathname, Query: u.search, Hash: u.hash };
-          document.getElementById('res').innerHTML = Object.entries(parts).map(([k,v])=>'<tr><td class="py-2 font-bold">' + k + '</td><td class="py-2 font-mono">' + v + '</td></tr>').join('');
-        } catch(e) { document.getElementById('res').innerHTML = '<tr><td class="text-red-500 py-2">Invalid URL</td></tr>'; }
-      }
-    
+
+function process() {
+  const input = document.getElementById('input').value.trim();
+  try {
+    const url = new URL(input);
+    document.getElementById('output').value = 
+      'Protocol: ' + url.protocol + '\n' +
+      'Host: ' + url.host + '\n' +
+      'Hostname: ' + url.hostname + '\n' +
+      'Port: ' + url.port + '\n' +
+      'Pathname: ' + url.pathname + '\n' +
+      'Search: ' + url.search + '\n' +
+      'Hash: ' + url.hash;
+  } catch(e) {
+    alert('Invalid URL');
+  }
+}
     </script>
   </body>
 </html>

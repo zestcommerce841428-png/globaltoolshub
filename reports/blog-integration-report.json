@@ -1,0 +1,83 @@
+{
+  "totalFiles": 177,
+  "integrated": 177,
+  "categories": [
+    "tools",
+    "developer",
+    "productivity",
+    "security",
+    "seo"
+  ],
+  "samplePosts": [
+    {
+      "title": "A Compact Developer Toolkit",
+      "url": "blog-developer-toolkit.html",
+      "category": "tools",
+      "excerpt": "A useful toolkit covers formatting, validation, encoding, cryptography, and API testing.",
+      "date": "2026-06-01"
+    },
+    {
+      "title": "A Practical Guide To JSON Tools",
+      "url": "blog-json-tools-guide.html",
+      "category": "developer",
+      "excerpt": "JSON formatters, validators, viewers, and minifiers help developers debug data faster.",
+      "date": "2026-06-01"
+    },
+    {
+      "title": "A Safer Regex Testing Workflow",
+      "url": "blog-regex-testing-workflow.html",
+      "category": "developer",
+      "excerpt": "Test regular expressions with sample cases, edge cases, and clear replacement previews.",
+      "date": "2026-06-01"
+    },
+    {
+      "title": "Base64 And URL Encoding Explained",
+      "url": "blog-base64-url-encoding.html",
+      "category": "tools",
+      "excerpt": "Encoding tools help move data safely through URLs, forms, APIs, and config files.",
+      "date": "2026-06-01"
+    },
+    {
+      "title": "Color Tools For Better UI Decisions",
+      "url": "blog-color-tools-design.html",
+      "category": "tools",
+      "excerpt": "Contrast checkers, palette generators, and converters improve visual quality and accessibility.",
+      "date": "2026-06-01"
+    },
+    {
+      "title": "Hashing And Checksums For Everyday Work",
+      "url": "blog-hashing-checksums.html",
+      "category": "tools",
+      "excerpt": "Hashes help verify file integrity, compare content, and create stable identifiers.",
+      "date": "2026-06-01"
+    },
+    {
+      "title": "How To Build A Better Online Tools Workflow",
+      "url": "blog-best-online-tools-workflow.html",
+      "category": "productivity",
+      "excerpt": "Create a simple workflow by grouping tools by intent: inspect, convert, validate, compress, and export.",
+      "date": "2026-06-01"
+    },
+    {
+      "title": "Image Optimization Basics",
+      "url": "blog-image-optimization-basics.html",
+      "category": "tools",
+      "excerpt": "Compress, resize, convert, watermark, and inspect images before publishing them online.",
+      "date": "2026-06-01"
+    },
+    {
+      "title": "Password Generator Tips",
+      "url": "blog-password-generator-tips.html",
+      "category": "security",
+      "excerpt": "Strong passwords should be long, unique, random, and stored in a trusted password manager.",
+      "date": "2026-06-01"
+    },
+    {
+      "title": "Privacy-First Browser Tools",
+      "url": "blog-privacy-first-tools.html",
+      "category": "tools",
+      "excerpt": "Local browser processing can reduce unnecessary uploads and make simple utilities safer.",
+      "date": "2026-06-01"
+    }
+  ]
+}

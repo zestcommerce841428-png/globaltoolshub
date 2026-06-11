@@ -41,11 +41,12 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const lines = document.getElementById('input').value.split('
-'); document.getElementById('output').value = 'Total Lines: ' + lines.length + '
-Non-Empty: ' + lines.filter(l=>l.trim()).length; }
-    
+
+function process() {
+  const input = document.getElementById('input').value;
+  const lines = input.split('\n').length;
+  document.getElementById('output').value = 'Total lines: ' + lines;
+}
     </script>
   </body>
 </html>

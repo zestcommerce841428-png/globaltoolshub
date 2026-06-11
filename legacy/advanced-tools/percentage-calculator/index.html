@@ -44,9 +44,13 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const input = document.getElementById('input').value; const m = input.match(/(d+)s*%s*ofs*(d+)/i); if(m) { document.getElementById('output').value = (parseFloat(m[1]) / 100) * parseFloat(m[2]); } else { document.getElementById('output').value = 'Format: 20% of 100'; } }
-    
+
+function process() {
+  const value = parseFloat(document.getElementById('value')?.value || 0);
+  const total = parseFloat(document.getElementById('total')?.value || 100);
+  const percentage = (value / total * 100).toFixed(2);
+  document.getElementById('output').value = percentage + '%';
+}
     </script>
   </body>
 </html>

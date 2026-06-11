@@ -38,9 +38,11 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+'; let res = ''; for(let i=0; i<16; i++) res += chars.charAt(Math.floor(Math.random() * chars.length)); document.getElementById('output').value = res; }
-    
+
+function process() {
+  const input = document.getElementById('input').value;
+  document.getElementById('output').value = input.split('').reverse().join('');
+}
     </script>
   </body>
 </html>

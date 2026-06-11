@@ -40,21 +40,21 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-      function diff() {
-        const l1 = document.getElementById('t1').value.split('\n');
-        const l2 = document.getElementById('t2').value.split('\n');
-        const res = [];
-        for(let i=0; i<Math.max(l1.length, l2.length); i++) {
-          if(l1[i] === l2[i]) res.push('  ' + (l1[i]||''));
-          else {
-            if(l1[i]!==undefined) res.push('<span class="text-red-600 bg-red-100 px-1 dark:bg-red-900/30">- ' + l1[i] + '</span>');
-            if(l2[i]!==undefined) res.push('<span class="text-green-600 bg-green-100 px-1 dark:bg-green-900/30">+ ' + l2[i] + '</span>');
-          }
-        }
-        document.getElementById('res').innerHTML = res.join('\n');
-      }
-    
+
+function process() {
+  const text1 = document.getElementById('text1').value.split('\n');
+  const text2 = document.getElementById('text2').value.split('\n');
+  let diff = '';
+  const maxLines = Math.max(text1.length, text2.length);
+  for(let i=0; i<maxLines; i++) {
+    if(text1[i] !== text2[i]) {
+      diff += 'Line ' + (i+1) + ':\n';
+      if(text1[i]) diff += '- ' + text1[i] + '\n';
+      if(text2[i]) diff += '+ ' + text2[i] + '\n';
+    }
+  }
+  document.getElementById('output').value = diff || 'No differences found';
+}
     </script>
   </body>
 </html>

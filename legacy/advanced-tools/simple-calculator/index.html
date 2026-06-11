@@ -65,5 +65,17 @@
       function calcClear() { disp = '0'; op = null; prev = null; d.value = disp; }
     
     </script>
+  <script>
+
+function process() {
+  const expr = document.getElementById('input').value;
+  try {
+    const result = Function('"use strict"; return (' + expr + ')')();
+    document.getElementById('output').value = result;
+  } catch(e) {
+    alert('Invalid expression: ' + e.message);
+  }
+}
+</script>
   </body>
 </html>

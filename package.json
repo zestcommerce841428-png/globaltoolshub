@@ -23,6 +23,7 @@
     "@tailwindcss/cli": "^4.3.0",
     "http-server": "^14.1.1",
     "puppeteer": "^25.1.0",
+    "serve-handler": "^6.1.7",
     "tailwindcss": "^4.3.0"
   },
   "dependencies": {

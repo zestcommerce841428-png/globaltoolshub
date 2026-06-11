@@ -48,9 +48,17 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-      document.getElementById('ts').value = Math.floor(Date.now()/1000);
-    
+
+function process() {
+  const input = document.getElementById('input').value.trim();
+  if(/^\d+$/.test(input)) {
+    const date = new Date(parseInt(input) * 1000);
+    document.getElementById('output').value = date.toISOString() + '\n' + date.toString();
+  } else {
+    const timestamp = Math.floor(new Date(input).getTime() / 1000);
+    document.getElementById('output').value = timestamp.toString();
+  }
+}
     </script>
   </body>
 </html>

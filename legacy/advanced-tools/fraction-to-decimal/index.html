@@ -41,9 +41,13 @@
     </main>
     <global-footer></global-footer>
     <script>
-      
-function process() { const inStr = document.getElementById('input').value; document.getElementById('output').value = inStr.replace(/s+/g, ' ').replace(/ {s*/g, '{').replace(/ }s*/g, '}').replace(/;s*/g, ';').replace(/:s*/g, ':'); }
-    
+
+function process() {
+  const input = document.getElementById('input').value.trim();
+  const [num, den] = input.split('/').map(n => parseInt(n.trim()));
+  if(!den || den===0) { alert('Invalid fraction'); return; }
+  document.getElementById('output').value = (num / den).toString();
+}
     </script>
   </body>
 </html>

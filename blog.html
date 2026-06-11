@@ -10,44 +10,287 @@
     <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/styles.css?v=2">
     <link rel="stylesheet" href="assets/site.css?v=2">
+    <script src="assets/components.js?v=2" defer></script>
     <script src="assets/seo-runtime.js" defer></script>
   </head>
   <body data-bg="clean">
     
-  <header class="border-b border-slate-200/80 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
-    <div class="shell flex min-h-16 items-center justify-between gap-4 py-3">
-      <a href="index.html" class="flex min-w-0 items-center gap-3" aria-label="GlobalToolsHub home">
-        <img src="assets/logo.svg" alt="" class="h-10 w-10 shrink-0 rounded-lg">
-        <span class="truncate text-lg font-bold tracking-normal">GlobalToolsHub</span>
-      </a>
-      <nav class="hidden items-center gap-4 text-sm font-semibold text-slate-600 md:flex dark:text-slate-300" aria-label="Main navigation">
-        <a href="index.html">Tools</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Compliance</a>
-      </nav>
-    </div>
-  </header>
-    <main class="page-main">
-      <h1>Blog</h1><p>Guides for using browser tools more effectively.</p><div class="page-grid"><article class="page-card"><h2><a href="blog-best-online-tools-workflow.html">How To Build A Better Online Tools Workflow</a></h2><p>Create a simple workflow by grouping tools by intent: inspect, convert, validate, compress, and export.</p></article><article class="page-card"><h2><a href="blog-json-tools-guide.html">A Practical Guide To JSON Tools</a></h2><p>JSON formatters, validators, viewers, and minifiers help developers debug data faster.</p></article><article class="page-card"><h2><a href="blog-pdf-tools-browser.html">When Browser PDF Tools Make Sense</a></h2><p>PDF merge, split, compress, image export, and protection tools are most useful when they are quick and local-first.</p></article><article class="page-card"><h2><a href="blog-image-optimization-basics.html">Image Optimization Basics</a></h2><p>Compress, resize, convert, watermark, and inspect images before publishing them online.</p></article><article class="page-card"><h2><a href="blog-password-generator-tips.html">Password Generator Tips</a></h2><p>Strong passwords should be long, unique, random, and stored in a trusted password manager.</p></article><article class="page-card"><h2><a href="blog-regex-testing-workflow.html">A Safer Regex Testing Workflow</a></h2><p>Test regular expressions with sample cases, edge cases, and clear replacement previews.</p></article><article class="page-card"><h2><a href="blog-base64-url-encoding.html">Base64 And URL Encoding Explained</a></h2><p>Encoding tools help move data safely through URLs, forms, APIs, and config files.</p></article><article class="page-card"><h2><a href="blog-hashing-checksums.html">Hashing And Checksums For Everyday Work</a></h2><p>Hashes help verify file integrity, compare content, and create stable identifiers.</p></article><article class="page-card"><h2><a href="blog-color-tools-design.html">Color Tools For Better UI Decisions</a></h2><p>Contrast checkers, palette generators, and converters improve visual quality and accessibility.</p></article><article class="page-card"><h2><a href="blog-unit-converters.html">Why Unit Converters Still Matter</a></h2><p>Fast unit conversion prevents mistakes in engineering, design, finance, and daily tasks.</p></article><article class="page-card"><h2><a href="blog-privacy-first-tools.html">Privacy-First Browser Tools</a></h2><p>Local browser processing can reduce unnecessary uploads and make simple utilities safer.</p></article><article class="page-card"><h2><a href="blog-developer-toolkit.html">A Compact Developer Toolkit</a></h2><p>A useful toolkit covers formatting, validation, encoding, cryptography, and API testing.</p></article><article class="page-card"><h2><a href="blog-seo-for-tool-sites.html">SEO Foundations For Tool Sites</a></h2><p>Tool pages need precise titles, descriptions, structured data, internal links, and fast loading.</p></article><article class="page-card"><h2><a href="blog-responsive-tools.html">Responsive Design For Utility Pages</a></h2><p>A tool page should work on phones, tablets, and desktops without hiding critical controls.</p></article><article class="page-card"><h2><a href="blog-static-site-performance.html">Static Site Performance Checklist</a></h2><p>Prebuilt assets, local dependencies, lean scripts, and image discipline keep sites fast.</p></article></div>
-    </main>
-    
-  <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-500 dark:border-slate-800">
-    <div class="shell">
-      <div class="mb-3 flex flex-wrap justify-center gap-4">
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="cookies.html">Cookies</a>
-        <a href="security.html">Security</a>
-        <a href="accessibility.html">Accessibility</a>
-        <a href="disclaimer.html">Disclaimer</a>
+    <global-header></global-header>
+
+    <main class="shell py-8 sm:py-10">
+      <div class="mb-8">
+        <h1 class="text-3xl font-black sm:text-4xl">Blog</h1>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">Guides for using browser tools more effectively.</p>
       </div>
-      <p>Copyright 2026 GlobalToolsHub. Built for fast browser-based tools.</p>
-    </div>
-  </footer>
+
+      <!-- Search and Filter Controls -->
+      <div class="surface mb-6 rounded-lg p-4">
+        <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <input 
+            id="blogSearch" 
+            type="search" 
+            class="control" 
+            placeholder="Search blog posts..."
+            aria-label="Search blog posts">
+          
+          <select id="categoryFilter" class="control" aria-label="Filter by category">
+            <option value="all">All Categories</option>
+            <option value="tools">Tools & Utilities</option>
+            <option value="productivity">Productivity</option>
+            <option value="seo">SEO & Marketing</option>
+            <option value="developer">Developer Guides</option>
+            <option value="security">Security & Privacy</option>
+          </select>
+
+          <select id="sortBy" class="control" aria-label="Sort by">
+            <option value="recent">Most Recent</option>
+            <option value="popular">Most Popular</option>
+            <option value="title">Title A-Z</option>
+          </select>
+
+          <div class="flex items-center gap-2">
+            <select id="postsPerPage" class="control flex-1" aria-label="Posts per page">
+              <option value="12">12 per page</option>
+              <option value="24" selected>24 per page</option>
+              <option value="48">48 per page</option>
+              <option value="all">Show All</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="mt-3 flex items-center justify-between text-sm">
+          <p id="resultCount" class="font-semibold text-slate-600 dark:text-slate-300">Loading posts...</p>
+          <button id="clearFilters" class="text-indigo-600 hover:text-indigo-700 dark:text-indigo-400" onclick="clearAllFilters()">
+            Clear Filters
+          </button>
+        </div>
+      </div>
+
+      <!-- Blog Grid -->
+      <div id="blogGrid" class="page-grid mb-6">
+        <!-- Blog posts will be inserted here -->
+      </div>
+
+      <!-- Pagination -->
+      <nav id="pagination" class="flex flex-wrap justify-center gap-2" aria-label="Blog pagination">
+        <!-- Pagination buttons will be inserted here -->
+      </nav>
+
+      <!-- No Results Message -->
+      <div id="noResults" class="surface hidden rounded-lg p-8 text-center">
+        <p class="text-lg font-semibold text-slate-600 dark:text-slate-300">No blog posts found</p>
+        <p class="mt-2 text-sm text-slate-500">Try adjusting your search or filters</p>
+      </div>
+    </main>
+
+    <global-footer></global-footer>
+
+    <script>
+      // Blog posts data - will be loaded from JSON
+      let blogPosts = [];
+
+      // State
+      let currentPage = 1;
+      let filteredPosts = [...blogPosts];
+      let postsPerPage = 24;
+
+      // Initialize
+      async function init() {
+        try {
+          // Load blog data from JSON
+          const response = await fetch('assets/blog-data.json');
+          blogPosts = await response.json();
+          filteredPosts = [...blogPosts];
+          
+          renderPosts();
+          bindEvents();
+        } catch (error) {
+          console.error('Failed to load blog data:', error);
+          document.getElementById('resultCount').textContent = 'Failed to load blog posts';
+          document.getElementById('noResults').classList.remove('hidden');
+        }
+      }
+
+      // Bind events
+      function bindEvents() {
+        document.getElementById('blogSearch').addEventListener('input', filterPosts);
+        document.getElementById('categoryFilter').addEventListener('change', filterPosts);
+        document.getElementById('sortBy').addEventListener('change', filterPosts);
+        document.getElementById('postsPerPage').addEventListener('change', (e) => {
+          postsPerPage = e.target.value === 'all' ? filteredPosts.length : parseInt(e.target.value);
+          currentPage = 1;
+          renderPosts();
+        });
+      }
+
+      // Filter posts
+      function filterPosts() {
+        const searchTerm = document.getElementById('blogSearch').value.toLowerCase();
+        const category = document.getElementById('categoryFilter').value;
+        const sortBy = document.getElementById('sortBy').value;
+
+        // Filter
+        filteredPosts = blogPosts.filter(post => {
+          const matchesSearch = !searchTerm || 
+            post.title.toLowerCase().includes(searchTerm) || 
+            post.excerpt.toLowerCase().includes(searchTerm);
+          const matchesCategory = category === 'all' || post.category === category;
+          return matchesSearch && matchesCategory;
+        });
+
+        // Sort
+        if (sortBy === 'recent') {
+          filteredPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+        } else if (sortBy === 'title') {
+          filteredPosts.sort((a, b) => a.title.localeCompare(b.title));
+        }
+
+        currentPage = 1;
+        renderPosts();
+      }
+
+      // Clear filters
+      function clearAllFilters() {
+        document.getElementById('blogSearch').value = '';
+        document.getElementById('categoryFilter').value = 'all';
+        document.getElementById('sortBy').value = 'recent';
+        filterPosts();
+      }
+
+      // Render posts
+      function renderPosts() {
+        const grid = document.getElementById('blogGrid');
+        const noResults = document.getElementById('noResults');
+        const resultCount = document.getElementById('resultCount');
+
+        if (filteredPosts.length === 0) {
+          grid.classList.add('hidden');
+          noResults.classList.remove('hidden');
+          resultCount.textContent = '0 posts';
+          document.getElementById('pagination').innerHTML = '';
+          return;
+        }
+
+        grid.classList.remove('hidden');
+        noResults.classList.add('hidden');
+
+        // Pagination
+        const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+        const start = (currentPage - 1) * postsPerPage;
+        const end = Math.min(start + postsPerPage, filteredPosts.length);
+        const visiblePosts = filteredPosts.slice(start, end);
+
+        // Update count
+        resultCount.textContent = `${filteredPosts.length} post${filteredPosts.length !== 1 ? 's' : ''} found`;
+
+        // Render grid
+        grid.innerHTML = visiblePosts.map(post => `
+          <article class="page-card">
+            <div class="mb-2 text-xs font-semibold uppercase tracking-wide text-indigo-600 dark:text-indigo-400">
+              ${post.category}
+            </div>
+            <h2 class="text-xl font-bold">
+              <a href="${post.url}" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                ${escapeHtml(post.title)}
+              </a>
+            </h2>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
+              ${escapeHtml(post.excerpt)}
+            </p>
+            <div class="mt-4 flex items-center justify-between text-xs text-slate-500">
+              <time datetime="${post.date}">${formatDate(post.date)}</time>
+              <a href="${post.url}" class="font-semibold text-indigo-600 hover:text-indigo-700 dark:text-indigo-400">
+                Read more →
+              </a>
+            </div>
+          </article>
+        `).join('');
+
+        // Render pagination
+        renderPagination(totalPages);
+      }
+
+      // Render pagination
+      function renderPagination(totalPages) {
+        const pagination = document.getElementById('pagination');
+        
+        if (totalPages <= 1) {
+          pagination.innerHTML = '';
+          return;
+        }
+
+        const buttons = [];
+        
+        // Previous button
+        buttons.push(`
+          <button 
+            class="h-10 rounded-md border px-3 text-sm surface ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-slate-100 dark:hover:bg-slate-800'}" 
+            onclick="goToPage(${currentPage - 1})"
+            ${currentPage === 1 ? 'disabled' : ''}>
+            Previous
+          </button>
+        `);
+
+        // Page numbers
+        const maxButtons = 5;
+        let startPage = Math.max(1, currentPage - Math.floor(maxButtons / 2));
+        let endPage = Math.min(totalPages, startPage + maxButtons - 1);
+        
+        if (endPage - startPage < maxButtons - 1) {
+          startPage = Math.max(1, endPage - maxButtons + 1);
+        }
+
+        for (let i = startPage; i <= endPage; i++) {
+          buttons.push(`
+            <button 
+              class="h-10 rounded-md border px-3 text-sm ${i === currentPage ? 'button-primary' : 'surface hover:bg-slate-100 dark:hover:bg-slate-800'}"
+              onclick="goToPage(${i})">
+              ${i}
+            </button>
+          `);
+        }
+
+        // Next button
+        buttons.push(`
+          <button 
+            class="h-10 rounded-md border px-3 text-sm surface ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : 'hover:bg-slate-100 dark:hover:bg-slate-800'}"
+            onclick="goToPage(${currentPage + 1})"
+            ${currentPage === totalPages ? 'disabled' : ''}>
+            Next
+          </button>
+        `);
+
+        pagination.innerHTML = buttons.join('');
+      }
+
+      // Go to page
+      function goToPage(page) {
+        const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+        if (page < 1 || page > totalPages) return;
+        
+        currentPage = page;
+        renderPosts();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      // Utility functions
+      function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+
+      function formatDate(dateStr) {
+        const date = new Date(dateStr);
+        return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+      }
+
+      // Initialize on load
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    </script>
   </body>
 </html>
