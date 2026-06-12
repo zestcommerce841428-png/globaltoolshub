@@ -195,6 +195,25 @@ function upsertDynamicSeo(content, file, sourceRoot) {
     updated = updated.replace(/<\/head>/i, `    ${seoRuntimeScript}\n</head>`);
   }
 
+  // Add favicon links
+  const faviconPath = path
+    .relative(path.dirname(file), path.join(root, "assets", "logo.svg"))
+    .replaceAll(path.sep, "/");
+  
+  const faviconLink = `<link rel="icon" href="${faviconPath}" type="image/svg+xml">`;
+  if (/<link\s+rel=["']icon["'][^>]*>/i.test(updated)) {
+    updated = updated.replace(/<link\s+rel=["']icon["'][^>]*>/i, faviconLink);
+  } else {
+    updated = updated.replace(/<head([^>]*)>/i, `<head$1>\n    ${faviconLink}`);
+  }
+
+  const appleTouchIconLink = `<link rel="apple-touch-icon" href="${faviconPath}">`;
+  if (/<link\s+rel=["']apple-touch-icon["'][^>]*>/i.test(updated)) {
+    updated = updated.replace(/<link\s+rel=["']apple-touch-icon["'][^>]*>/i, appleTouchIconLink);
+  } else {
+    updated = updated.replace(/<\/head>/i, `    ${appleTouchIconLink}\n</head>`);
+  }
+
   return updated;
 }
 
