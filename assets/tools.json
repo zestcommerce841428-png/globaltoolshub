@@ -7507,5 +7507,59 @@
       "including",
       "password"
     ]
+  },
+  {
+    "id": "authorpro-main-index-html",
+    "title": "AuthorPro - Manuscript Formatter",
+    "description": "Free online manuscript formatter for authors. Format your book into PDF or EPUB with title page, preface, chapters, units, acknowledgements & more. No sign-up needed.",
+    "category": "Text",
+    "source": "GlobalToolsHub",
+    "url": "AuthorPro-main/index.html",
+    "tags": [
+      "manuscript",
+      "formatter",
+      "author",
+      "book",
+      "pdf",
+      "epub",
+      "writing",
+      "editor",
+      "chapters"
+    ]
+  },
+  {
+    "id": "fileflux-main-index-html",
+    "title": "FileFlux - File Converter",
+    "description": "Free online file converter. Convert PNG to JPG, JPG to PNG, PDF to Image, Image to PDF, Text to Image, Image to Text, PDF to Text, Text to PDF — all in your browser. No upload. No signup. 100% free.",
+    "category": "Image",
+    "source": "GlobalToolsHub",
+    "url": "fileflux-main/index.html",
+    "tags": [
+      "file",
+      "converter",
+      "image",
+      "pdf",
+      "png",
+      "jpg",
+      "ocr",
+      "conversion"
+    ]
+  },
+  {
+    "id": "transcriptpro-main-index-html",
+    "title": "TranscriptPro - YouTube Transcript Extractor",
+    "description": "Extract YouTube video transcripts instantly for free. Get full text transcript with or without timestamps. Perfect for students, content creators, researchers, and professionals.",
+    "category": "Utility",
+    "source": "GlobalToolsHub",
+    "url": "transcriptpro-main/index.html",
+    "tags": [
+      "youtube",
+      "transcript",
+      "subtitles",
+      "video",
+      "extractor",
+      "text",
+      "captions"
+    ]
   }
 ]
