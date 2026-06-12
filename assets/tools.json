@@ -3644,20 +3644,23 @@
   },
   {
     "id": "advanced-tools-json-formatter-index-html",
-    "title": "JSON Formatter",
-    "description": "Advanced JSON Formatter tool for developers.",
+    "title": "JSON Formatter & Validator",
+    "description": "Format, validate, and beautify JSON data with syntax highlighting and error detection.",
     "category": "Developer",
     "source": "Advanced Tools",
     "url": "legacy/advanced-tools/json-formatter/index.html",
     "tags": [
       "json",
       "formatter",
-      "advanced",
-      "tool",
-      "for",
-      "developers",
-      "index",
-      "html"
+      "validator",
+      "format",
+      "validate",
+      "and",
+      "beautify",
+      "data",
+      "with",
+      "syntax",
+      "highlighting"
     ]
   },
   {
@@ -5051,6 +5054,26 @@
     ]
   },
   {
+    "id": "advanced-tools-qrcode-generator-index-html",
+    "title": "QR Code Generator",
+    "description": "Free online QR Code Generator. Create QR codes for text, URLs, contacts, and more.",
+    "category": "Image",
+    "source": "Advanced Tools",
+    "url": "legacy/advanced-tools/qrcode-generator/index.html",
+    "tags": [
+      "code",
+      "generator",
+      "free",
+      "online",
+      "create",
+      "codes",
+      "for",
+      "text",
+      "urls",
+      "contacts"
+    ]
+  },
+  {
     "id": "online-tools-qrcode-html",
     "title": "Qrcode",
     "description": "Use Qrcode online at GlobalToolsHub. Fast, responsive, privacy-friendly browser tool from the unified tools collection.",
@@ -5089,25 +5112,6 @@
       "privacy",
       "friendly",
       "browser"
-    ]
-  },
-  {
-    "id": "advanced-tools-qrcode-generator-index-html",
-    "title": "Qrcode Generator",
-    "description": "Free online Qrcode Generator. Secure, fast, and easy to use.",
-    "category": "Image",
-    "source": "Advanced Tools",
-    "url": "legacy/advanced-tools/qrcode-generator/index.html",
-    "tags": [
-      "qrcode",
-      "generator",
-      "free",
-      "online",
-      "secure",
-      "fast",
-      "and",
-      "easy",
-      "use"
     ]
   },
   {
