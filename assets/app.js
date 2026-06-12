@@ -247,7 +247,7 @@ async function init() {
   
   if (!elements.grid) return; // Stop execution on non-catalog pages
   
-  const response = await fetch("assets/tools.json", { cache: "no-store" });
+  const response = await fetch("assets/tools.json?v=" + new Date().getTime(), { cache: "no-store" });
   state.tools = await response.json();
   populateFilters();
   localize();
